@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    --primary-200: #F7F7FC;
+    --gradient-1: 188,79%,70%;
+    --gradient-2: 283,62%,86%;
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+  }
+}
+
+.bg-primary-200 {
+  background-color:  var(--primary-200);
+}
+
+.gradient-1 {
+  background-color: var(--gradient-1);
+}
+
+.gradient-2 {
+  background-color: var(--gradient-2);
+}
+
+.hscroll-line {
+  @apply -bottom-[100px] right-[50%] h-[1.3px] absolute lg:block hidden overflow-hidden w-[40px] rotate-[90deg];
+  transform-origin: 50% 50%;
+}
+
+
+.hscroll-line::before,
+.hscroll-line::after {
+  @apply absolute top-0 left-0 right-0 bottom-0 content-['']
+}
+
+.hscroll-line:before {
+  @apply bg-gray-600;
+}
+
+.hscroll-line::after {
+	background: black;
+	animation: move 2s infinite
+}
+
+@keyframes move {
+	0% {
+		transform: translate3d(-200%, 0, 0)
+	}
+	60% {
+		transform: translate3d(100%, 0, 0)
+	}
+	100% {
+		transform: translate3d(100%, 0, 0)
+	}
+}
