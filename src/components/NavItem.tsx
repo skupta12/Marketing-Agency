@@ -1,11 +1,10 @@
-"use client"
+"use client";
 
 import { useState } from "react";
-import NavItems from "./NavItems";
-
+import { navItems } from "../data";
+import Link from "next/link";
 
 export function NavItem() {
-
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handleClick = () => {
@@ -21,7 +20,9 @@ export function NavItem() {
       >
         <div
           className={`bg-black block w-8 h-[2px] transition-all origin-[5px] 
-              ${isOpen ? "rotate-45" : "rotate-0"}`}
+              ${
+                isOpen ? "rotate-45" : "rotate-0"
+              }`}
         />
         <div
           className={`bg-black block w-8 h-[2px] transition-all origin-[5px] 
@@ -30,14 +31,28 @@ export function NavItem() {
       </button>
 
       <div
-        className={`fixed left-0 right-0 top-0 h-screen flex justify-center items-center bg-white transition-transform duration-700 ease-in-out 
-       ${isOpen ? "transform translate-y-[90px]" : "transform translate-y-full"}`}
+        className={`fixed left-0 right-0 top-0 h-screen flex justify-center items-center bg-white 
+        transition-transform duration-700 ease-in-out 
+       ${
+         isOpen ? "transform translate-y-[90px]" : "transform translate-y-full"
+       }`}
       >
-        {isOpen ? <NavItems/> : <NavItems/>}
+        <nav>
+          <ul className="flex flex-col items-center cursor pointer gap-5 leading-[1]">
+            {navItems.map(({ id, name, href }) => (
+              <li key={id}>
+                <Link href={href}>
+                  <div className="text-black lg:text-[90px] text-[50px] font-semibold">
+                    {name}
+                  </div>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </div>
     </>
   );
 }
 
 export default NavItem;
-

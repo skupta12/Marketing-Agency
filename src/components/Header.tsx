@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { NavItem } from '@/components/NavItem';
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { NavItem } from "@/components/NavItem";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
@@ -16,18 +16,18 @@ const Header = () => {
       setInitialLoad(false);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     handleScroll();
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [isScrolled]);
 
   const headerStyle = {
-    backgroundColor: isScrolled || initialLoad ? 'white' : 'transparent',
-    transition: 'background-color 0.3s ease',
+    backgroundColor: isScrolled || initialLoad ? "white" : "transparent",
+    transition: "background-color 0.3s ease",
   };
 
   return (
@@ -40,7 +40,13 @@ const Header = () => {
           <div className="flex items-center justify-between">
             <div className="header-logo ">
               <Link href="/">
-                <Image quality={100} width={70} height={70} src="/header-logo.png" alt="header logo" />
+                <Image
+                  quality={100}
+                  width={70}
+                  height={70}
+                  src="/header-logo.png"
+                  alt="header logo"
+                />
               </Link>
             </div>
             <div className="nav-items">

@@ -11,7 +11,7 @@ const MaxWidthWrapper = ({
 }) => {
   return (
     <div
-      className="container px-4 md:px-20"
+      className="mx-auto max-w-[1360px] px-4 md:px-20"
     >
       {children}
     </div>

@@ -1,4 +1,32 @@
 
+export const navItems = [
+  {
+      id: 1,
+      name: "Home",
+      href: "/"
+  },
+  {
+      id: 2,
+      name: "About",
+      href: "/about"
+  },
+  {
+      id: 3,
+      name: "Work",
+      href: "/work"
+  },
+  {
+      id: 4,
+      name: "News",
+      href: "/news"
+  },
+  {
+    id: 5,
+    name: "Contact",
+    href: "/contact"
+}
+];
+
 export const trust = [
   {
     id: 1,
@@ -47,5 +75,23 @@ export const services = [
     title: "Leadership Development",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 
+  },
+]
+
+export const counter = [
+  {
+    id: 1,
+    number: "610+",
+    text: "Active monthly users"
+  },
+  {
+    id: 2,
+    number: "17",
+    text: "Global location"
+  },
+  {
+    id: 3,
+    number: "6.8M",
+    text: "Funding from backers"
   },
 ]

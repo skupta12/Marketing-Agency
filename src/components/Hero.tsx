@@ -3,8 +3,7 @@ import Image from "next/image";
 import { Playfair_Display } from "next/font/google";
 import Button from "./Button";
 import MaxWidthWrapper from "./MaxWidthWrapper";
-
-export const playfair = Playfair_Display({ subsets: ["latin"], style: "italic" });
+import { playfair } from "@/app/layout";
 
 const firstGradient = "pointer-events-none filter blur-[100px] absolute -z-[1] top-1/2 -left-72 lg:w-[550px] w-[400px] lg:h-[200px] h-[100px] bg-[hsl(188,79%,70%)] rounded-full"
 const secGradient = "pointer-events-none filter blur-[100px] absolute -z-[1] top-1/2 -right-[100px] lg:w-[550px] w-[400px] lg:h-[300px] h-[200px] bg-[hsl(283,62%,86%)] rounded-full"
