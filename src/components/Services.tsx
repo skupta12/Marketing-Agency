@@ -17,7 +17,7 @@ const Services = () => {
             <span className="text-gray-500">business approach</span>.
           </p>
         </div>
-        <div className="grid grid-cols-12 gap-4 lg:pt-20 pt-10 lg:pb-32 pb-20">
+        <div className="grid grid-cols-12 gap-4 pt-20 lg:pb-32 pb-20">
           {services.map(({ id, icon, title, text }) => (
             <div
               className="w-full lg:col-span-4 md:col-span-6 col-span-12 bg-primary-200 p-12"

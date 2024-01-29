@@ -46,7 +46,7 @@
 }
 
 .hscroll-line {
-  @apply -bottom-[100px] right-[50%] h-[1.3px] absolute lg:block hidden overflow-hidden w-[40px] rotate-[90deg];
+  @apply -bottom-[100px] rounded-lg right-[50%] transform translate-x-[50%] -translate-y-[50%] h-[2.5px] absolute lg:block hidden overflow-hidden w-[45px] rotate-[90deg];
   transform-origin: 50% 50%;
 }
 
@@ -57,12 +57,12 @@
 }
 
 .hscroll-line:before {
-  @apply bg-gray-600;
+  @apply bg-gray-400;
 }
 
 .hscroll-line::after {
 	background: black;
-	animation: move 2s infinite
+	animation: move 2s infinite linear;
 }
 
 @keyframes move {
@@ -76,3 +76,57 @@
 		transform: translate3d(100%, 0, 0)
 	}
 }
+
+@-webkit-keyframes move {
+	0% {
+		transform: translate3d(-200%, 0, 0)
+	}
+	60% {
+		transform: translate3d(100%, 0, 0)
+	}
+	100% {
+		transform: translate3d(100%, 0, 0)
+	}
+}
+
+.scroller-box[data-animated="true"] .scroller-list {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll 300s linear infinite;
+}
+
+@keyframes scroll {
+  to {
+      transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+@-webkit-keyframes scroll {
+  to {
+      transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  
+}
+
+.swiper-slide img {
+ 
+}
+
+.swiper {
+
+}
+
+
+
+
+
+
+

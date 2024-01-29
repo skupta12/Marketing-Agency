@@ -1,8 +1,13 @@
 import { playfair } from "@/app/layout";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import Image from "next/image";
+import Link from "next/link";
+import InfinitiveScroller from "./InfinitiveScroller";
 
 const Portfolio = () => {
+  const scrollerboxStyle =
+    "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2";
+
   return (
     <MaxWidthWrapper>
       <div className="text-center">
@@ -14,55 +19,96 @@ const Portfolio = () => {
           <span className="text-gray-500">latest endeavors</span>.
         </p>
       </div>
-      <div className="grid grid-cols-[1.5fr_1.2fr] gap-x-28 lg:pt-20 pt-10">
-        <div className="pb-32">
-          <Image
-            className="w-full"
-            width={400}
-            height={400}
-            src="/portfolio/portfolio-1.jpg"
-            alt="portfolio-image"
-          />
+      <div>
+        <div className="grid lg:grid-cols-[1.5fr_1.2fr] lg:gap-x-28 pt-20">
+          <div className="group lg:mb-32 relative overflow-hidden">
+            <Link href={" "}>
+              <Image
+                className="w-full"
+                width={400}
+                height={400}
+                src="/portfolio/portfolio-1.jpg"
+                alt="portfolio-image"
+              />
+              <div
+                className={`scroller-box sm:opacity-0 duration-200 transition-opacity group-hover:opacity-[1] 
+              ${scrollerboxStyle}`}
+              >
+                <InfinitiveScroller title="Dreamy Visions" />
+              </div>
+            </Link>
+          </div>
+          <div className="group lg:self-end relative overflow-hidden">
+            <Link href={" "}>
+              <Image
+                className="w-full"
+                width={400}
+                height={400}
+                src="/portfolio/portfolio-2.jpg"
+                alt="portfolio-image"
+              />
+              <div
+                className={`scroller-box sm:opacity-0 duration-200 transition-opacity group-hover:opacity-[1] 
+              ${scrollerboxStyle}`}
+              >
+                <InfinitiveScroller title="Whimsy Tails" />
+              </div>
+            </Link>
+          </div>
         </div>
-        <div className="self-end">
-          <Image
-          className="w-full"
-            width={400}
-            height={400}
-            src="/portfolio/portfolio-2.jpg"
-            alt="portfolio-image"
-          />
+        <div className="grid lg:grid-cols-[1.2fr_1.5fr] lg:gap-x-28 lg:pt-40">
+          <div className="group lg:self-end relative overflow-hidden">
+            <Link href={""}>
+              <Image
+                className="w-full"
+                width={400}
+                height={400}
+                src="/portfolio/portfolio-3.jpg"
+                alt="portfolio-image"
+              />
+              <div
+                className={`scroller-box sm:opacity-0 duration-200 transition-opacity group-hover:opacity-[1] 
+              ${scrollerboxStyle}`}
+              >
+                <InfinitiveScroller title="Night Desert" />
+              </div>
+            </Link>
+          </div>
+          <div className="group lg:mb-32 relative overflow-hidden">
+            <Link href={""}>
+              <Image
+                className="w-full"
+                width={400}
+                height={400}
+                src="/portfolio/portfolio-4.jpg"
+                alt="portfolio-image"
+              />
+              <div
+                className={`scroller-box sm:opacity-0 duration-200 transition-opacity group-hover:opacity-[1] 
+              ${scrollerboxStyle}`}
+              >
+                <InfinitiveScroller title="Colorful Jorneys" />
+              </div>
+            </Link>
+          </div>
         </div>
-      </div>
-      <div className="grid grid-cols-[1.2fr_1.5fr] gap-x-28 lg:pt-40 pt-20">
-        <div className="self-end">
-          <Image
-            className="w-full"
-            width={400}
-            height={400}
-            src="/portfolio/portfolio-3.jpg"
-            alt="portfolio-image"
-          />
+        <div className="group lg:pt-32 relative overflow-hidden">
+          <Link href={""}>
+            <Image
+              className="w-full mx-auto"
+              width={1000}
+              height={1000}
+              src="/portfolio/portfolio-5.jpg"
+              alt="portfolio-image"
+            />
+            <div
+              className={`scroller-box sm:opacity-0 duration-200 transition-opacity group-hover:opacity-[1] 
+              ${scrollerboxStyle} lg:-translate-y-0 -translate-y-1/2`}
+            >
+              <InfinitiveScroller title="Imaginary Realms" />
+            </div>
+          </Link>
         </div>
-        <div className="pb-32">
-          <Image
-          className="w-full"
-            width={400}
-            height={400}
-            src="/portfolio/portfolio-4.jpg"
-            alt="portfolio-image"
-          />
-        </div>
-        <div className="lg:pt-32 pt-20">
-        <Image
-          className=""
-            width={400}
-            height={400}
-            src="/portfolio/portfolio-4.jpg"
-            alt="portfolio-image"
-          />
-        </div>
-       
       </div>
     </MaxWidthWrapper>
   );

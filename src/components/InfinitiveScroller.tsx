@@ -1,0 +1,50 @@
+"use client"
+
+import React, { useEffect, useRef } from "react";
+
+interface TitleProps {
+  title: string;
+  className?: string;
+}
+
+const InfinitiveScroller = ({ title, className }: TitleProps) => {
+  const isFirstRender = useRef(true);
+
+  useEffect(() => {
+    const scrollers = document.querySelectorAll(".scroller-box");
+
+    scrollers.forEach((scroller) => {
+      if (isFirstRender.current) {
+        scroller.setAttribute("data-animated", "true");
+
+        const scrollerInner = scroller.querySelector(".scroller-list");
+
+        if (scrollerInner) {
+          const scrollerContent = Array.from(scrollerInner.children);
+
+          scrollerContent.forEach((item) => {
+            const duplicatedItem = item.cloneNode(true) as HTMLElement;
+            duplicatedItem.setAttribute("aria-hidden", "true");
+            scrollerInner.appendChild(duplicatedItem);
+          });
+        }
+      }
+    });
+
+    isFirstRender.current = false;
+  }, []);
+
+  return (
+    <div>
+      <ul className="scroller-list flex flex-wrap gap-[1rem] pointer-events-none select-none">
+        <li className="p-[1rem]">
+          <span className={`lg:text-[55px] text-[40px] text-white font-semibold ${className}`}>
+            {title}
+          </span>
+        </li>
+      </ul>
+    </div>
+  );
+};
+
+export default InfinitiveScroller;

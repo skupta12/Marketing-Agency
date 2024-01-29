@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Portfolio from "@/components/Portfolio";
 import Services from "@/components/Services";
+import Testimonial from "@/components/Testimonial";
 import Trust from "@/components/Trust";
 
 export default function Home() {
@@ -21,6 +22,10 @@ export default function Home() {
 
         <section className="lg:py-20 py-14">
           <Portfolio />
+        </section>
+
+        <section className="lg:py-20 py-14">
+          <Testimonial />
         </section>
         
       </main>
