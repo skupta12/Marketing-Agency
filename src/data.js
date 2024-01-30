@@ -134,36 +134,42 @@ export const testimonial = [
     id: 1,
     src: "/trust/hitech.svg",
     text: '"Working with Liege has been a transformative experience for our brand."',
-    name: "Marketing Director"
+    name: "Lucas Smith",
+    prof: "Marketing Director"
   },
   {
     id: 2,
     src: "/trust/hues.svg",
     text: '"Working with Liege has been a transformative experience for our brand."',
-    name: "Marketing Director"
+    name: "Lucas Smith",
+    prof: "Marketing Director"
   },
   {
     id: 3,
     src: "/trust/kobe.svg",
     text: '"Working with Liege has been a transformative experience for our brand."',
-    name: "Marketing Director"
+    name: "Lucas Smith",
+    prof: "Marketing Director"
   },
   {
     id: 4,
     src: "/trust/terra.svg",
     text: '"Working with Liege has been a transformative experience for our brand."',
-    name: "Marketing Director"
+    name: "Lucas Smith",
+    prof: "Marketing Director"
   },
   {
     id: 5,
     src: "/trust/ther.svg",
     text: '"Working with Liege has been a transformative experience for our brand."',
-    name: "Marketing Director"
+    name: "Lucas Smith",
+    prof: "Marketing Director"
   },
   {
     id: 6,
     src: "/trust/tokyo.svg",
     text: '"Working with Liege has been a transformative experience for our brand."',
-    name: "Marketing Director"
+    name: "Lucas Smith",
+    prof: "Marketing Director"
   },
 ]

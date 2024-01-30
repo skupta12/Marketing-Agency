@@ -1,3 +1,4 @@
+import Ai from "@/components/Ai";
 import Hero from "@/components/Hero";
 import Portfolio from "@/components/Portfolio";
 import Services from "@/components/Services";
@@ -12,20 +13,24 @@ export default function Home() {
           <Hero />
         </section>
 
-        <section className="lg:py-20 py-14">
+        <section className="lg:py-24 py-14">
           <Trust />
         </section>
 
-        <section className="lg:py-20 py-14">
+        <section className="lg:py-24 py-14">
           <Services />
         </section>
 
-        <section className="lg:py-20 py-14">
+        <section className="lg:py-24 py-14 overflow-hidden">
           <Portfolio />
         </section>
 
-        <section className="lg:py-20 py-14">
+        <section className="lg:py-24 py-14">
           <Testimonial />
+        </section>
+
+        <section className="lg:py-24 py-14">
+          <Ai />
         </section>
         
       </main>

@@ -107,21 +107,19 @@
   }
 }
 
+
+
 .swiper {
-  width: 100%;
-  height: 100%;
+  @apply w-full h-full;
 }
 
 .swiper-slide {
-  
-}
-
-.swiper-slide img {
- 
+  @apply flex justify-center items-center;
 }
 
 .swiper {
-
+  width: 100%;
+  height: 100%;
 }
 
 

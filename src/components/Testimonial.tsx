@@ -1,72 +1,74 @@
 "use client";
 
-import React, { useRef, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import React, { useState } from "react";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "../app/globals.css";
-import { Pagination, Navigation } from "swiper/modules";
 import MaxWidthWrapper from "./MaxWidthWrapper";
-import Image from "next/image"
+import Image from "next/image";
 import { testimonial } from "@/data";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function Testimonial() {
+  
   const [swiperRef, setSwiperRef] = useState<Swiper | null>(null);
 
   return (
     <>
       <MaxWidthWrapper>
-        <div className="mb-20">
+        <div className="mb-20 sm:flex items-center justify-between">
           <h3 className="sm:text-[34px] text-[30px] font-semibold">
             Trusted by over 4,000{" "}
             <span className="text-gray-500">clients worldwide</span>.
           </h3>
+          <div className="flex gap-x-3 mt-10 sm:mt-0">
+            <button
+              className="group p-5 bg-primary-200 hover:bg-black hover:scale-[.95] transition"
+              onClick={() => swiperRef.slidePrev()}
+            >
+              <ChevronLeft className="w-[21px] h-[21px] group-hover:text-white" />
+            </button>
+            <button
+              className="group p-5 bg-primary-200 hover:bg-black hover:scale-[.95] transition"
+              onClick={() => swiperRef.slideNext()}
+            >
+              <ChevronRight className="w-[21px] h-[21px] group-hover:text-white" />
+            </button>
+          </div>
         </div>
       </MaxWidthWrapper>
+
       <Swiper
         onSwiper={setSwiperRef}
         slidesPerView={4}
-        // loop={true}
+        loop={true}
         centeredSlides={true}
-        spaceBetween={30}
+        spaceBetween={20}
         navigation={false}
-        modules={[Pagination, Navigation]}
-        className="mySwiper"
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            centeredSlides: false,
+          },     
+          640: {
+            slidesPerView: 2, 
+            centeredSlides: false,
+          },
+          767: {
+            slidesPerView: 3,
+            centeredSlides: false,
+          },
+          1024: {
+            centeredSlides: false,
+            slidesPerView: 4,
+          }
+        }}
       >
-        <SwiperSlide className="bg-primary-200 px-8 py-10">
-          <Image width={100} height={100} src="/trust/hues.svg" alt="testimonial logo" />
-          <div>
-            <p className="text-[26px] font-semibold mt-10 mb-7" aria-hidden="true">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, dolore!</p>
-            <p className="text-[17px] font-semibold">Emma Harisson, <span className="text-gray-500">Marketing Director</span></p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="bg-primary-200 px-8 py-10">
-          <Image width={100} height={100} src="/trust/hues.svg" alt="testimonial logo" />
-          <div>
-            <p className="text-[26px] font-semibold mt-10 mb-7" aria-hidden="true">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, dolore!</p>
-            <p className="text-[17px] font-semibold">Emma Harisson, <span className="text-gray-500">Marketing Director</span></p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="bg-primary-200 px-8 py-10">
-          <Image width={100} height={100} src="/trust/hues.svg" alt="testimonial logo" />
-          <div>
-            <p className="text-[26px] font-semibold mt-10 mb-7" aria-hidden="true">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, dolore!</p>
-            <p className="text-[17px] font-semibold">Emma Harisson, <span className="text-gray-500">Marketing Director</span></p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="bg-primary-200 px-8 py-10">
-          <Image width={100} height={100} src="/trust/hues.svg" alt="testimonial logo" />
-          <div>
-            <p className="text-[26px] font-semibold mt-10 mb-7" aria-hidden="true">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, dolore!</p>
-            <p className="text-[17px] font-semibold">Emma Harisson, <span className="text-gray-500">Marketing Director</span></p>
-          </div>
-        </SwiperSlide>
-
-
-        {/* <SwiperSlide className="bg-primary-200 px-8 py-10">
-          {testimonial.map(({ id, src, text, name }) => (
-            <div key={id}>
+        {testimonial.map(({ id, src, text, name, prof }) => (
+          <SwiperSlide key={id} className="bg-primary-200 px-12 py-14">
+            <div>
               <Image
                 width={100}
                 height={100}
@@ -81,12 +83,12 @@ export default function Testimonial() {
                   {text}
                 </p>
                 <p className="text-[17px] font-semibold">
-                  {name}
+                  {name}, <span className="text-gray-500">{prof}</span>
                 </p>
               </div>
             </div>
-          ))}
-        </SwiperSlide> */}
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );

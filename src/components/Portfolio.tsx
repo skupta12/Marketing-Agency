@@ -5,11 +5,14 @@ import Link from "next/link";
 import InfinitiveScroller from "./InfinitiveScroller";
 
 const Portfolio = () => {
-  const scrollerboxStyle =
-    "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2";
-
+  
+  const scrollerboxStyle = "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:opacity-0 duration-300 transition-opacity group-hover:opacity-[1]";
+  const portfolioGradient = "pointer-events-none filter blur-[100px] absolute -z-[1] bottom-20 -right-72 lg:w-[650px] w-[400px] lg:h-[700px] h-[400px] bg-[hsl(188,79%,70%)] rounded-full"
+  
   return (
     <MaxWidthWrapper>
+      <div className={portfolioGradient} />
+
       <div className="text-center">
         <h3 className={`text-[50px] font-semibold`}>
           Recent <span className={`${playfair.className}`}>work</span>
@@ -31,8 +34,7 @@ const Portfolio = () => {
                 alt="portfolio-image"
               />
               <div
-                className={`scroller-box sm:opacity-0 duration-200 transition-opacity group-hover:opacity-[1] 
-              ${scrollerboxStyle}`}
+                className={`scroller-box  ${scrollerboxStyle}`}
               >
                 <InfinitiveScroller title="Dreamy Visions" />
               </div>
@@ -48,8 +50,7 @@ const Portfolio = () => {
                 alt="portfolio-image"
               />
               <div
-                className={`scroller-box sm:opacity-0 duration-200 transition-opacity group-hover:opacity-[1] 
-              ${scrollerboxStyle}`}
+                className={`scroller-box ${scrollerboxStyle}`}
               >
                 <InfinitiveScroller title="Whimsy Tails" />
               </div>
@@ -67,8 +68,7 @@ const Portfolio = () => {
                 alt="portfolio-image"
               />
               <div
-                className={`scroller-box sm:opacity-0 duration-200 transition-opacity group-hover:opacity-[1] 
-              ${scrollerboxStyle}`}
+                className={`scroller-box ${scrollerboxStyle}`}
               >
                 <InfinitiveScroller title="Night Desert" />
               </div>
@@ -84,8 +84,7 @@ const Portfolio = () => {
                 alt="portfolio-image"
               />
               <div
-                className={`scroller-box sm:opacity-0 duration-200 transition-opacity group-hover:opacity-[1] 
-              ${scrollerboxStyle}`}
+                className={`scroller-box ${scrollerboxStyle}`}
               >
                 <InfinitiveScroller title="Colorful Jorneys" />
               </div>
@@ -102,8 +101,7 @@ const Portfolio = () => {
               alt="portfolio-image"
             />
             <div
-              className={`scroller-box sm:opacity-0 duration-200 transition-opacity group-hover:opacity-[1] 
-              ${scrollerboxStyle} lg:-translate-y-0 -translate-y-1/2`}
+              className={`scroller-box ${scrollerboxStyle} lg:-translate-y-0 -translate-y-1/2`}
             >
               <InfinitiveScroller title="Imaginary Realms" />
             </div>
@@ -111,6 +109,8 @@ const Portfolio = () => {
         </div>
       </div>
     </MaxWidthWrapper>
+   
+    
   );
 };
 
