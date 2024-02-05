@@ -8,11 +8,13 @@ import "swiper/css/navigation";
 import "../app/globals.css";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import Image from "next/image";
-import { testimonial } from "@/data";
+import { testimonial } from "@/data/data";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function Testimonial() {
-  
+
+  type Swiper = any
+
   const [swiperRef, setSwiperRef] = useState<Swiper | null>(null);
 
   return (
@@ -26,13 +28,13 @@ export default function Testimonial() {
           <div className="flex gap-x-3 mt-10 sm:mt-0">
             <button
               className="group p-5 bg-primary-200 hover:bg-black hover:scale-[.95] transition"
-              onClick={() => swiperRef.slidePrev()}
+              onClick={() => swiperRef && swiperRef.slidePrev()}
             >
               <ChevronLeft className="w-[21px] h-[21px] group-hover:text-white" />
             </button>
             <button
               className="group p-5 bg-primary-200 hover:bg-black hover:scale-[.95] transition"
-              onClick={() => swiperRef.slideNext()}
+              onClick={() => swiperRef && swiperRef.slideNext()}
             >
               <ChevronRight className="w-[21px] h-[21px] group-hover:text-white" />
             </button>

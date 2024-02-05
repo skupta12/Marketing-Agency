@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter_Tight, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import CTA from "@/components/CTA";
 
 
 const inter = Inter_Tight({ subsets: ["latin"] });
@@ -26,7 +28,8 @@ export default function RootLayout({
           <div className="flex-grow flex-1">
             {children}
           </div>
-          {/* <Footer /> */}
+          <CTA />
+          <Footer />
           {/* </Providers> */}
         </main>
       </body>

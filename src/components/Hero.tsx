@@ -1,12 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import { Playfair_Display } from "next/font/google";
 import Button from "./Button";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { playfair } from "@/app/layout";
 
-const firstGradient = "pointer-events-none filter blur-[100px] absolute -z-[1] top-1/2 -left-72 lg:w-[550px] w-[400px] lg:h-[200px] h-[100px] bg-[hsl(188,79%,70%)] rounded-full"
-const secGradient = "pointer-events-none filter blur-[100px] absolute -z-[1] top-1/2 -right-[100px] lg:w-[550px] w-[400px] lg:h-[300px] h-[200px] bg-[hsl(283,62%,86%)] rounded-full"
+export const firstGradient = "pointer-events-none filter blur-[100px] absolute -z-[1] top-1/2 -left-72 lg:w-[550px] w-[400px] lg:h-[200px] h-[100px] bg-[hsl(188,79%,70%)] rounded-full"
+export const secGradient = "pointer-events-none filter blur-[100px] absolute -z-[1] top-1/2 -right-[100px] lg:w-[550px] w-[400px] lg:h-[300px] h-[200px] bg-[hsl(283,62%,86%)] rounded-full"
 
 const Hero = () => {
   return (
@@ -15,7 +14,7 @@ const Hero = () => {
         <div className="grid grid-cols-12 gap-y-12 lg:gap-y-7 gap-x-5 lg:place-items-center">
           <div className="lg:col-span-6 col-span-12">
             <div className="hero-text mb-10">
-              <h1 className="lg:text-[65px] md:text-[55px] text-[45px] font-semibold leading-[1]">
+              <h1 className="lg:text-[65px] md:text-[55px] text-[45px] font-semibold leading-tight">
                 The{" "}
                 <span className={`font-medium ${playfair.className}`}>
                   web–based

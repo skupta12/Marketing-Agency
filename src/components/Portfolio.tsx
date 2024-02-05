@@ -14,12 +14,12 @@ const Portfolio = () => {
       <div className={portfolioGradient} />
 
       <div className="text-center">
-        <h3 className={`text-[50px] font-semibold`}>
+        <h3 className={`sm:text-[50px] text-[40px] font-semibold mb-4`}>
           Recent <span className={`${playfair.className}`}>work</span>
         </h3>
         <p className="lg:text-[26px] text-[24px] font-medium">
           Showcase of our{" "}
-          <span className="text-gray-500">latest endeavors</span>.
+          <span className="text-gray-500 font-semibold">latest endeavors</span>.
         </p>
       </div>
       <div>
@@ -33,8 +33,9 @@ const Portfolio = () => {
                 src="/portfolio/portfolio-1.jpg"
                 alt="portfolio-image"
               />
+              <span className="absolute inset-x-0 top-0 bottom-0 group-hover:bg-port-rgba transition" />
               <div
-                className={`scroller-box  ${scrollerboxStyle}`}
+                className={`scroller-box ${scrollerboxStyle}`}
               >
                 <InfinitiveScroller title="Dreamy Visions" />
               </div>
@@ -49,6 +50,7 @@ const Portfolio = () => {
                 src="/portfolio/portfolio-2.jpg"
                 alt="portfolio-image"
               />
+              <span className="absolute inset-x-0 top-0 bottom-0 group-hover:bg-port-rgba transition" />
               <div
                 className={`scroller-box ${scrollerboxStyle}`}
               >
@@ -67,6 +69,7 @@ const Portfolio = () => {
                 src="/portfolio/portfolio-3.jpg"
                 alt="portfolio-image"
               />
+              <span className="absolute inset-x-0 top-0 bottom-0 group-hover:bg-port-rgba transition" />
               <div
                 className={`scroller-box ${scrollerboxStyle}`}
               >
@@ -83,6 +86,7 @@ const Portfolio = () => {
                 src="/portfolio/portfolio-4.jpg"
                 alt="portfolio-image"
               />
+              <span className="absolute inset-x-0 top-0 bottom-0 group-hover:bg-port-rgba transition" />
               <div
                 className={`scroller-box ${scrollerboxStyle}`}
               >
@@ -91,19 +95,20 @@ const Portfolio = () => {
             </Link>
           </div>
         </div>
-        <div className="group lg:pt-32 relative overflow-hidden">
+        <div className="group lg:mt-32 relative overflow-hidden">
           <Link href={""}>
             <Image
               className="w-full mx-auto"
-              width={1000}
-              height={1000}
+              width={800}
+              height={800}
               src="/portfolio/portfolio-5.jpg"
               alt="portfolio-image"
             />
+            <span className="absolute inset-x-0 top-0 bottom-0 group-hover:bg-port-rgba transition-colors duration-500" />
             <div
-              className={`scroller-box ${scrollerboxStyle} lg:-translate-y-0 -translate-y-1/2`}
+              className={`scroller-box ${scrollerboxStyle}`}
             >
-              <InfinitiveScroller title="Imaginary Realms" />
+            <InfinitiveScroller title="Imaginary Realms" />
             </div>
           </Link>
         </div>

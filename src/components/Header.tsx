@@ -33,7 +33,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`w-full fixed top-0 left-0 z-[111] transition-all duration-300`}
+        className={`w-full fixed top-0 left-0 z-[111]`}
         style={headerStyle}
       >
         <div className="max-w-[1536px] mx-auto px-4 md:px-20 py-8">
@@ -49,9 +49,7 @@ const Header = () => {
                 />
               </Link>
             </div>
-            <div className="nav-items">
-              <NavItem />
-            </div>
+            <NavItem />
           </div>
         </div>
       </header>

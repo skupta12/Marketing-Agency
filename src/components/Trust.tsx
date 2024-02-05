@@ -1,6 +1,6 @@
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import Image from "next/image";
-import { trust } from "../data";
+import { trust } from "../data/data";
 import Button from "./Button";
 
 const Trust = () => {

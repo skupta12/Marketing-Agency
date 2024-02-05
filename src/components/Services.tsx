@@ -1,6 +1,6 @@
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { playfair } from "@/app/layout";
-import { counter, services } from "@/data";
+import { counter, services } from "@/data/data";
 import Image from "next/image";
 
 const Services = () => {
@@ -8,11 +8,11 @@ const Services = () => {
     <MaxWidthWrapper>
       <div>
         <div className="text-center">
-          <h3 className="text-[50px] font-semibold">
+          <h3 className="sm:text-[50px] text-[40px] font-semibold mb-4">
             What{" "}
             <span className={`font-medium ${playfair.className}`}>we do</span>
           </h3>
-          <p className="text-[26px] font-medium">
+          <p className="sm:text-[26px] text-[24px] font-semibold">
             Build a customer-focused{" "}
             <span className="text-gray-500">business approach</span>.
           </p>
@@ -34,7 +34,7 @@ const Services = () => {
           ))}
         </div>
           <div className="analyzed-text text-center">
-            <h4 className="font-medium text-[26px]">
+            <h4 className="font-semibold sm:text-[26px] text-[24px]">
               We&apos;ve analyzed the data and have compelling{" "}
               <span className="text-gray-500">
                 <br />
@@ -43,7 +43,7 @@ const Services = () => {
               .
             </h4>
           </div>
-          <div className="counter grid grid-cols-12 gap-7 mt-10 place-items-center">
+          <div className="counter grid grid-cols-12 gap-7 mt-10 justify-center">
             {counter.map(({ number, text, id }) => (
               <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12 text-center">
                 <h2 className="sm:text-[91px] text-[70px] font-semibold">

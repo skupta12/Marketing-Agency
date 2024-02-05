@@ -100,31 +100,31 @@ export const portfolio = [
   {
     id: 1,
     src: "/portfolio/portfolio-1.jpg",
-    scrollerTitle: "Dreamy Visions Dreamy Visions Dreamy Visions",
+    scrollerTitle: "Dreamy Visions",
     href: "/"
   },
   {
     id: 2,
     src: "/portfolio/portfolio-2.jpg",
-    scrollerTitle: "Whimsy Tails Whimsy Tails Whimsy Tails",
+    scrollerTitle: "Whimsy Tails",
     href: "/"
   },
   {
     id: 3,
     src: "/portfolio/portfolio-3.jpg",
-    scrollerTitle: "Colorful Jorneys Colorful Jorneys Colorful Jorneys",
+    scrollerTitle: "Colorful Jorneys",
     href: "/"
   },
   {
     id: 4,
     src: "/portfolio/portfolio-4.jpg",
-    scrollerTitle: "Night Desert Night Desert Night Desert",
+    scrollerTitle: "Night Desert",
     href: "/"
   },
   {
     id: 5,
     src: "/portfolio/portfolio-5.jpg",
-    scrollerTitle: "Imaginary Realms Imaginary Realms Imaginary Realms",
+    scrollerTitle: "Imaginary Realms",
     href: "/"
   },
 ]
@@ -173,3 +173,106 @@ export const testimonial = [
     prof: "Marketing Director"
   },
 ]
+
+export const aiList = [
+  {
+    id: 1,
+    content: "Marketing plans powered by AI technology",
+  },
+  {
+    id: 2,
+    content: "Live customer support chat widget",
+  },
+  {
+    id: 3,
+    content: "Automatic scaling campaign tools",
+  },
+  {
+    id: 4,
+    content: "Adaptive testing reporting",
+  },
+]
+
+export const blog = [
+  {
+    id: 1,
+    src: "/blog/blog-1.jpg",
+    label: "Code",
+    text: "Our design process explained",
+    date: "April 27, 2024"
+  },
+  {
+    id: 2,
+    src: "/blog/blog-2.jpg",
+    label: "Marketing",
+    text: "A peek into our branding strategy",
+    date: "May 10, 2024"
+
+  },
+  {
+    id: 3,
+    src: "/blog/blog-3.jpg",
+    label: "Design",
+    text: "Developing Seamless mobile apps",
+    date: "April 1, 2024"
+
+  },
+]
+
+export const media = [
+  {
+    id: 1,
+    href: "/twitter.png",
+  },
+  {
+    id: 2,
+    href: "/inst.png",
+  },
+  {
+    id: 3,
+    href: "/dribble.png",
+  },
+  {
+    id: 4,
+    href: "/linkedin.png",
+  },
+]
+
+export const footer = [
+  {
+    id: 1,
+    city: "New York",
+    street: "123 Broadway Street, Suite 16, New York, NY",
+  },
+  {
+    id: 2,
+    city: "San Francisco",
+    street: "789 Market Street, Floor 3, San Francisco, CA",
+  },
+  {
+    id: 3,
+    city: "Paris",
+    street: "12 Rue de la Paix, 75002 Paris, France",
+  },
+]
+
+export const team = [
+  {
+    id: 1,
+    src: "/team/team-1.jpg",
+    name: "Nathanial Reed",
+    prof: "Co Founder",
+  },
+  {
+    id: 2,
+    src: "/team/team-2.jpg",
+    name: "Marcus Vinson",
+    prof: "Developer",
+  },
+  {
+    id: 3,
+    src: "/team/team-3.jpg",
+    name: "Isabella Knight",
+    prof: "Marketing",
+  },
+];
