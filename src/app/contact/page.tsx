@@ -16,7 +16,7 @@ const Page = () => {
           </div>
         </div>
         <div className="grid grid-cols-12 gap-4 items-center">
-          <div className="col-span-6 lg:pr-12">
+          <div className="lg:col-span-6 col-span-12 lg:pr-12">
             <form action="#">
               <div className="grid grid-cols-12 gap-4">
                 <div className="col-span-6">
@@ -71,8 +71,9 @@ const Page = () => {
               </div>
             </form>
           </div>
-          <div className="col-span-6">
+          <div className="lg:col-span-6 col-span-12 lg:mt-0 mt-8">
             <Image
+            className="w-full"
               width={500}
               height={500}
               src="/blog/blog-1.jpg"
