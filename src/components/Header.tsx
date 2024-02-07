@@ -35,13 +35,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="header-logo ">
             <Link href="/">
-              <Image
-                quality={100}
-                width={70}
-                height={70}
-                src="/header-logo.png"
-                alt="header logo"
-              />
+              <h6 className="font-semibold text-[30px]">Liège</h6>
             </Link>
           </div>
           <NavItem />
