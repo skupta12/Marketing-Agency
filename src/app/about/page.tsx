@@ -21,9 +21,9 @@ const Page = () => {
         </div>
         <div>
           <Image
-            width={1000}
-            height={1000}
-            quality={80}
+            loading="eager"
+            width={1100}
+            height={1100}
             className="w-full"
             src="/blog/blog-1.jpg"
             alt="blog image"
