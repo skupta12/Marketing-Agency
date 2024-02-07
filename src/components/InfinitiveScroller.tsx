@@ -7,7 +7,7 @@ interface TitleProps {
   className?: string;
 }
 
-const InfinitiveScroller = ({ title, className }: TitleProps) => {
+const InfinitiveScroller = ({ title }: TitleProps) => {
   const isFirstRender = useRef(true);
 
   useEffect(() => {
@@ -37,7 +37,7 @@ const InfinitiveScroller = ({ title, className }: TitleProps) => {
   return (
       <ul className="scroller-list flex flex-nowrap gap-[1rem] pointer-events-none select-none">
         <li className="p-[1rem]">
-          <span className={`lg:text-[55px] text-[40px] text-white font-semibold ${className}`}>
+          <span className={`lg:text-[55px] text-[40px] text-white font-semibold`}>
             {title}
           </span>
         </li>

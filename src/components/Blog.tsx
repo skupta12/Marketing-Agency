@@ -2,7 +2,7 @@ import { playfair } from "@/app/layout";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import Button from "./Button";
 import { blog } from "@/data/data";
-import Image from "next/image"
+import Image from "next/image";
 import Link from "next/link";
 
 const Blog = () => {
@@ -29,14 +29,26 @@ const Blog = () => {
         {blog.map(({ id, src, label, text, date }) => (
           <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
             <Link href="#">
-              <Image className="w-full" width={500} height={500} src={src} alt="blog post" />
+              <Image
+                className="w-full"
+                width={500}
+                height={500}
+                src={src}
+                alt="blog post"
+              />
             </Link>
             <div>
-              <span className="inline-block font-semibold border-2 border-black px-4 py-1 rounded-full my-6">{label}</span>
+              <span className="inline-block font-semibold border-2 border-black px-4 py-1 rounded-full my-6">
+                {label}
+              </span>
               <Link href="#">
-                <h5 className="sm:text-[30px] text-[24px] font-semibold mb-6">{text}</h5>
+                <h5 className="sm:text-[30px] text-[24px] font-semibold mb-6">
+                  {text}
+                </h5>
               </Link>
-              <span className="text-gray-500 font-medium text-[18px]">{date}</span>
+              <span className="text-gray-500 font-medium text-[18px]">
+                {date}
+              </span>
             </div>
           </div>
         ))}
