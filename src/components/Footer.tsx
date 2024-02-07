@@ -41,7 +41,7 @@ const Footer = () => {
               contact@liege.com
             </p>
             <div className="flex items-center gap-x-4">
-              {media.map(({ id, href}) => (
+              {media.map(({ id, href }) => (
                 <Link key={id} href="#">
                   <Image
                     className="hover:scale-90"

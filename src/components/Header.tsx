@@ -6,54 +6,48 @@ import Image from "next/image";
 import { NavItem } from "@/components/NavItem";
 
 const Header = () => {
-  const [isScrolled, setIsScrolled] = useState<boolean>(false);
-  const [initialLoad, setInitialLoad] = useState<boolean>(true);
+  const [scrollAlpha, setScrollAlpha] = useState<number>(1)
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrolled = window.scrollY > 100;
-      setIsScrolled(scrolled);
-      setInitialLoad(false);
+      const scrollTop = window.scrollY;
+      const maxScroll = document.body.clientHeight - window.innerHeight;
+      const scrollAlpha = Math.min(scrollTop / 250, maxScroll / 250);
+      setScrollAlpha(scrollAlpha);
     };
 
     window.addEventListener("scroll", handleScroll);
-
     handleScroll();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isScrolled]);
+  }, []);
 
   const headerStyle = {
-    backgroundColor: isScrolled || initialLoad ? "white" : "transparent",
-    transition: "background-color 0.3s ease",
+    backgroundColor: `rgba(255, 255, 255, ${scrollAlpha})`,
+    transition: "background-color 0.2s ease",
   };
 
   return (
-    <>
-      <header
-        className={`w-full fixed top-0 left-0 z-[111]`}
-        style={headerStyle}
-      >
-        <div className="max-w-[1536px] mx-auto px-4 md:px-20 py-8">
-          <div className="flex items-center justify-between">
-            <div className="header-logo ">
-              <Link href="/">
-                <Image
-                  quality={100}
-                  width={70}
-                  height={70}
-                  src="/header-logo.png"
-                  alt="header logo"
-                />
-              </Link>
-            </div>
-            <NavItem />
+    <header className={`w-full fixed top-0 left-0 z-[111]`} style={headerStyle}>
+      <div className="max-w-[1536px] mx-auto px-4 md:px-20 py-8">
+        <div className="flex items-center justify-between">
+          <div className="header-logo ">
+            <Link href="/">
+              <Image
+                quality={100}
+                width={70}
+                height={70}
+                src="/header-logo.png"
+                alt="header logo"
+              />
+            </Link>
           </div>
+          <NavItem />
         </div>
-      </header>
-    </>
+      </div>
+    </header>
   );
 };
 

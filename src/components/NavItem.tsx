@@ -12,9 +12,9 @@ export function NavItem() {
   };
 
   const closeMenu = () => {
-    setIsOpen(false)
-  }
-  
+    setIsOpen(false);
+  };
+
   return (
     <>
       <button
@@ -33,22 +33,36 @@ export function NavItem() {
       </button>
 
       <div
-        className={`fixed left-0 right-0 top-0 h-screen flex justify-center items-center bg-white
+        className={`fixed left-0 -z-[1] right-0 top-0 h-screen flex justify-center items-center bg-white
         transition-transform duration-700 ease-in-out 
        ${
-         isOpen ? "transform translate-y-[96px]" : "transform translate-y-full"
+         isOpen ? "transform translate-y-0" : "transform translate-y-full"
        }`}
       >
         <nav className="navbar">
-          <ul className="text-center leading-tight">
-            {navItems.map(({ id, name, href }) => (
-              <li className="overflow-hidden" key={id}>
-                <Link href={href}>
-                  <div onClick={closeMenu} className="text-black lg:text-[90px] text-[50px] font-semibold">
-                    <span className="relative inline-block transition-transform duration-500" data-hover={name}>{name}</span>
-                  </div>
-                </Link>
-              </li>
+          <ul>
+            {navItems.map(({ id, name, href, number }) => (
+              <div className="flex gap-x-3 justify-center leading-[1.3]" key={id}>
+                <span className="flex flex-col justify-center items-center 
+                border-2 border-black rounded-full p-1 w-[40px] h-[40px]">
+                  {number}
+                </span>
+                <li className="overflow-hidden">
+                  <Link href={href}>
+                    <div
+                      onClick={closeMenu}
+                      className="text-black lg:text-[90px] text-[50px] font-semibold"
+                    >
+                      <span
+                        className="relative inline-block transition-transform duration-500"
+                        data-hover={name}
+                      >
+                        {name}
+                      </span>
+                    </div>
+                  </Link>
+                </li>
+              </div>
             ))}
           </ul>
         </nav>

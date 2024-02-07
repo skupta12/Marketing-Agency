@@ -5,7 +5,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
 
-
 const inter = Inter_Tight({ subsets: ["latin"] });
 export const playfair = Playfair_Display({ subsets: ["latin"], style: "italic" });
 

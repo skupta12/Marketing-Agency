@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -20,7 +20,7 @@ export default function Testimonial() {
   return (
     <>
       <MaxWidthWrapper>
-        <div className="mb-20 sm:flex items-center justify-between">
+        <div className="sm:mb-20 mb-10 sm:flex items-center justify-between">
           <h3 className="sm:text-[34px] text-[30px] font-semibold">
             Trusted by over 4,000{" "}
             <span className="text-gray-500">clients worldwide</span>.

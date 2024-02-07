@@ -46,10 +46,9 @@
 }
 
 .hscroll-line {
-  @apply -bottom-[100px] rounded-lg right-[50%] transform translate-x-[50%] -translate-y-[50%] h-[2.5px] absolute lg:block hidden overflow-hidden w-[45px] rotate-[90deg];
+  @apply -bottom-[50px] rounded-lg right-[50%] transform translate-x-[50%] -translate-y-[50%] h-[2.5px] absolute lg:block hidden overflow-hidden w-[45px] rotate-[90deg];
   transform-origin: 50% 50%;
 }
-
 
 .hscroll-line::before,
 .hscroll-line::after {

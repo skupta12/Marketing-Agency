@@ -1,57 +1,62 @@
 
 export const navItems = [
   {
-      id: 1,
-      name: "Home",
-      href: "/"
+    id: 1,
+    name: "Home",
+    href: "/",
+    number: '0' + 1,
   },
   {
-      id: 2,
-      name: "About",
-      href: "/about"
+    id: 2,
+    name: "About",
+    href: "/about",
+    number: '0' + 2,
   },
   {
-      id: 3,
-      name: "Work",
-      href: "/work"
+    id: 3,
+    name: "Work",
+    href: "/work",
+    number: '0' + 3,
   },
   {
-      id: 4,
-      name: "News",
-      href: "/news"
+    id: 4,
+    name: "News",
+    href: "/news",
+    number: '0' + 4,
   },
   {
     id: 5,
     name: "Contact",
-    href: "/contact"
-}
+    href: "/contact",
+    number: '0' + 5,
+  },
 ];
 
 export const trust = [
   {
     id: 1,
-    src: "/trust/kobe.svg"
-  }, 
+    src: "/trust/kobe.svg",
+  },
   {
     id: 2,
-    src: "/trust/hues.svg"
-  }, 
+    src: "/trust/hues.svg",
+  },
   {
     id: 3,
-    src: "/trust/terra.svg"
-  }, 
+    src: "/trust/terra.svg",
+  },
   {
     id: 4,
-    src: "/trust/ther.svg"
-  }, 
+    src: "/trust/ther.svg",
+  },
   {
     id: 5,
-    src: "/trust/tokyo.svg"
+    src: "/trust/tokyo.svg",
   },
   {
     id: 6,
-    src: "/trust/hitech.svg"
-  }
+    src: "/trust/hitech.svg",
+  },
 ];
 
 export const services = [
@@ -59,75 +64,72 @@ export const services = [
     id: 1,
     icon: "/services/icon-1.png",
     title: "Strategic Planning",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     id: 2,
     icon: "/services/icon-2.png",
     title: "Market Analysis",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
     id: 3,
     icon: "/services/icon-3.png",
     title: "Leadership Development",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
-]
+];
 
 export const counter = [
   {
     id: 1,
     number: "610+",
-    text: "Active monthly users"
+    text: "Active monthly users",
   },
   {
     id: 2,
     number: "17",
-    text: "Global location"
+    text: "Global location",
   },
   {
     id: 3,
     number: "6.8M",
-    text: "Funding from backers"
+    text: "Funding from backers",
   },
-]
+];
 
 export const portfolio = [
   {
     id: 1,
     src: "/portfolio/portfolio-1.jpg",
     scrollerTitle: "Dreamy Visions",
-    href: "/"
+    href: "/",
   },
   {
     id: 2,
     src: "/portfolio/portfolio-2.jpg",
     scrollerTitle: "Whimsy Tails",
-    href: "/"
+    href: "/",
   },
   {
     id: 3,
     src: "/portfolio/portfolio-3.jpg",
     scrollerTitle: "Colorful Jorneys",
-    href: "/"
+    href: "/",
   },
   {
     id: 4,
     src: "/portfolio/portfolio-4.jpg",
     scrollerTitle: "Night Desert",
-    href: "/"
+    href: "/",
   },
   {
     id: 5,
     src: "/portfolio/portfolio-5.jpg",
     scrollerTitle: "Imaginary Realms",
-    href: "/"
+    href: "/",
   },
-]
+];
 
 export const testimonial = [
   {
@@ -135,44 +137,44 @@ export const testimonial = [
     src: "/trust/hitech.svg",
     text: '"Working with Liege has been a transformative experience for our brand."',
     name: "Lucas Smith",
-    prof: "Marketing Director"
+    prof: "Marketing Director",
   },
   {
     id: 2,
     src: "/trust/hues.svg",
     text: '"Working with Liege has been a transformative experience for our brand."',
     name: "Lucas Smith",
-    prof: "Marketing Director"
+    prof: "Marketing Director",
   },
   {
     id: 3,
     src: "/trust/kobe.svg",
     text: '"Working with Liege has been a transformative experience for our brand."',
     name: "Lucas Smith",
-    prof: "Marketing Director"
+    prof: "Marketing Director",
   },
   {
     id: 4,
     src: "/trust/terra.svg",
     text: '"Working with Liege has been a transformative experience for our brand."',
     name: "Lucas Smith",
-    prof: "Marketing Director"
+    prof: "Marketing Director",
   },
   {
     id: 5,
     src: "/trust/ther.svg",
     text: '"Working with Liege has been a transformative experience for our brand."',
     name: "Lucas Smith",
-    prof: "Marketing Director"
+    prof: "Marketing Director",
   },
   {
     id: 6,
     src: "/trust/tokyo.svg",
     text: '"Working with Liege has been a transformative experience for our brand."',
     name: "Lucas Smith",
-    prof: "Marketing Director"
+    prof: "Marketing Director",
   },
-]
+];
 
 export const aiList = [
   {
@@ -191,7 +193,7 @@ export const aiList = [
     id: 4,
     content: "Adaptive testing reporting",
   },
-]
+];
 
 export const blog = [
   {
@@ -199,25 +201,23 @@ export const blog = [
     src: "/blog/blog-1.jpg",
     label: "Code",
     text: "Our design process explained",
-    date: "April 27, 2024"
+    date: "April 27, 2024",
   },
   {
     id: 2,
     src: "/blog/blog-2.jpg",
     label: "Marketing",
     text: "A peek into our branding strategy",
-    date: "May 10, 2024"
-
+    date: "May 10, 2024",
   },
   {
     id: 3,
     src: "/blog/blog-3.jpg",
     label: "Design",
     text: "Developing Seamless mobile apps",
-    date: "April 1, 2024"
-
+    date: "April 1, 2024",
   },
-]
+];
 
 export const media = [
   {
@@ -236,7 +236,7 @@ export const media = [
     id: 4,
     href: "/linkedin.png",
   },
-]
+];
 
 export const footer = [
   {
@@ -254,7 +254,7 @@ export const footer = [
     city: "Paris",
     street: "12 Rue de la Paix, 75002 Paris, France",
   },
-]
+];
 
 export const team = [
   {
