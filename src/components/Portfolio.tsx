@@ -1,5 +1,3 @@
-"use client";
-
 import { playfair } from "@/app/layout";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import Image from "next/image";
