@@ -42,7 +42,7 @@ export function NavItem() {
         <nav className="navbar">
           <ul>
             {navItems.map(({ id, name, href, number }) => (
-              <div className="flex gap-x-3 justify-center leading-[1.3]" key={id}>
+              <div className="flex gap-x-3 justify-center leading-[1.3] relative" key={id}>
                 <span className="flex flex-col justify-center items-center 
                 border-2 border-black rounded-full p-1 w-[40px] h-[40px]">
                   {number}

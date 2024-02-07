@@ -1,3 +1,5 @@
+"use client";
+
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import Image from "next/image";
 import { trust } from "../data/data";

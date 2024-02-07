@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { ArrowRight } from "lucide-react";

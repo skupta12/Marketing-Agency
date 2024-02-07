@@ -1,5 +1,5 @@
 import MaxWidthWrapper from "./MaxWidthWrapper";
-import { footer, media, team } from "@/data/data";
+import { footer, media} from "@/data/data";
 import Image from "next/image";
 import Link from "next/link";
 

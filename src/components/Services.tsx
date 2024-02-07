@@ -1,3 +1,5 @@
+"use client";
+
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { playfair } from "@/app/layout";
 import { counter, services } from "@/data/data";
