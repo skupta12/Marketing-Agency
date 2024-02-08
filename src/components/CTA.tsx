@@ -27,13 +27,13 @@ const CTA = () => {
               <div className="flex items-center mb-5">
                 <input
                   className="px-6 py-5 bg-white rounded-l-full
-              max-w-[600px] w-full placeholder:font-medium outline-[thin] focus:outline-gray-400"
+              max-w-[600px] w-full placeholder:font-medium outline-[thin] border-2 focus:outline-none focus:border-sky-500"
                   type="email"
                   name="email"
                   placeholder="Enter your email"
                 />
                 <button
-                  className="w-[80px] h-[70px] rounded-full p-4 bg-black flex flex-col justify-center items-center"
+                  className="w-[80px] h-[70px] ml-2 rounded-full p-4 bg-black flex flex-col justify-center items-center"
                   type="submit"
                 >
                   <ArrowRight className="text-white w-[20px] h-[20px]" />
