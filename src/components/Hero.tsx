@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="grid grid-cols-12 gap-y-12 lg:gap-y-7 gap-x-5 lg:place-items-center">
           <div className="lg:col-span-6 col-span-12 order-2 lg:order-none">
             <div className="hero-text mb-10">
-              <h1 className="lg:text-[65px] md:text-[55px] text-[44px] font-semibold leading-tight">
+              <h1 className="lg:text-[65px] md:text-[55px] text-[40px] font-semibold leading-tight">
                 The{" "}
                 <span className={`font-medium ${playfair.className}`}>
                   web–based
@@ -34,7 +34,7 @@ const Hero = () => {
             <Button title="Send a Message" />
           </div>
           <div className="lg:col-span-6 col-span-12">
-            <Image priority={true} loading="eager" width={500} height={500} src="/hero.png" alt="hero image" />
+            <Image className="w-full" width={500} height={500} src="/hero.png" alt="hero image" />
           </div>
         </div>
         <div className={firstGradient} />

@@ -20,6 +20,7 @@ export function NavItem() {
       <button
         onClick={handleClick}
         type="button"
+        aria-label="Burger Menu"
         className={`w-11 h-8 hover:scale-90 flex justify-around flex-col flex-wrap z-10 cursor-pointer transition-all duration-400`}
       >
         <div

@@ -13,9 +13,9 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function Testimonial() {
 
-  type Swiper = any
+  type Swiper = any | null;
 
-  const [swiperRef, setSwiperRef] = useState<Swiper | null>(null);
+  const [swiperRef, setSwiperRef] = useState<Swiper | null>(null); 
 
   return (
     <>
@@ -27,12 +27,14 @@ export default function Testimonial() {
           </h3>
           <div className="flex gap-x-3 mt-10 sm:mt-0">
             <button
+              aria-label="Arrow Left"
               className="group p-5 bg-primary-200 hover:bg-black hover:scale-[.95] transition"
               onClick={() => swiperRef && swiperRef.slidePrev()}
             >
               <ChevronLeft className="w-[21px] h-[21px] group-hover:text-white" />
             </button>
             <button
+              aria-label="Arrow Right"
               className="group p-5 bg-primary-200 hover:bg-black hover:scale-[.95] transition"
               onClick={() => swiperRef && swiperRef.slideNext()}
             >
@@ -79,7 +81,7 @@ export default function Testimonial() {
               />
               <div>
                 <p
-                  className="text-[26px] font-semibold mt-10 mb-7"
+                  className="sm:text-[26px] text-[22px] font-semibold mt-10 mb-7"
                   aria-hidden="true"
                 >
                   {text}

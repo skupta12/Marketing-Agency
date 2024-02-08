@@ -21,7 +21,7 @@ const Page = () => {
             <span className="hscroll-line"></span>
           </div>
         </div>
-        <div className="grid grid-cols-12 gap-5">
+        <div className="grid grid-cols-12 md:gap-5">
           {portfolio.map(({ id, src, href, scrollerTitle }) => (
             <div
               key={id}

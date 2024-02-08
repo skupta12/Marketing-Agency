@@ -33,7 +33,6 @@ const Portfolio = () => {
                 src="/portfolio/portfolio-1.jpg"
                 alt="portfolio-image"
               />
-              <span className="absolute inset-x-0 top-0 bottom-0 group-hover:bg-port-rgba transition" />
               <div
                 className={`scroller-box ${scrollerboxStyle}`}
               >
@@ -50,7 +49,6 @@ const Portfolio = () => {
                 src="/portfolio/portfolio-2.jpg"
                 alt="portfolio-image"
               />
-              <span className="absolute inset-x-0 top-0 bottom-0 group-hover:bg-port-rgba transition" />
               <div
                 className={`scroller-box ${scrollerboxStyle}`}
               >
@@ -69,7 +67,6 @@ const Portfolio = () => {
                 src="/portfolio/portfolio-3.jpg"
                 alt="portfolio-image"
               />
-              <span className="absolute inset-x-0 top-0 bottom-0 group-hover:bg-port-rgba transition" />
               <div
                 className={`scroller-box ${scrollerboxStyle}`}
               >
@@ -86,7 +83,6 @@ const Portfolio = () => {
                 src="/portfolio/portfolio-4.jpg"
                 alt="portfolio-image"
               />
-              <span className="absolute inset-x-0 top-0 bottom-0 group-hover:bg-port-rgba transition" />
               <div
                 className={`scroller-box ${scrollerboxStyle}`}
               >
@@ -104,7 +100,6 @@ const Portfolio = () => {
               src="/portfolio/portfolio-5.jpg"
               alt="portfolio-image"
             />
-            <span className="absolute inset-x-0 top-0 bottom-0 group-hover:bg-port-rgba transition-colors duration-500" />
             <div
               className={`scroller-box ${scrollerboxStyle}`}
             >

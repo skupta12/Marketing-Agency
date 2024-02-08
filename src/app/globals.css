@@ -120,12 +120,29 @@
 
 /* Nav Effect  */
 
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
 .navbar li span::before {@apply absolute top-[100%] content-[attr(data-hover)];}
 
 .navbar li:hover span, .navbar li:focus span {
 	transform: translateY(-100%);
 	-webkit-transform: translateY(-100%);
 }
+
+
 
 
 

@@ -21,7 +21,6 @@ const Page = () => {
         </div>
         <div>
           <Image
-            loading="eager"
             width={1100}
             height={1100}
             className="w-full"
