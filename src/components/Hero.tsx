@@ -9,7 +9,6 @@ export const secGradient =
   "pointer-events-none filter blur-[100px] absolute -z-[1] top-1/2 -right-[100px] lg:w-[550px] w-[400px] lg:h-[300px] h-[200px] bg-[hsl(283,62%,86%)] rounded-full";
 
 const Hero = () => {
-
   return (
     <MaxWidthWrapper>
       <div className="lg:pt-[230px] pt-[150px] relative">
@@ -34,7 +33,7 @@ const Hero = () => {
             <Button title="Send a Message" />
           </div>
           <div className="lg:col-span-6 col-span-12">
-            <Image className="w-full" width={500} height={500} src="/hero.png" alt="hero image" />
+            <Image width={500} height={500} src="/hero.png" alt="hero image" />
           </div>
         </div>
         <div className={firstGradient} />
