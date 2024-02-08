@@ -55,10 +55,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="lg:flex justify-between items-center gap-5 mt-20">
-          <Link className="text-[15px] font-medium text-gray-500" href="#">
-            © This is a Flowmance template powered by Webflow
-          </Link>
+        <div className="lg:flex justify-between items-center gap-5 mt-20">   
           <div className="flex items-center gap-x-5 text-[16px] text-gray-500 font-medium lg:mt-0 mt-3">
             <Link className="relative inline-block" href="#">
               <span className="absolute inset-x-0 -bottom-1 h-[2px] bg-black"></span>
