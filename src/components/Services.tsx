@@ -1,5 +1,5 @@
 import MaxWidthWrapper from "./MaxWidthWrapper";
-import { playfair } from "@/app/layout";
+import { playfair } from "@/app/fonts";
 import { counter, services } from "@/data/data";
 import Image from "next/image";
 

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Button from "./Button";
 import MaxWidthWrapper from "./MaxWidthWrapper";
-import { playfair } from "@/app/layout";
+import { playfair } from "@/app/fonts";
 
 export const firstGradient =
   "pointer-events-none filter blur-[100px] absolute -z-[1] top-1/2 -left-72 lg:w-[550px] w-[400px] lg:h-[200px] h-[100px] bg-[hsl(188,79%,70%)] rounded-full";

@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
-import { Inter_Tight, Playfair_Display } from "next/font/google";
+import { inter } from "./fonts";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
-
-const inter = Inter_Tight({ subsets: ["latin"] });
-export const playfair = Playfair_Display({ subsets: ["latin"], style: "italic" });
 
 export const metadata: Metadata = {
   title: "Marketing Agency",

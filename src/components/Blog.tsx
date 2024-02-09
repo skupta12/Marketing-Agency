@@ -1,4 +1,4 @@
-import { playfair } from "@/app/layout";
+import { playfair } from "@/app/fonts";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import Button from "./Button";
 import { blog } from "@/data/data";
