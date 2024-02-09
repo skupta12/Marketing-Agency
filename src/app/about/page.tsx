@@ -1,6 +1,6 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import React from "react";
-import { playfair } from "../layout";
+import { playfair } from "../fonts";
 import Image from "next/image";
 import Button from "@/components/Button";
 import { team } from "@/data/data";

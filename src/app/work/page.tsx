@@ -1,6 +1,6 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import React from "react";
-import { playfair } from "../layout";
+import { playfair } from "../fonts";
 import InfinitiveScroller from "@/components/InfinitiveScroller";
 import Image from "next/image";
 import Link from "next/link";
