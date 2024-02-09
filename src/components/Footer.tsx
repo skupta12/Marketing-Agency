@@ -1,3 +1,5 @@
+"use client"
+
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { footer, media} from "@/data/data";
 import Image from "next/image";
