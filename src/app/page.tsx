@@ -11,34 +11,13 @@ export default function Home() {
   return (
     <>
       <main>
-        <section className="lg:pb-[200px] pb-16 overflow-hidden">
           <Hero />
-        </section>
-
-        <section className="lg:py-24 py-16">
           <Trust />
-        </section>
-
-        <section className="lg:py-24 py-16">
           <Services />
-        </section>
-
-        <section className="lg:py-24 py-16 overflow-hidden">
           <Portfolio />
-        </section>
-
-        <section className="lg:py-24 py-16">
           <Testimonial />
-        </section>
-
-        <section className="lg:py-24 py-16">
           <Ai />
-        </section>
-
-        <section className="lg:py-24 py-16">
           <Blog />
-        </section>
-        
       </main>
     </>
   );

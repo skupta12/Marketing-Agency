@@ -12,13 +12,12 @@ import { testimonial } from "@/data/data";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function Testimonial() {
-
   type Swiper = any | null;
 
-  const [swiperRef, setSwiperRef] = useState<Swiper | null>(null); 
+  const [swiperRef, setSwiperRef] = useState<Swiper | null>(null);
 
   return (
-    <>
+    <section className="lg:py-24 py-16">
       <MaxWidthWrapper>
         <div className="sm:mb-20 mb-10 sm:flex items-center justify-between">
           <h3 className="sm:text-[34px] text-[30px] font-semibold">
@@ -55,9 +54,9 @@ export default function Testimonial() {
           320: {
             slidesPerView: 1,
             centeredSlides: false,
-          },     
+          },
           640: {
-            slidesPerView: 2, 
+            slidesPerView: 2,
             centeredSlides: false,
           },
           767: {
@@ -67,7 +66,7 @@ export default function Testimonial() {
           1024: {
             centeredSlides: false,
             slidesPerView: 4,
-          }
+          },
         }}
       >
         {testimonial.map(({ id, src, text, name, prof }) => (
@@ -94,6 +93,6 @@ export default function Testimonial() {
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+    </section>
   );
 }
