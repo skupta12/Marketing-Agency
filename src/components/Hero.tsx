@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Button from "./Button";
-import MaxWidthWrapper from "./MaxWidthWrapper";
 import { playfair } from "@/app/fonts";
 
 export const firstGradient =
@@ -36,12 +35,12 @@ const Hero = () => {
               <Button title="Send a Message" />
             </div>
             <div className="lg:col-span-6 col-span-12">
-              <Image
+              {/* <Image
                 width={500}
                 height={500}
                 src="/hero.png"
                 alt="hero image"
-              />
+              /> */}
             </div>
           </div>
           <div className={firstGradient} />

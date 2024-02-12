@@ -24,7 +24,7 @@ const Services = () => {
               key={id}
             >
               <div className="services-icon flex flex-col justify-center items-center w-[100px] h-[100px] bg-white rounded-full p-6">
-                <Image width={45} height={45} src={icon} alt="service icon" />
+                {/* <Image width={45} height={45} src={icon} alt="service icon" /> */}
               </div>
               <div className="services-text">
                 <h5 className="text-[22px] mt-10 font-semibold">{title}</h5>

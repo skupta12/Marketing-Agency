@@ -29,13 +29,13 @@ const Blog = () => {
           {blog.map(({ id, src, label, text, date }) => (
             <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
               <Link href="#">
-                <Image
+                {/* <Image
                   className="w-full"
                   width={500}
                   height={500}
                   src={src}
                   alt="blog post"
-                />
+                /> */}
               </Link>
               <div>
                 <span className="inline-block font-semibold border-2 border-black px-4 py-1 rounded-full my-6">

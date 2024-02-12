@@ -20,13 +20,13 @@ const Trust = () => {
             {trust.map(({ id, src }) => (
               <div key={id} className="sm:col-span-4 col-span-6">
                 <div className="bg-primary-200 p-12 h-full">
-                  <Image
+                  {/* <Image
                     className="mx-auto"
                     width={100}
                     height={100}
                     src={src}
                     alt="trust image"
-                  />
+                  /> */}
                 </div>
               </div>
             ))}
@@ -41,12 +41,12 @@ const Trust = () => {
             <Button title="View Packages" />
           </div>
           <div>
-            <Image
+            {/* <Image
               width={550}
               height={550}
               src="/media-ring.png"
               alt="media ring"
-            />
+            /> */}
           </div>
         </div>
       </div>
