@@ -18,7 +18,7 @@ const Page = () => {
           <div className="lg:col-span-6 col-span-12 lg:pr-12">
             <form action="#">
               <div className="grid grid-cols-12 gap-4">
-                <div className="col-span-6">
+                <div className="lg:col-span-6 col-span-12">
                   <label className="form-label">First name</label>
                   <input
                     className="mt-2 w-full border-2 border-black rounded-md p-[14px] 
@@ -28,7 +28,7 @@ const Page = () => {
                     placeholder="John Doe"
                   />
                 </div>
-                <div className="col-span-6">
+                <div className="lg:col-span-6 col-span-12">
                   <label className="form-label">Email</label>
                   <input
                     className="mt-2 w-full border-2 border-black rounded-md p-[14px] 
@@ -38,7 +38,7 @@ const Page = () => {
                     placeholder="contact@example.com"
                   />
                 </div>
-                <div className="col-span-6 mt-4">
+                <div className="lg:col-span-6 col-span-12 lg:mt-4">
                   <label className="form-label">Phone</label>
                   <input
                     className="mt-2 w-full border-2 border-black rounded-md p-[14px] placeholder:text-black 
@@ -48,7 +48,7 @@ const Page = () => {
                     placeholder="+1 675-786"
                   />
                 </div>
-                <div className="col-span-6 mt-4">
+                <div className="lg:col-span-6 col-span-12 lg:mt-4">
                   <label className="form-label">Schedule to receive call</label>
                   <input
                     className="mt-2 w-full border-2 border-black rounded-md p-[14px] placeholder:text-black 
@@ -58,7 +58,7 @@ const Page = () => {
                     placeholder="10:00 AM to 4:00 PM"
                   />
                 </div>
-                <div className="col-span-12 mt-5">
+                <div className="col-span-12 lg:mt-5">
                   <button
                     type="button"
                     value="submit"
