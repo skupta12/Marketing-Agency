@@ -1,4 +1,3 @@
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import React from "react";
 import { playfair } from "../fonts";
 import Image from "next/image";
@@ -6,7 +5,7 @@ import Image from "next/image";
 const Page = () => {
   return (
     <section className="lg:pt-[180px] pt-[150px] lg:pb-24 pb-16">
-      <MaxWidthWrapper>
+      <div className="container md:px-10 px-5">
         <div className="text-center lg:mb-48 mb-20">
           <h1 className="lg:text-[100px] md:text-[80px] text-[46px] font-semibold">
             Stay in <span className={playfair.className}>touch</span>
@@ -81,7 +80,7 @@ const Page = () => {
             />
           </div>
         </div>
-      </MaxWidthWrapper>
+      </div>
     </section>
   );
 };

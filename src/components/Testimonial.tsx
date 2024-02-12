@@ -6,19 +6,19 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "../app/globals.css";
-import MaxWidthWrapper from "./MaxWidthWrapper";
 import Image from "next/image";
 import { testimonial } from "@/data/data";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function Testimonial() {
+
   type Swiper = any | null;
 
   const [swiperRef, setSwiperRef] = useState<Swiper | null>(null);
 
   return (
     <section className="lg:py-24 py-16">
-      <MaxWidthWrapper>
+      <div className="container md:px-10 px-5">
         <div className="sm:mb-20 mb-10 sm:flex items-center justify-between">
           <h3 className="sm:text-[34px] text-[30px] font-semibold">
             Trusted by over 4,000{" "}
@@ -41,7 +41,7 @@ export default function Testimonial() {
             </button>
           </div>
         </div>
-      </MaxWidthWrapper>
+      </div>
 
       <Swiper
         onSwiper={setSwiperRef}

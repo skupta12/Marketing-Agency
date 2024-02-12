@@ -7,7 +7,7 @@ import { firstGradient, secGradient } from "./Hero";
 const CTA = () => {
   return (
     <section className="lg:py-24 py-16 overflow-hidden">
-      <MaxWidthWrapper>
+      <div className="container md:px-10 px-5 relative">
         <div className={firstGradient} />
         <div className={secGradient} />
 
@@ -45,7 +45,7 @@ const CTA = () => {
             </form>
           </div>
         </div>
-      </MaxWidthWrapper>
+      </div>
     </section>
   );
 };

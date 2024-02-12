@@ -1,4 +1,3 @@
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import React from "react";
 import { playfair } from "../fonts";
 import InfinitiveScroller from "@/components/InfinitiveScroller";
@@ -12,7 +11,7 @@ const Page = () => {
 
   return (
     <section className="lg:pt-[180px] lg:pb-24 pb-16 pt-[150px]">
-      <MaxWidthWrapper>
+      <div className="container md:px-10 px-5">
         <div className="text-center lg:mb-48 mb-20">
           <h1 className="lg:text-[100px] md:text-[80px] text-[46px] font-semibold">
             Latest <span className={playfair.className}>work</span>
@@ -43,7 +42,7 @@ const Page = () => {
             </div>
           ))}
         </div>
-      </MaxWidthWrapper>
+      </div>
     </section>
   );
 };

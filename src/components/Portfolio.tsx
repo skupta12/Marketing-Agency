@@ -11,10 +11,9 @@ const Portfolio = () => {
     "pointer-events-none filter blur-[100px] absolute -z-[1] bottom-20 -right-72 lg:w-[650px] w-[400px] lg:h-[700px] h-[400px] bg-[hsl(188,79%,70%)] rounded-full";
 
   return (
-    <section className="lg:py-24 py-16 overflow-hidden">
-      <MaxWidthWrapper>
-        <div className={portfolioGradient} />
-
+    <section className="lg:py-24 py-16 overflow-hidden relative">
+      <div className={portfolioGradient} />
+      <div className="container md:px-10 px-5">
         <div className="text-center">
           <h3 className={`sm:text-[50px] text-[40px] font-semibold mb-4`}>
             Recent <span className={`${playfair.className}`}>work</span>
@@ -103,7 +102,7 @@ const Portfolio = () => {
             </Link>
           </div>
         </div>
-      </MaxWidthWrapper>
+      </div>
     </section>
   );
 };

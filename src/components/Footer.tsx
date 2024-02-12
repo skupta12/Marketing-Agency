@@ -1,14 +1,11 @@
-"use client"
-
-import MaxWidthWrapper from "./MaxWidthWrapper";
-import { footer, media} from "@/data/data";
+import { footer, media } from "@/data/data";
 import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
   return (
     <footer className="lg:pt-24 pt-16 lg:pb-12 pb-10">
-      <MaxWidthWrapper>
+      <div className="container md:px-10 px-5">
         <div className="grid grid-cols-12">
           <div className="lg:col-span-7 col-span-12 lg:mb-0 mb-20">
             <div className="inline-block text-[14px] font-semibold border-2 border-black px-5 py-2 rounded-full mb-10">
@@ -57,7 +54,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="lg:flex justify-between items-center gap-5 mt-20">   
+        <div className="lg:flex justify-between items-center gap-5 mt-20">
           <div className="flex items-center gap-x-5 text-[16px] text-gray-500 font-medium lg:mt-0 mt-3">
             <Link className="relative inline-block" href="#">
               <span className="absolute inset-x-0 -bottom-1 h-[2px] bg-black"></span>
@@ -70,7 +67,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-      </MaxWidthWrapper>
+      </div>
     </footer>
   );
 };

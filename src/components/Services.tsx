@@ -6,7 +6,7 @@ import Image from "next/image";
 const Services = () => {
   return (
     <section className="lg:py-24 py-16">
-      <MaxWidthWrapper>
+      <div className="container md:px-10 px-5">
         <div className="text-center">
           <h3 className="sm:text-[50px] text-[40px] font-semibold mb-4">
             What{" "}
@@ -56,7 +56,7 @@ const Services = () => {
             </div>
           ))}
         </div>
-      </MaxWidthWrapper>
+      </div>
     </section>
   );
 };

@@ -1,5 +1,4 @@
 import { playfair } from "@/app/fonts";
-import MaxWidthWrapper from "./MaxWidthWrapper";
 import Button from "./Button";
 import { blog } from "@/data/data";
 import Image from "next/image";
@@ -8,7 +7,7 @@ import Link from "next/link";
 const Blog = () => {
   return (
     <section className="lg:py-24 py-16">
-      <MaxWidthWrapper>
+      <div className="container md:px-10 px-5">
         <div className="sm:flex justify-between items-center">
           <div>
             <h3 className="sm:text-[50px] text-[40px] font-semibold mb-4">
@@ -54,7 +53,7 @@ const Blog = () => {
             </div>
           ))}
         </div>
-      </MaxWidthWrapper>
+      </div>
     </section>
   );
 };
