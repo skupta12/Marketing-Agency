@@ -1,4 +1,3 @@
-import React from "react";
 import { playfair } from "../fonts";
 import Image from "next/image";
 import Button from "@/components/Button";

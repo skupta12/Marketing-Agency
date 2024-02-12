@@ -1,4 +1,3 @@
-import React from "react";
 import { playfair } from "../fonts";
 import InfinitiveScroller from "@/components/InfinitiveScroller";
 import Image from "next/image";

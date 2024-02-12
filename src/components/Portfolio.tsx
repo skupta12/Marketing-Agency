@@ -1,5 +1,4 @@
 import { playfair } from "@/app/fonts";
-import MaxWidthWrapper from "./MaxWidthWrapper";
 import Image from "next/image";
 import Link from "next/link";
 import InfinitiveScroller from "./InfinitiveScroller";

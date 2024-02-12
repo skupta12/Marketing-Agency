@@ -1,10 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 import "../app/globals.css";
 import Image from "next/image";
 import { testimonial } from "@/data/data";
@@ -28,14 +26,14 @@ export default function Testimonial() {
             <button
               aria-label="Arrow Left"
               className="group p-5 bg-primary-200 hover:bg-black hover:scale-[.95] transition"
-              onClick={() => swiperRef && swiperRef.slidePrev()}
+              onClick={() => swiperRef.slidePrev()}
             >
               <ChevronLeft className="w-[21px] h-[21px] group-hover:text-white" />
             </button>
             <button
               aria-label="Arrow Right"
               className="group p-5 bg-primary-200 hover:bg-black hover:scale-[.95] transition"
-              onClick={() => swiperRef && swiperRef.slideNext()}
+              onClick={() => swiperRef.slideNext()}
             >
               <ChevronRight className="w-[21px] h-[21px] group-hover:text-white" />
             </button>
