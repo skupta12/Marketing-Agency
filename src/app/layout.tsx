@@ -3,6 +3,7 @@ import { inter } from "./fonts";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CTA from "@/components/CTA";
 
 export const metadata: Metadata = {
   title: "Marketing Agency",
@@ -23,6 +24,7 @@ export default function RootLayout({
           <div className="flex-grow flex-1">
             {children}
           </div>
+          <CTA />
           <Footer />
           {/* </Providers> */}
         </main>

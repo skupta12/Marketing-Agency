@@ -34,6 +34,7 @@ const Hero = () => {
             </div>
             <div className="lg:col-span-6 col-span-12">
               <Image
+                loading="eager"
                 width={500}
                 height={500}
                 src="/hero.png"

@@ -1,6 +1,5 @@
 import Ai from "@/components/Ai";
 import Blog from "@/components/Blog";
-import CTA from "@/components/CTA";
 import Hero from "@/components/Hero";
 import Portfolio from "@/components/Portfolio";
 import Services from "@/components/Services";
@@ -19,7 +18,7 @@ export default function Home() {
           <Testimonial />
           <Ai />
           <Blog />
-          <CTA />
+          {/* <CTA /> */}
       </main>
     </>
   );

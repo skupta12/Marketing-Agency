@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 
 const InfinitiveScroller = ({ title }: {title?: string, className?: string }) => {
   
-  const isFirstRender = useRef(true);
+  const isFirstRender = useRef<boolean>(true);
 
   useEffect(() => {
     const scrollers = document.querySelectorAll(".scroller-box");
