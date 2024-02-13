@@ -4,11 +4,11 @@ import Button from "./Button";
 
 const CTA = () => {
   return (
-    <section className="lg:py-24 py-16 overflow-hidden">
+    <section
+      className="lg:py-36 py-16 overflow-hidden bg-no-repeat bg-center" // extra padding for gradient
+      style={{ backgroundImage: "url(gradient.png)" }}
+    >
       <div className="container md:px-10 px-5 relative">
-        {/* <div className={firstGradient} />
-        <div className={secGradient} /> */}
-
         <div className="grid grid-cols-12 gap-4">
           <div className="lg:col-span-6 col-span-12">
             <h2 className="sm:text-[37px] text-[33px] font-semibold leading-tight mb-5">
@@ -31,6 +31,7 @@ const CTA = () => {
                   placeholder="Enter your email"
                 />
                 <button
+                  aria-label="submit"
                   className="w-[80px] h-[70px] ml-2 rounded-full p-4 bg-black flex flex-col justify-center items-center"
                   type="submit"
                 >

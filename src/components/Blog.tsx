@@ -42,7 +42,7 @@ const Blog = () => {
                   {label}
                 </span>
                 <Link href="#">
-                  <h5 className="sm:text-[30px] text-[24px] font-semibold mb-6">
+                  <h5 className="sm:text-[30px] text-[24px] font-semibold mb-6 pr-2">
                     {text}
                   </h5>
                 </Link>

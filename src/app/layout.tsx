@@ -3,12 +3,20 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Marketing Agency - React and Next JS Template',
+  description: 'The official Next.js Course Dashboard, built with App Router.',
+  // metadataBase: new URL(''),
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <body className={inter.className}>
