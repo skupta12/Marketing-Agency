@@ -33,7 +33,6 @@ const Page = () => {
                   src={src}
                   alt="portfolio image"
                 />
-                <span className="absolute inset-x-0 top-0 bottom-0 group-hover:bg-port-rgba transition-colors duration-500" />
                 <div className={`scroller-box ${scrollerboxStyle}`}>
                   <InfinitiveScroller title={scrollerTitle} />
                 </div>

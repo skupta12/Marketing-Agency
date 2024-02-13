@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-const InfinitiveScroller = ({ title }: {title?: string, className?: string }) => {
+const InfinitiveScroller = ({ title }: { title: string }) => {
   
   const isFirstRender = useRef<boolean>(true);
 
