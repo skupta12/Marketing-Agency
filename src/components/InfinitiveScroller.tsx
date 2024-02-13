@@ -2,12 +2,8 @@
 
 import { useEffect, useRef } from "react";
 
-interface TitleProps {
-  title?: string;
-  className?: string;
-}
-
-const InfinitiveScroller = ({ title }: TitleProps) => {
+const InfinitiveScroller = ({ title }: {title?: string, className?: string }) => {
+  
   const isFirstRender = useRef(true);
 
   useEffect(() => {

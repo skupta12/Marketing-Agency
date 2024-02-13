@@ -29,13 +29,13 @@ const Portfolio = () => {
           <div className="grid lg:grid-cols-[1.5fr_1.2fr] lg:gap-x-28 pt-20">
             <div className="group lg:mb-32 relative overflow-hidden">
               <Link href={" "}>
-                {/* <Image
+                <Image
                   className="w-full"
                   width={400}
                   height={400}
                   src="/portfolio/portfolio-1.jpg"
                   alt="portfolio-image"
-                /> */}
+                />
                 <div className={`scroller-box ${scrollerboxStyle}`}>
                   <InfinitiveScroller title="Dreamy Visions" />
                 </div>
@@ -43,13 +43,13 @@ const Portfolio = () => {
             </div>
             <div className="group lg:self-end relative overflow-hidden">
               <Link href={" "}>
-                {/* <Image
+                <Image
                   className="w-full"
                   width={400}
                   height={400}
                   src="/portfolio/portfolio-2.jpg"
                   alt="portfolio-image"
-                /> */}
+                />
                 <div className={`scroller-box ${scrollerboxStyle}`}>
                   <InfinitiveScroller title="Whimsy Tails" />
                 </div>
@@ -59,13 +59,13 @@ const Portfolio = () => {
           <div className="grid lg:grid-cols-[1.2fr_1.5fr] lg:gap-x-28 lg:pt-40">
             <div className="group lg:self-end relative overflow-hidden">
               <Link href={""}>
-                {/* <Image
+                <Image
                   className="w-full"
                   width={400}
                   height={400}
                   src="/portfolio/portfolio-3.jpg"
                   alt="portfolio-image"
-                /> */}
+                />
                 <div className={`scroller-box ${scrollerboxStyle}`}>
                   <InfinitiveScroller title="Night Desert" />
                 </div>
@@ -73,13 +73,13 @@ const Portfolio = () => {
             </div>
             <div className="group lg:mb-32 relative overflow-hidden">
               <Link href={""}>
-                {/* <Image
+                <Image
                   className="w-full"
                   width={400}
                   height={400}
                   src="/portfolio/portfolio-4.jpg"
                   alt="portfolio-image"
-                /> */}
+                />
                 <div className={`scroller-box ${scrollerboxStyle}`}>
                   <InfinitiveScroller title="Colorful Jorneys" />
                 </div>
@@ -88,13 +88,13 @@ const Portfolio = () => {
           </div>
           <div className="group lg:mt-32 relative overflow-hidden">
             <Link href={""}>
-              {/* <Image
+              <Image
                 className="w-full mx-auto"
                 width={800}
                 height={800}
                 src="/portfolio/portfolio-5.jpg"
                 alt="portfolio-image"
-              /> */}
+              />
               <div className={`scroller-box ${scrollerboxStyle}`}>
                 <InfinitiveScroller title="Imaginary Realms" />
               </div>
