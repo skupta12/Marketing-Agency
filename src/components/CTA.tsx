@@ -1,13 +1,13 @@
 import { ArrowRight } from "lucide-react";
 import Button from "./Button";
-import { firstGradient, secGradient } from "./Hero";
+// import { firstGradient, secGradient } from "./Hero";
 
 const CTA = () => {
   return (
     <section className="lg:py-24 py-16 overflow-hidden">
       <div className="container md:px-10 px-5 relative">
-        <div className={firstGradient} />
-        <div className={secGradient} />
+        {/* <div className={firstGradient} />
+        <div className={secGradient} /> */}
 
         <div className="grid grid-cols-12 gap-4">
           <div className="lg:col-span-6 col-span-12">
