@@ -42,7 +42,7 @@ const Ai = () => {
             </div>
           </div>
           <div>
-            <Image width={900} height={800} src="/ai.jpg" alt="ai image" />
+            {/* <Image width={900} height={800} src="/ai.jpg" alt="ai image" /> */}
           </div>
         </div>
       </div>

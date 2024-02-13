@@ -42,13 +42,13 @@ const Footer = () => {
             <div className="flex items-center gap-x-4">
               {media.map(({ id, href }) => (
                 <Link key={id} href="#">
-                  <Image
+                  {/* <Image
                     className="hover:scale-90"
                     width={20}
                     height={20}
                     src={href}
                     alt="media logo"
-                  />
+                  /> */}
                 </Link>
               ))}
             </div>

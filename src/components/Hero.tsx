@@ -33,12 +33,12 @@ const Hero = () => {
               <Button title="Send a Message" />
             </div>
             <div className="lg:col-span-6 col-span-12">
-              <Image
+              {/* <Image
                 width={500}
                 height={500}
                 src="/hero.png"
                 alt="hero image"
-              />
+              /> */}
             </div>
           </div>
           <div className={firstGradient} />

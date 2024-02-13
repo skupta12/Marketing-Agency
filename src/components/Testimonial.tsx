@@ -70,12 +70,12 @@ export default function Testimonial() {
         {testimonial.map(({ id, src, text, name, prof }) => (
           <SwiperSlide key={id} className="bg-primary-200 px-12 py-14">
             <div>
-              <Image
+              {/* <Image
                 width={100}
                 height={100}
                 src={src}
                 alt="testimonial logo"
-              />
+              /> */}
               <div>
                 <p
                   className="sm:text-[26px] text-[22px] font-semibold mt-10 mb-7"
