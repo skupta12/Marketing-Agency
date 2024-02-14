@@ -34,13 +34,15 @@ const Portfolio = () => {
         </div>
         <div>
           <div className="grid lg:grid-cols-[1.5fr_1.2fr] lg:gap-x-28 pt-20">
-            <div className="group lg:mb-32 relative overflow-hidden">
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              data-aos-once="true"
+              data-aos-offset="-250"
+              className="group lg:mb-32 relative overflow-hidden"
+            >
               <Link href={" "}>
                 <Image
-                  data-aos="zoom-in"
-                  data-aos-duration="500"
-                  data-aos-once="true"
-                  data-aos-offset="-250"
                   className="w-full"
                   width={400}
                   height={400}
@@ -52,13 +54,15 @@ const Portfolio = () => {
                 </div>
               </Link>
             </div>
-            <div className="group lg:self-end relative overflow-hidden">
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              data-aos-once="true"
+              data-aos-offset="-250"
+              className="group lg:self-end relative overflow-hidden"
+            >
               <Link href={" "}>
                 <Image
-                  data-aos="zoom-in"
-                  data-aos-duration="500"
-                  data-aos-once="true"
-                  data-aos-offset="-250"
                   className="w-full"
                   width={400}
                   height={400}
@@ -72,13 +76,15 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="grid lg:grid-cols-[1.2fr_1.5fr] lg:gap-x-28 lg:pt-40">
-            <div className="group lg:self-end relative overflow-hidden">
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              data-aos-once="true"
+              data-aos-offset="-250"
+              className="group lg:self-end relative overflow-hidden"
+            >
               <Link href={""}>
                 <Image
-                  data-aos="zoom-in"
-                  data-aos-duration="500"
-                  data-aos-once="true"
-                  data-aos-offset="-250"
                   className="w-full"
                   width={400}
                   height={400}
@@ -90,13 +96,15 @@ const Portfolio = () => {
                 </div>
               </Link>
             </div>
-            <div className="group lg:mb-32 relative overflow-hidden">
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              data-aos-once="true"
+              data-aos-offset="-250"
+              className="group lg:mb-32 relative overflow-hidden"
+            >
               <Link href={""}>
                 <Image
-                  data-aos="zoom-in"
-                  data-aos-duration="500"
-                  data-aos-once="true"
-                  data-aos-offset="-250"
                   className="w-full"
                   width={400}
                   height={400}
