@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 import { navItems } from "../data/data";
 import Link from "next/link";

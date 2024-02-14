@@ -7,7 +7,7 @@ const Services = () => {
   return (
     <section className="lg:py-24 py-16">
       <MaxWidthWrapper>
-        <div className="text-center">
+        <div data-aos="fade-up" data-aos-duration="800" data-aos-once="true" className="text-center">
           <h3 className="sm:text-[50px] text-[40px] font-semibold mb-4">
             What{" "}
             <span className={`font-medium ${playfair.className}`}>we do</span>
@@ -17,7 +17,7 @@ const Services = () => {
             <span className="text-gray-500">business approach</span>.
           </p>
         </div>
-        <div className="grid grid-cols-12 gap-4 pt-20 lg:pb-32 pb-20">
+        <div data-aos="fade-up" data-aos-duration="800" data-aos-once="true" className="grid grid-cols-12 gap-4 pt-20 lg:pb-32 pb-20">
           {services.map(({ id, icon, title, text }) => (
             <div
               className="w-full lg:col-span-4 md:col-span-6 col-span-12 bg-primary-200 p-12"
@@ -34,7 +34,7 @@ const Services = () => {
           ))}
         </div>
         <div className="analyzed-text text-center">
-          <h4 className="font-semibold sm:text-[26px] text-[24px]">
+          <h4 data-aos="fade-up" data-aos-duration="800" data-aos-once="true" className="font-semibold sm:text-[26px] text-[24px]">
             We&apos;ve analyzed the data and have compelling{" "}
             <span className="text-gray-500">
               <br />
@@ -44,8 +44,9 @@ const Services = () => {
           </h4>
         </div>
         <div className="counter grid grid-cols-12 gap-7 mt-10 justify-center">
-          {counter.map(({ number, text, id }) => (
+          {counter.map(({ number, text, id, dataAosDelay }) => (
             <div
+              data-aos="fade-up" data-aos-duration="800" data-aos-delay={dataAosDelay}
               key={id}
               className="lg:col-span-4 md:col-span-6 col-span-12 text-center"
             >

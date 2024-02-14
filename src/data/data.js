@@ -85,16 +85,19 @@ export const counter = [
     id: 1,
     number: "610+",
     text: "Active monthly users",
+    dataAosDelay: "0"
   },
   {
     id: 2,
     number: "17",
     text: "Global location",
+    dataAosDelay: "200"
   },
   {
     id: 3,
     number: "6.8M",
     text: "Funding from backers",
+    dataAosDelay: "400"
   },
 ];
 

@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { Check } from "lucide-react";
 import { aiList } from "@/data/data";
@@ -8,8 +6,13 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 
 const Ai = () => {
   return (
-    <section className="lg:py-24 py-16">
-     <MaxWidthWrapper>
+    <section
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-once="true"
+      className="lg:py-24 py-16"
+    >
+      <MaxWidthWrapper>
         <div className="grid lg:grid-cols-2 items-center gap-10">
           <div>
             <h4 className="sm:text-[34px] text-[30px] font-semibold leading-tight">

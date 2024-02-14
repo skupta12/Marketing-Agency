@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -19,7 +17,12 @@ export default function Testimonial() {
     <section className="lg:py-24 py-16">
       <MaxWidthWrapper>
         <div className="sm:mb-20 mb-10 sm:flex items-center justify-between">
-          <h3 className="sm:text-[34px] text-[30px] font-semibold">
+          <h3
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-once="true"
+            className="sm:text-[34px] text-[30px] font-semibold"
+          >
             Trusted by over 4,000{" "}
             <span className="text-gray-500">clients worldwide</span>.
           </h3>
@@ -68,6 +71,7 @@ export default function Testimonial() {
           },
         }}
       >
+        
         {testimonial.map(({ id, src, text, name, prof }) => (
           <SwiperSlide key={id} className="bg-primary-200 px-12 py-14">
             <div>

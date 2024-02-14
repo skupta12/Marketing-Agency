@@ -10,7 +10,7 @@ const Blog = () => {
     <section className="lg:py-24 py-16">
       <MaxWidthWrapper>
         <div className="sm:flex justify-between items-center">
-          <div>
+          <div data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
             <h3 className="sm:text-[50px] text-[40px] font-semibold mb-4">
               From{" "}
               <span className={`font-medium ${playfair.className}`}>Blog</span>
@@ -26,7 +26,12 @@ const Blog = () => {
           <Button className="mt-14" title="View All" />
         </div>
 
-        <div className="grid grid-cols-12 gap-x-4 gap-y-10 pt-20">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-once="true"
+          className="grid grid-cols-12 gap-x-4 gap-y-10 pt-20"
+        >
           {blog.map(({ id, src, label, text, date }) => (
             <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
               <Link href="#">
