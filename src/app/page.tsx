@@ -16,10 +16,13 @@ import { useEffect } from "react";
 export default function Home() {
 
   useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, [])
+    const initAos = setTimeout(() => {
+      AOS.init();
+      AOS.refresh();
+    }, 100); // Задержка в 100 миллисекунд
   
+    return () => clearTimeout(initAos);
+  }, []);
   return (
     <>
       <main>

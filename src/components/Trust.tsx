@@ -11,7 +11,7 @@ const Trust = () => {
           <div className="lg:col-span-4 col-span-12 lg:pr-5 pr-0">
             <h4
               data-aos="fade-right"
-              data-aos-duration="800"
+              data-aos-duration="600"
               data-aos-once="true"
               className="lg:text-[26px] text-[24px] font-semibold"
             >
@@ -43,7 +43,7 @@ const Trust = () => {
           <div>
             <h4
               data-aos="fade-right"
-              data-aos-duration="800"
+              data-aos-duration="600"
               data-aos-once="true"
               className="text-[34px] font-semibold mb-10"
             >
@@ -55,7 +55,7 @@ const Trust = () => {
           <div>
             <Image
               data-aos="zoom-in"
-              data-aos-duration="800"
+              data-aos-duration="600"
               data-aos-once="true"
               width={550}
               height={550}

@@ -14,7 +14,7 @@ const Page = () => {
         <div className="text-center lg:mb-48 mb-20">
           <h1
             data-aos="fade-up"
-            data-aos-duration="800"
+            data-aos-duration="600"
             data-aos-once="true"
             className="lg:text-[100px] md:text-[80px] text-[46px] font-semibold"
           >

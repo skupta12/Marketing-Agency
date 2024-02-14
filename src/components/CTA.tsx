@@ -12,9 +12,9 @@ const CTA = () => {
           <div className="lg:col-span-6 col-span-12">
             <h2
               data-aos="fade-up"
-              data-aos-duration="800"
+              data-aos-duration="600"
               data-aos-once="true"
-              data-aos-offset="-400"
+              // data-aos-offset="-400"
               className="sm:text-[37px] text-[33px] font-semibold leading-tight mb-5"
             >
               Sign up to participate in our exclusive{" "}
@@ -22,9 +22,9 @@ const CTA = () => {
             </h2>
             <p
               data-aos="fade-up"
-              data-aos-duration="800"
+              data-aos-duration="600"
               data-aos-once="true"
-              data-aos-offset="-400"
+              // data-aos-offset="-400"
               className="text-[18px] font-medium text-gray-500"
             >
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga.
@@ -34,9 +34,9 @@ const CTA = () => {
           <div className="lg:col-span-6 col-span-12 lg:justify-self-center">
             <form
               data-aos="fade-up"
-              data-aos-duration="800"
+              data-aos-duration="600"
               data-aos-once="true"
-              data-aos-offset="-400"
+              // data-aos-offset="-400"
               className="lg:mt-0 mt-14"
               action="#"
             >

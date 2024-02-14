@@ -35,7 +35,7 @@ const InfinitiveScroller = ({ title }: { title: string }) => {
         data-aos="fade-in"
         data-aos-duration="500"
         data-aos-once="true"
-        data-aos-offset="-500"
+        // data-aos-offset="-500"
         className="p-[1rem]"
       >
         <span className={`lg:text-[55px] text-[40px] text-white font-semibold`}>
