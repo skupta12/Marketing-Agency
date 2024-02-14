@@ -87,20 +87,6 @@ const Portfolio = () => {
               </Link>
             </div>
           </div>
-          <div className="group lg:mt-32 relative overflow-hidden">
-            <Link href={""}>
-              <Image
-                className="w-full mx-auto"
-                width={800}
-                height={800}
-                src="/portfolio/portfolio-5.jpg"
-                alt="portfolio-image"
-              />
-              <div className={`scroller-box ${scrollerboxStyle}`}>
-                <InfinitiveScroller title="Imaginary Realms" />
-              </div>
-            </Link>
-          </div>
         </div>
       </MaxWidthWrapper>
     </section>

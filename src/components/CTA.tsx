@@ -5,7 +5,7 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 const CTA = () => {
   return (
     <section
-      className="lg:py-36 py-16 overflow-hidden bg-no-repeat bg-center gradient" // extra padding for gradient
+      className="lg:py-36 py-16 overflow-hidden bg-no-repeat md:bg-center gradient" // extra padding for gradient
     >
       <MaxWidthWrapper className="relative">
         <div className="grid grid-cols-12 gap-4">
