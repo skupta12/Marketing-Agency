@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   // metadataBase: new URL(''),
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -19,7 +20,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} antialiased`}>
         <Header />
         <main className="relative flex flex-col min-h-screen">
           <div className="flex-grow flex-1">

@@ -16,7 +16,7 @@ const Trust = () => {
           <div className="lg:col-span-8 col-span-12 grid grid-cols-12 gap-5">
             {trust.map(({ id, src }) => (
               <div key={id} className="sm:col-span-4 col-span-6">
-                <div className="bg-primary-200 p-12 h-full">
+                <div className="bg-primary-200 p-12">
                   <Image
                     className="mx-auto"
                     width={100}

@@ -143,6 +143,18 @@
 }
 
 
+/* Hero Images swap */
+
+@media(min-width: 768px) {
+  .gradient {
+    background-image: url("/gradient-mobile.png");
+  }  
+}
+.gradient {
+  background-image: url("/gradient.png");
+
+}
+
 
 
 
