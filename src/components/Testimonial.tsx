@@ -21,6 +21,7 @@ export default function Testimonial() {
             data-aos="fade-right"
             data-aos-duration="800"
             data-aos-once="true"
+            data-aos-offset="-250"
             className="sm:text-[34px] text-[30px] font-semibold"
           >
             Trusted by over 4,000{" "}

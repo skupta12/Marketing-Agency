@@ -14,7 +14,13 @@ const Portfolio = () => {
     <section className="lg:py-24 py-16 overflow-hidden relative">
       <div className={portfolioGradient} />
       <MaxWidthWrapper>
-        <div data-aos="fade-up" data-aos-duration="800" data-aos-once="true" className="text-center">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-once="true"
+          data-aos-offset="-250"
+          className="text-center"
+        >
           <h3 className={`sm:text-[50px] text-[40px] font-semibold mb-4`}>
             Recent <span className={`${playfair.className}`}>work</span>
           </h3>
@@ -31,7 +37,10 @@ const Portfolio = () => {
             <div className="group lg:mb-32 relative overflow-hidden">
               <Link href={" "}>
                 <Image
-                  data-aos="zoom-in" data-aos-duration="500" data-aos-once="true"
+                  data-aos="zoom-in"
+                  data-aos-duration="500"
+                  data-aos-once="true"
+                  data-aos-offset="-250"
                   className="w-full"
                   width={400}
                   height={400}
@@ -46,7 +55,10 @@ const Portfolio = () => {
             <div className="group lg:self-end relative overflow-hidden">
               <Link href={" "}>
                 <Image
-                  data-aos="zoom-in" data-aos-duration="500" data-aos-once="true"
+                  data-aos="zoom-in"
+                  data-aos-duration="500"
+                  data-aos-once="true"
+                  data-aos-offset="-250"
                   className="w-full"
                   width={400}
                   height={400}
@@ -63,7 +75,10 @@ const Portfolio = () => {
             <div className="group lg:self-end relative overflow-hidden">
               <Link href={""}>
                 <Image
-                  data-aos="zoom-in" data-aos-duration="500" data-aos-once="true"
+                  data-aos="zoom-in"
+                  data-aos-duration="500"
+                  data-aos-once="true"
+                  data-aos-offset="-250"
                   className="w-full"
                   width={400}
                   height={400}
@@ -78,7 +93,10 @@ const Portfolio = () => {
             <div className="group lg:mb-32 relative overflow-hidden">
               <Link href={""}>
                 <Image
-                  data-aos="zoom-in" data-aos-duration="500" data-aos-once="true"
+                  data-aos="zoom-in"
+                  data-aos-duration="500"
+                  data-aos-once="true"
+                  data-aos-offset="-250"
                   className="w-full"
                   width={400}
                   height={400}

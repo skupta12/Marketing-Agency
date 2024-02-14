@@ -5,7 +5,7 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 
 const Hero = () => {
   return (
-    <section className="lg:pb-[200px] pb-16 overflow-hidden bg-no-repeat md:bg-center gradient">
+    <section data-aos="fade-in" className="lg:pb-[200px] pb-16 overflow-hidden bg-no-repeat md:bg-center gradient">
     {/* // style={{ backgroundImage: "url(gradient.png)", transition: "all 0.7s"}}> */}
       <MaxWidthWrapper>
         <div className="lg:pt-[230px] pt-[150px] relative">

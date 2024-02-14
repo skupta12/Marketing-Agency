@@ -10,7 +10,11 @@ const Blog = () => {
     <section className="lg:py-24 py-16">
       <MaxWidthWrapper>
         <div className="sm:flex justify-between items-center">
-          <div data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+          <div 
+            data-aos-offset="-250" 
+            data-aos="fade-up" 
+            data-aos-duration="800" 
+            data-aos-once="true">
             <h3 className="sm:text-[50px] text-[40px] font-semibold mb-4">
               From{" "}
               <span className={`font-medium ${playfair.className}`}>Blog</span>
@@ -30,6 +34,7 @@ const Blog = () => {
           data-aos="fade-up"
           data-aos-duration="800"
           data-aos-once="true"
+          data-aos-offset="-250"
           className="grid grid-cols-12 gap-x-4 gap-y-10 pt-20"
         >
           {blog.map(({ id, src, label, text, date }) => (

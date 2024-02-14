@@ -10,17 +10,36 @@ const CTA = () => {
       <MaxWidthWrapper className="relative">
         <div className="grid grid-cols-12 gap-4">
           <div className="lg:col-span-6 col-span-12">
-            <h2 data-aos="fade-up" data-aos-duration="800" data-aos-once="true" className="sm:text-[37px] text-[33px] font-semibold leading-tight mb-5">
+            <h2
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-once="true"
+              data-aos-offset="-250"
+              className="sm:text-[37px] text-[33px] font-semibold leading-tight mb-5"
+            >
               Sign up to participate in our exclusive{" "}
               <span className="text-gray-500">Private Beta</span>.
             </h2>
-            <p data-aos="fade-up" data-aos-duration="800" data-aos-once="true" className="text-[18px] font-medium text-gray-500">
+            <p
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-once="true"
+              data-aos-offset="-250"
+              className="text-[18px] font-medium text-gray-500"
+            >
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga.
             </p>
             <Button className="mt-14" title="Send a message" />
           </div>
           <div className="lg:col-span-6 col-span-12 lg:justify-self-center">
-            <form data-aos="fade-up" data-aos-duration="800" data-aos-once="true" className="lg:mt-0 mt-14" action="#">
+            <form
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-once="true"
+              data-aos-offset="-250"
+              className="lg:mt-0 mt-14"
+              action="#"
+            >
               <div className="flex items-center mb-5 relative">
                 <input
                   className="px-6 py-5 bg-white rounded-full

@@ -10,6 +10,7 @@ const Ai = () => {
       data-aos="fade-up"
       data-aos-duration="800"
       data-aos-once="true"
+      data-aos-offset="-250"
       className="lg:py-24 py-16"
     >
       <MaxWidthWrapper>
