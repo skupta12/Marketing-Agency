@@ -36,8 +36,6 @@ const Hero = () => {
               <Image
                 data-aos="zoom-in" data-aos-duration="800"
                 data-aos-once="true"
-                priority={true}
-                loading="eager"
                 width={500}
                 height={500}
                 src="/hero.png"
