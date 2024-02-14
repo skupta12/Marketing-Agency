@@ -8,7 +8,7 @@ import { media } from "@/data/data";
 const Page = () => {
   return (
     <>
-      <section className="lg:pt-[180px] pt-[150px]">
+      <section className="lg:pt-[180px] pt-[150px] gradient">
         <div className="container md:px-10 px-5">
           <div className="text-center lg:mb-48 mb-20">
             <h1
