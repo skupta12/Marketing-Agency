@@ -6,16 +6,15 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 
 const Ai = () => {
   return (
-    <section
-      data-aos="fade-up"
-      data-aos-duration="800"
-      data-aos-once="true"
-      data-aos-offset="-250"
-      className="lg:py-24 py-16"
-    >
+    <section className="lg:py-24 py-16">
       <MaxWidthWrapper>
         <div className="grid lg:grid-cols-2 items-center gap-10">
-          <div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-once="true"
+            data-aos-offset="-250"
+          >
             <h4 className="sm:text-[34px] text-[30px] font-semibold leading-tight">
               Artificial Intelligence solutions that deliver
               <span className="text-gray-500"> remarkable success</span>.
@@ -46,7 +45,12 @@ const Ai = () => {
               />
             </div>
           </div>
-          <div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-once="true"
+            data-aos-offset="-250"
+          >
             <Image width={900} height={800} src="/ai.jpg" alt="ai image" />
           </div>
         </div>
