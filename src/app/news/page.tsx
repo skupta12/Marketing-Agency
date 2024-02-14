@@ -8,7 +8,12 @@ const Page = () => {
     <section className="lg:pt-[180px] pt-[150px] lg:pb-24 pb-16">
       <div className="container md:px-10 px-5">
         <div className="text-center lg:mb-48 mb-20">
-          <h1 className="lg:text-[100px] md:text-[80px] text-[46px] font-semibold">
+          <h1
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-once="true"
+            className="lg:text-[100px] md:text-[80px] text-[46px] font-semibold"
+          >
             From <span className={playfair.className}>blog</span>
           </h1>
           <div className="relative mb-5 lg:block hidden">

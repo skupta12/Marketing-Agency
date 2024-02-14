@@ -6,7 +6,12 @@ const Page = () => {
     <section className="lg:pt-[180px] pt-[150px] lg:pb-24 pb-16">
       <div className="container md:px-10 px-5">
         <div className="text-center lg:mb-48 mb-20">
-          <h1 className="lg:text-[100px] md:text-[80px] text-[46px] font-semibold">
+          <h1
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-once="true"
+            className="lg:text-[100px] md:text-[80px] text-[46px] font-semibold"
+          >
             Stay in <span className={playfair.className}>touch</span>
           </h1>
           <div className="relative mb-5 lg:block hidden">
@@ -71,7 +76,7 @@ const Page = () => {
           </div>
           <div className="lg:col-span-6 col-span-12 lg:mt-0 mt-8">
             <Image
-            className="w-full"
+              className="w-full"
               width={500}
               height={500}
               src="/blog/blog-1.jpg"
