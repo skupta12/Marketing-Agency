@@ -13,6 +13,7 @@ const Portfolio = () => {
       <MaxWidthWrapper>
         <div
           data-aos="fade-up"
+          data-aos-offset="-250"
           className="text-center"
         >
           <h3 className={`sm:text-[50px] text-[40px] font-semibold mb-4`}>
@@ -31,6 +32,7 @@ const Portfolio = () => {
             <div
               data-aos="zoom-in"
               data-aos-duration="500"
+              data-aos-offset="-250"
               className="group lg:mb-32 relative overflow-hidden"
             >
               <Link href={" "}>
@@ -49,6 +51,7 @@ const Portfolio = () => {
             <div
               data-aos="zoom-in"
               data-aos-duration="500"
+              data-aos-offset="-250"
               className="group lg:self-end relative overflow-hidden"
             >
               <Link href={" "}>
@@ -69,6 +72,7 @@ const Portfolio = () => {
             <div
               data-aos="zoom-in"
               data-aos-duration="500"
+              data-aos-offset="-250"
               className="group lg:self-end relative overflow-hidden"
             >
               <Link href={""}>
@@ -87,6 +91,7 @@ const Portfolio = () => {
             <div
               data-aos="zoom-in"
               data-aos-duration="500"
+              data-aos-offset="-250"
               className="group lg:mb-32 relative overflow-hidden"
             >
               <Link href={""}>
