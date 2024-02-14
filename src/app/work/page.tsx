@@ -9,7 +9,7 @@ const Page = () => {
     "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:opacity-0 duration-300 transition-opacity group-hover:opacity-[1]";
 
   return (
-    <section className="lg:pt-[180px] lg:pb-24 pb-16 pt-[150px] gradient">
+    <section className="lg:pt-[180px] lg:pb-24 pb-16 pt-[150px] gradient bg-no-repeat bg-top">
       <div className="container md:px-10 px-5">
         <div className="text-center lg:mb-48 mb-20">
           <h1
