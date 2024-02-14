@@ -58,7 +58,6 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="600"
               data-aos-delay={dataAosDelay}
-              data-aos-offset="-250"
               key={id}
               className="lg:col-span-4 md:col-span-6 col-span-12 text-center"
             >
