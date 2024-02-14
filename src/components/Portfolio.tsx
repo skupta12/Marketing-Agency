@@ -32,7 +32,7 @@ const Portfolio = () => {
             <div
               data-aos="zoom-in"
               data-aos-duration="500"
-              data-aos-offset="-150"
+            
               className="group lg:mb-32 relative overflow-hidden"
             >
               <Link href={" "}>
@@ -51,7 +51,6 @@ const Portfolio = () => {
             <div
               data-aos="zoom-in"
               data-aos-duration="500"
-              data-aos-offset="-150"
               className="group lg:self-end relative overflow-hidden"
             >
               <Link href={" "}>
@@ -72,7 +71,6 @@ const Portfolio = () => {
             <div
               data-aos="zoom-in"
               data-aos-duration="500"
-              data-aos-offset="-150"
               className="group lg:self-end relative overflow-hidden"
             >
               <Link href={""}>
@@ -91,7 +89,6 @@ const Portfolio = () => {
             <div
               data-aos="zoom-in"
               data-aos-duration="500"
-              data-aos-offset="-150"
               className="group lg:mb-32 relative overflow-hidden"
             >
               <Link href={""}>
