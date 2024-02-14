@@ -30,14 +30,14 @@ const InfinitiveScroller = ({ title }: { title: string }) => {
   }, []);
 
   return (
-    <ul
-      data-aos="zoom-in"
-      data-aos-duration="500"
-      data-aos-once="true"
-      data-aos-offset="-500"
-      className="scroller-list flex flex-nowrap gap-[1rem] pointer-events-none select-none"
-    >
-      <li className="p-[1rem]">
+    <ul className="scroller-list flex flex-nowrap gap-[1rem] pointer-events-none select-none">
+      <li
+        data-aos="fade-in"
+        data-aos-duration="500"
+        data-aos-once="true"
+        data-aos-offset="-500"
+        className="p-[1rem]"
+      >
         <span className={`lg:text-[55px] text-[40px] text-white font-semibold`}>
           {title}
         </span>
