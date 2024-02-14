@@ -8,13 +8,18 @@ const Page = () => {
         <div className="text-center lg:mb-48 mb-20">
           <h1
             data-aos="fade-up"
+            data-aos-delay="50"
             data-aos-duration="800"
-            data-aos-once="true"
             className="lg:text-[100px] md:text-[80px] text-[46px] font-semibold"
           >
             Stay in <span className={playfair.className}>touch</span>
           </h1>
-          <div className="relative mb-5 lg:block hidden">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="800"
+            className="relative mb-5 lg:block hidden"
+          >
             <span className="hscroll-line"></span>
           </div>
         </div>

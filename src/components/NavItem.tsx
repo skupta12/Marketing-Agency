@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { navItems } from "../data/data";
 import Link from "next/link";
@@ -7,10 +9,6 @@ export function NavItem() {
 
   const handleClick = () => {
     setIsOpen((prev) => !prev);
-  };
-
-  const closeMenu = () => {
-    setIsOpen(false);
   };
 
   return (
@@ -40,16 +38,16 @@ export function NavItem() {
       >
         <nav className="navbar">
           <ul>
-            {navItems.map(({ id, name, href, number }) => (
-              <div className="flex gap-x-3 justify-center leading-[1.3] relative" key={id}>
+            {navItems.map(({ id, name, href, number, aosDelay }) => (
+              <div className="flex gap-x-3 justify-center leading-tight relative" key={id}>
                 <span className="flex flex-col justify-center items-center 
                 border-2 border-black rounded-full p-1 w-[40px] h-[40px]">
                   {number}
                 </span>
                 <li className="overflow-hidden">
-                  <Link href={href}>
+                  <Link href={href} data-aos-delay={aosDelay} data-aos="fade-right" className={isOpen ? "aos-animate" : 'no-animate'}>
                     <div
-                      onClick={closeMenu}
+                     onClick={() => setIsOpen(false)}
                       className="text-black lg:text-[90px] text-[50px] font-semibold"
                     >
                       <span

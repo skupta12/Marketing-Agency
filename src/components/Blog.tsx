@@ -11,10 +11,8 @@ const Blog = () => {
       <MaxWidthWrapper>
         <div className="sm:flex justify-between items-center">
           <div 
-            // data-aos-offset="-250" 
-            data-aos="fade-up" 
-            data-aos-duration="600" 
-            data-aos-once="true">
+            data-aos-offset="-250" 
+            data-aos="fade-up">
             <h3 className="sm:text-[50px] text-[40px] font-semibold mb-4">
               From{" "}
               <span className={`font-medium ${playfair.className}`}>Blog</span>
@@ -32,9 +30,7 @@ const Blog = () => {
 
         <div
           data-aos="fade-up"
-          data-aos-duration="600"
-          data-aos-once="true"
-          // data-aos-offset="-250"
+          data-aos-offset="-250"
           className="grid grid-cols-12 gap-x-4 gap-y-10 pt-20"
         >
           {blog.map(({ id, src, label, text, date }) => (

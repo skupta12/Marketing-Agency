@@ -7,18 +7,13 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 const Portfolio = () => {
   const scrollerboxStyle =
     "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:opacity-0 duration-300 transition-opacity group-hover:opacity-[1]";
-  const portfolioGradient =
-    "pointer-events-none filter blur-[100px] absolute -z-[1] bottom-20 -right-72 lg:w-[650px] w-[400px] lg:h-[700px] h-[400px] bg-[hsl(188,79%,70%)] rounded-full";
 
   return (
     <section className="lg:py-24 py-16 overflow-hidden relative">
-      <div className={portfolioGradient} />
       <MaxWidthWrapper>
         <div
           data-aos="fade-up"
-          data-aos-duration="600"
-          data-aos-once="true"
-          // data-aos-offset="-250"
+          data-aos-offset="-250"
           className="text-center"
         >
           <h3 className={`sm:text-[50px] text-[40px] font-semibold mb-4`}>
@@ -37,8 +32,7 @@ const Portfolio = () => {
             <div
               data-aos="zoom-in"
               data-aos-duration="500"
-              data-aos-once="true"
-              // data-aos-offset="-250"
+              data-aos-offset="-250"
               className="group lg:mb-32 relative overflow-hidden"
             >
               <Link href={" "}>
@@ -57,8 +51,7 @@ const Portfolio = () => {
             <div
               data-aos="zoom-in"
               data-aos-duration="500"
-              data-aos-once="true"
-              // data-aos-offset="-250"
+              data-aos-offset="-250"
               className="group lg:self-end relative overflow-hidden"
             >
               <Link href={" "}>
@@ -79,8 +72,7 @@ const Portfolio = () => {
             <div
               data-aos="zoom-in"
               data-aos-duration="500"
-              data-aos-once="true"
-              // data-aos-offset="-250"
+              data-aos-offset="-250"
               className="group lg:self-end relative overflow-hidden"
             >
               <Link href={""}>
@@ -99,8 +91,7 @@ const Portfolio = () => {
             <div
               data-aos="zoom-in"
               data-aos-duration="500"
-              data-aos-once="true"
-              // data-aos-offset="-250"
+              data-aos-offset="-250"
               className="group lg:mb-32 relative overflow-hidden"
             >
               <Link href={""}>

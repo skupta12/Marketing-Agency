@@ -17,8 +17,10 @@ export default function Home() {
 
   useEffect(() => {
     const initAos = setTimeout(() => {
-      AOS.init();
-      AOS.refresh();
+      AOS.init({
+        once: true,
+        duration: 600,     
+      });
     }, 100); // Задержка в 100 миллисекунд
   
     return () => clearTimeout(initAos);

@@ -9,8 +9,6 @@ const Services = () => {
       <MaxWidthWrapper>
         <div
           data-aos="fade-up"
-          data-aos-duration="600"
-          data-aos-once="true"
           className="text-center"
         >
           <h3 className="sm:text-[50px] text-[40px] font-semibold mb-4">
@@ -24,8 +22,6 @@ const Services = () => {
         </div>
         <div
           data-aos="fade-up"
-          data-aos-duration="600"
-          data-aos-once="true"
           className="grid grid-cols-12 gap-4 pt-20 lg:pb-32 pb-20"
         >
           {services.map(({ id, icon, title, text }) => (
@@ -46,8 +42,6 @@ const Services = () => {
         <div className="analyzed-text text-center">
           <h4
             data-aos="fade-up"
-            data-aos-duration="600"
-            data-aos-once="true"
             className="font-semibold sm:text-[26px] text-[24px]"
           >
             We&apos;ve analyzed the data and have compelling{" "}
@@ -64,7 +58,7 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-duration="600"
               data-aos-delay={dataAosDelay}
-              // data-aos-offset="-250"
+              data-aos-offset="-250"
               key={id}
               className="lg:col-span-4 md:col-span-6 col-span-12 text-center"
             >

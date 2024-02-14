@@ -11,8 +11,6 @@ const Trust = () => {
           <div className="lg:col-span-4 col-span-12 lg:pr-5 pr-0">
             <h4
               data-aos="fade-right"
-              data-aos-duration="600"
-              data-aos-once="true"
               className="lg:text-[26px] text-[24px] font-semibold"
             >
               More than 100 companies internationally{" "}
@@ -24,7 +22,6 @@ const Trust = () => {
               <div key={id} className="sm:col-span-4 col-span-6">
                 <div
                   data-aos="zoom-in"
-                  data-aos-once="true"
                   className="bg-primary-200 p-12"
                 >
                   <Image
@@ -43,8 +40,6 @@ const Trust = () => {
           <div>
             <h4
               data-aos="fade-right"
-              data-aos-duration="600"
-              data-aos-once="true"
               className="text-[34px] font-semibold mb-10"
             >
               Check out our range of social media{" "}
@@ -55,8 +50,6 @@ const Trust = () => {
           <div>
             <Image
               data-aos="zoom-in"
-              data-aos-duration="600"
-              data-aos-once="true"
               width={550}
               height={550}
               src="/media-ring.png"
