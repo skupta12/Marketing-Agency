@@ -18,10 +18,6 @@ export default function Testimonial() {
       <MaxWidthWrapper>
         <div className="sm:mb-20 mb-10 sm:flex items-center justify-between">
           <h3
-            data-aos="fade-right"
-            data-aos-duration="800"
-            data-aos-once="true"
-            data-aos-offset="-250"
             className="sm:text-[34px] text-[30px] font-semibold"
           >
             Trusted by over 4,000{" "}
