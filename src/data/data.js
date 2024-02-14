@@ -35,27 +35,27 @@ export const navItems = [
 export const trust = [
   {
     id: 1,
-    src: "/trust/kobe.svg",
+    src: "/svg/kobe.svg",
   },
   {
     id: 2,
-    src: "/trust/hues.svg",
+    src: "/svg/hues.svg",
   },
   {
     id: 3,
-    src: "/trust/terra.svg",
+    src: "/svg/terra.svg",
   },
   {
     id: 4,
-    src: "/trust/ther.svg",
+    src: "/svg/ther.svg",
   },
   {
     id: 5,
-    src: "/trust/tokyo.svg",
+    src: "/svg/tokyo.svg",
   },
   {
     id: 6,
-    src: "/trust/hitech.svg",
+    src: "/svg/hitech.svg",
   },
 ];
 

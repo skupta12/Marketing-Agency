@@ -1,30 +1,30 @@
 "use client";
 
-// import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { NavItem } from "@/components/NavItem";
 
 const Header = () => {
-  // const [scrollAlpha, setScrollAlpha] = useState<number>(1)
+  const [scrollAlpha, setScrollAlpha] = useState<number>(1)
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const scrollTop = window.scrollY;
-  //     const maxScroll = document.body.clientHeight - window.innerHeight;
-  //     const scrollAlpha = Math.min(scrollTop / 250, maxScroll / 250);
-  //     setScrollAlpha(scrollAlpha);
-  //   };
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const maxScroll = document.body.clientHeight - window.innerHeight;
+      const scrollAlpha = Math.min(scrollTop / 250, maxScroll / 250);
+      setScrollAlpha(scrollAlpha);
+    };
 
-  //   window.addEventListener("scroll", handleScroll);
-  //   handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
 
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const headerStyle = {
-    backgroundColor: `rgba(255, 255, 255, 1)`,
+    backgroundColor: `rgba(255, 255, 255, ${scrollAlpha})`,
   };
 
   return (
