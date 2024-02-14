@@ -13,7 +13,7 @@ const Ai = () => {
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-once="true"
-            data-aos-offset="-250"
+            data-aos-offset="-350"
           >
             <h4 className="sm:text-[34px] text-[30px] font-semibold leading-tight">
               Artificial Intelligence solutions that deliver
@@ -49,7 +49,7 @@ const Ai = () => {
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-once="true"
-            data-aos-offset="-250"
+            data-aos-offset="-350"
           >
             <Image width={900} height={800} src="/ai.jpg" alt="ai image" />
           </div>
