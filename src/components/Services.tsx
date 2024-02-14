@@ -1,11 +1,12 @@
 import { playfair } from "@/app/fonts";
 import { counter, services } from "@/data/data";
 import Image from "next/image";
+import MaxWidthWrapper from "./MaxWidthWrapper";
 
 const Services = () => {
   return (
     <section className="lg:py-24 py-16">
-      <div className="container md:px-10 px-5">
+      <MaxWidthWrapper>
         <div className="text-center">
           <h3 className="sm:text-[50px] text-[40px] font-semibold mb-4">
             What{" "}
@@ -55,7 +56,7 @@ const Services = () => {
             </div>
           ))}
         </div>
-      </div>
+      </MaxWidthWrapper>
     </section>
   );
 };

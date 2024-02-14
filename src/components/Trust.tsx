@@ -1,11 +1,12 @@
 import Image from "next/image";
 import { trust } from "../data/data";
 import Button from "./Button";
+import MaxWidthWrapper from "./MaxWidthWrapper";
 
 const Trust = () => {
   return (
     <section className="lg:py-24 py-16">
-      <div className="container md:px-10 px-5">
+      <MaxWidthWrapper>
         <div className="grid grid-cols-12 gap-7 lg:pb-32 pb-20">
           <div className="lg:col-span-4 col-span-12 lg:pr-5 pr-0">
             <h4 className="lg:text-[26px] text-[24px] font-semibold">
@@ -46,7 +47,7 @@ const Trust = () => {
             />
           </div>
         </div>
-      </div>
+      </MaxWidthWrapper>
     </section>
   );
 };

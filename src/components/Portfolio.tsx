@@ -2,6 +2,7 @@ import { playfair } from "@/app/fonts";
 import Image from "next/image";
 import Link from "next/link";
 import InfinitiveScroller from "./InfinitiveScroller";
+import MaxWidthWrapper from "./MaxWidthWrapper";
 
 const Portfolio = () => {
   const scrollerboxStyle =
@@ -12,7 +13,7 @@ const Portfolio = () => {
   return (
     <section className="lg:py-24 py-16 overflow-hidden relative">
       <div className={portfolioGradient} />
-      <div className="container md:px-10 px-5">
+      <MaxWidthWrapper>
         <div className="text-center">
           <h3 className={`sm:text-[50px] text-[40px] font-semibold mb-4`}>
             Recent <span className={`${playfair.className}`}>work</span>
@@ -101,7 +102,7 @@ const Portfolio = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </MaxWidthWrapper>
     </section>
   );
 };

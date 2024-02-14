@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Button from "./Button";
 import { playfair } from "@/app/fonts";
+import MaxWidthWrapper from "./MaxWidthWrapper";
 
 const Hero = () => {
   return (
     <section className="lg:pb-[200px] pb-16 overflow-hidden bg-no-repeat md:bg-center gradient">
     {/* // style={{ backgroundImage: "url(gradient.png)", transition: "all 0.7s"}}> */}
-      <div className="container md:px-10 px-5">
+      <MaxWidthWrapper>
         <div className="lg:pt-[230px] pt-[150px] relative">
           <div className="grid grid-cols-12 gap-y-12 lg:gap-y-7 gap-x-5 lg:place-items-center">
             <div className="lg:col-span-6 col-span-12">
@@ -43,7 +44,7 @@ const Hero = () => {
             <span className="hscroll-line"></span>
           </div>
         </div>
-      </div>
+      </MaxWidthWrapper>
     </section>
   );
 };

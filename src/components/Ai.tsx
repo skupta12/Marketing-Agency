@@ -4,11 +4,12 @@ import Image from "next/image";
 import { Check } from "lucide-react";
 import { aiList } from "@/data/data";
 import { DownloadButton } from "./Button";
+import MaxWidthWrapper from "./MaxWidthWrapper";
 
 const Ai = () => {
   return (
     <section className="lg:py-24 py-16">
-      <div className="container md:px-10 px-5">
+     <MaxWidthWrapper>
         <div className="grid lg:grid-cols-2 items-center gap-10">
           <div>
             <h4 className="sm:text-[34px] text-[30px] font-semibold leading-tight">
@@ -45,7 +46,7 @@ const Ai = () => {
             <Image width={900} height={800} src="/ai.jpg" alt="ai image" />
           </div>
         </div>
-      </div>
+      </MaxWidthWrapper>
     </section>
   );
 };

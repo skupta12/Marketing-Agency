@@ -7,6 +7,7 @@ import "../app/globals.css";
 import Image from "next/image";
 import { testimonial } from "@/data/data";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import MaxWidthWrapper from "./MaxWidthWrapper";
 
 export default function Testimonial() {
 
@@ -16,7 +17,7 @@ export default function Testimonial() {
 
   return (
     <section className="lg:py-24 py-16">
-      <div className="container md:px-10 px-5">
+      <MaxWidthWrapper>
         <div className="sm:mb-20 mb-10 sm:flex items-center justify-between">
           <h3 className="sm:text-[34px] text-[30px] font-semibold">
             Trusted by over 4,000{" "}
@@ -39,7 +40,7 @@ export default function Testimonial() {
             </button>
           </div>
         </div>
-      </div>
+      </MaxWidthWrapper>
 
       <Swiper
         onSwiper={setSwiperRef}

@@ -1,13 +1,14 @@
 import { footer, media } from "@/data/data";
 import Image from "next/image";
 import Link from "next/link";
+import MaxWidthWrapper from "./MaxWidthWrapper";
 
 const Footer = () => {
   return (
     <footer className="lg:pt-24 pt-16 lg:pb-12 pb-10">
-      <div className="container md:px-10 px-5">
+      <MaxWidthWrapper>
         <div className="grid grid-cols-12">
-          <div className="lg:col-span-7 col-span-12 lg:mb-0 mb-20">
+          <div className="lg:col-span-7 col-span-12 lg:mb-0 mb-14">
             <div className="inline-block text-[14px] font-semibold border-2 border-black px-5 py-2 rounded-full mb-10">
               VISIT US
             </div>
@@ -30,13 +31,13 @@ const Footer = () => {
           </div>
 
           <div className="lg:col-span-5 col-span-12 lg:ml-14 lg:justify-self-center">
-            <div className="inline-block text-[14px] font-semibold border-2 border-black px-5 py-2 rounded-full mb-10">
+            <div className="inline-block text-[14px] font-semibold border-2 border-black px-5 py-2 rounded-full sm:mb-10 mb-5">
               STAY IN TOUCH
             </div>
             <p className="mb-4 text-[16px] font-semibold text-gray-500 relative">
               +1 333 20 98 40
             </p>
-            <p className="text-[16px] font-semibold text-gray-500 mb-10 relative">
+            <p className="text-[16px] font-semibold text-gray-500 sm:mb-10 mb-5 relative">
               contact@liege.com
             </p>
             <div className="flex items-center gap-x-4">
@@ -67,7 +68,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </MaxWidthWrapper>
     </footer>
   );
 };
