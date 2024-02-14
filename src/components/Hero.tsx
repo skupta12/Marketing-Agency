@@ -12,14 +12,14 @@ const Hero = () => {
           <div className="grid grid-cols-12 gap-y-12 lg:gap-y-7 gap-x-5 lg:place-items-center">
             <div className="lg:col-span-6 col-span-12">
               <div className="hero-text mb-10">
-                <h1 className="lg:text-[65px] md:text-[55px] text-[40px] font-semibold leading-tight">
+                <h1 data-aos="fade-right" data-aos-duration="700" className="lg:text-[65px] md:text-[55px] text-[40px] font-semibold leading-tight">
                   The{" "}
                   <span className={`font-medium ${playfair.className}`}>
                     web–based
                   </span>{" "}
                   marketing agency.
                 </h1>
-                <p className="lg:mt-16 mt-10 font-semibold lg:text-[26px] text-[24px]">
+                <p data-aos="fade-right" data-aos-delay="200" data-aos-duration="700" className="lg:mt-16 mt-10 font-semibold lg:text-[26px] text-[24px]">
                   We build comprehensive digital solutions to efficiently{" "}
                   <span className="text-gray-500">
                     manage and improve sales funnels
@@ -31,6 +31,7 @@ const Hero = () => {
             </div>
             <div className="lg:col-span-6 col-span-12">
               <Image
+                data-aos="zoom-in" data-aos-duration="700"
                 priority={true}
                 loading="eager"
                 width={500}
@@ -40,7 +41,7 @@ const Hero = () => {
               />
             </div>
           </div>
-          <div className="relative">
+          <div data-aos="fade-in" className="relative">
             <span className="hscroll-line"></span>
           </div>
         </div>

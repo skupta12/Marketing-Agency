@@ -10,7 +10,7 @@ interface TitleProps {
 const Button = ({ title, className }: TitleProps) => {
   return (
     <>
-      <button
+      <button data-aos="fade-right" data-aos-duration="700" data-aos-delay="400"
         className={`${className} text-white text-[17px] font-medium px-11 
       py-4 inline-flex rounded-[30px] group bg-gradient-to-r from-purple-400 
       from-20% via-sky-600 via-50% to-cyan-400 to-90%`}
