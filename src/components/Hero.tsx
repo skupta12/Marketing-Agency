@@ -4,8 +4,17 @@ import { playfair } from "@/app/fonts";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 
 const Hero = () => {
+
+  const leftGradient =
+    "pointer-events-none filter blur-[50px] absolute -z-[1] top-52 right-0 w-[150px] h-[150px] bg-[#e3c1f0] rounded-full";
+
+    const rightGradient =
+    "pointer-events-none filter blur-[50px] absolute -z-[1] top-52 left-0 w-[100px] h-[100px] bg-[#85e2f0] rounded-full";
+
   return (
-    <section className="lg:pb-[200px] pb-16 overflow-hidden bg-no-repeat md:bg-center bg-top gradient">
+    <section className="lg:pb-[200px] pb-16 overflow-hidden bg-no-repeat md:bg-center bg-top gradient relative">
+      <div className={`${leftGradient} md:hidden block`}/>
+      <div className={`${rightGradient} md:hidden block`}/>
       <MaxWidthWrapper>
         <div className="lg:pt-[230px] pt-[150px] relative">
           <div className="grid grid-cols-12 gap-y-12 lg:gap-y-7 gap-x-5 lg:place-items-center">

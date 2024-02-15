@@ -145,7 +145,10 @@
 
 /* Hero Images swap */
 
-.gradient {
+@media(min-width:768px) {
+  .gradient {
     background-image: url("/gradient.png");
 }
+}
+
 
