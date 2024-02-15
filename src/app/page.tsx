@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Ai from "@/components/Ai";
 import Blog from "@/components/Blog";
@@ -9,34 +9,31 @@ import Testimonial from "@/components/Testimonial";
 import Trust from "@/components/Trust";
 
 // @ts-expect-error
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 export default function Home() {
-
+  
   useEffect(() => {
     const initAos = setTimeout(() => {
       AOS.init({
         once: true,
-        duration: 600,     
+        duration: 600,
       });
     }, 100); // Задержка в 100 миллисекунд
-  
+
     return () => clearTimeout(initAos);
   }, []);
   return (
     <>
-      <main>
-          <Hero />
-          <Trust />
-          <Services />
-          <Portfolio />
-          <Testimonial />
-          <Ai />
-          <Blog />
-          {/* <CTA /> */}
-      </main>
+      <Hero />
+      <Trust />
+      <Services />
+      <Portfolio />
+      <Testimonial />
+      <Ai />
+      <Blog />
     </>
   );
 }

@@ -5,8 +5,7 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 
 const Hero = () => {
   return (
-    <section data-aos="fade-in" className="lg:pb-[200px] pb-16 overflow-hidden 
-    bg-no-repeat md:bg-center bg-top gradient">
+    <section className="lg:pb-[200px] pb-16 overflow-hidden bg-no-repeat md:bg-center bg-top gradient">
       <MaxWidthWrapper>
         <div className="lg:pt-[230px] pt-[150px] relative">
           <div className="grid grid-cols-12 gap-y-12 lg:gap-y-7 gap-x-5 lg:place-items-center">

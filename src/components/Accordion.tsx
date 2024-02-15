@@ -11,7 +11,7 @@ const Accordion = ({ title, content }: { title: string; content: string }) => {
     "transform duration-400 ease-in-out"
   );
 
-  const contentSpace = useRef(null);
+  const contentSpace = useRef<null>(null);
 
   return (
     <div className="flex flex-col">

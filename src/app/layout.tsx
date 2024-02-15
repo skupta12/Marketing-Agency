@@ -3,14 +3,9 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
-import { Metadata } from "next";
+import { constructMetadata } from "@/lib/utils";
 
-export const metadata: Metadata = {
-  title: 'Marketing Agency - React and Next JS Template',
-  description: 'The official Next.js Course Dashboard, built with App Router.',
-  // metadataBase: new URL(''),
-};
-
+export const metadata = constructMetadata()
 
 export default function RootLayout({
   children,
