@@ -145,10 +145,14 @@
 
 /* Hero Images swap */
 
-@media(min-width:640px) {
+@media(min-width:768px) {
   .gradient {
     background-image: url("/gradient.png");
 }
+}
+
+.gradient-mobile {
+  background-image: url("/gradient-mobile.png");
 }
 
 
