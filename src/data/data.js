@@ -1,35 +1,35 @@
 
 export const navItems = [
   {
-    id: 1,
+    id: 0,
     name: "Home",
     href: "/",
     number: '0' + 1,
     aosDelay: '150',
   },
   {
-    id: 2,
+    id: 1,
     name: "About",
     href: "/about",
     number: '0' + 2,
     aosDelay: '300',
   },
   {
-    id: 3,
+    id: 2,
     name: "Work",
     href: "/work",
     number: '0' + 3,
     aosDelay: '450',
   },
   {
-    id: 4,
+    id: 3,
     name: "News",
     href: "/news",
     number: '0' + 4,
     aosDelay: '600',
   },
   {
-    id: 5,
+    id: 4,
     name: "Contact",
     href: "/contact",
     number: '0' + 5,
@@ -39,46 +39,46 @@ export const navItems = [
 
 export const trust = [
   {
-    id: 1,
+    id: 0,
     src: "/svg/kobe.svg",
   },
   {
-    id: 2,
+    id: 1,
     src: "/svg/hues.svg",
   },
   {
-    id: 3,
+    id: 2,
     src: "/svg/terra.svg",
   },
   {
-    id: 4,
+    id: 3,
     src: "/svg/ther.svg",
   },
   {
-    id: 5,
+    id: 4,
     src: "/svg/tokyo.svg",
   },
   {
-    id: 6,
+    id: 5,
     src: "/svg/hitech.svg",
   },
 ];
 
 export const services = [
   {
-    id: 1,
+    id: 0,
     icon: "/services/icon-1.png",
     title: "Strategic Planning",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
-    id: 2,
+    id: 1,
     icon: "/services/icon-2.png",
     title: "Market Analysis",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
   {
-    id: 3,
+    id: 2,
     icon: "/services/icon-3.png",
     title: "Leadership Development",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -87,19 +87,19 @@ export const services = [
 
 export const counter = [
   {
-    id: 1,
+    id: 0,
     number: "610+",
     text: "Active monthly users",
     dataAosDelay: "0"
   },
   {
-    id: 2,
+    id: 1,
     number: "17",
     text: "Global location",
     dataAosDelay: "200"
   },
   {
-    id: 3,
+    id: 2,
     number: "6.8M",
     text: "Funding from backers",
     dataAosDelay: "400"
@@ -108,31 +108,31 @@ export const counter = [
 
 export const portfolio = [
   {
-    id: 1,
+    id: 0,
     src: "/portfolio/portfolio-1.jpg",
     scrollerTitle: "Dreamy Visions",
     href: "/",
   },
   {
-    id: 2,
+    id: 1,
     src: "/portfolio/portfolio-2.jpg",
     scrollerTitle: "Whimsy Tails",
     href: "/",
   },
   {
-    id: 3,
+    id: 2,
     src: "/portfolio/portfolio-3.jpg",
     scrollerTitle: "Colorful Jorneys",
     href: "/",
   },
   {
-    id: 4,
+    id: 3,
     src: "/portfolio/portfolio-4.jpg",
     scrollerTitle: "Night Desert",
     href: "/",
   },
   // {
-  //   id: 5,
+  //   id: 4,
   //   src: "/portfolio/portfolio-5.jpg",
   //   scrollerTitle: "Imaginary Realms",
   //   href: "/",
@@ -141,42 +141,42 @@ export const portfolio = [
 
 export const testimonial = [
   {
-    id: 1,
+    id: 0,
     src: "/svg/hitech.svg",
     text: '"Working with Liege has been a transformative experience for our brand."',
     name: "Lucas Smith",
     prof: "Marketing Director",
   },
   {
-    id: 2,
+    id: 1,
     src: "/svg/hues.svg",
     text: '"Working with Liege has been a transformative experience for our brand."',
     name: "Lucas Smith",
     prof: "Marketing Director",
   },
   {
-    id: 3,
+    id: 2,
     src: "/svg/kobe.svg",
     text: '"Working with Liege has been a transformative experience for our brand."',
     name: "Lucas Smith",
     prof: "Marketing Director",
   },
   {
-    id: 4,
+    id: 3,
     src: "/svg/terra.svg",
     text: '"Working with Liege has been a transformative experience for our brand."',
     name: "Lucas Smith",
     prof: "Marketing Director",
   },
   {
-    id: 5,
+    id: 4,
     src: "/svg/ther.svg",
     text: '"Working with Liege has been a transformative experience for our brand."',
     name: "Lucas Smith",
     prof: "Marketing Director",
   },
   {
-    id: 6,
+    id: 5,
     src: "/svg/tokyo.svg",
     text: '"Working with Liege has been a transformative experience for our brand."',
     name: "Lucas Smith",
@@ -186,40 +186,40 @@ export const testimonial = [
 
 export const aiList = [
   {
-    id: 1,
+    id: 0,
     content: "Marketing plans powered by AI technology",
   },
   {
-    id: 2,
+    id: 1,
     content: "Live customer support chat widget",
   },
   {
-    id: 3,
+    id: 2,
     content: "Automatic scaling campaign tools",
   },
   {
-    id: 4,
+    id: 3,
     content: "Adaptive testing reporting",
   },
 ];
 
 export const blog = [
   {
-    id: 1,
+    id: 0,
     src: "/blog/blog-1.jpg",
     label: "Code",
     text: "Our design process explained",
     date: "April 27, 2024",
   },
   {
-    id: 2,
+    id: 1,
     src: "/blog/blog-2.jpg",
     label: "Marketing",
     text: "A peek into our branding strategy",
     date: "May 10, 2024",
   },
   {
-    id: 3,
+    id: 2,
     src: "/blog/blog-3.jpg",
     label: "Design",
     text: "Developing Seamless mobile apps",
@@ -229,36 +229,36 @@ export const blog = [
 
 export const media = [
   {
-    id: 1,
+    id: 0,
     href: "/twitter.png",
   },
   {
-    id: 2,
+    id: 1,
     href: "/inst.png",
   },
   {
-    id: 3,
+    id: 2,
     href: "/dribble.png",
   },
   {
-    id: 4,
+    id: 3,
     href: "/linkedin.png",
   },
 ];
 
 export const footer = [
   {
-    id: 1,
+    id: 0,
     city: "New York",
     street: "123 Broadway Street, Suite 16, New York, NY",
   },
   {
-    id: 2,
+    id: 1,
     city: "San Francisco",
     street: "789 Market Street, Floor 3, San Francisco, CA",
   },
   {
-    id: 3,
+    id: 2,
     city: "Paris",
     street: "12 Rue de la Paix, 75002 Paris, France",
   },
@@ -266,21 +266,82 @@ export const footer = [
 
 export const team = [
   {
-    id: 1,
+    id: 0,
     src: "/team/team-1.jpg",
     name: "Nathanial Reed",
     prof: "Co Founder",
   },
   {
-    id: 2,
+    id: 1,
     src: "/team/team-2.jpg",
     name: "Marcus Vinson",
     prof: "Developer",
   },
   {
-    id: 3,
+    id: 2,
     src: "/team/team-3.jpg",
     name: "Isabella Knight",
     prof: "Marketing",
   },
 ];
+
+export const contact = [
+
+  {
+    id: 0,
+    label: "First name",
+    placeholder: "John Doe",
+    type: "text",
+    name: "name",
+
+  },
+  {
+    id: 1,
+    label: "Email",
+    placeholder: "contact@example.com",
+    type: "text",
+    name: "email",
+  },
+  {
+    id: 2,
+    label: "Phone",
+    placeholder: "+1 675-786",
+    type: "tel",
+    name: "phone",
+  },
+  {
+    id: 3,
+    label: "Schedule to receive call",
+    placeholder: "10:00 AM to 4:00 PM",
+    type: "text",
+    name: "text",
+  },
+]
+
+export const accordion = [
+  {
+    id: 0,
+    title: "General questions about our courses",
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nulla similique earum. Perferendis, possimus?",
+  },
+  {
+    id: 1,
+    title: "Getting started: FAQ for new learners",
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nulla similique earum. Perferendis, possimus?",
+  },
+  {
+    id: 2,
+    title: "Technical queries and troubleshooting",
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nulla similique earum. Perferendis, possimus?",
+  },
+  {
+    id: 3,
+    title: "Pricing and payment information",
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nulla similique earum. Perferendis, possimus?",
+  },
+  {
+    id: 4,
+    title: "Certifications and course completion",
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nulla similique earum. Perferendis, possimus?",
+  },
+]

@@ -11,7 +11,7 @@ const Header = () => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       const maxScroll = document.body.clientHeight - window.innerHeight;
-      const scrollAlpha = Math.min(scrollTop / 250, maxScroll / 250);
+      const scrollAlpha = Math.min(scrollTop / 200, maxScroll / 200);
       setScrollAlpha(scrollAlpha);
     };
 

@@ -37,7 +37,7 @@ const CTA = () => {
               <div className="flex items-center mb-5 relative">
                 <input
                   className="px-6 py-5 bg-white rounded-full
-              max-w-[600px] w-full placeholder:font-medium border-2 focus:outline-none focus:border-sky-500"
+              max-w-[600px] w-full placeholder:font-medium border-[1px] border-white focus:outline-none focus:border-sky-500"
                   type="email"
                   name="email"
                   placeholder="Enter your email"

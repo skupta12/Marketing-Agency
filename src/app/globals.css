@@ -46,7 +46,7 @@
 }
 
 .hscroll-line {
-  @apply lg:-bottom-[50px] -bottom-7 rounded-lg right-[50%] transform translate-x-[50%] -translate-y-[50%] md:h-[2.5px] h-[1.5px] absolute overflow-hidden md:w-[45px] w-[35px] rotate-[90deg];
+  @apply lg:-bottom-[50px] -bottom-7 rounded-lg right-[50%] transform translate-x-[50%] -translate-y-[50%] md:h-[2.5px] h-[2px] absolute overflow-hidden md:w-[45px] w-[40px] rotate-[90deg];
   transform-origin: 50% 50%;
 }
 
@@ -123,16 +123,16 @@
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(100%);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0%);
   }
 }
 
 .fade-in-up {
-  animation: fadeInUp 0.5s ease forwards;
+  animation: fadeInUp 5s ease;
 }
 
 .navbar li span::before {@apply absolute top-[100%] content-[attr(data-hover)];}
@@ -148,13 +148,4 @@
 .gradient {
     background-image: url("/gradient.png");
 }
-
-
-
-
-
-
-
-
-
 

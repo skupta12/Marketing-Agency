@@ -5,6 +5,7 @@ import { navItems } from "../data/data";
 import Link from "next/link";
 
 export function NavItem() {
+  
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handleClick = () => {
@@ -45,7 +46,7 @@ export function NavItem() {
                   {number}
                 </span>
                 <li className="overflow-hidden">
-                  <Link href={href} data-aos-delay={aosDelay} data-aos="fade-right" className={isOpen ? "aos-animate" : 'no-animate'}>
+                  <Link href={href} className={''}>
                     <div
                      onClick={() => setIsOpen(false)}
                       className="text-black lg:text-[90px] text-[50px] font-semibold"
