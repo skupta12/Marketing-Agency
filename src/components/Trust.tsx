@@ -45,7 +45,7 @@ const Trust = () => {
               Check out our range of social media{" "}
               <span className="text-gray-500">marketing options</span>.
             </h4>
-            <Button title="View Packages" />
+            <Button href="/price" title="View Packages" />
           </div>
           <div>
             <Image

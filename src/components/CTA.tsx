@@ -25,7 +25,7 @@ const CTA = () => {
             >
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga.
             </p>
-            <Button className="mt-14" title="Send a message" />
+            <Button href="/contact" className="mt-14" title="Send a message" />
           </div>
           <div className="lg:col-span-6 col-span-12 lg:justify-self-center">
             <form

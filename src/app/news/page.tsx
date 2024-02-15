@@ -27,21 +27,22 @@ const Page = () => {
         <div className="grid grid-cols-12 gap-x-4 gap-y-10">
           {blog.map(({ id, src, label, text, date }) => (
             <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
-              <Link href="#">
+              <Link className="relative" href="#">
                 <Image
                   className="w-full sm:h-auto h-[300px]"
                   width={500}
                   height={500}
                   src={src}
-                  alt="blog post"
+                  alt={text}
                 />
+                <div className="absolute content-[''] top-0 left-0 right-0 bottom-0 inset-0 hover:bg-white hover:bg-opacity-15 transition" />
               </Link>
               <div>
                 <span className="inline-block font-semibold border-2 border-black px-4 py-1 rounded-full my-6">
                   {label}
                 </span>
                 <Link href="#">
-                  <h5 className="sm:text-[30px] text-[24px] font-semibold mb-6">
+                  <h5 className="sm:text-[30px] text-[24px] font-semibold mb-6 pr-2">
                     {text}
                   </h5>
                 </Link>

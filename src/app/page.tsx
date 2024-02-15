@@ -14,14 +14,14 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 export default function Home() {
-  
+
   useEffect(() => {
     const initAos = setTimeout(() => {
       AOS.init({
         once: true,
         duration: 600,
       });
-    }, 100); // Задержка в 100 миллисекунд
+    }, 100);
 
     return () => clearTimeout(initAos);
   }, []);

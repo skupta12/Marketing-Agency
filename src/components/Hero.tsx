@@ -28,7 +28,7 @@ const Hero = () => {
                   .
                 </p>
               </div>
-              <Button title="Send a Message" />
+              <Button href="/contact" title="Send a Message" />
             </div>
             <div className="lg:col-span-6 col-span-12">
               <Image

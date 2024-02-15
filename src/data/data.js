@@ -345,3 +345,48 @@ export const accordion = [
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nulla similique earum. Perferendis, possimus?",
   },
 ]
+
+export const prices = [
+  {
+    id: 0,
+    label: "Printing Package",
+    price: "$ 4,900.00 USD",
+    title: "WHAT'S INCLUDED?",
+    type: [
+      "Logo Design",
+      "Business Card Design",
+      "Stationery Design",
+      "Envelope Design",
+      "Ready in 14 days",
+
+    ]
+  },
+  {
+    id: 1,
+    label: "Single-Page Website",
+    price: "$ 1,900.00 USD",
+    title: "WHAT'S INCLUDED?",
+    type: [
+      "One Page Website",
+      "Responsive Website",
+      "Content Management System",
+      "Free Support",
+      "Ready in 2 days",
+
+    ]
+  },
+  {
+    id: 2,
+    label: "Multi-Page Website",
+    price: "$ 7,900.00 USD",
+    title: "WHAT'S INCLUDED?",
+    type: [
+      "2 to 6 Pages",
+      "Responsive Website",
+      "Content Management System",
+      "Free Support",
+      "Ready in 7 Days",
+
+    ]
+  },
+]

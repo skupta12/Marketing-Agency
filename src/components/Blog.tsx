@@ -10,9 +10,7 @@ const Blog = () => {
     <section className="lg:py-24 py-16">
       <MaxWidthWrapper>
         <div className="sm:flex justify-between items-center">
-          <div 
-            data-aos-offset="-250" 
-            data-aos="fade-up">
+          <div data-aos-offset="-250" data-aos="fade-up">
             <h3 className="sm:text-[50px] text-[40px] font-semibold mb-4">
               From{" "}
               <span className={`font-medium ${playfair.className}`}>Blog</span>
@@ -25,7 +23,7 @@ const Blog = () => {
               .
             </p>
           </div>
-          <Button className="mt-14" title="View All" />
+          <Button href="/news" className="mt-14" title="View All" />
         </div>
 
         <div
@@ -35,7 +33,7 @@ const Blog = () => {
         >
           {blog.map(({ id, src, label, text, date }) => (
             <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
-              <Link href="#">
+              <Link className="relative" href="#">
                 <Image
                   className="w-full"
                   width={500}
@@ -43,6 +41,8 @@ const Blog = () => {
                   src={src}
                   alt="blog post"
                 />
+                <div className="absolute content-[''] top-0 left-0 right-0 bottom-0 inset-0 
+                hover:bg-white hover:bg-opacity-15 transition" />
               </Link>
               <div>
                 <span className="inline-block font-semibold border-2 border-black px-4 py-1 rounded-full my-6">

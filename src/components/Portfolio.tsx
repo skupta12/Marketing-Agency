@@ -35,7 +35,7 @@ const Portfolio = () => {
             
               className="group lg:mb-32 relative overflow-hidden"
             >
-              <Link href={" "}>
+              <Link href={"/project"}>
                 <Image
                   className="w-full"
                   width={400}

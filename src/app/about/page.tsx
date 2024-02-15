@@ -55,7 +55,7 @@ const Page = () => {
               as a design studio dedicated to creativity and individuality in a
               world craving its presence.
             </p>
-            <Button className="mt-14" title="Join us" />
+            <Button href="/news" className="mt-14" title="Join us" />
           </div>
         </div>
       </section>

@@ -2,6 +2,7 @@ import Faq from "@/components/Faq";
 import { playfair } from "../fonts";
 import Image from "next/image";
 import { contact } from "@/data/data";
+import { ContactButton } from "@/components/Button";
 
 const Page = () => {
   return (
@@ -42,15 +43,9 @@ const Page = () => {
                         />
                       </div>
                     );
-                  })} 
+                  })}
                   <div className="col-span-12 lg:mt-5">
-                    <button
-                      type="button"
-                      value="submit"
-                      className="inline-block font-medium text-center w-full bg-black text-white p-[14px] rounded-lg"
-                    >
-                      Contact us
-                    </button>
+                    <ContactButton className="w-full" title="Contact us" />
                   </div>
                 </div>
               </form>

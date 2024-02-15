@@ -17,6 +17,7 @@ const config: Config = {
     extend: {
       colors: {
         "port-rgba": "rgba(0, 0, 0, 0.1)",
+        'black-rgba': 'rgba(0, 0, 0, 0.54)',
       },
     },
     container: {
