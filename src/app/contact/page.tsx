@@ -26,7 +26,11 @@ const Page = () => {
               <span className="hscroll-line"></span>
             </div>
           </div>
-          <div className="grid grid-cols-12 gap-4 items-center">
+          <div
+            className="grid grid-cols-12 gap-4 items-center"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <div className="lg:col-span-6 col-span-12 lg:pr-12">
               <form action="#">
                 <div className="grid grid-cols-12 gap-4">

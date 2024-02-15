@@ -15,7 +15,6 @@ const Page = () => {
               data-aos="fade-up"
               data-aos-delay="50"
               data-aos-duration="600"
-
               className="lg:text-[100px] md:text-[80px] text-[46px] font-semibold"
             >
               About <span className={playfair.className}>Liège</span>
@@ -28,7 +27,7 @@ const Page = () => {
               <span className="hscroll-line"></span>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-up" data-aos-delay="400">
             <Image
               width={1100}
               height={1100}

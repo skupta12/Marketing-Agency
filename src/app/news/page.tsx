@@ -16,15 +16,15 @@ const Page = () => {
           >
             From <span className={playfair.className}>blog</span>
           </h1>
-          <div
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="800"
-          >
+          <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
             <span className="hscroll-line"></span>
           </div>
         </div>
-        <div className="grid grid-cols-12 gap-x-4 gap-y-10">
+        <div
+          className="grid grid-cols-12 gap-x-4 gap-y-10"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           {blog.map(({ id, src, label, text, date }) => (
             <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
               <Link className="relative" href="#">

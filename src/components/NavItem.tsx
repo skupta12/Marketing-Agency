@@ -39,7 +39,7 @@ export function NavItem() {
       >
         <nav className="navbar">
           <ul>
-            {navItems.map(({ id, name, href, number, aosDelay }) => (
+            {navItems.map(({ id, name, href, number }) => (
               <div className="flex gap-x-3 justify-center leading-tight relative" key={id}>
                 <span className="flex flex-col justify-center items-center 
                 border-2 border-black rounded-full p-1 w-[40px] h-[40px]">

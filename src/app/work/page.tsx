@@ -19,14 +19,15 @@ const Page = () => {
           >
             Latest <span className={playfair.className}>work</span>
           </h1>
-          <div
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
+          <div data-aos="fade-up" data-aos-delay="200">
             <span className="hscroll-line"></span>
           </div>
         </div>
-        <div className="grid grid-cols-12 md:gap-5">
+        <div
+          className="grid grid-cols-12 md:gap-5"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           {portfolio.map(({ id, src, href, scrollerTitle }) => (
             <div
               key={id}

@@ -16,17 +16,21 @@ const page = () => {
             >
               Our <span className={playfair.className}>Prices</span>
             </h1>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
+            <div data-aos="fade-up" data-aos-delay="200">
               <span className="hscroll-line"></span>
             </div>
           </div>
-          <div className="grid grid-cols-12 lg:gap-3 gap-7">
+          <div
+            className="grid grid-cols-12 lg:gap-3 gap-7"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             {prices.map(({ id, label, price, title, type }) => {
               return (
-                <div  key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
+                <div
+                  key={id}
+                  className="lg:col-span-4 md:col-span-6 col-span-12"
+                >
                   <div className="box px-10 py-12 bg-primary-200">
                     <p className="text-[17px] font-semibold mb-3">{label}</p>
                     <h3 className="text-[32px] font-medium">{price}</h3>
@@ -35,10 +39,15 @@ const page = () => {
                     </small>
                     <ul className="text-gray-500 font-medium mb-6">
                       {type.map((item, i) => (
-                        <li className="mb-[6px]" key={i}>{item}</li>
+                        <li className="mb-[6px]" key={i}>
+                          {item}
+                        </li>
                       ))}
                     </ul>
-                    <ContactButton className="sm:w-auto w-full" title="Contact us" />
+                    <ContactButton
+                      className="sm:w-auto w-full"
+                      title="Contact us"
+                    />
                   </div>
                 </div>
               );
