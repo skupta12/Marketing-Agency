@@ -10,7 +10,7 @@ const Page = () => {
     <>
       <section className="lg:pt-[180px] pt-[150px] gradient bg-no-repeat bg-top">
         <div className="container md:px-10 px-5">
-          <div className="text-center lg:mb-48 mb-20">
+          <div className="text-center lg:mb-48 mb-20 relative">
             <h1
               data-aos="fade-up"
               data-aos-delay="50"
@@ -24,7 +24,6 @@ const Page = () => {
               data-aos="fade-up"
               data-aos-delay="200"
               data-aos-duration="600"
-              className="relative mb-5 lg:block hidden"
             >
               <span className="hscroll-line"></span>
             </div>

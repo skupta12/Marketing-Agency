@@ -40,7 +40,7 @@ const Hero = () => {
               />
             </div>
           </div>
-          <div data-aos="fade-in" className="relative">
+          <div data-aos="fade-in" className="relative lg:block hidden">
               <span className="hscroll-line"></span>
           </div>
         </div>
