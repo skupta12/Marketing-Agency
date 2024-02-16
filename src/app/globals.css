@@ -37,13 +37,13 @@
   background-color:  var(--primary-200);
 }
 
-.gradient-1 {
+/* .gradient-1 {
   background-color: var(--gradient-1);
 }
 
 .gradient-2 {
   background-color: var(--gradient-2);
-}
+} */
 
 .hscroll-line {
   @apply lg:-bottom-[50px] -bottom-7 rounded-lg right-[50%] transform translate-x-[50%] -translate-y-[50%] md:h-[2.5px] h-[2px] absolute overflow-hidden md:w-[45px] w-[40px] rotate-[90deg];
@@ -145,10 +145,16 @@
 
 /* Hero Images swap */
 
-
 .gradient {
-    background-image: url("/gradient.png");
+    background-image: url('/gradient.png');
 }
+
+.gradient-mobile {
+  background-image: url("/gradient-mobile.png");
+}
+
+
+
 
 
 
