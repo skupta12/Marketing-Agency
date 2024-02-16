@@ -7,25 +7,41 @@ const Hero = () => {
 
   return (
     <section className="lg:pb-[200px] pb-16 overflow-hidden relative">
-
-      <div className="gradient absolute bg-no-repeat bg-center w-full h-full -z-[1] sm:block hidden"/>
-      <div className="gradient-mobile absolute bg-no-repeat bg-top w-full h-full -z-[1] sm:hidden block"/>
+      <Image
+        src={"/gradient.png"}
+        fill
+        alt="hero gradient"
+        className="absolute bg-no-repeat bg-center w-full h-full -z-[1]"
+      />
+        {/* <Image
+        src={"/gradient-mobile.png"}
+        fill
+        alt="hero gradient"
+        className="sm:hidden block absolute bg-no-repeat bg-center w-full h-full -z-[1]"
+      /> */}
 
       <MaxWidthWrapper>
         <div className="lg:pt-[230px] pt-[150px] relative">
           <div className="grid grid-cols-12 gap-y-12 lg:gap-y-7 gap-x-5 lg:place-items-center">
             <div className="lg:col-span-6 col-span-12">
               <div className="hero-text mb-10">
-                <h1 data-aos="fade-right" data-aos-duration="600"
-                className="lg:text-[65px] md:text-[55px] text-[40px] font-semibold leading-tight">
+                <h1
+                  data-aos="fade-right"
+                  data-aos-duration="600"
+                  className="lg:text-[65px] md:text-[55px] text-[40px] font-semibold leading-tight"
+                >
                   The{" "}
                   <span className={`font-medium ${playfair.className}`}>
                     web–based
                   </span>{" "}
                   marketing agency.
                 </h1>
-                <p data-aos="fade-right" data-aos-delay="200" data-aos-duration="600"
-                className="lg:mt-16 mt-10 font-semibold lg:text-[26px] text-[24px]">
+                <p
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                  data-aos-duration="600"
+                  className="lg:mt-16 mt-10 font-semibold lg:text-[26px] text-[24px]"
+                >
                   We build comprehensive digital solutions to efficiently{" "}
                   <span className="text-gray-500">
                     manage and improve sales funnels
@@ -37,7 +53,8 @@ const Hero = () => {
             </div>
             <div className="lg:col-span-6 col-span-12">
               <Image
-                data-aos="zoom-in" data-aos-duration="600"
+                data-aos="zoom-in"
+                data-aos-duration="600"
                 width={500}
                 height={500}
                 src="/hero.png"
@@ -46,7 +63,7 @@ const Hero = () => {
             </div>
           </div>
           <div data-aos="fade-in" className="relative lg:block hidden">
-              <span className="hscroll-line"></span>
+            <span className="hscroll-line"></span>
           </div>
         </div>
       </MaxWidthWrapper>
