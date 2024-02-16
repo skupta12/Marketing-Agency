@@ -11,14 +11,14 @@ const Hero = () => {
         src={"/gradient.png"}
         fill
         alt="hero gradient"
-        className="absolute bg-no-repeat bg-center w-full h-full -z-[1]"
+        className="sm:block hidden absolute bg-no-repeat bg-center w-full h-full -z-[1]"
       />
-        {/* <Image
+        <Image
         src={"/gradient-mobile.png"}
         fill
         alt="hero gradient"
-        className="sm:hidden block absolute bg-no-repeat bg-center w-full h-full -z-[1]"
-      /> */}
+        className="sm:hidden block absolute bg-no-repeat bg-bottom w-full h-full -z-[1]"
+      />
 
       <MaxWidthWrapper>
         <div className="lg:pt-[230px] pt-[150px] relative">
