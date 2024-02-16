@@ -8,9 +8,9 @@ const Hero = () => {
   return (
     <section className="lg:pb-[200px] pb-16 overflow-hidden relative">
 
-      <div className="gradient absolute bg-no-repeat bg-center w-full h-full -z-[1] md:block hidden"/>
-      <div className="gradient-mobile absolute bg-no-repeat bg-top w-full h-full -z-[1] md:hidden block"/>
-      
+      <div className="gradient absolute bg-no-repeat bg-center w-full h-full -z-[1] sm:block hidden"/>
+      <div className="gradient-mobile absolute bg-no-repeat bg-top w-full h-full -z-[1] sm:hidden block"/>
+
       <MaxWidthWrapper>
         <div className="lg:pt-[230px] pt-[150px] relative">
           <div className="grid grid-cols-12 gap-y-12 lg:gap-y-7 gap-x-5 lg:place-items-center">
