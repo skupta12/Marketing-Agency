@@ -36,7 +36,7 @@ const Portfolio = () => {
             
               className="group lg:mb-32 relative overflow-hidden"
             >
-              <Link href={"/project"}>
+              <Link href={"/"}>
                 <Image
                   className="w-full"
                   width={400}
@@ -54,7 +54,7 @@ const Portfolio = () => {
               data-aos-duration="500"
               className="group lg:self-end relative overflow-hidden"
             >
-              <Link href={" "}>
+              <Link href={"/"}>
                 <Image
                   className="w-full"
                   width={400}
@@ -74,7 +74,7 @@ const Portfolio = () => {
               data-aos-duration="500"
               className="group lg:self-end relative overflow-hidden"
             >
-              <Link href={""}>
+              <Link href={"/"}>
                 <Image
                   className="w-full"
                   width={400}
@@ -92,7 +92,7 @@ const Portfolio = () => {
               data-aos-duration="500"
               className="group lg:mb-32 relative overflow-hidden"
             >
-              <Link href={""}>
+              <Link href={"/"}>
                 <Image
                   className="w-full"
                   width={400}
