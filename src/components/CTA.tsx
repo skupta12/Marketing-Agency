@@ -1,12 +1,17 @@
 import { ArrowRight } from "lucide-react";
 import Button from "./Button";
 import MaxWidthWrapper from "./MaxWidthWrapper";
+import Image from "next/image"
+import Gradient from "./Gradient";
 
 const CTA = () => {
   return (
     <section
-      className="lg:py-36 py-16 overflow-hidden bg-no-repeat md:bg-center gradient" // extra padding for gradient
+      className="lg:py-36 py-16 overflow-hidden relative" // extra padding for gradient
     >
+        <Gradient className="sm:block hidden" src="/gradient.png" />
+        <Gradient className="sm:hidden block" src="/gradient-mobile.png" 
+        />
       <MaxWidthWrapper className="relative">
         <div className="grid grid-cols-12 gap-4">
           <div className="lg:col-span-6 col-span-12">

@@ -29,7 +29,7 @@ const Page = () => {
             <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
               <Link className="relative" href="#">
                 <Image
-                  className="w-full sm:h-auto h-[300px]"
+                  className="w-full"
                   width={500}
                   height={500}
                   src={src}

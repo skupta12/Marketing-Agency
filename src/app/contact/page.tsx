@@ -3,11 +3,12 @@ import { playfair } from "../fonts";
 import Image from "next/image";
 import { contact } from "@/data/data";
 import { ContactButton } from "@/components/Button";
+import Gradient from "@/components/Gradient";
 
 const Page = () => {
   return (
     <>
-      <section className="lg:pt-[180px] pt-[150px] lg:pb-24 pb-16 gradient bg-no-repeat bg-top">
+      <section className="lg:pt-[180px] pt-[150px] lg:pb-24 pb-16 relative">
         <div className="container md:px-10 px-5">
           <div className="text-center lg:mb-48 mb-20 relative">
             <h1

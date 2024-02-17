@@ -1,6 +1,6 @@
 import { inter } from "./fonts";
 import "./globals.css";
-import Header from "@/components/Header";
+import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
 import { constructMetadata } from "@/lib/utils";
