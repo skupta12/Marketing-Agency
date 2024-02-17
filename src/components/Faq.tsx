@@ -2,10 +2,11 @@ import React from "react";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import Accordion from "./Accordion";
 import { accordion } from "@/data/data";
+import style from "@/style";
 
 const Faq = () => {
   return (
-    <section className="lg:py-24 py-16">
+    <section className={`${style.sectionPadding}`}>
       <MaxWidthWrapper>
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="text">

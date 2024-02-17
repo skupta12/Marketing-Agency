@@ -3,20 +3,21 @@ import Image from "next/image";
 import Link from "next/link";
 import InfinitiveScroller from "./InfinitiveScroller";
 import MaxWidthWrapper from "./MaxWidthWrapper";
+import style from "@/style";
 
 const Portfolio = () => {
   const scrollerboxStyle =
     "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:opacity-0 duration-300 transition-opacity group-hover:opacity-[1]";
 
   return (
-    <section className="lg:py-24 py-16 overflow-hidden relative">
+    <section className={`${style.sectionPadding} overflow-hidden relative`}>
       <MaxWidthWrapper>
         <div
           data-aos="fade-up"
           data-aos-offset="-250"
           className="text-center"
         >
-          <h3 className={`sm:text-[50px] text-[40px] font-semibold mb-4`}>
+          <h3 className={`${style.heading3} mb-4`}>
             Recent <span className={`${playfair.className}`}>work</span>
           </h3>
           <p className="lg:text-[26px] text-[24px] font-medium">

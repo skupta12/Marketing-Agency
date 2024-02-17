@@ -9,6 +9,15 @@ const Page = () => {
   return (
     <>
       <section className="lg:pt-[180px] pt-[150px] lg:pb-24 pb-16 relative">
+      <Gradient 
+        className="sm:block hidden" 
+        src="/gradient.png" 
+        isPriority />
+      <Gradient
+        className="sm:hidden block"
+        src="/gradient-mobile.png"
+        isPriority
+      />
         <div className="container md:px-10 px-5">
           <div className="text-center lg:mb-48 mb-20 relative">
             <h1

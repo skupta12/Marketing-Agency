@@ -3,10 +3,11 @@ import { Check } from "lucide-react";
 import { aiList } from "@/data/data";
 import { DownloadButton } from "./Button";
 import MaxWidthWrapper from "./MaxWidthWrapper";
+import style from "@/style";
 
 const Ai = () => {
   return (
-    <section className="lg:py-24 py-16">
+    <section className={`${style.sectionPadding}`}>
       <MaxWidthWrapper>
         <div className="grid lg:grid-cols-2 items-center gap-10">
           <div

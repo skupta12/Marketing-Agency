@@ -2,10 +2,11 @@ import Image from "next/image";
 import { trust } from "../data/data";
 import Button from "./Button";
 import MaxWidthWrapper from "./MaxWidthWrapper";
+import style from "../style"
 
 const Trust = () => {
   return (
-    <section className="lg:py-24 py-16">
+    <section className={`${style.sectionPadding}`}>
       <MaxWidthWrapper>
         <div className="grid grid-cols-12 gap-7 lg:pb-32 pb-20">
           <div className="lg:col-span-4 col-span-12 lg:pr-5 pr-0">

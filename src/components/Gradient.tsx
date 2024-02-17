@@ -4,7 +4,6 @@ const Gradient = ({
   src,
   isPriority,
   className,
-
 }: {
   src: string;
   isPriority?: boolean;

@@ -2,16 +2,17 @@ import { playfair } from "@/app/fonts";
 import { counter, services } from "@/data/data";
 import Image from "next/image";
 import MaxWidthWrapper from "./MaxWidthWrapper";
+import style from "@/style";
 
 const Services = () => {
   return (
-    <section className="lg:py-24 py-16">
+    <section className={`${style.sectionPadding}`}>
       <MaxWidthWrapper>
         <div
           data-aos="fade-up"
           className="text-center"
         >
-          <h3 className="sm:text-[50px] text-[40px] font-semibold mb-4">
+          <h3 className={`${style.heading3} mb-4`}>
             What{" "}
             <span className={`font-medium ${playfair.className}`}>we do</span>
           </h3>

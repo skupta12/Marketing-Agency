@@ -6,6 +6,7 @@ import Image from "next/image";
 import { testimonial } from "@/data/data";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import MaxWidthWrapper from "./MaxWidthWrapper";
+import style from "@/style";
 
 export default function Testimonial() {
 
@@ -14,15 +15,15 @@ export default function Testimonial() {
   const [swiperRef, setSwiperRef] = useState<Swiper | null>(null);
 
   return (
-    <section className="lg:py-24 py-16">
+    <section className={`${style.sectionPadding}`}>
       <MaxWidthWrapper>
         <div className="sm:mb-20 mb-10 sm:flex items-center justify-between">
-          <h3
+          <h4
             className="sm:text-[34px] text-[30px] font-semibold"
           >
             Trusted by over 4,000{" "}
             <span className="text-gray-500">clients worldwide</span>.
-          </h3>
+          </h4>
           <div className="flex gap-x-3 mt-10 sm:mt-0">
             <button
               aria-label="Arrow Left"

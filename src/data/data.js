@@ -225,6 +225,28 @@ export const blog = [
     text: "Developing Seamless mobile apps",
     date: "April 1, 2024",
   },
+  // {
+  //   id: 3,
+  //   src: "/blog/blog-2.jpg",
+  //   label: "Design",
+  //   text: "Developing Seamless mobile apps",
+  //   date: "April 1, 2024",
+  // },
+  // {
+  //   id: 4,
+  //   src: "/blog/blog-1.jpg",
+  //   label: "Design",
+  //   text: "Developing Seamless mobile apps",
+  //   date: "April 1, 2024",
+  // },
+  // {
+  //   id: 5,
+  //   src: "/blog/blog-3.jpg",
+  //   label: "Design",
+  //   text: "Developing Seamless mobile apps",
+  //   date: "April 1, 2024",
+  // },
+  
 ];
 
 export const media = [

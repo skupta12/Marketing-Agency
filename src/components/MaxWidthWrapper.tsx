@@ -1,3 +1,4 @@
+import style from "@/style";
 import { ReactNode } from "react";
 
 // Creating a container
@@ -6,12 +7,12 @@ const MaxWidthWrapper = ({
   className,
   children,
 }: {
-  className?: string; // optional
+  className?: string;
   children: ReactNode;
 }) => {
   return (
     <div
-      className="mx-auto w-full max-w-[1360px] px-4 md:px-20 relative"
+      className={`${style.boxWidth}`}
     >
       {children}
     </div>

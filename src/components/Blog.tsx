@@ -4,14 +4,15 @@ import { blog } from "@/data/data";
 import Image from "next/image";
 import Link from "next/link";
 import MaxWidthWrapper from "./MaxWidthWrapper";
+import style from "@/style";
 
 const Blog = () => {
   return (
-    <section className="lg:py-24 py-16">
+    <section className={`${style.sectionPadding}`}>
       <MaxWidthWrapper>
         <div className="sm:flex justify-between items-center">
           <div data-aos-offset="-250" data-aos="fade-up">
-            <h3 className="sm:text-[50px] text-[40px] font-semibold mb-4">
+            <h3 className={`${style.heading3} mb-4`}>
               From{" "}
               <span className={`font-medium ${playfair.className}`}>Blog</span>
             </h3>
@@ -41,8 +42,10 @@ const Blog = () => {
                   src={src}
                   alt="blog post"
                 />
-                <div className="absolute content-[''] top-0 left-0 right-0 bottom-0 inset-0 
-                hover:bg-white hover:bg-opacity-15 transition" />
+                <div
+                  className="absolute content-[''] top-0 left-0 right-0 bottom-0 inset-0 
+                hover:bg-white hover:bg-opacity-15 transition"
+                />
               </Link>
               <div>
                 <span className="inline-block font-semibold border-2 border-black px-4 py-1 rounded-full my-6">

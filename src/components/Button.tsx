@@ -5,13 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-interface TitleProps {
+type TitleProps = {
   title: string;
   icon?: string;
   className?: string;
   href?: string;
 }
-
 
 export const Button = ({ title, className, href = "/" }: TitleProps) => {
 

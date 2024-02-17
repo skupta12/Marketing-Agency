@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import Image from "next/image";
 
 const Accordion = ({ title, content }: { title: string; content: string }) => {
-    
+  
   const [active, setActive] = useState<boolean>(false);
   const [height, setHeight] = useState<string>("0px");
   const [rotate, setRotate] = useState<string>(

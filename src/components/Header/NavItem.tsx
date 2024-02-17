@@ -46,7 +46,7 @@ export function NavItem() {
                   {number}
                 </span>
                 <li className="overflow-hidden">
-                  <Link href={href} className={''}>
+                  <Link href={href}>
                     <div
                      onClick={() => setIsOpen(false)}
                       className="text-black lg:text-[90px] text-[50px] font-semibold"
