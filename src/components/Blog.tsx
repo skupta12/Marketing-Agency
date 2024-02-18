@@ -24,7 +24,7 @@ const Blog = () => {
               .
             </p>
           </div>
-          <Button href="/news" className="mt-14" title="View All" />
+          <Button href="/post" className="mt-14" title="View All" />
         </div>
 
         <div
