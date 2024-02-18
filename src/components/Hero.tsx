@@ -56,7 +56,7 @@ const Hero = () => {
                 data-aos-duration="600"
                 width={500}
                 height={500}
-                priority
+                loading="eager"
                 src="/hero.png"
                 alt="hero image"
               />
