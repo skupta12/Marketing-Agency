@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { portfolio } from "@/data/data";
 import Gradient from "@/components/Gradient";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 
 const Page = () => {
   const scrollerboxStyle =
@@ -11,17 +12,19 @@ const Page = () => {
 
   return (
     <section className="lg:pt-[180px] pt-[150px] lg:pb-24 pb-16 relative">
-        <Gradient
+         <Gradient
+          fill
           className="sm:block hidden"
           src="/gradient.png"
           isPriority
         />
         <Gradient
+          fill
           className="sm:hidden block"
           src="/gradient-mobile.png"
           isPriority
         />
-      <div className="container md:px-10 px-5">
+      <MaxWidthWrapper>
         <div className="text-center lg:mb-48 mb-20 relative">
           <h1
             data-aos="fade-up"
@@ -59,7 +62,7 @@ const Page = () => {
             </div>
           ))}
         </div>
-      </div>
+      </MaxWidthWrapper>
     </section>
   );
 };

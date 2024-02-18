@@ -2,20 +2,22 @@ import Image from "next/image";
 
 const Gradient = ({
   src,
+  fill,
   isPriority,
   className,
 }: {
   src: string;
+  fill?: boolean
   isPriority?: boolean;
   className?: string;
 }) => {
   return (
     <Image
       src={src}
-      fill
+      fill={fill}
       priority={isPriority}
       alt="gradients"
-      className={`${className} absolute bg-no-repeat bg-center w-full h-full -z-[1]`}
+      className={`${className} -z-[1]`}
     />
   );
 };

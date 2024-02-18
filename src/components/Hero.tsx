@@ -7,11 +7,14 @@ import Gradient from "./Gradient";
 const Hero = () => {
   return (
     <section className="lg:pb-[200px] pb-16 overflow-hidden relative">
-      <Gradient 
+      <Gradient
+        fill
         className="sm:block hidden" 
         src="/gradient.png" 
-        isPriority />
+        isPriority 
+        />
       <Gradient
+        fill
         className="sm:hidden block"
         src="/gradient-mobile.png"
         isPriority
@@ -53,6 +56,7 @@ const Hero = () => {
                 data-aos-duration="600"
                 width={500}
                 height={500}
+                priority
                 src="/hero.png"
                 alt="hero image"
               />

@@ -9,9 +9,9 @@ const CTA = () => {
     <section
       className="lg:py-36 py-16 overflow-hidden relative" // extra padding for gradient
     >
-        <Gradient className="sm:block hidden" src="/gradient.png" />
-        <Gradient className="sm:hidden block" src="/gradient-mobile.png" 
-        />
+      <Gradient fill className="sm:block hidden" src="/gradient.png" />
+      <Gradient fill className="sm:hidden block" src="/gradient-mobile.png" />
+      
       <MaxWidthWrapper className="relative">
         <div className="grid grid-cols-12 gap-4">
           <div className="lg:col-span-6 col-span-12">

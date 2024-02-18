@@ -3,22 +3,25 @@ import Image from "next/image";
 import Button from "@/components/Button";
 import Gradient from "@/components/Gradient";
 import Team from "@/components/Team";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 
 const Page = () => {
   return (
     <>
       <section className="lg:pt-[180px] pt-[150px] relative">
         <Gradient
+          fill
           className="sm:block hidden"
           src="/gradient.png"
           isPriority
         />
         <Gradient
+          fill
           className="sm:hidden block"
           src="/gradient-mobile.png"
           isPriority
         />
-        <div className="container md:px-10 px-5">
+        <MaxWidthWrapper>
           <div className="text-center lg:mb-48 mb-20 relative">
             <h1
               data-aos="fade-up"
@@ -63,9 +66,9 @@ const Page = () => {
               as a design studio dedicated to creativity and individuality in a
               world craving its presence.
             </p>
-            <Button href="/news" className="mt-14" title="Join us" />
+            <Button href="/post" className="mt-14" title="Join us" />
           </div>
-        </div>
+        </MaxWidthWrapper>
       </section>
       <Team />
     </>

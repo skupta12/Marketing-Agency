@@ -24,7 +24,7 @@ export const navItems = [
   {
     id: 3,
     name: "News",
-    href: "/news",
+    href: "/post",
     number: '0' + 4,
     aosDelay: '600',
   },

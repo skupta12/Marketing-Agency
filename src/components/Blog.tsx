@@ -14,7 +14,7 @@ const Blog = () => {
           <div data-aos-offset="-250" data-aos="fade-up">
             <h3 className={`${style.heading3} mb-4`}>
               From{" "}
-              <span className={`font-medium ${playfair.className}`}>Blog</span>
+              <span className={`font-medium ${playfair.className}`}>blog</span>
             </h3>
             <p className="sm:text-[26px] text-[24px] font-medium">
               Discover the latest tips,{" "}
@@ -37,8 +37,8 @@ const Blog = () => {
               <Link className="relative" href="#">
                 <Image
                   className="w-full"
-                  width={500}
-                  height={500}
+                  width={600}
+                  height={600}
                   src={src}
                   alt="blog post"
                 />

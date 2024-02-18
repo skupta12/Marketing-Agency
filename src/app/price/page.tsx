@@ -2,23 +2,26 @@ import { playfair } from "@/app/fonts";
 import { ContactButton } from "@/components/Button";
 import Faq from "@/components/Faq";
 import Gradient from "@/components/Gradient";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { prices } from "@/data/data";
 
 const page = () => {
   return (
     <>
       <section className="lg:pt-[180px] pt-[150px] lg:pb-24 pb-16 relative">
-      <Gradient
+        <Gradient
+          fill
           className="sm:block hidden"
           src="/gradient.png"
           isPriority
         />
         <Gradient
+          fill
           className="sm:hidden block"
           src="/gradient-mobile.png"
           isPriority
         />
-        <div className="container md:px-10 px-5">
+        <MaxWidthWrapper>
           <div className="text-center lg:mb-48 mb-20 relative">
             <h1
               data-aos="fade-up"
@@ -64,7 +67,7 @@ const page = () => {
               );
             })}
           </div>
-        </div>
+        </MaxWidthWrapper>
       </section>
       <Faq />
     </>
