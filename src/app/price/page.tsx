@@ -3,7 +3,7 @@ import { ContactButton } from "@/components/Button";
 import Faq from "@/components/Faq";
 import Gradient from "@/components/Gradient";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import { prices } from "@/data/data";
+import { prices } from "@/lib/placeholder-data";
 
 const page = () => {
   return (

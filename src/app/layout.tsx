@@ -20,8 +20,9 @@ export default function RootLayout({
         <main className="relative flex flex-col min-h-screen">
           <div className="flex-grow flex-1">
             {children}
+            <CTA />  
           </div>
-          <CTA />  
+        
         </main>
         <Footer />
       </body>

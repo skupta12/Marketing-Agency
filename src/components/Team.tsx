@@ -1,5 +1,5 @@
 import { playfair } from "@/app/fonts";
-import { media, team } from "@/data/data";
+import { media, team } from "@/lib/placeholder-data";
 import Image from "next/image";
 import Link from "next/link";
 

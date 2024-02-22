@@ -1,8 +1,8 @@
 import { Metadata } from "next"
 
 export function constructMetadata({
-    title = 'Marketing Agency - React and Next JS Template',
-    description = 'The official Next.js Course Dashboard, built with App Router.',
+    title = 'Liege - React and Next JS Template',
+    description = 'Liege - React and Next JS Template',
     image = '/thumbnail.png',
     icons = '/favicon.ico',
     noIndex = false,

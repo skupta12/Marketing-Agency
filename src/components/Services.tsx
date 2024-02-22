@@ -1,5 +1,5 @@
 import { playfair } from "@/app/fonts";
-import { counter, services } from "@/data/data";
+import { counter, services } from "@/lib/placeholder-data";
 import Image from "next/image";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import style from "@/style";

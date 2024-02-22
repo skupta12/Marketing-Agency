@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { trust } from "../data/data";
+import { trust } from "@/lib/placeholder-data";
 import Button from "./Button";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import style from "../style"

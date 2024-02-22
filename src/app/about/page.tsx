@@ -46,6 +46,7 @@ const Page = () => {
               className="w-full"
               src="/blog/blog-1.jpg"
               alt="blog image"
+              quality={100}
             />
           </div>
           <div className="aboutus-text text-center">

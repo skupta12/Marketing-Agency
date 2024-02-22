@@ -1,4 +1,4 @@
-import { footer, media } from "@/data/data";
+import { footer, media } from "@/lib/placeholder-data";
 import Image from "next/image";
 import Link from "next/link";
 import MaxWidthWrapper from "./MaxWidthWrapper";

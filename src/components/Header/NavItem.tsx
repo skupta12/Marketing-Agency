@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { navItems } from "../../data/data";
+import { navItems } from "@/lib/placeholder-data";
 import Link from "next/link";
 
 export function NavItem() {

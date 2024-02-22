@@ -1,14 +1,11 @@
 import { playfair } from "../fonts";
-import InfinitiveScroller from "@/components/InfinitiveScroller";
-import Image from "next/image";
-import Link from "next/link";
-import { portfolio } from "@/data/data";
 import Gradient from "@/components/Gradient";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import Portfolio from "./portfolio";
+import { Suspense } from "react";
+import { PortfolioSkeleton } from "../skeletons";
 
 const Page = () => {
-  const scrollerboxStyle =
-    "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:opacity-0 duration-300 transition-opacity group-hover:opacity-[1]";
 
   return (
     <section className="lg:pt-[180px] pt-[150px] lg:pb-24 pb-16 relative">
@@ -37,31 +34,10 @@ const Page = () => {
             <span className="hscroll-line"></span>
           </div>
         </div>
-        <div
-          className="grid grid-cols-12 md:gap-5"
-          data-aos="fade-up"
-          data-aos-delay="400"
-        >
-          {portfolio.map(({ id, src, href, scrollerTitle }) => (
-            <div
-              key={id}
-              className="md:col-span-6 col-span-12 relative overflow-hidden group"
-            >
-              <Link href={href}>
-                <Image
-                  className="w-full"
-                  width={800}
-                  height={800}
-                  src={src}
-                  alt="portfolio image"
-                />
-                <div className={`scroller-box ${scrollerboxStyle}`}>
-                  <InfinitiveScroller title={scrollerTitle} />
-                </div>
-              </Link>
-            </div>
-          ))}
-        </div>
+        <Suspense fallback={<PortfolioSkeleton/>}>
+          <Portfolio />
+        </Suspense>
+    
       </MaxWidthWrapper>
     </section>
   );

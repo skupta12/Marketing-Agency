@@ -203,50 +203,28 @@ export const aiList = [
   },
 ];
 
-export const blog = [
+export const blogs = [
   {
-    id: 0,
+    id: "3958dc9e-712f-4377-85e9-fec4b6a64420",
     src: "/blog/blog-1.jpg",
     label: "Code",
     text: "Our design process explained",
     date: "April 27, 2024",
   },
   {
-    id: 1,
+    id: "3958dc9e-712f-4377-85e9-fec4b6a64421",
     src: "/blog/blog-2.jpg",
     label: "Marketing",
     text: "A peek into our branding strategy",
     date: "May 10, 2024",
   },
   {
-    id: 2,
+    id: "3958dc9e-712f-4377-85e9-fec4b6a64422",
     src: "/blog/blog-3.jpg",
     label: "Design",
     text: "Developing Seamless mobile apps",
     date: "April 1, 2024",
   },
-  // {
-  //   id: 3,
-  //   src: "/blog/blog-2.jpg",
-  //   label: "Design",
-  //   text: "Developing Seamless mobile apps",
-  //   date: "April 1, 2024",
-  // },
-  // {
-  //   id: 4,
-  //   src: "/blog/blog-1.jpg",
-  //   label: "Design",
-  //   text: "Developing Seamless mobile apps",
-  //   date: "April 1, 2024",
-  // },
-  // {
-  //   id: 5,
-  //   src: "/blog/blog-3.jpg",
-  //   label: "Design",
-  //   text: "Developing Seamless mobile apps",
-  //   date: "April 1, 2024",
-  // },
-  
 ];
 
 export const media = [
@@ -412,3 +390,8 @@ export const prices = [
     ]
   },
 ]
+
+// module.exports = {
+//   blogs,
+// };
+

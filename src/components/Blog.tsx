@@ -1,8 +1,7 @@
 import { playfair } from "@/app/fonts";
 import Button from "./Button";
-import { blog } from "@/data/data";
+import { blogs } from "@/lib/placeholder-data";
 import Image from "next/image";
-import Link from "next/link";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import style from "@/style";
 
@@ -32,30 +31,30 @@ const Blog = () => {
           data-aos-offset="-250"
           className="grid grid-cols-12 gap-x-4 gap-y-10 pt-20"
         >
-          {blog.map(({ id, src, label, text, date }) => (
+          {blogs.map(({ id, src, label, text, date }) => (
             <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
-              <Link className="relative" href="#">
+              <div className="relative">
                 <Image
                   className="w-full"
                   width={600}
-                  height={600}
+                  height={290}
                   src={src}
                   alt="blog post"
                 />
-                <div
+                {/* <div
                   className="absolute content-[''] top-0 left-0 right-0 bottom-0 inset-0 
                 hover:bg-white hover:bg-opacity-15 transition"
-                />
-              </Link>
+                /> */}
+              </div>
               <div>
                 <span className="inline-block font-semibold border-2 border-black px-4 py-1 rounded-full my-6">
                   {label}
                 </span>
-                <Link href="#">
+                <div className="blog-title">
                   <h5 className="sm:text-[30px] text-[24px] font-semibold mb-6 pr-2">
                     {text}
                   </h5>
-                </Link>
+                </div>
                 <span className="text-gray-500 font-medium text-[18px]">
                   {date}
                 </span>

@@ -1,7 +1,7 @@
 import React from "react";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import Accordion from "./Accordion";
-import { accordion } from "@/data/data";
+import { accordion } from "@/lib/placeholder-data";
 import style from "@/style";
 
 const Faq = () => {

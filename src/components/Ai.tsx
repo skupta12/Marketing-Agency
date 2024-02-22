@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Check } from "lucide-react";
-import { aiList } from "@/data/data";
+import { aiList } from "@/lib/placeholder-data";
 import { DownloadButton } from "./Button";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import style from "@/style";
