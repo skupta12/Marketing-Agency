@@ -15,8 +15,8 @@ export default async function Post() {
   return (
     <div
       className="grid grid-cols-12 gap-x-4 gap-y-20"
-      data-aos="fade-up"
-      data-aos-delay="400"
+      // data-aos="fade-up"
+      // data-aos-delay="400"
     >
       {blogs?.map((item) => (
         <div key={item.id} className="lg:col-span-4 md:col-span-6 col-span-12">

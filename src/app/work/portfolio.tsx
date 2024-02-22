@@ -19,8 +19,8 @@ export default async function portfolio() {
   return (
     <div
       className="grid grid-cols-12 md:gap-5"
-      data-aos="fade-up"
-      data-aos-delay="400"
+    //   data-aos="fade-up"
+    //   data-aos-delay="400"
     >
       {portfolioItems.map((portfolio) => (
         <div

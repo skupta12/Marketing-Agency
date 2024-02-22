@@ -20,6 +20,10 @@ export default function Home() {
       AOS.init({
         once: true,
         duration: 600,
+        // disable: function() {
+        //   var maxWidth = 768;
+        //   return window.innerWidth < maxWidth;
+        // }
       });
     }, 100);
 
