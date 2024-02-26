@@ -23,7 +23,7 @@ export async function fetchBlog() {
 }
 
 export async function fetchPortfolio() {
-  // noStore();
+  noStore();
   try {
     const data = await sql<Portfolio>`
       SELECT portfolios.id, portfolios.src, portfolios.title, portfolios.href 

@@ -5,16 +5,12 @@ import { fetchBlog } from "@/lib/data";
 
 // async component for blog
 export default async function Post() {
-  const delayData = async () => {
-    await new Promise(resolve => setTimeout(resolve, 100));
-    return await fetchBlog();
-  };
 
-  const blogs = await delayData();
+  const blogs = await fetchBlog();
   
   return (
     <div
-      className="grid grid-cols-12 gap-x-4 gap-y-20"
+      className="grid grid-cols-12 gap-x-7 gap-y-20"
       // data-aos="fade-up"
       // data-aos-delay="400"
     >

@@ -2,12 +2,12 @@ import Image from "next/image";
 import React from "react";
 
 const shimmer =
-  "before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/60 before:to-transparent";
+  "before:absolute before:inset-0 before:bg-gradient-to-r animate-pulse before:from-transparent before:via-white/70 before:to-transparent";
 
 export function BlogSkeletonItem() {
   return (
     <>
-      <div className={`lg:col-span-4 md:col-span-6 col-span-12`}>
+      <div className={`${shimmer} relative oveflow-hidden lg:col-span-4 md:col-span-6 col-span-12`}>
         <Image
           className="w-full"
           src="/blog-placeholder.jpg"
@@ -17,12 +17,12 @@ export function BlogSkeletonItem() {
         />
         <div>
           <span
-            className={`w-20 h-10 bg-gray-200 inline-block px-4 py-1 my-6 rounded-full`}
+            className={`w-20 h-10 bg-slate-200 inline-block px-4 py-1 my-6 rounded-full`}
           ></span>
           <div className="my-4">
-            <h5 className="py-5 bg-slate-200 rounded-lg mb-6"></h5>
+            <h5 className="w-[300px] py-5 bg-slate-200 rounded-lg mb-6"></h5>
           </div>
-          <span className="block py-3 bg-gray-200 rounded-lg"></span>
+          <span className="w-64 block py-3 bg-slate-200 rounded-lg"></span>
         </div>
       </div>
     </>
@@ -31,7 +31,7 @@ export function BlogSkeletonItem() {
 
 export function PortfolioSkeletonItem() {
   return (
-    <div className="md:col-span-6 col-span-12 relative overflow-hidden group">
+    <div className={`${shimmer} md:col-span-6 col-span-12 relative overflow-hidden group`}>
       <Image
         className="w-full"
         width={800}
@@ -46,9 +46,7 @@ export function PortfolioSkeletonItem() {
 export function PortfolioSkeleton() {
   return (
     <div
-      className="grid grid-cols-12 md:gap-5"
-      data-aos="fade-up"
-      data-aos-delay="400"
+      className={`grid grid-cols-12 md:gap-5`}
     >
       <PortfolioSkeletonItem />
       <PortfolioSkeletonItem />
@@ -62,9 +60,7 @@ export default function BlogSkeleton() {
   return (
     <div className="relative">
       <div
-        className={`grid grid-cols-12 gap-x-4 gap-y-20 relative 
-      data-aos="fade-up"
-        data-aos-delay="400">`}
+        className="grid grid-cols-12 gap-x-7 gap-y-20 relative"
       >
         <BlogSkeletonItem />
         <BlogSkeletonItem />

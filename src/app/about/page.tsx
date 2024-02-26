@@ -39,7 +39,7 @@ const Page = () => {
               <span className="hscroll-line"></span>
             </div>
           </div>
-          <div data-aos="fade-up" data-aos-delay="400">
+          <div>
             <Image
               width={900}
               height={900}

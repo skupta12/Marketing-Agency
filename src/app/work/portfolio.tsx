@@ -9,20 +9,13 @@ const scrollerboxStyle =
 
 export default async function portfolio() {
 
-    const delayData = async () => {
-        await new Promise(resolve => setTimeout(resolve, 100));
-        return await fetchPortfolio();
-      };
-    
-      const portfolioItems = await delayData();
+  const portfolioItems = await fetchPortfolio();
 
   return (
     <div
       className="grid grid-cols-12 md:gap-5"
-    //   data-aos="fade-up"
-    //   data-aos-delay="400"
     >
-      {portfolioItems.map((portfolio) => (
+      {portfolioItems?.map((portfolio) => (
         <div
           key={portfolio.id}
           className="md:col-span-6 col-span-12 relative overflow-hidden group"
