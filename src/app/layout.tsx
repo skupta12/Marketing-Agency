@@ -22,7 +22,6 @@ export default function RootLayout({
             {children}
             <CTA />  
           </div>
-        
         </main>
         <Footer />
       </body>

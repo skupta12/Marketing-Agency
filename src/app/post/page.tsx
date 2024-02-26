@@ -24,17 +24,15 @@ const Page = () => {
       <MaxWidthWrapper>
         <div className="text-center lg:mb-48 mb-20 relative">
           <h1
-            data-aos="fade-up"
-            data-aos-delay="50"
-            data-aos-duration="800"
             className="lg:text-[100px] md:text-[80px] text-[46px] font-semibold"
           >
             From <span className={playfair.className}>blog</span>
           </h1>
-          <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+          <div>
             <span className="hscroll-line"></span>
           </div>
         </div>
+        {/* async component */}
         <Suspense fallback={<BlogSkeleton />}>
           <Post />
         </Suspense>
