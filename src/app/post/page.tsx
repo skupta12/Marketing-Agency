@@ -6,6 +6,7 @@ import Post from "./post";
 import BlogSkeleton from "../skeletons";
 import { fetchBlogPages } from "@/lib/data";
 import Pagination from "./pagination";
+import Search from "./search";
 
 export default async function page({
   searchParams,
@@ -35,7 +36,7 @@ export default async function page({
         isPriority
       />
       <MaxWidthWrapper>
-        <div className="text-center lg:mb-48 mb-20 relative">
+        <div className="text-center lg:mb-40 mb-20 relative">
           <h1 className="lg:text-[100px] md:text-[80px] text-[46px] font-semibold">
             From <span className={playfair.className}>blog</span>
           </h1>
@@ -43,6 +44,9 @@ export default async function page({
             <span className="hscroll-line"></span>
           </div>
         </div>
+        <div className="mb-10 flex items-center justify-between gap-2 md:mt-8">
+        <Search placeholder="Search..." />
+      </div>
         {/* async component */}
         <Suspense key={query + currentPage} fallback={<BlogSkeleton />}>
           <Post query={query} currentPage={currentPage}  />
