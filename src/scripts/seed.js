@@ -49,49 +49,49 @@ main().catch((err) => {
   );
 });
 
-async function seedPortfolio(client) {
-  try {
-    await client.sql`CREATE EXTENSION IF NOT EXISTS "uuid-ossp"`;
-    const createTable = await client.sql`
-        CREATE TABLE IF NOT EXISTS portfolios (
-            id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
-            src VARCHAR(255) NOT NULL,
-            title VARCHAR(255) NOT NULL,
-            href VARCHAR(255) NOT NULL
-        );
-      `;
+// async function seedPortfolio(client) {
+//   try {
+//     await client.sql`CREATE EXTENSION IF NOT EXISTS "uuid-ossp"`;
+//     const createTable = await client.sql`
+//         CREATE TABLE IF NOT EXISTS portfolios (
+//             id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
+//             src VARCHAR(255) NOT NULL,
+//             title VARCHAR(255) NOT NULL,
+//             href VARCHAR(255) NOT NULL
+//         );
+//       `;
 
-    console.log(`Created "portfolio" table`);
+//     console.log(`Created "portfolio" table`);
 
-    // Insert data into the "portfolio" table
+//     // Insert data into the "portfolio" table
 
-    const insertedPortfolio = await Promise.all(
-      portfolios.map(
-        (portfolio) => client.sql`
-          INSERT INTO portfolios (id, src, title, href)
-          VALUES (${portfolio.id}, ${portfolio.src}, ${portfolio.title}, ${portfolio.href})
-          ON CONFLICT (id) DO NOTHING;
-        `
-      )
-    );
+//     const insertedPortfolio = await Promise.all(
+//       portfolios.map(
+//         (portfolio) => client.sql`
+//           INSERT INTO portfolios (id, src, title, href)
+//           VALUES (${portfolio.id}, ${portfolio.src}, ${portfolio.title}, ${portfolio.href})
+//           ON CONFLICT (id) DO NOTHING;
+//         `
+//       )
+//     );
 
-    console.log(`Seeded ${insertedPortfolio.length} portfolio items`);
+//     console.log(`Seeded ${insertedPortfolio.length} portfolio items`);
 
-    return {
-      createTable,
-      blogs: insertedPortfolio,
-    };
-  } catch (error) {
-    console.error("Error seeding portfolio:", error);
-    throw error;
-  }
-}
+//     return {
+//       createTable,
+//       blogs: insertedPortfolio,
+//     };
+//   } catch (error) {
+//     console.error("Error seeding portfolio:", error);
+//     throw error;
+//   }
+// }
 
 async function main() {
   const client = await db.connect();
 
   await seedBlog(client);
-  await seedPortfolio(client);
+  // await seedPortfolio(client);
 
   await client.end();
 }

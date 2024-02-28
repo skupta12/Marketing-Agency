@@ -6,9 +6,9 @@ export type Blog = {
     date: string;
 };
 
-export type Portfolio = {
-  id: string;
-  src: string;
-  title: string;
-  href: string;
-}
+// export type Portfolio = {
+//   id: string;
+//   src: string;
+//   title: string;
+//   href: string;
+// }

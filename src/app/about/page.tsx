@@ -35,8 +35,8 @@ const Page = () => {
           </div>
           <div>
             <Image
-              width={900}
-              height={900}
+              width={600}
+              height={600}
               className="w-full"
               src="/blog/blog-1.jpg"
               alt="blog image"

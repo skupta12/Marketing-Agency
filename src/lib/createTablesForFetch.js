@@ -25,7 +25,7 @@ const blogs = [
     src: "/blog/blog-4.jpg",
     label: "Code",
     text: "Our design process explained",
-    date: "April 27, 2024",
+    date: "August 16, 2024",
   },
   {
     id: "3958dc9e-712f-4377-85e9-fec4b6a64423",
@@ -39,38 +39,45 @@ const blogs = [
     src: "/blog/blog-6.jpg",
     label: "Design",
     text: "Developing Seamless mobile apps",
-    date: "April 1, 2024",
-  },
-];
-
-const portfolios = [
-  {
-    id: '3957dc9e-712f-4377-85e9-fec4b6a64421',
-    src: "/portfolio/portfolio-1.jpg",
-    title: "Dreamy Visions",
-    href: "/",
+    date: "June 5, 2024",
   },
   {
-    id: "3358dc9e-712f-4377-85e9-fec4b6a64421",
-    src: "/portfolio/portfolio-2.jpg",
-    title: "Whimsy Tails",
-    href: "/",
+    id: "3958dc9e-712f-4377-85e9-fec4b6a54427",
+    src: "/blog/blog-7.jpg",
+    label: "Technology",
+    text: "Unveiling the latest advancements",
+    date: "August 16, 2024",
   },
   {
-    id: "3958dc8e-712f-4377-85e9-fec4b6a64421",
-    src: "/portfolio/portfolio-3.jpg",
-    title: "Colorful Jorneys",
-    href: "/",
+    id: "29f3a7b2-80ff-4f79-a7d6-58fc0f1c0b92",
+    src: "/blog/blog-8.jpg",
+    label: "Development",
+    text: "Exploring the world of coding",
+    date: "September 5, 2024",
   },
   {
-    id: "3958dc9e-712f-4377-84e9-fec4b6a64421",
-    src: "/portfolio/portfolio-4.jpg",
-    title: "Night Desert",
-    href: "/",
+    id: "6e82d1b3-6c6b-4b59-9bb0-afe0fe69a0b3",
+    src: "/blog/blog-9.jpg",
+    label: "Innovation",
+    text: "Revolutionizing the tech landscape",
+    date: "October 12, 2024",
+  },
+  {
+    id: "1c2d5f9e-8f8d-4e91-b0af-31b2e2a54f71",
+    src: "/blog/blog-10.jpg",
+    label: "Insights",
+    text: "Diving deep into industry trends",
+    date: "November 21, 2024",
+  },
+  {
+    id: "1c2d5f9e-8f8d-4e91-b0af-31b2e2a54f77",
+    src: "/blog/blog-1.jpg",
+    label: "Insights",
+    text: "Diving deep into industry trends",
+    date: "November 21, 2024",
   },
 ];
 
 module.exports = {
   blogs,
-  portfolios,
 };

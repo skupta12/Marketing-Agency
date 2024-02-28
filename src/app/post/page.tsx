@@ -4,8 +4,21 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Suspense } from "react";
 import Post from "./post";
 import BlogSkeleton from "../skeletons";
+import { fetchBlogPages } from "@/lib/data";
+import Pagination from "./pagination";
 
-const Page = () => {
+export default async function page({
+  searchParams,
+}: {
+  searchParams?: { 
+    query?: string,
+    page?: string,
+  };
+}) {
+
+  const query = searchParams?.query || '';
+  const currentPage = Number(searchParams?.page || 1);
+  const totalPages = await fetchBlogPages(query)
 
   return (
     <section className="lg:pt-[180px] pt-[150px] lg:pb-24 pb-16 relative">
@@ -23,9 +36,7 @@ const Page = () => {
       />
       <MaxWidthWrapper>
         <div className="text-center lg:mb-48 mb-20 relative">
-          <h1
-            className="lg:text-[100px] md:text-[80px] text-[46px] font-semibold"
-          >
+          <h1 className="lg:text-[100px] md:text-[80px] text-[46px] font-semibold">
             From <span className={playfair.className}>blog</span>
           </h1>
           <div>
@@ -33,12 +44,14 @@ const Page = () => {
           </div>
         </div>
         {/* async component */}
-        <Suspense fallback={<BlogSkeleton />}>
-          <Post />
+        <Suspense key={query + currentPage} fallback={<BlogSkeleton />}>
+          <Post query={query} currentPage={currentPage}  />
         </Suspense>
+        <div className="mt-20 flex w-full justify-center">
+          <Pagination totalPages={totalPages} />
+        </div>
       </MaxWidthWrapper>
     </section>
   );
 }
 
-export default Page;
