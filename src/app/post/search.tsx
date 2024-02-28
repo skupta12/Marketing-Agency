@@ -38,12 +38,12 @@ export default function Search({ placeholder }: { placeholder: string }) {
       onChange={(e) => {
         handleSearch(e.target.value)
       }}
-        className="peer block w-[300px] border-2 rounded-lg p-[13px] 
-        placeholder:text-gray-500 pl-10 placeholder:font-medium focus:outline-none focus:border-sky-500"
+        className="peer block sm:w-[300px] w-full border-2 rounded-lg p-[13px] 
+        placeholder:text-gray-500 pl-4 placeholder:font-medium focus:outline-none focus:border-sky-500"
         placeholder={placeholder}
         defaultValue={searchParams.get('query')?.toString()}
       />
-      <MagnifyingGlassIcon className="absolute left-[76%] top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-gray-900" />
+      <MagnifyingGlassIcon className="lg:absolute hidden left-[76%] top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-gray-900" />
     </div>
   );
 }
