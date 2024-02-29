@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { fetchBlog, fetchFilteredBlogs } from "@/lib/data";
+import { fetchFilteredBlogs } from "@/lib/data";
 
-// async component for blog
+
 export default async function Post({
   query,
   currentPage,
@@ -17,9 +17,9 @@ export default async function Post({
     <div className="grid grid-cols-12 gap-x-7 gap-y-20">
       {blogs.map(({ id, src, label, text, date }) => (
         <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
-          <Link className="relative" href={`/post/${""}`}>
+          <Link className="relative" href={`/post/${''}`}> {/* dynamic route */}
             <Image
-              className="w-full h-auto"
+              className="w-full"
               width={400}
               height={290}
               src={src}
@@ -31,7 +31,7 @@ export default async function Post({
             <span className="inline-block font-semibold border-2 border-black px-4 py-1 rounded-full my-6">
               {label}
             </span>
-            <Link href="#">
+            <Link href={`/post/${''}`}> {/* dynamic route */}
               <h5 className="block sm:text-[30px] text-[24px] font-semibold mb-4 pr-5">
                 {text}
               </h5>

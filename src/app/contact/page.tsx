@@ -58,6 +58,7 @@ const Page = () => {
                           type={type}
                           name={name}
                           placeholder={placeholder}
+                          required
                         />
                       </div>
                     );

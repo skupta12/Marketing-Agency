@@ -4,6 +4,7 @@ import { blogs } from "@/lib/placeholder-data";
 import Image from "next/image";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import style from "@/style";
+import Link from "next/link";
 
 const Blog = () => {
   return (
@@ -33,7 +34,7 @@ const Blog = () => {
         >
           {blogs.map(({ id, src, label, text, date }) => (
             <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
-              <div className="relative">
+              <Link className="relative" href={`/post/${""}`}> {/*dynamic route */}
                 <Image
                   className="w-full"
                   width={600}
@@ -41,19 +42,21 @@ const Blog = () => {
                   src={src}
                   alt="blog post"
                 />
-                {/* <div
+                <div
                   className="absolute content-[''] top-0 left-0 right-0 bottom-0 inset-0 
                 hover:bg-white hover:bg-opacity-15 transition"
-                /> */}
-              </div>
+                />
+              </Link>
               <div>
                 <span className="inline-block font-semibold border-2 border-black px-4 py-1 rounded-full my-6">
                   {label}
                 </span>
                 <div className="blog-title">
-                  <h5 className="sm:text-[30px] text-[24px] font-semibold mb-6 pr-2">
-                    {text}
-                  </h5>
+                  <Link href={`/post/${''}`}> {/* dynamic route */}
+                    <h5 className="sm:text-[30px] text-[24px] font-semibold mb-6 pr-2">
+                      {text}
+                    </h5>
+                  </Link>
                 </div>
                 <span className="text-gray-500 font-medium text-[18px]">
                   {date}

@@ -31,7 +31,7 @@ export async function fetchFilteredBlogs(
   const offset = (currentPage - 1) * ITEMS_PER_PAGE;
 
   try {
-    const invoices = await sql<Blog>`
+    const blogs = await sql<Blog>`
       SELECT
         blogs.id,
         blogs.src,
@@ -48,7 +48,7 @@ export async function fetchFilteredBlogs(
       LIMIT ${ITEMS_PER_PAGE} OFFSET ${offset}
     `;
 
-    return invoices.rows;
+    return blogs.rows;
   } catch (error) {
     console.error("Database Error:", error);
     throw new Error("Failed to fetch filtered blogs.");

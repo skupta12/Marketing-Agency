@@ -6,20 +6,19 @@ import Post from "./post";
 import BlogSkeleton from "../skeletons";
 import { fetchBlogPages } from "@/lib/data";
 import Pagination from "./pagination";
-import Search from "./search";
+// import Search from "./search";
 
 export default async function page({
   searchParams,
 }: {
-  searchParams?: { 
-    query?: string,
-    page?: string,
+  searchParams?: {
+    query?: string;
+    page?: string;
   };
 }) {
-
-  const query = searchParams?.query || '';
+  const query = searchParams?.query || "";
   const currentPage = Number(searchParams?.page || 1);
-  const totalPages = await fetchBlogPages(query)
+  const totalPages = await fetchBlogPages(query);
 
   return (
     <section className="lg:pt-[180px] pt-[150px] lg:pb-24 pb-16 relative">
@@ -36,7 +35,7 @@ export default async function page({
         isPriority
       />
       <MaxWidthWrapper>
-        <div className="text-center lg:mb-40 mb-20 relative">
+        <div className="text-center lg:mb-48 mb-20 relative">
           <h1 className="lg:text-[100px] md:text-[80px] text-[46px] font-semibold">
             From <span className={playfair.className}>blog</span>
           </h1>
@@ -44,12 +43,12 @@ export default async function page({
             <span className="hscroll-line"></span>
           </div>
         </div>
-        <div className="mb-10 flex items-center justify-between gap-2 md:mt-8">
-        <Search placeholder="Search..." />
-      </div>
+        {/* <div className="mb-10 flex items-center justify-between gap-2 md:mt-8">
+          <Search placeholder="Search..." />
+        </div> */}
         {/* async component */}
         <Suspense key={query + currentPage} fallback={<BlogSkeleton />}>
-          <Post query={query} currentPage={currentPage}  />
+          <Post query={query} currentPage={currentPage} />
         </Suspense>
         <div className="mt-20 flex w-full justify-center">
           <Pagination totalPages={totalPages} />
@@ -58,4 +57,3 @@ export default async function page({
     </section>
   );
 }
-

@@ -38,7 +38,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
       onChange={(e) => {
         handleSearch(e.target.value)
       }}
-        className="peer block sm:w-[300px] w-full border-2 rounded-lg p-[13px] 
+        className="peer block md:w-[300px] w-full border-2 border-transparent rounded-lg md:p-[13px] p-[9px] 
         placeholder:text-gray-500 pl-4 placeholder:font-medium focus:outline-none focus:border-sky-500"
         placeholder={placeholder}
         defaultValue={searchParams.get('query')?.toString()}

@@ -24,16 +24,23 @@ const Page = () => {
         <MaxWidthWrapper>
           <div className="text-center lg:mb-48 mb-20 relative">
             <h1
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="800"
               className="lg:text-[100px] md:text-[80px] text-[46px] font-semibold"
             >
               About <span className={playfair.className}>Liège</span>
             </h1>
-            <div
-            >
+            <div 
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="800">
               <span className="hscroll-line"></span>
             </div>
           </div>
-          <div>
+          <div 
+            data-aos="fade-up"
+            data-aos-delay="400">
             <Image
               width={600}
               height={600}
