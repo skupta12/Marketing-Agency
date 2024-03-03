@@ -1,6 +1,7 @@
 const blogs = [
   {
     id: "3958dc9e-712f-4377-85e9-fec4b6a64420",
+    url: "our-design-process-explained",
     src: "/blog/blog-1.jpg",
     label: "Code",
     text: "Our design process explained",
@@ -8,13 +9,15 @@ const blogs = [
   },
   {
     id: "3958dc9e-712f-4377-85e9-fec4b6a64421",
+    url: "a-peek-into-our-branding",
     src: "/blog/blog-2.jpg",
     label: "Marketing",
-    text: "A peek into our branding strategy",
+    text: "A peek into our branding",
     date: "May 10, 2024",
   },
   {
     id: "3958dc9e-712f-4377-85e9-fec4b6a64422",
+    url: "developing-seamless-mobile-apps",
     src: "/blog/blog-3.jpg",
     label: "Design",
     text: "Developing Seamless mobile apps",
@@ -22,13 +25,15 @@ const blogs = [
   },
   {
     id: "3958dc9e-712f-4377-85e9-fec4b6a64427",
+    url: "revisiting-our-design-process",
     src: "/blog/blog-4.jpg",
     label: "Code",
-    text: "Our design process explained",
+    text: "Revisiting our design process",
     date: "August 16, 2024",
   },
   {
     id: "3958dc9e-712f-4377-85e9-fec4b6a64423",
+    url: "a-peek-into-our-branding-strategy",
     src: "/blog/blog-5.jpg",
     label: "Marketing",
     text: "A peek into our branding strategy",
@@ -36,47 +41,46 @@ const blogs = [
   },
   {
     id: "3958dc9e-712f-4377-85e9-fec4b6a64426",
+    url: "developing-seamless-mobile-experiences",
     src: "/blog/blog-6.jpg",
     label: "Design",
-    text: "Developing Seamless mobile apps",
+    text: "Developing Seamless mobile experiences",
     date: "June 5, 2024",
   },
   {
     id: "3958dc9e-712f-4377-85e9-fec4b6a54427",
+    url: "latest-technological-advancements",
     src: "/blog/blog-7.jpg",
     label: "Technology",
-    text: "Unveiling the latest advancements",
+    text: "Latest technological advancements",
     date: "August 16, 2024",
   },
   {
     id: "29f3a7b2-80ff-4f79-a7d6-58fc0f1c0b92",
+    url: "navigating-the-world-of-coding",
     src: "/blog/blog-8.jpg",
     label: "Development",
-    text: "Exploring the world of coding",
+    text: "Navigating the world of coding",
     date: "September 5, 2024",
   },
   {
     id: "6e82d1b3-6c6b-4b59-9bb0-afe0fe69a0b3",
+    url: "reshaping-the-tech-industry",
     src: "/blog/blog-9.jpg",
     label: "Innovation",
-    text: "Revolutionizing the tech landscape",
+    text: "Reshaping the tech industry",
     date: "October 12, 2024",
   },
   {
     id: "1c2d5f9e-8f8d-4e91-b0af-31b2e2a54f71",
+    url: "trends-in-the-industry",
     src: "/blog/blog-10.jpg",
     label: "Insights",
-    text: "Diving deep into industry trends",
-    date: "November 21, 2024",
-  },
-  {
-    id: "1c2d5f9e-8f8d-4e91-b0af-31b2e2a54f77",
-    src: "/blog/blog-1.jpg",
-    label: "Insights",
-    text: "Diving deep into industry trends",
+    text: "Trends in the industry",
     date: "November 21, 2024",
   },
 ];
+
 
 module.exports = {
   blogs,

@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { fetchFilteredBlogs } from "@/lib/data";
 
-
 export default async function Post({
   query,
   currentPage,
@@ -11,15 +10,16 @@ export default async function Post({
   query: string;
   currentPage: number;
 }) {
+
   const blogs = await fetchFilteredBlogs(query, currentPage);
 
   return (
-    <div className="grid grid-cols-12 gap-x-7 gap-y-20">
-      {blogs.map(({ id, src, label, text, date }) => (
+    <div className="grid grid-cols-12 gap-x-7 sm:gap-y-18 gap-y-14">
+      {blogs.map(({ id, url, src, label, text, date }) => (
         <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
-          <Link className="relative" href={`/post/${''}`}> {/* dynamic route */}
+          <Link className="relative" href={`/post/${url}`}> {/* dynamic route */}
             <Image
-              className="w-full"
+              className="w-full aspect-[4/3] object-cover object-center"
               width={400}
               height={290}
               src={src}
@@ -28,15 +28,15 @@ export default async function Post({
             <div className="absolute content-[''] top-0 left-0 right-0 bottom-0 inset-0 hover:bg-white hover:bg-opacity-15 transition" />
           </Link>
           <div>
-            <span className="inline-block font-semibold border-2 border-black px-4 py-1 rounded-full my-6">
+            <span className="text-[15px] inline-block font-semibold border-2 border-black px-4 py-1 rounded-full my-5">
               {label}
             </span>
-            <Link href={`/post/${''}`}> {/* dynamic route */}
-              <h5 className="block sm:text-[30px] text-[24px] font-semibold mb-4 pr-5">
+            <Link href={`/post/${url}`}> {/* dynamic route */}
+              <h5 className="block sm:text-[28px] text-[24px] font-semibold mb-3 pr-5">
                 {text}
               </h5>
             </Link>
-            <span className="text-gray-500 font-medium text-[18px]">
+            <span className="text-gray-500 font-medium text-[16px]">
               {date}
             </span>
           </div>

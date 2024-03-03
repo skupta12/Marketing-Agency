@@ -206,6 +206,7 @@ export const aiList = [
 export const blogs = [
   {
     id: "3958dc9e-712f-4377-85e9-fec4b6a64420",
+    url: "our-design-process-explained",
     src: "/blog/blog-1.jpg",
     label: "Code",
     text: "Our design process explained",
@@ -213,13 +214,15 @@ export const blogs = [
   },
   {
     id: "3958dc9e-712f-4377-85e9-fec4b6a64421",
+    url: "a-peek-into-our-branding",
     src: "/blog/blog-2.jpg",
     label: "Marketing",
-    text: "A peek into our branding strategy",
+    text: "A peek into our branding",
     date: "May 10, 2024",
   },
   {
     id: "3958dc9e-712f-4377-85e9-fec4b6a64422",
+    url: "developing-seamless-mobile-apps",
     src: "/blog/blog-3.jpg",
     label: "Design",
     text: "Developing Seamless mobile apps",

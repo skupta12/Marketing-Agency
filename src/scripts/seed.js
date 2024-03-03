@@ -1,5 +1,5 @@
 const { db } = require("@vercel/postgres");
-const { blogs, portfolios } = require("../lib/createTablesForFetch");
+const { blogs } = require("../lib/createTablesForFetch");
 
 async function seedBlog(client) {
   try {
@@ -8,6 +8,7 @@ async function seedBlog(client) {
     const createTable = await client.sql`
         CREATE TABLE IF NOT EXISTS blogs (
             id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
+            url VARCHAR(255) NOT NULL,
             src VARCHAR(255) NOT NULL,
             label VARCHAR(255) NOT NULL,
             text VARCHAR(255) NOT NULL,
@@ -22,8 +23,8 @@ async function seedBlog(client) {
     const insertedBlog = await Promise.all(
       blogs.map(
         (blog) => client.sql`
-          INSERT INTO blogs (id, src, label, text, date)
-          VALUES (${blog.id}, ${blog.src}, ${blog.label}, ${blog.text}, ${blog.date})
+          INSERT INTO blogs (id, url, src, label, text, date)
+          VALUES (${blog.id}, ${blog.url}, ${blog.src}, ${blog.label}, ${blog.text}, ${blog.date})
           ON CONFLICT (id) DO NOTHING;
         `
       )

@@ -30,14 +30,14 @@ const Blog = () => {
         <div
           data-aos="fade-up"
           data-aos-offset="-250"
-          className="grid grid-cols-12 gap-x-4 gap-y-10 pt-20"
+          className="grid grid-cols-12 gap-x-7 sm:gap-y-18 gap-y-14 pt-20"
         >
-          {blogs.map(({ id, src, label, text, date }) => (
+          {blogs.map(({ id, url, src, label, text, date }) => (
             <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
-              <Link className="relative" href={`/post/${""}`}> {/*dynamic route */}
+              <Link className="relative" href={`/post/${url}`}>
                 <Image
-                  className="w-full"
-                  width={600}
+                  className="w-full aspect-[4/3] object-cover object-center"
+                  width={400}
                   height={290}
                   src={src}
                   alt="blog post"
@@ -48,11 +48,11 @@ const Blog = () => {
                 />
               </Link>
               <div>
-                <span className="inline-block font-semibold border-2 border-black px-4 py-1 rounded-full my-6">
+                <span className="text-[15px] inline-block font-semibold border-2 border-black px-4 py-1 rounded-full my-6">
                   {label}
                 </span>
                 <div className="blog-title">
-                  <Link href={`/post/${''}`}> {/* dynamic route */}
+                  <Link href={`/post/${url}`}>
                     <h5 className="sm:text-[30px] text-[24px] font-semibold mb-6 pr-2">
                       {text}
                     </h5>

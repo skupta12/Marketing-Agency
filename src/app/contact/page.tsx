@@ -5,11 +5,13 @@ import { contact } from "@/lib/placeholder-data";
 import { ContactButton } from "@/components/Button";
 import Gradient from "@/components/Gradient";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import styles from "@/style";
+import CTA from "@/components/CTA";
 
 const Page = () => {
   return (
     <>
-      <section className="lg:pt-[180px] pt-[150px] lg:pb-24 pb-16 relative">
+      <section className={`${styles.routePadding} lg:pb-24 pb-16 relative`}>
       <Gradient
           fill
           className="sm:block hidden"
@@ -22,6 +24,7 @@ const Page = () => {
           src="/gradient-mobile.png"
           isPriority
         />
+        
         <MaxWidthWrapper>
           <div className="text-center lg:mb-48 mb-20 relative">
             <h1
@@ -82,6 +85,7 @@ const Page = () => {
         </MaxWidthWrapper>
       </section>
       <Faq />
+      <CTA />
     </>
   );
 };

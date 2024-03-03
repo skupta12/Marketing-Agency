@@ -6,7 +6,7 @@ export async function fetchBlog() {
   noStore();
   try {
     const data = await sql<Blog>`
-      SELECT blogs.id, blogs.src, blogs.label, blogs.text, blogs.date
+      SELECT blogs.id, blogs.url, blogs.src, blogs.label, blogs.text, blogs.date
       FROM blogs
       ORDER BY blogs.date DESC
       LIMIT 6`;
@@ -18,7 +18,7 @@ export async function fetchBlog() {
     return latestBlogs;
   } catch (error) {
     console.error("Database Error:", error);
-    throw new Error("Failed to fetch the latest invoices.");
+    throw new Error("Failed to fetch the latest blog posts.");
   }
 }
 
@@ -34,12 +34,14 @@ export async function fetchFilteredBlogs(
     const blogs = await sql<Blog>`
       SELECT
         blogs.id,
+        blogs.url,
         blogs.src,
         blogs.label,
         blogs.text,
         blogs.date
       FROM blogs
       WHERE
+      blogs.url::text ILIKE ${`%${query}%`} OR
       blogs.src ILIKE ${`%${query}%`} OR
       blogs.label::text ILIKE ${`%${query}%`} OR
       blogs.text::text ILIKE ${`%${query}%`} OR
@@ -75,6 +77,26 @@ export async function fetchBlogPages(query: string) {
     throw new Error('Failed to fetch total number of blogs.');
   }
 }
+
+export async function fetchCurrentPost() {
+  noStore();
+  try {
+    const data = await sql<Blog>`
+      SELECT blogs.url, blogs.src, blogs.label, blogs.text
+      FROM blogs
+      `;
+
+    const currentBlogs = data.rows.map((item) => ({
+      ...item,
+    }));
+
+    return currentBlogs;
+  } catch (error) {
+    console.error("Database Error:", error);
+    throw new Error("Failed to fetch the current post.");
+  }
+}
+
 
 
 // export async function fetchPortfolio() {

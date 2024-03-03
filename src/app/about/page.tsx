@@ -4,11 +4,13 @@ import Button from "@/components/Button";
 import Gradient from "@/components/Gradient";
 import Team from "@/components/Team";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import CTA from "@/components/CTA";
+import styles from "@/style";
 
 const Page = () => {
   return (
     <>
-      <section className="lg:pt-[180px] pt-[150px] relative">
+      <section className={`${styles.routePadding} relative`}>
         <Gradient
           fill
           className="sm:block hidden"
@@ -74,6 +76,7 @@ const Page = () => {
         </MaxWidthWrapper>
       </section>
       <Team />
+      <CTA />  
     </>
   );
 };

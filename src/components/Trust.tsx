@@ -19,8 +19,8 @@ const Trust = () => {
             </h4>
           </div>
           <div className="lg:col-span-8 col-span-12 grid grid-cols-12 gap-5">
-            {trust.map(({ id, src }) => (
-              <div key={id} className="sm:col-span-4 col-span-6">
+            {trust.map((item, index) => (
+              <div key={index} className="sm:col-span-4 col-span-6">
                 <div
                   data-aos="zoom-in"
                   className="bg-primary-200 p-12"
@@ -29,7 +29,7 @@ const Trust = () => {
                     className="mx-auto"
                     width={100}
                     height={100}
-                    src={src}
+                    src={item.src}
                     alt="trust image"
                   />
                 </div>

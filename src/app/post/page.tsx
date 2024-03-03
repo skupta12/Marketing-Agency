@@ -6,7 +6,8 @@ import Post from "./post";
 import BlogSkeleton from "../skeletons";
 import { fetchBlogPages } from "@/lib/data";
 import Pagination from "./pagination";
-// import Search from "./search";
+import CTA from "@/components/CTA";
+import styles from "@/style";
 
 export default async function page({
   searchParams,
@@ -21,7 +22,8 @@ export default async function page({
   const totalPages = await fetchBlogPages(query);
 
   return (
-    <section className="lg:pt-[180px] pt-[150px] lg:pb-24 pb-16 relative">
+    <>
+    <section className={`${styles.routePadding} lg:pb-24 pb-16 relative`}>
       <Gradient
         fill
         className="sm:block hidden"
@@ -55,5 +57,7 @@ export default async function page({
         </div>
       </MaxWidthWrapper>
     </section>
+    <CTA />
+    </>
   );
 }

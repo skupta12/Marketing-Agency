@@ -115,7 +115,7 @@ function PaginationArrow({
   direction: 'left' | 'right';
   isDisabled?: boolean;
 }) {
-  // Dynamically determining the className based on direction and isDisabled state
+  
   const className = clsx(
     'flex h-10 w-10 items-center justify-center rounded-md border',
     {
@@ -126,7 +126,6 @@ function PaginationArrow({
     },
   );
 
-  // Rendering pagination arrow as a link if it's not disabled
   const icon =
     direction === 'left' ? (
       <ArrowLeftIcon className="w-4" />

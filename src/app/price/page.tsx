@@ -4,11 +4,12 @@ import Faq from "@/components/Faq";
 import Gradient from "@/components/Gradient";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { prices } from "@/lib/placeholder-data";
+import styles from "@/style";
 
 const page = () => {
   return (
     <>
-      <section className="lg:pt-[180px] pt-[150px] lg:pb-24 pb-16 relative">
+      <section className={`${styles.routePadding} lg:pb-24 pb-16 relative`}>
         <Gradient
           fill
           className="sm:block hidden"
