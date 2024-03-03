@@ -9,9 +9,7 @@ import CTA from "@/components/CTA";
 export default async function Page({ params }: { params: { url: string } }) {
 
   const blogs = await fetchCurrentPost();
-
   const post = blogs?.find((obj) => obj.url === params.url);
-
 
   if (!post) {
     return <NotFound />
@@ -46,12 +44,12 @@ export default async function Page({ params }: { params: { url: string } }) {
               <Image
                 className="w-full"
                 width={1000}
-                height={1000}
+                height={660}
                 src={src}
                 alt="blog-image"
                 loading="eager"
                 priority
-                quality={90}
+                // quality={90}
               />
             </div>
           </div>
