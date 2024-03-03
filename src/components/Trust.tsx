@@ -50,6 +50,7 @@ const Trust = () => {
           </div>
           <div>
             <Image
+              className="w-full"
               data-aos="zoom-in"
               width={550}
               height={550}

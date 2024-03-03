@@ -52,6 +52,7 @@ const Hero = () => {
             </div>
             <div className="lg:col-span-6 col-span-12">
               <Image
+                className="w-full"
                 data-aos="zoom-in"
                 data-aos-duration="600"
                 width={500}

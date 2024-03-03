@@ -27,7 +27,7 @@ export default async function Page({ params }: { params: { url: string } }) {
             <span className="text-[15px] inline-block font-semibold border-2 border-black px-4 py-1 rounded-full mb-7">
               {label}
             </span>
-            <div className="mb-20">
+            <div className="md:mb-20 mb-10">
               <h1
                 data-aos="fade-up"
                 data-aos-delay="50"
@@ -44,14 +44,14 @@ export default async function Page({ params }: { params: { url: string } }) {
               data-aos-duration="800"
             >
               <Image
-                className="w-full h-full"
-                width={1536}
-                height={1080}
+                className="w-full"
+                width={1000}
+                height={1000}
                 src={src}
                 alt="blog-image"
                 loading="eager"
-                quality={100}
                 priority
+                quality={90}
               />
             </div>
           </div>
