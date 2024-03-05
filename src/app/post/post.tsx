@@ -10,6 +10,7 @@ export default async function Post({
   query: string;
   currentPage: number;
 }) {
+
   // artificial delay
   const delayData = async () => {
     await new Promise(resolve => setTimeout(resolve, 700));
@@ -24,13 +25,12 @@ export default async function Post({
       {blogs.map(({ id, url, src, label, text, date }) => (
         <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
           <Link className="relative" href={`/post/${url}`}>
-            {" "}
             {/* dynamic route */}
-            <div className="aspect-[4/3]">
+            <div className="aspect-[3/2]">
               <Image
-                className="object-cover object-center"
+                className="h-full object-cover object-center"
                 width={600}
-                height={450}
+                height={290}
                 src={src}
                 alt="blog image"
               />

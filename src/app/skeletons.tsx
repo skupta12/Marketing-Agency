@@ -10,7 +10,7 @@ export function BlogSkeletonItem() {
       <div
         className={`${shimmer} relative oveflow-hidden lg:col-span-4 md:col-span-6 col-span-12`}
       >
-        <div className="aspect-[4/3]">
+        <div className="w-full aspect-[3/2]">
           <Image
             // className="object-cover object-center"
             src="/blog-placeholder.jpg"
