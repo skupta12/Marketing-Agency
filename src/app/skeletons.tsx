@@ -9,7 +9,7 @@ export function BlogSkeletonItem() {
     <>
       <div className={`${shimmer} relative oveflow-hidden lg:col-span-4 md:col-span-6 col-span-12`}>
         <Image
-          className="w-full aspect-[4/3] object-cover"
+          className="w-full"
           src="/blog-placeholder.jpg"
           alt="placeholder image"
           width={600}
