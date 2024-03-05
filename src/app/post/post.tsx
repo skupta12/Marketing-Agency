@@ -29,7 +29,8 @@ export default async function Post({
             <div className="aspect-[4/3]">
               <Image
                 className="object-cover object-center"
-                fill
+                width={600}
+                height={450}
                 src={src}
                 alt="blog image"
               />

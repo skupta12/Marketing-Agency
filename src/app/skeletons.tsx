@@ -12,7 +12,7 @@ export function BlogSkeletonItem() {
       >
         <div className="aspect-[4/3]">
           <Image
-            className="object-cover object-center"
+            // className="object-cover object-center"
             src="/blog-placeholder.jpg"
             alt="placeholder image"
             width={600}
