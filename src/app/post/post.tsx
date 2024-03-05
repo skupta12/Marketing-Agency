@@ -25,10 +25,10 @@ export default async function Post({
       {blogs.map(({ id, url, src, label, text, date }) => (
         <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
           <Link className="relative" href={`/post/${url}`}>
-            {/* dynamic route */}
             <div>
               <Image
-                className="w-full h-full object-cover object-center"
+                className="w-full h-full object-cover"
+                blurDataURL="/blog-placeholder.jpg"
                 width={1000}
                 height={650}
                 src={src}
