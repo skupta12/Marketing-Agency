@@ -35,13 +35,16 @@ const Blog = () => {
           {blogs.map(({ id, url, src, label, text, date }) => (
             <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
               <Link className="relative" href={`/post/${url}`}>
-                <Image
-                  className="w-full aspect-[4/3] object-cover object-center"
-                  width={400}
-                  height={290}
-                  src={src}
-                  alt="blog post"
-                />
+                <div>
+                  <Image
+                    className="object-cover"
+                    width={1000}
+                    height={650}
+                    src={src}
+                    alt="blog post"
+                  />
+                </div>
+
                 <div
                   className="absolute content-[''] top-0 left-0 right-0 bottom-0 inset-0 
                 hover:bg-white hover:bg-opacity-15 transition"
