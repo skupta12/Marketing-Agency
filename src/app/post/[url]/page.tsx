@@ -27,9 +27,6 @@ export default async function Page({ params }: { params: { url: string } }) {
             </span>
             <div className="md:mb-20 mb-10">
               <h1
-                data-aos="fade-up"
-                data-aos-delay="50"
-                data-aos-duration="800"
                 className="font-semibold text-[30px] lg:text-[70px] md:text-[50px] xl:text-[94px] leading-[1.1]"
               >
                 {text}
@@ -37,19 +34,16 @@ export default async function Page({ params }: { params: { url: string } }) {
             </div>
 
             <div
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-duration="800"
             >
               <Image
                 className="w-full"
                 width={1000}
                 height={660}
                 src={src}
-                alt="blog-image"
+                alt="blog post"
                 loading="eager"
                 priority
-                // quality={90}
+                quality={90}
               />
             </div>
           </div>

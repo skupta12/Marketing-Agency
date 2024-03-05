@@ -10,8 +10,14 @@ export default async function Post({
   query: string;
   currentPage: number;
 }) {
+  // artificial delay
+  const delayData = async () => {
+    await new Promise(resolve => setTimeout(resolve, 700));
+    return await fetchFilteredBlogs(query, currentPage);
+  };
 
-  const blogs = await fetchFilteredBlogs(query, currentPage);
+  const blogs = await delayData();
+
 
   return (
     <div className="grid grid-cols-12 gap-x-7 sm:gap-y-18 gap-y-14">
@@ -19,9 +25,9 @@ export default async function Post({
         <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
           <Link className="relative" href={`/post/${url}`}> {/* dynamic route */}
             <Image
-              className="w-full aspect-[4/3] object-cover object-center"
-              width={400}
-              height={290}
+              className="w-full object-cover aspect-[4/3]"
+              width={600}
+              height={450}
               src={src}
               alt="blog image"
             />
@@ -31,7 +37,7 @@ export default async function Post({
             <span className="text-[15px] inline-block font-semibold border-2 border-black px-4 py-1 rounded-full my-5">
               {label}
             </span>
-            <Link href={`/post/${url}`}> {/* dynamic route */}
+            <Link href={`/post/${url}`}>
               <h5 className="block sm:text-[28px] text-[24px] font-semibold mb-3 pr-5">
                 {text}
               </h5>

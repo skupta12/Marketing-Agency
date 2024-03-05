@@ -9,18 +9,18 @@ export function BlogSkeletonItem() {
     <>
       <div className={`${shimmer} relative oveflow-hidden lg:col-span-4 md:col-span-6 col-span-12`}>
         <Image
-          className="w-full aspect-[4/3]"
+          className="w-full aspect-[4/3] object-cover"
           src="/blog-placeholder.jpg"
-          alt="blog"
-          width={500}
-          height={500}
+          alt="placeholder image"
+          width={600}
+          height={450}
         />
         <div>
           <span
-            className={`w-20 h-10 bg-slate-200 inline-block px-4 py-1 my-6 rounded-full`}
+            className={`w-20 h-8 bg-slate-200 inline-block px-4 py-1 my-5 rounded-full`}
           ></span>
-          <div className="my-4">
-            <h5 className="w-[300px] py-5 bg-slate-200 rounded-lg mb-6"></h5>
+          <div className="mb-3">
+            <h5 className="w-[300px] py-5 bg-slate-200 rounded-lg"></h5>
           </div>
           <span className="w-64 block py-3 bg-slate-200 rounded-lg"></span>
         </div>

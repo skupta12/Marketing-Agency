@@ -19,6 +19,7 @@ export default async function page({
 }) {
   const query = searchParams?.query || "";
   const currentPage = Number(searchParams?.page || 1);
+
   const totalPages = await fetchBlogPages(query);
 
   return (
