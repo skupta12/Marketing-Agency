@@ -7,14 +7,18 @@ const shimmer =
 export function BlogSkeletonItem() {
   return (
     <>
-      <div className={`${shimmer} relative oveflow-hidden lg:col-span-4 md:col-span-6 col-span-12`}>
-        <Image
-          className="w-full aspect-[4/3]"
-          src="/blog-placeholder.jpg"
-          alt="placeholder image"
-          width={600}
-          height={450}
-        />
+      <div
+        className={`${shimmer} relative oveflow-hidden lg:col-span-4 md:col-span-6 col-span-12`}
+      >
+        <div className="aspect-[4/3]">
+          <Image
+            className="object-cover object-center"
+            src="/blog-placeholder.jpg"
+            alt="placeholder image"
+            width={600}
+            height={450}
+          />
+        </div>
         <div>
           <span
             className={`w-20 h-8 bg-slate-200 inline-block px-4 py-1 my-5 rounded-full`}

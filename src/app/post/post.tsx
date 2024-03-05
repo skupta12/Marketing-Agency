@@ -26,7 +26,7 @@ export default async function Post({
           <Link className="relative" href={`/post/${url}`}>
             {" "}
             {/* dynamic route */}
-            <div className="aspect-[4/3] overflow-hidden">
+            <div className="aspect-[4/3]">
               <Image
                 className="object-cover object-center"
                 fill
@@ -34,14 +34,6 @@ export default async function Post({
                 alt="blog image"
               />
             </div>
-            {/* <div className='relative aspect-square overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75'>
-                            <Image
-                              fill
-                              src={item.imageSrc}
-                              alt='product category image'
-                              className='object-cover object-center'
-                            />
-                          </div> */}
             <div className="absolute content-[''] top-0 left-0 right-0 bottom-0 inset-0 hover:bg-white hover:bg-opacity-15 transition" />
           </Link>
           <div>
