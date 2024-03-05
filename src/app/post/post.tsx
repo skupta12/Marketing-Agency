@@ -26,11 +26,11 @@ export default async function Post({
         <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
           <Link className="relative" href={`/post/${url}`}>
             {/* dynamic route */}
-            <div className="aspect-[3/2]">
+            <div>
               <Image
-                className="h-full object-cover object-center"
-                width={600}
-                height={290}
+                className="w-full h-full object-cover object-center"
+                width={1000}
+                height={650}
                 src={src}
                 alt="blog image"
               />
