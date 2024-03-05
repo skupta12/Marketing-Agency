@@ -23,14 +23,25 @@ export default async function Post({
     <div className="grid grid-cols-12 gap-x-7 sm:gap-y-18 gap-y-14">
       {blogs.map(({ id, url, src, label, text, date }) => (
         <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
-          <Link className="relative" href={`/post/${url}`}> {/* dynamic route */}
-            <Image
-              className="w-full aspect-[4/3]"
-              width={600}
-              height={450}
-              src={src}
-              alt="blog image"
-            />
+          <Link className="relative" href={`/post/${url}`}>
+            {" "}
+            {/* dynamic route */}
+            <div className="aspect-[4/3] overflow-hidden">
+              <Image
+                className="object-cover object-center"
+                fill
+                src={src}
+                alt="blog image"
+              />
+            </div>
+            {/* <div className='relative aspect-square overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75'>
+                            <Image
+                              fill
+                              src={item.imageSrc}
+                              alt='product category image'
+                              className='object-cover object-center'
+                            />
+                          </div> */}
             <div className="absolute content-[''] top-0 left-0 right-0 bottom-0 inset-0 hover:bg-white hover:bg-opacity-15 transition" />
           </Link>
           <div>
