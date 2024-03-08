@@ -109,34 +109,48 @@ export const counter = [
 export const portfolio = [
   {
     id: 0,
+    url: "dreamy-visions",
     src: "/portfolio/portfolio-1.jpg",
+    secSrc: "/portfolio/url-1.jpg",
     scrollerTitle: "Dreamy Visions",
-    href: "/",
+    client: "Client",
+    role: "Font, User Interface",
+    recognition: "CSS Award",
+    year: "2021"
   },
   {
     id: 1,
+    url: "whimsy-tails",
     src: "/portfolio/portfolio-2.jpg",
+    secSrc: "/portfolio/url-2.jpg",
     scrollerTitle: "Whimsy Tails",
-    href: "/",
+    client: "Client",
+    role: "Logo, User Interface",
+    recognition: "Awwwards",
+    year: "2020"
   },
   {
     id: 2,
+    url: "colorful-jorneys",
     src: "/portfolio/portfolio-3.jpg",
+    secSrc: "/portfolio/url-3.jpg",
     scrollerTitle: "Colorful Jorneys",
-    href: "/",
+    client: "Client",
+    role: "UI, UX, Development",
+    recognition: "CSS Award",
+    year: "2024"
   },
   {
     id: 3,
+    url: "night-desert",
     src: "/portfolio/portfolio-4.jpg",
+    secSrc: "/portfolio/url-1.jpg",
     scrollerTitle: "Night Desert",
-    href: "/",
+    client: "Client",
+    role: "UI, UX, Development",
+    recognition: "CSS Award",
+    year: "2022"
   },
-  // {
-  //   id: 4,
-  //   src: "/portfolio/portfolio-5.jpg",
-  //   scrollerTitle: "Imaginary Realms",
-  //   href: "/",
-  // },
 ];
 
 export const testimonial = [

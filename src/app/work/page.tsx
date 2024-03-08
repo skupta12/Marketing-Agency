@@ -51,21 +51,21 @@ const Page = () => {
             className="grid grid-cols-12 md:gap-5"
           >
             {portfolio.length > 0 &&
-              portfolio.map((portfolio) => (
+              portfolio.map(({id, url, src, scrollerTitle}) => (
                 <div
-                  key={portfolio.id}
+                  key={id}
                   className="md:col-span-6 col-span-12 relative overflow-hidden group"
                 >
-                  <Link href={portfolio.href}>
+                  <Link href={`/work/${url}`}>
                     <Image
                       className="w-full"
                       width={800}
                       height={800}
-                      src={portfolio.src}
+                      src={src}
                       alt="portfolio image"
                     />
                     <div className={`scroller-box ${scrollerboxStyle}`}>
-                      <InfinitiveScroller title={portfolio.scrollerTitle} />
+                      <InfinitiveScroller title={scrollerTitle} />
                     </div>
                   </Link>
                 </div>

@@ -6,6 +6,7 @@ const styles = {
   
     flexCenter: "flex justify-center items-center",
     flexStart: "flex justify-center items-start",
+    flexBetween: "flex justify-between items-center",
   
     sectionPadding: "lg:py-24 py-16",
     routePadding: "lg:pt-[180px] pt-[150px]",

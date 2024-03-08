@@ -2,7 +2,7 @@ import Faq from "@/components/Faq";
 import { playfair } from "../fonts";
 import Image from "next/image";
 import { contact } from "@/lib/placeholder-data";
-import { ContactButton } from "@/components/Button";
+import { BlackButton } from "@/components/Button";
 import Gradient from "@/components/Gradient";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import styles from "@/style";
@@ -67,7 +67,7 @@ const Page = () => {
                     );
                   })}
                   <div className="col-span-12 lg:mt-5">
-                    <ContactButton className="w-full" title="Contact us" />
+                    <BlackButton className="w-full" title="Contact us" />
                   </div>
                 </div>
               </form>

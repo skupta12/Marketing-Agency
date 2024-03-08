@@ -1,5 +1,5 @@
 import { playfair } from "@/app/fonts";
-import { ContactButton } from "@/components/Button";
+import { BlackButton } from "@/components/Button";
 import Faq from "@/components/Faq";
 import Gradient from "@/components/Gradient";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
@@ -59,7 +59,7 @@ const page = () => {
                         </li>
                       ))}
                     </ul>
-                    <ContactButton
+                    <BlackButton
                       className="sm:w-auto w-full"
                       title="Contact us"
                     />

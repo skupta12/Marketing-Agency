@@ -53,7 +53,7 @@ export const DownloadButton = ({ title, icon, className }: TitleProps) => {
   );
 };
 
-export const ContactButton = ({ title, className }: TitleProps) => {
+export const BlackButton = ({ title, className }: TitleProps) => {
   return (
     <>
       <button
