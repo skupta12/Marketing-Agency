@@ -52,8 +52,8 @@ const Trust = () => {
             <Image
               className="w-full"
               data-aos="zoom-in"
-              width={550}
-              height={550}
+              width={590}
+              height={338}
               src="/media-ring.png"
               alt="media ring"
             />

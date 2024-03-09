@@ -26,7 +26,7 @@ export default function Page({ params }: { params: { url: string } }) {
         <div className="grid grid-cols-12 sm:gap-x-10 gap-x-5 gap-y-10 items-center">
           <div className="lg:col-span-7 col-span-12">
             <div className="relative">
-              <Image className="w-full" width={700} height={490} src={src} alt="work-image"  
+              <Image className="w-full" width={683} height={478} src={src} alt="work-image"  
               sizes="(max-width: 768px) 100vw, (max-width: 1320px) 50vw, 33vw" />
             </div>
           </div>

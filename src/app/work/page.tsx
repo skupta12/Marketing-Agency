@@ -30,17 +30,17 @@ const Page = () => {
         <MaxWidthWrapper>
           <div className="text-center lg:mb-48 mb-20 relative">
             <h1
-              data-aos="fade-up"
-              data-aos-delay="50"
-              data-aos-duration="800"
+              // data-aos="fade-up"
+              // data-aos-delay="50"
+              // data-aos-duration="800"
               className="lg:text-[100px] md:text-[80px] text-[46px] font-semibold"
             >
               Latest <span className={playfair.className}>work</span>
             </h1>
             <div
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-duration="800"
+              // data-aos="fade-up"
+              // data-aos-delay="200"
+              // data-aos-duration="800"
             >
               <span className="hscroll-line"></span>
             </div>
@@ -50,8 +50,7 @@ const Page = () => {
             data-aos-delay="400"
             className="grid grid-cols-12 md:gap-5"
           >
-            {portfolio.length > 0 &&
-              portfolio.map(({id, url, src, scrollerTitle}) => (
+            {portfolio.map(({ id, url, src, scrollerTitle }) => (
                 <div
                   key={id}
                   className="md:col-span-6 col-span-12 relative overflow-hidden group"
@@ -59,8 +58,9 @@ const Page = () => {
                   <Link href={`/work/${url}`}>
                     <Image
                       className="w-full"
-                      width={800}
-                      height={800}
+                      width={590}
+                      height={413}
+                      priority
                       src={src}
                       alt="portfolio image"
                     />

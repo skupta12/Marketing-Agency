@@ -15,8 +15,8 @@ const Team = () => {
             <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
               <Image
                 className="w-full"
-                width={500}
-                height={500}
+                width={397}
+                height={397}
                 src={src}
                 alt="blog post"
               />

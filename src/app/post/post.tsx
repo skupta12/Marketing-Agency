@@ -13,7 +13,7 @@ export default async function Post({
 
   // artificial delay
   const delayData = async () => {
-    await new Promise(resolve => setTimeout(resolve, 700));
+    await new Promise(resolve => setTimeout(resolve, 500));
     return await fetchFilteredBlogs(query, currentPage);
   };
 
@@ -30,8 +30,8 @@ export default async function Post({
                 className="w-full h-full object-cover"
                 placeholder="blur"
                 blurDataURL="/blog-placeholder.jpg"
-                width={1000}
-                height={650}
+                width={381}
+                height={247}
                 src={src}
                 alt="blog image"
               />
