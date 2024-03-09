@@ -2,11 +2,12 @@ import { playfair } from "@/app/fonts";
 import { media, team } from "@/lib/placeholder-data";
 import Image from "next/image";
 import Link from "next/link";
+import MaxWidthWrapper from "./MaxWidthWrapper";
 
 const Team = () => {
   return (
     <section className="lg:py-32 py-16">
-      <div className="container md:px-10 px-5">
+      <MaxWidthWrapper>
         <h3 className="text-center sm:text-[40px] text-[36px] font-semibold">
           The <span className={playfair.className}>team</span>
         </h3>
@@ -48,7 +49,7 @@ const Team = () => {
             </div>
           ))}
         </div>
-      </div>
+      </MaxWidthWrapper>
     </section>
   );
 };

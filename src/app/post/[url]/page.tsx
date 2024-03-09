@@ -33,16 +33,16 @@ export default async function Page({ params }: { params: { url: string } }) {
               </h1>
             </div>
 
-            <div className="relative w-full max-w-[1200px] aspect-[70/45]"
+            <div className="relative w-full h-auto"
             >
               <Image
-                fill
                 src={src}
                 alt="blog post"
-                loading="eager"
+                width={1200}
+                height={771}
                 priority
                 quality={90}
-                sizes="(min-width: 1320px) 1200px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
+                sizes="(min-width: 1440px) 1200px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
               />
             </div>
           </div>

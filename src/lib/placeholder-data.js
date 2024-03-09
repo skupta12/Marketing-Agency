@@ -408,6 +408,33 @@ export const prices = [
   },
 ]
 
+export const workList = [
+  {
+    id: 0,
+    text: "Strategic Discovery",  
+  },
+  {
+    id: 1,
+    text: "Web application redesign & optimization",  
+  },
+  {
+    id: 2,
+    text: "Mobile application redesign & optimization",  
+  },
+  {
+    id: 3,
+    text: "Landing page redesign & optimization",  
+  },
+  {
+    id: 4,
+    text: "Component-based UI-kit",  
+  },
+  {
+    id: 5,
+    text: "Product Design Sprints to explore new functionality",  
+  },
+]
+
 // module.exports = {
 //   blogs,
 // };

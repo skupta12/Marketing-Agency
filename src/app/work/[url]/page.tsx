@@ -4,6 +4,9 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { portfolio } from "@/lib/placeholder-data";
 import styles from "@/style";
 import Image from "next/image";
+import TextInfo from "../textInfo";
+import Related from "../related";
+import CTA from "@/components/CTA";
 
 export default function Page({ params }: { params: { url: string } }) {
 
@@ -16,18 +19,26 @@ export default function Page({ params }: { params: { url: string } }) {
   const { src, secSrc, scrollerTitle, client, role, recognition, year } = work;
 
   return (
+    <>
     <section className={`${styles.routePadding} lg:pb-24 pb-16`}>
       <MaxWidthWrapper>
         <div className="mb-12">
-          <h1 className="lg:text-[65px] md:text-[58px] text-[34px] font-semibold leading-tight">
+          <h1 className="lg:text-[65px] md:text-[58px] text-[34px] font-semibold leading-tight tracking-[1.5px]">
             {scrollerTitle}
           </h1>
         </div>
         <div className="grid grid-cols-12 sm:gap-x-10 gap-x-5 gap-y-10 items-center">
           <div className="lg:col-span-7 col-span-12">
-            <div className="relative">
-              <Image className="w-full" width={683} height={478} src={src} alt="work-image"  
-              sizes="(max-width: 768px) 100vw, (max-width: 1320px) 50vw, 33vw" />
+            <div className="relative w-full">
+              <Image
+              className="w-full"
+              width={683} 
+              height={478} 
+              src={src}
+              priority 
+              alt="work-image" 
+              sizes="(min-width: 1440px) 683px, (min-width: 1040px) 48.95vw, (min-width: 780px) calc(100vw - 112px), calc(100vw - 32px)"
+              />
             </div>
           </div>
           <div className="lg:col-span-5 col-span-12 flex flex-col h-full justify-center border border-gray-300">
@@ -70,5 +81,9 @@ export default function Page({ params }: { params: { url: string } }) {
         </div>
       </MaxWidthWrapper>
     </section>
+    
+    <TextInfo secSrc={secSrc} />
+    <CTA />
+    </>
   );
 }
