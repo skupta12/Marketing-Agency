@@ -28,25 +28,25 @@ const Page = () => {
         <MaxWidthWrapper>
           <div className="text-center lg:mb-48 mb-20 relative">
             <h1
-              data-aos="fade-up"
-              data-aos-delay="50"
-              data-aos-duration="800"
+              // data-aos="fade-up"
+              // data-aos-delay="50"
+              // data-aos-duration="800"
               className="lg:text-[100px] md:text-[80px] text-[46px] font-semibold"
             >
               Stay in <span className={playfair.className}>touch</span>
             </h1>
             <div
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-duration="800"
+              // data-aos="fade-up"
+              // data-aos-delay="200"
+              // data-aos-duration="800"
             >
               <span className="hscroll-line"></span>
             </div>
           </div>
           <div
             className="grid grid-cols-12 gap-4 items-center"
-            data-aos="fade-up"
-            data-aos-delay="400"
+            // data-aos="fade-up"
+            // data-aos-delay="400"
           >
             <div className="lg:col-span-6 col-span-12 lg:pr-12">
               <form action="#">

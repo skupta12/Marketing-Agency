@@ -12,11 +12,7 @@ const Portfolio = () => {
   return (
     <section className={`${style.sectionPadding} overflow-hidden relative`}>
       <MaxWidthWrapper>
-        <div
-          data-aos="fade-up"
-          data-aos-offset="-250"
-          className="text-center"
-        >
+        <div data-aos="fade-up" data-aos-offset="-250" className="text-center">
           <h3 className={`${style.heading3} mb-4`}>
             Recent <span className={`${playfair.className}`}>work</span>
           </h3>
@@ -33,13 +29,12 @@ const Portfolio = () => {
             <div
               data-aos="zoom-in"
               data-aos-duration="500"
-            
               className="group lg:mb-32 relative overflow-hidden"
             >
-              <Link href={"/"}>
+              <Link href={"/work"}>
                 <Image
                   className="w-full"
-                  width={400}
+                  width={600}
                   height={400}
                   src="/portfolio/portfolio-1.jpg"
                   alt="portfolio-image"
@@ -54,10 +49,10 @@ const Portfolio = () => {
               data-aos-duration="500"
               className="group lg:self-end relative overflow-hidden"
             >
-              <Link href={"/"}>
+              <Link href={"/work"}>
                 <Image
                   className="w-full"
-                  width={400}
+                  width={600}
                   height={400}
                   src="/portfolio/portfolio-2.jpg"
                   alt="portfolio-image"
@@ -74,10 +69,10 @@ const Portfolio = () => {
               data-aos-duration="500"
               className="group lg:self-end relative overflow-hidden"
             >
-              <Link href={"/"}>
+              <Link href={"/work"}>
                 <Image
                   className="w-full"
-                  width={400}
+                  width={600}
                   height={400}
                   src="/portfolio/portfolio-3.jpg"
                   alt="portfolio-image"
@@ -92,10 +87,10 @@ const Portfolio = () => {
               data-aos-duration="500"
               className="group lg:mb-32 relative overflow-hidden"
             >
-              <Link href={"/"}>
+              <Link href={"/work"}>
                 <Image
                   className="w-full"
-                  width={400}
+                  width={600}
                   height={400}
                   src="/portfolio/portfolio-4.jpg"
                   alt="portfolio-image"

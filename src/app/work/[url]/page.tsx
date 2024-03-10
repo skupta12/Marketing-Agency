@@ -29,7 +29,7 @@ export default function Page({ params }: { params: { url: string } }) {
         </div>
         <div className="grid grid-cols-12 sm:gap-x-10 gap-x-5 gap-y-10 items-center">
           <div className="lg:col-span-7 col-span-12">
-            <div className="relative w-full">
+            <div className="relative w-full h-auto">
               <Image
               className="w-full"
               width={683} 

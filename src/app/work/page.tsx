@@ -46,8 +46,8 @@ const Page = () => {
             </div>
           </div>
           <div
-            data-aos="fade-up"
-            data-aos-delay="400"
+            // data-aos="fade-up"
+            // data-aos-delay="400"
             className="grid grid-cols-12 md:gap-5"
           >
             {portfolio.map(({ id, url, src, scrollerTitle }) => (
