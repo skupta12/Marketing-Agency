@@ -35,7 +35,7 @@ export default function Page({ params }: { params: { url: string } }) {
               width={683} 
               height={478} 
               src={src}
-              priority 
+              // priority 
               alt="work-image" 
               />
             </div>
