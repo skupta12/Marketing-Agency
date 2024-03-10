@@ -1,5 +1,6 @@
 import { playfair } from "@/app/fonts";
 import { BlackButton } from "@/components/Button";
+import CTA from "@/components/CTA";
 import Faq from "@/components/Faq";
 import Gradient from "@/components/Gradient";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
@@ -73,6 +74,7 @@ const page = () => {
         </MaxWidthWrapper>
       </section>
       <Faq />
+      <CTA />
     </>
   );
 };
