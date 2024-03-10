@@ -34,10 +34,10 @@ export default function Page({ params }: { params: { url: string } }) {
               className="object-cover"
               fill
               src={src}
-              priority
               sizes="(min-width: 1440px) 683px, (min-width: 1040px) 48.95vw, (min-width: 780px) calc(100vw - 112px), calc(100vw - 32px)"
               alt="work image details" 
               loading="eager"
+              priority
               />
             </div>
           </div>

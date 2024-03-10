@@ -41,9 +41,9 @@ export default async function Page({ params }: { params: { url: string } }) {
                 alt="blog details image"
                 fill
                 loading="eager"
+                priority
                 quality={100}
                 sizes="(min-width: 1440px) 1200px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
-                priority
               />
             </div>
           </div>
