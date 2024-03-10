@@ -55,8 +55,9 @@ const Hero = () => {
                 className="w-full"
                 data-aos="zoom-in"
                 data-aos-duration="600"
-                width={500}
-                height={500}
+                width={665}
+                height={653}
+                quality={100}
                 loading="eager"
                 src="/hero.png"
                 alt="hero image"

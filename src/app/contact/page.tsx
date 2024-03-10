@@ -66,7 +66,7 @@ const Page = () => {
                       </div>
                     );
                   })}
-                  <div className="col-span-12 lg:mt-5">
+                  <div className="col-span-12 mt-4">
                     <BlackButton className="w-full" title="Contact us" />
                   </div>
                 </div>

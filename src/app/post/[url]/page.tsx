@@ -33,7 +33,7 @@ export default async function Page({ params }: { params: { url: string } }) {
               </h1>
             </div>
 
-            <div className="relative lg:h-[750px] md:h-[500px] h-[260px] overflow-hidden"
+            <div className="relative lg:h-[620px] md:h-[500px] h-[260px] overflow-hidden"
             >
               <Image
                 className="object-cover"

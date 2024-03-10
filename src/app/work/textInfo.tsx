@@ -39,6 +39,7 @@ const TextInfo = ({ secSrc }: { secSrc: string }) => {
               <Image
                 className="object-cover"
                 fill
+                
                 src={secSrc}
                 alt="second details image"
                 sizes="(min-width: 1440px) 1200px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
