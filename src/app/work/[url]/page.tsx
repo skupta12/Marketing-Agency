@@ -29,14 +29,14 @@ export default function Page({ params }: { params: { url: string } }) {
         </div>
         <div className="grid grid-cols-12 sm:gap-x-10 gap-x-5 gap-y-10 items-center">
           <div className="lg:col-span-7 col-span-12">
-            <div className="relative w-full">
+            <div className="relative overflow-hidden sm:h-[478px] h-[260px]">
               <Image
-              className="w-full"
-              width={683} 
-              height={478} 
+              className="object-cover"
+              fill
               src={src}
-              // priority 
-              alt="work-image" 
+              priority
+              sizes="(min-width: 1440px) 683px, (min-width: 1040px) 48.95vw, (min-width: 780px) calc(100vw - 112px), calc(100vw - 32px)"
+              alt="work image details" 
               loading="eager"
               />
             </div>

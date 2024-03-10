@@ -10,7 +10,7 @@ import styles from "@/style";
 const Page = () => {
   return (
     <>
-      <section className={`${styles.routePadding} relative`}>
+      <section className={`${styles.routePadding} relative overflow-hidden`}>
         <Gradient
           fill
           className="sm:block hidden"
@@ -41,18 +41,19 @@ const Page = () => {
               <span className="hscroll-line"></span>
             </div>
           </div>
-          <div 
+          <div
+            className="relative lg:h-[750px] md:h-[500px] h-[260px] overflow-hidden"
             // data-aos="fade-up"
             // data-aos-delay="400"
             >
             <Image
-              width={600}
-              height={600}
-              className="w-full"
+              className="object-cover"
+              fill
               src="/blog/blog-1.jpg"
-              alt="blog image"
+              alt="about image"
               quality={100}
               loading="eager"
+              sizes="(min-width: 1440px) 1200px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
             />
           </div>
           <div className="aboutus-text text-center">

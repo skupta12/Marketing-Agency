@@ -12,7 +12,7 @@ const Page = () => {
   return (
     <>
       <section className={`${styles.routePadding} lg:pb-24 pb-16 relative`}>
-      <Gradient
+        <Gradient
           fill
           className="sm:block hidden"
           src="/gradient.png"
@@ -24,7 +24,7 @@ const Page = () => {
           src="/gradient-mobile.png"
           isPriority
         />
-        
+
         <MaxWidthWrapper>
           <div className="text-center lg:mb-48 mb-20 relative">
             <h1
@@ -36,9 +36,9 @@ const Page = () => {
               Stay in <span className={playfair.className}>touch</span>
             </h1>
             <div
-              // data-aos="fade-up"
-              // data-aos-delay="200"
-              // data-aos-duration="800"
+            // data-aos="fade-up"
+            // data-aos-delay="200"
+            // data-aos-duration="800"
             >
               <span className="hscroll-line"></span>
             </div>
@@ -73,13 +73,16 @@ const Page = () => {
               </form>
             </div>
             <div className="lg:col-span-6 col-span-12 lg:mt-0 mt-8">
-              <Image
-                className="w-full"
-                width={500}
-                height={500}
-                src="/blog/blog-1.jpg"
-                alt="blog image"
-              />
+              <div className="relative lg:h-[400px] md:h-[420px] h-[260px] overflow-hidden">
+                <Image
+                  className="object-cover"
+                  fill
+                  src="/blog/blog-1.jpg"
+                  alt="contact image"
+                  sizes="(min-width: 1440px) 592px, (min-width: 1040px) 42.11vw, 
+                  (min-width: 780px) calc(100vw - 112px), calc(100vw - 32px)"
+                />
+              </div>
             </div>
           </div>
         </MaxWidthWrapper>

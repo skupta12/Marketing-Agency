@@ -14,13 +14,17 @@ const Team = () => {
         <div className="grid grid-cols-12 gap-x-6 gap-y-10 pt-10">
           {team.map(({ id, src, prof, name }) => (
             <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
-              <Image
-                className="w-full"
-                width={397}
-                height={397}
-                src={src}
-                alt="blog post"
-              />
+              <div className="relative lg:h-[385px] h-[330px] overflow-hidden">
+                <Image 
+                  fill
+                  className="object-cover"
+                  src={src} 
+                  alt="team image"
+                  sizes="(min-width: 1440px) 384px, (min-width: 1040px) calc(28.16vw - 16px), 
+                  (min-width: 780px) calc(50vw - 68px), calc(100vw - 32px)"
+                  />
+              </div>
+
               <div className="text-center">
                 <span className="inline-block font-semibold text-[22px] mt-6 mb-2">
                   {name}

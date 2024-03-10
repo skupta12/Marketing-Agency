@@ -25,15 +25,16 @@ export default async function Post({
       {blogs.map(({ id, url, src, label, text, date }) => (
         <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
           <Link className="relative" href={`/post/${url}`}>
-            <div>
+            <div className="relative overflow-hidden h-[260px]">
               <Image
-                className="w-full h-full object-cover"
-                // placeholder="blur"
-                // blurDataURL="/blog-placeholder.jpg"
-                width={381}
-                height={247}
+                className="object-cover"
+                fill
                 src={src}
                 alt="blog image"
+                quality={100}
+                sizes="(min-width: 1440px) 381px, (min-width: 1040px) 
+                calc(27.89vw - 15px), (min-width: 780px) calc(50vw - 70px), 
+                (min-width: 380px) calc(100vw - 32px), calc(33.33vw + 208px)"
               />
             </div>
             <div className="absolute content-[''] top-0 left-0 right-0 bottom-0 inset-0 hover:bg-white hover:bg-opacity-15 transition" />

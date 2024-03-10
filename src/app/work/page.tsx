@@ -38,9 +38,9 @@ const Page = () => {
               Latest <span className={playfair.className}>work</span>
             </h1>
             <div
-              // data-aos="fade-up"
-              // data-aos-delay="200"
-              // data-aos-duration="800"
+            // data-aos="fade-up"
+            // data-aos-delay="200"
+            // data-aos-duration="800"
             >
               <span className="hscroll-line"></span>
             </div>
@@ -51,25 +51,31 @@ const Page = () => {
             className="grid grid-cols-12 md:gap-5"
           >
             {portfolio.map(({ id, url, src, scrollerTitle }) => (
-                <div
-                  key={id}
-                  className="md:col-span-6 col-span-12 relative overflow-hidden group"
+              <div
+                key={id}
+                className="md:col-span-6 col-span-12 relative overflow-hidden group"
+              >
+                <Link
+                  href={`/work/${url}`}
                 >
-                  <Link href={`/work/${url}`}>
+                  <div className="relative lg:h-[430px] h-[260px] overflow-hidden">
                     <Image
-                      className="w-full"
-                      width={590}
-                      height={413}
+                      className="object-cover"
+                      fill
+                      loading="eager"
                       priority
                       src={src}
+                      sizes="(min-width: 1440px) 590px, (min-width: 780px) 41.56vw, calc(100vw - 32px)"
                       alt="portfolio image"
                     />
-                    <div className={`scroller-box ${scrollerboxStyle}`}>
-                      <InfinitiveScroller title={scrollerTitle} />
-                    </div>
-                  </Link>
-                </div>
-              ))}
+                  </div>
+
+                  <div className={`scroller-box ${scrollerboxStyle}`}>
+                    <InfinitiveScroller title={scrollerTitle} />
+                  </div>
+                </Link>
+              </div>
+            ))}
           </div>
         </MaxWidthWrapper>
       </section>

@@ -33,17 +33,17 @@ export default async function Page({ params }: { params: { url: string } }) {
               </h1>
             </div>
 
-            <div className="relative w-full h-auto"
+            <div className="relative lg:h-[750px] md:h-[500px] h-[260px] overflow-hidden"
             >
               <Image
+                className="object-cover"
                 src={src}
-                alt="blog post"
-                width={1200}
-                height={771}
+                alt="blog details image"
+                fill
                 loading="eager"
-                // priority
-                // quality={90}
-                sizes="(min-width: 1320px) 1200px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
+                quality={100}
+                sizes="(min-width: 1440px) 1200px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
+                priority
               />
             </div>
           </div>
