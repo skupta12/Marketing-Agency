@@ -37,6 +37,7 @@ export default function Page({ params }: { params: { url: string } }) {
               src={src}
               // priority 
               alt="work-image" 
+              loading="eager"
               />
             </div>
           </div>

@@ -40,8 +40,9 @@ export default async function Page({ params }: { params: { url: string } }) {
                 alt="blog post"
                 width={1200}
                 height={771}
+                loading="eager"
                 // priority
-                quality={90}
+                // quality={90}
                 sizes="(min-width: 1440px) 1200px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
               />
             </div>
