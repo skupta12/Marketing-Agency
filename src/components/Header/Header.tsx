@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { NavItem } from "@/components/Header/NavItem";
+import { NavItem } from "@/components/header/NavItem";
 
 const Header = () => {
   const [scrollAlpha, setScrollAlpha] = useState<number>(1)
