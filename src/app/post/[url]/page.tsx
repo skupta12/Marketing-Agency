@@ -43,7 +43,7 @@ export default async function Page({ params }: { params: { url: string } }) {
                 loading="eager"
                 // priority
                 // quality={90}
-                // sizes="(min-width: 1440px) 1200px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
+                sizes="(min-width: 1320px) 1200px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
               />
             </div>
           </div>
