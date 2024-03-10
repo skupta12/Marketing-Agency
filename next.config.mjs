@@ -8,13 +8,13 @@ const nextConfig = {
 			},
 			{
 				protocol: "https",
+				port: "",
 				hostname: "marketing-agency-db.vercel.app",
+				pathname: "/**"
 			},
 		],
 	},
 };
 
 export default nextConfig;
-
-
 

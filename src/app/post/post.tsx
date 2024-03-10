@@ -28,8 +28,8 @@ export default async function Post({
             <div>
               <Image
                 className="w-full h-full object-cover"
-                placeholder="blur"
-                blurDataURL="/blog-placeholder.jpg"
+                // placeholder="blur"
+                // blurDataURL="/blog-placeholder.jpg"
                 width={381}
                 height={247}
                 src={src}
