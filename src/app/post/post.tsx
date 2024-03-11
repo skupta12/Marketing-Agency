@@ -2,6 +2,8 @@ import React from "react";
 import Link from "next/link";
 import { fetchFilteredBlogs } from "@/lib/data";
 import BlurImage from "@/components/BlurImage";
+// import Image from "next/image"
+// import BlogF from "/public/blog/blog-1.jpg"
 
 export default async function Post({
   query,
@@ -13,42 +15,42 @@ export default async function Post({
 
   // artificial delay
   const delayData = async () => {
-    await new Promise(resolve => setTimeout(resolve, 500));
+    await new Promise(resolve => setTimeout(resolve, 300));
     return await fetchFilteredBlogs(query, currentPage);
   };
 
   const blogs = await delayData();
-
+  
   return (
     <div className="grid grid-cols-12 gap-x-7 sm:gap-y-18 gap-y-14">
       {blogs?.map((blog, i) => (
         <div key={i} className="lg:col-span-4 md:col-span-6 col-span-12">
           <Link className="relative" href={`/post/${blog.url}`}>
             <div className="relative overflow-hidden h-[260px]">
-              <BlurImage  
-                fill
-                src={blog.src}
-                alt="blog image"
-                quality={100}
-                loading="eager"
-                priority
-                sizes="(min-width: 1440px) 381px, (min-width: 1040px) 
-                calc(27.89vw - 15px), (min-width: 780px) calc(50vw - 70px), 
-                (min-width: 380px) calc(100vw - 32px), calc(33.33vw + 208px)"
-               />
               {/* <Image
                 className="object-cover"
                 fill
-                src={blog.src}
+                src={BlogF}
                 alt="blog image"
                 quality={100}
                 loading="eager"
-                priority
                 placeholder="blur"
+                priority
                 sizes="(min-width: 1440px) 381px, (min-width: 1040px) 
                 calc(27.89vw - 15px), (min-width: 780px) calc(50vw - 70px), 
                 (min-width: 380px) calc(100vw - 32px), calc(33.33vw + 208px)"
               /> */}
+              <BlurImage
+                fill
+                src={blog.src}
+                alt="blog post image"
+                // quality={80}
+                priority
+                loading="eager"
+                sizes="(min-width: 1440px) 381px, (min-width: 1040px) 
+                calc(27.89vw - 15px), (min-width: 780px) calc(50vw - 70px), 
+                (min-width: 380px) calc(100vw - 32px), calc(33.33vw + 208px)"
+                />
             </div>
             <div className="absolute content-[''] top-0 left-0 right-0 bottom-0 inset-0 hover:bg-white hover:bg-opacity-15 transition" />
           </Link>

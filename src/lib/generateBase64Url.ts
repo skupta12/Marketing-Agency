@@ -1,11 +1,20 @@
-import { getPlaiceholder } from "plaiceholder";
+// import { getPlaiceholder } from "plaiceholder";
 
- // Function to generate blur data URL
+// export default async function getBase64(imageUrl: string) {
+//     try {
+//         const res = await fetch(imageUrl)
 
- const generateBlurDataURL = async (src) => {
-    const buffer = await fetch(src).then(async (res) => {
-      return Buffer.from(await res.arrayBuffer());
-    });
-    const { base64 } = await getPlaiceholder(buffer);
-    return base64;
-  };
+//         if (!res.ok) {
+//             throw new Error(`Failed to fetch image: ${res.status} ${res.statusText}`)
+//         }
+
+//         const buffer = await res.arrayBuffer()
+
+//         const { base64 } = await getPlaiceholder(Buffer.from(buffer))
+
+//         return base64;
+
+//     } catch (e) {
+//         if (e instanceof Error) console.log(e.stack)
+//     }
+// }

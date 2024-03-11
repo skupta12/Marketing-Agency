@@ -34,19 +34,18 @@ const TextInfo = ({ secSrc }: { secSrc: string }) => {
             })}
           </ol>
           <div className="w-full h-auto">
-            <hr className="sm:mt-20 mt-10 sm:mb-16 mb-8 text-gray-300 bg-gray-300" />
+            <hr className="sm:mt-20 mt-10 sm:mb-16 mb-8 text-gray-300" />
             <div className="relative lg:h-[750px] md:h-[500px] h-[260px] overflow-hidden">
               <Image
                 className="object-cover"
-                fill
-                
+                fill               
                 src={secSrc}
                 alt="second details image"
                 sizes="(min-width: 1440px) 1200px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
               />
             </div>
 
-            <hr className="sm:mt-20 mt-10 sm:mb-16 mb-8 text-gray-300 bg-gray-300" />
+            <hr className="sm:mt-20 mt-10 sm:mb-16 mb-8 text-gray-300"/>
           </div>
           <div>
             <h3 className="text-[24px] font-medium mb-2 leading-tight">

@@ -29,13 +29,13 @@ const BlurImage = ({
   return (
     <Image
       src={src}
-      className={`${className} object-cover ${
-        zoomIn && "hover:scale-110 transition-all duration-300"
+      className={`${className} object-cover transition-all duration-100 scale-110 ${
+        zoomIn && "hover:scale-110"
       } 
       ${
         isLoading
-          ? "scale-110 blur-2xl grayscale-[50%]"
-          : "scale-100 blur-0 grayscale-0"
+          ? "blur-2xl grayscale-[50%]"
+          : "blur-0 grayscale-0"
       }`}
       fill={fill}
       onLoad={() => setIsLoading(false)}

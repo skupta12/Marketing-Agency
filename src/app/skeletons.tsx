@@ -23,7 +23,10 @@ export function BlogSkeletonItem() {
           <span
             className={`w-20 h-8 bg-slate-200 inline-block px-4 py-1 my-5 rounded-full`}
           ></span>
-          <div className="mb-3">
+          <div className="mb-4">
+            <h5 className="w-[300px] py-4 bg-slate-200 rounded-lg"></h5>
+          </div>
+          <div className="mb-4">
             <h5 className="w-[300px] py-4 bg-slate-200 rounded-lg"></h5>
           </div>
           <span className="w-64 block py-3 bg-slate-200 rounded-lg"></span>
@@ -64,7 +67,7 @@ export default function BlogSkeleton() {
   return (
     <div className="relative">
       <div
-        className="grid grid-cols-12 gap-x-7 gap-y-20 relative"
+        className="grid grid-cols-12 gap-x-7 sm:gap-y-18 gap-y-14"
       >
         <BlogSkeletonItem />
         <BlogSkeletonItem />
