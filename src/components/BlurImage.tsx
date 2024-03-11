@@ -38,7 +38,7 @@ const BlurImage = ({
           : "scale-100 blur-0 grayscale-0"
       }`}
       fill={fill}
-      onLoadingComplete={() => setIsLoading(false)}
+      onLoad={() => setIsLoading(false)}
       alt={alt}
       quality={quality}
       loading={loading}

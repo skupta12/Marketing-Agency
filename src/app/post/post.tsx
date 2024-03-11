@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { fetchFilteredBlogs } from "@/lib/data";
 import BlurImage from "@/components/BlurImage";
 
@@ -45,6 +44,7 @@ export default async function Post({
                 quality={100}
                 loading="eager"
                 priority
+                placeholder="blur"
                 sizes="(min-width: 1440px) 381px, (min-width: 1040px) 
                 calc(27.89vw - 15px), (min-width: 780px) calc(50vw - 70px), 
                 (min-width: 380px) calc(100vw - 32px), calc(33.33vw + 208px)"
@@ -66,7 +66,7 @@ export default async function Post({
             </span>
           </div>
         </div>
-      ))}
+      ))}  
     </div>
   );
 }
