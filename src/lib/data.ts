@@ -38,14 +38,16 @@ export async function fetchFilteredBlogs(
         blogs.src,
         blogs.label,
         blogs.text,
-        blogs.date
+        blogs.date,
+        blogs.blur
       FROM blogs
       WHERE
       blogs.url::text ILIKE ${`%${query}%`} OR
       blogs.src ILIKE ${`%${query}%`} OR
       blogs.label::text ILIKE ${`%${query}%`} OR
       blogs.text::text ILIKE ${`%${query}%`} OR
-      blogs.date::text ILIKE ${`%${query}%`}
+      blogs.date::text ILIKE ${`%${query}%`} OR
+      blogs.blur::text ILIKE ${`%${query}%`}
       ORDER BY blogs.date DESC
       LIMIT ${ITEMS_PER_PAGE} OFFSET ${offset}
     `;
@@ -82,7 +84,7 @@ export async function fetchCurrentPost() {
   noStore();
   try {
     const data = await sql<Blog>`
-      SELECT blogs.url, blogs.src, blogs.label, blogs.text
+      SELECT blogs.url, blogs.src, blogs.label, blogs.text, blogs.blur
       FROM blogs
       `;
 

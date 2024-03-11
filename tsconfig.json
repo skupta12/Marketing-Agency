@@ -28,6 +28,6 @@
     ".next/types/**/*.ts", 
     "src/lib/placeholder-data.js",
     "scripts/seed.js"
-  ],
+, "src/lib/createTablesForFetch.js"  ],
   "exclude": ["node_modules"]
 }

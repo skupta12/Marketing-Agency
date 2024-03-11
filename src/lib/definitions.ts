@@ -5,6 +5,7 @@ export type Blog = {
     label: string;
     text: string;
     date: string;
+    blur: string;
 };
 
 // export type Portfolio = {

@@ -116,7 +116,8 @@ export const portfolio = [
     client: "Client",
     role: "Font, User Interface",
     recognition: "CSS Award",
-    year: "2021"
+    year: "2021",
+    blur: "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoIAAYAAkA4JbACdAEWUE9Bv8AA/vEBLwRZMkQKK4SBDgBkAVl91X/GGOXsYBs4sqgX3/nEyt/97S/9E/JIqZQ+D207U5kEJ8G6D/QzpAA="
   },
   {
     id: 1,
@@ -127,7 +128,8 @@ export const portfolio = [
     client: "Client",
     role: "Logo, User Interface",
     recognition: "Awwwards",
-    year: "2020"
+    year: "2020",
+    blur: "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAABQAgCdASoIAAYAAkA4JbACdLoB+AH4gAIM/vwA/vjibzBI6K7ozCM7N0Z//Ru9Y5VgCYofmLf/JscWarJkW/QwAAA="
   },
   {
     id: 2,
@@ -138,7 +140,8 @@ export const portfolio = [
     client: "Client",
     role: "UI, UX, Development",
     recognition: "CSS Award",
-    year: "2024"
+    year: "2024",
+    blur: "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACQAQCdASoIAAYAAkA4JaQAAudFrAAA/v4mSeLzYr73hnFIQFhQAAAA"
   },
   {
     id: 3,
@@ -149,7 +152,8 @@ export const portfolio = [
     client: "Client",
     role: "UI, UX, Development",
     recognition: "CSS Award",
-    year: "2022"
+    year: "2022",
+    blur: "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAABwAgCdASoIAAYAAkA4JbACdLoB+ACAAAXBjEAAAPuD6ZV/g72RKIP0l/+CE3KwPNF41hq/+LS6UOnQHpt9TgAA"
   },
 ];
 
@@ -219,12 +223,13 @@ export const aiList = [
 
 export const blogs = [
   {
-    id: "3958dc9e-712f-4377-85e9-fec4b6a64420",
+    id: "3958dc9e-712f-4277-85e9-fec4b6a64420",
     url: "detailed-explanation-of-our-design-process",
     src: "/blog/blog-1.jpg",
     label: "Code",
     text: "Detailed explanation of our design process",
     date: "April 27, 2024",
+    blur: "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACQAQCdASoIAAUAAkA4JYgAAuTqLAAA/vmWKUff2XSR3CD3/+KHNnb/kAA=",
   },
   {
     id: "3958dc9e-712f-4377-85e9-fec4b6a64421",
@@ -233,6 +238,7 @@ export const blogs = [
     label: "Marketing",
     text: "Examining our branding strategy closely",
     date: "May 10, 2024",
+    blur: "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAAAwAgCdASoIAAUAAkA4JbACdLoB+AACzJ2riAD++lhE91hXFzQUlXQZy7vaLf0ubn/8gzY8ZZ8ltQ/1Y2oSFN+fQAA=",
     },
   {
     id: "3958dc9e-712f-4377-85e9-fec4b6a64422",
@@ -241,6 +247,7 @@ export const blogs = [
     label: "Design",
     text: "Strategies for seamless mobile apps",
     date: "April 1, 2024",
+    blur: "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAUAAkA4JZwAAsf1jq8AAP71+ACa5H6f7b3fVeXKa0diA8L/jYmipDEp0AAA",
   },
 ];
 

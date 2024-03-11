@@ -12,7 +12,8 @@ async function seedBlog(client) {
             src VARCHAR(255) NOT NULL,
             label VARCHAR(255) NOT NULL,
             text VARCHAR(255) NOT NULL,
-            date VARCHAR(255) NOT NULL
+            date VARCHAR(255) NOT NULL,
+            blur VARCHAR(255) NOT NULL
         );
       `;
 
@@ -23,8 +24,8 @@ async function seedBlog(client) {
     const insertedBlog = await Promise.all(
       blogs.map(
         (blog) => client.sql`
-          INSERT INTO blogs (id, url, src, label, text, date)
-          VALUES (${blog.id}, ${blog.url}, ${blog.src}, ${blog.label}, ${blog.text}, ${blog.date})
+          INSERT INTO blogs (id, url, src, label, text, date, blur)
+          VALUES (${blog.id}, ${blog.url}, ${blog.src}, ${blog.label}, ${blog.text}, ${blog.date}, ${blog.blur})
           ON CONFLICT (id) DO NOTHING;
         `
       )

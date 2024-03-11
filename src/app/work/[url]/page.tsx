@@ -5,7 +5,7 @@ import { portfolio } from "@/lib/placeholder-data";
 import styles from "@/style";
 import TextInfo from "../textInfo";
 import CTA from "@/sections/CTA";
-import BlurImage from "@/components/BlurImage";
+import Image from "next/image"
 
 export default function Page({ params }: { params: { url: string } }) {
 
@@ -15,7 +15,15 @@ export default function Page({ params }: { params: { url: string } }) {
     return <NotFound />;
   }
 
-  const { src, secSrc, scrollerTitle, client, role, recognition, year } = work;
+  const { 
+    src, 
+    secSrc, 
+    scrollerTitle, 
+    client, 
+    role, 
+    recognition, 
+    year, 
+    blur } = work;
 
   return (
     <>
@@ -29,14 +37,17 @@ export default function Page({ params }: { params: { url: string } }) {
         <div className="grid grid-cols-12 sm:gap-x-10 gap-x-5 gap-y-10 items-center">
           <div className="lg:col-span-7 col-span-12">
             <div className="relative overflow-hidden sm:h-[478px] h-[320px]">
-              <BlurImage 
+               <Image
                 fill
                 src={src}
-                sizes="(min-width: 1320px) 683px, (min-width: 1040px) 48.95vw, (min-width: 780px) calc(100vw - 112px), calc(100vw - 32px)"
+                sizes="(min-width: 1320px) 683px, (min-width: 1040px) 48.95vw, 
+                (min-width: 780px) calc(100vw - 112px), calc(100vw - 32px)"
                 alt="work image details"
                 loading="eager"
                 priority
-               />
+                placeholder="blur"
+                blurDataURL={blur}
+                />
             </div>
           </div>
           <div className="lg:col-span-5 col-span-12 flex flex-col h-full justify-center border border-gray-300">

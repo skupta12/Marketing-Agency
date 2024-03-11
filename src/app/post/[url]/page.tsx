@@ -16,7 +16,7 @@ export default async function Page({ params }: { params: { url: string } }) {
     return <NotFound />
   }
 
-  const { src, text, label } = post;
+  const { src, text, label, blur } = post;
 
   return (
     <>
@@ -33,12 +33,14 @@ export default async function Page({ params }: { params: { url: string } }) {
             </div>
 
             <div className="relative lg:h-[750px] md:h-[500px] h-[320px] overflow-hidden">
-              <BlurImage   
-                alt="blog details image"
+              <Image
                 src={src}
-                fill
-                loading="eager"
+                alt="blog details image"
+                fill 
+                priority
                 quality={100}
+                placeholder="blur"
+                blurDataURL={blur}
                 sizes="(min-width: 1440px) 900px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
               />
             </div>

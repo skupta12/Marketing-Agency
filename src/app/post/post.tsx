@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import { fetchFilteredBlogs } from "@/lib/data";
-import BlurImage from "@/components/BlurImage";
-// import Image from "next/image"
-// import BlogF from "/public/blog/blog-1.jpg"
+// import BlurImage from "@/components/BlurImage";
+import Image from "next/image"
+// import BlogF from "/public/blog/blog-10.jpg"
 
 export default async function Post({
   query,
@@ -15,38 +15,27 @@ export default async function Post({
 
   // artificial delay
   const delayData = async () => {
-    await new Promise(resolve => setTimeout(resolve, 300));
+    await new Promise(resolve => setTimeout(resolve, 200));
     return await fetchFilteredBlogs(query, currentPage);
   };
 
   const blogs = await delayData();
-  
+
   return (
     <div className="grid grid-cols-12 gap-x-7 sm:gap-y-18 gap-y-14">
-      {blogs?.map((blog, i) => (
-        <div key={i} className="lg:col-span-4 md:col-span-6 col-span-12">
-          <Link className="relative" href={`/post/${blog.url}`}>
+      {blogs?.map(({ id, url, src, label, text, date, blur }) => (
+        <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
+          <Link className="relative" href={`/post/${url}`}>
             <div className="relative overflow-hidden h-[260px]">
-              {/* <Image
-                className="object-cover"
+              <Image
                 fill
-                src={BlogF}
-                alt="blog image"
-                quality={100}
+                src={src}
+                alt="blog post image"
+                quality={90}
+                priority
                 loading="eager"
                 placeholder="blur"
-                priority
-                sizes="(min-width: 1440px) 381px, (min-width: 1040px) 
-                calc(27.89vw - 15px), (min-width: 780px) calc(50vw - 70px), 
-                (min-width: 380px) calc(100vw - 32px), calc(33.33vw + 208px)"
-              /> */}
-              <BlurImage
-                fill
-                src={blog.src}
-                alt="blog post image"
-                // quality={80}
-                priority
-                loading="eager"
+                blurDataURL={blur}
                 sizes="(min-width: 1440px) 381px, (min-width: 1040px) 
                 calc(27.89vw - 15px), (min-width: 780px) calc(50vw - 70px), 
                 (min-width: 380px) calc(100vw - 32px), calc(33.33vw + 208px)"
@@ -56,15 +45,15 @@ export default async function Post({
           </Link>
           <div>
             <span className="text-[15px] inline-block font-semibold border-2 border-black px-4 py-1 rounded-full my-5">
-              {blog.label}
+              {label}
             </span>
-            <Link href={`/post/${blog.url}`}>
+            <Link href={`/post/${url}`}>
               <h5 className="block sm:text-[28px] text-[24px] font-semibold mb-3 pr-5">
-                {blog.text}
+                {text}
               </h5>
             </Link>
             <span className="text-gray-500 font-medium text-[16px]">
-              {blog.date}
+              {date}
             </span>
           </div>
         </div>

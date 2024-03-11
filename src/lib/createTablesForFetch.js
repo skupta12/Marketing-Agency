@@ -1,11 +1,12 @@
 const blogs = [
     {
-      id: "3958dc9e-712f-4377-85e9-fec4b6a64420",
+      id: "3958dc9e-712f-4277-85e9-fec4b6a64420",
       url: "detailed-explanation-of-our-design-process",
       src: "/blog/blog-1.jpg",
       label: "Code",
       text: "Detailed explanation of our design process",
       date: "April 27, 2024",
+      blur: "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACQAQCdASoIAAUAAkA4JYgAAuTqLAAA/vmWKUff2XSR3CD3/+KHNnb/kAA=",
     },
     {
       id: "3958dc9e-712f-4377-85e9-fec4b6a64421",
@@ -14,6 +15,7 @@ const blogs = [
       label: "Marketing",
       text: "Examining our branding strategy closely",
       date: "May 10, 2024",
+      blur: "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAAAwAgCdASoIAAUAAkA4JbACdLoB+AACzJ2riAD++lhE91hXFzQUlXQZy7vaLf0ubn/8gzY8ZZ8ltQ/1Y2oSFN+fQAA=",
       },
     {
       id: "3958dc9e-712f-4377-85e9-fec4b6a64422",
@@ -22,6 +24,7 @@ const blogs = [
       label: "Design",
       text: "Strategies for seamless mobile apps",
       date: "April 1, 2024",
+      blur: "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAUAAkA4JZwAAsf1jq8AAP71+ACa5H6f7b3fVeXKa0diA8L/jYmipDEp0AAA",
     },
     {
       id: "3958dc9e-712f-4377-85e9-fec4b6a64427",
@@ -30,6 +33,7 @@ const blogs = [
       label: "Code",
       text: "Rethinking our design process",
       date: "August 16, 2024",
+      blur: "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACQAQCdASoIAAUAAkA4JagCdLoAA5gA/u940Tf/LP/P74u9Tn21w276AAA=",
     },
     {
       id: "3958dc9e-712f-4377-85e9-fec4b6a64423",
@@ -38,6 +42,7 @@ const blogs = [
       label: "Marketing",
       text: "Insights into our branding approach",
       date: "May 10, 2024",
+      blur: "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAQCdASoIAAUAAkA4JZgCdAEOuwSAAP74oY29dofenTkdpmSiCLPQYdrEqSgEAAmEpiWgWcq9ft0x2eE/QBeai2b2J2OVAAA=",
     },
     {
       id: "3958dc9e-712f-4377-85e9-fec4b6a64426",
@@ -46,6 +51,7 @@ const blogs = [
       label: "Design",
       text: "Enhancing mobile user experiences",
       date: "June 5, 2024",
+      blur: "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAADQAQCdASoIAAUAAkA4JZwCdAD0jPJKIAD++oTkdwLVMoCQHjLgAA==",
     },
     {
       id: "3958dc9e-712f-4377-85e9-fec4b6a54427",
@@ -54,6 +60,7 @@ const blogs = [
       label: "Technology",
       text: "Latest technological advancements explored",
       date: "August 16, 2024",
+      blur: "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoIAAUAAkA4JagCdAEO+MVfQAD+iIjuDzqoP822bMsT62uj9ITPV9hFpS3+fYiaVArZd+vQn/ZOM/jgThxEfxgfS2BwAAAA",
     },
     {
       id: "29f3a7b2-80ff-4f79-a7d6-58fc0f1c0b92",
@@ -62,6 +69,7 @@ const blogs = [
       label: "Development",
       text: "Deep dive into coding and programming",
       date: "September 5, 2024",
+      blur: "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoIAAUAAkA4JaACdAEO+M37wAD+/AKizrAsfHpPvNJTlWA8fw59sf2wW/kGqkkH4inHAqozp6AAAA==",
     },
     {
       id: "6e82d1b3-6c6b-4b59-9bb0-afe0fe69a0b3",
@@ -70,6 +78,7 @@ const blogs = [
       label: "Innovation",
       text: "Reshaping the tech industry through innovation",
       date: "October 12, 2024",
+      blur: "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoIAAUAAkA4JbACdLoAAnA0LLAA/h836jaKBstjVcWBNadXMkeeTn7i0f/qZWeRXfL07b/k3sa/8wsQT/PugvnRqX/88k/6m/WkAA==",
     },
     {
       id: "1c2d5f9e-8f8d-4e91-b0af-31b2e2a54f71",
@@ -78,6 +87,7 @@ const blogs = [
       label: "Insights",
       text: "Latest industry trends analyzed",
       date: "November 21, 2024",
+      blur: "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoIAAUAAkA4JQBOhgogLPcycAAA/upOPpgWeOKnPBOrJis2jwR2zwCuWq1izSiZEYY3KiLwpl5lv5PaLC7DD0u5AAA=",
     },
   ];
   
