@@ -12,6 +12,7 @@ const BlurImage = ({
   priority,
   sizes,
   zoomIn,
+  className,
 }: {
   src: string;
   fill: boolean;
@@ -19,15 +20,16 @@ const BlurImage = ({
   quality?: number;
   loading?: "eager" | "lazy" | undefined;
   priority?: boolean;
-  sizes: string;
+  sizes?: string;
   zoomIn?: string;
+  className?: string;
 }) => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   return (
     <Image
       src={src}
-      className={`object-cover ${
+      className={`${className} object-cover ${
         zoomIn && "hover:scale-110 transition-all duration-300"
       } 
       ${

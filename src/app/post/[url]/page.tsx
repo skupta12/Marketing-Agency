@@ -33,7 +33,7 @@ export default async function Page({ params }: { params: { url: string } }) {
             </div>
 
             <div className="relative lg:h-[750px] md:h-[500px] h-[320px] overflow-hidden">
-              <BlurImage
+              <BlurImage   
                 alt="blog details image"
                 src={src}
                 fill

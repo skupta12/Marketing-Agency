@@ -25,8 +25,8 @@ export default async function Post({
       {blogs?.map((blog, i) => (
         <div key={i} className="lg:col-span-4 md:col-span-6 col-span-12">
           <Link className="relative" href={`/post/${blog.url}`}>
-            <div className="relative overflow-hidden w-[381px] h-[260px]">
-              <BlurImage
+            <div className="relative overflow-hidden h-[260px]">
+              <BlurImage  
                 fill
                 src={blog.src}
                 alt="blog image"
