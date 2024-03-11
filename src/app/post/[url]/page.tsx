@@ -4,7 +4,8 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Image from "next/image";
 import { oswald } from "@/app/fonts";
 import NotFound from "@/app/not-found";
-import CTA from "@/components/CTA";
+import CTA from "@/sections/CTA";
+import BlurImage from "@/components/BlurImage";
 
 export default async function Page({ params }: { params: { url: string } }) {
 
@@ -26,24 +27,19 @@ export default async function Page({ params }: { params: { url: string } }) {
               {label}
             </span>
             <div className="md:mb-20 mb-10">
-              <h1
-                className="font-semibold text-[30px] lg:text-[70px] md:text-[50px] xl:text-[94px] leading-[1.1]"
-              >
+              <h1 className="font-semibold text-[30px] lg:text-[70px] md:text-[50px] xl:text-[94px] leading-[1.1]">
                 {text}
               </h1>
             </div>
 
-            <div className="relative lg:h-[620px] md:h-[500px] h-[260px] overflow-hidden"
-            >
-              <Image
-                className="object-cover"
-                src={src}
+            <div className="relative lg:h-[750px] md:h-[500px] h-[320px] overflow-hidden">
+              <BlurImage
                 alt="blog details image"
+                src={src}
                 fill
                 loading="eager"
-                // priority
                 quality={100}
-                sizes="(min-width: 1440px) 1200px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
+                sizes="(min-width: 1440px) 900px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
               />
             </div>
           </div>

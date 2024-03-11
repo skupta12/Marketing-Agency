@@ -5,7 +5,7 @@ import { portfolio } from "@/lib/placeholder-data";
 import styles from "@/style";
 import Image from "next/image";
 import TextInfo from "../textInfo";
-import CTA from "@/components/CTA";
+import CTA from "@/sections/CTA";
 
 export default function Page({ params }: { params: { url: string } }) {
 

@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
-import Button from "./Button";
-import MaxWidthWrapper from "./MaxWidthWrapper";
-import Gradient from "./Gradient";
+import Button from "../components/Button";
+import MaxWidthWrapper from "../components/MaxWidthWrapper";
+import Gradient from "../components/Gradient";
 import styles from "@/style";
 
 const CTA = () => {

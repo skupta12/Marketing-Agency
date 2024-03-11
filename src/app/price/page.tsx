@@ -1,7 +1,7 @@
 import { playfair } from "@/app/fonts";
 import { BlackButton } from "@/components/Button";
-import CTA from "@/components/CTA";
-import Faq from "@/components/Faq";
+import CTA from "@/sections/CTA";
+import Faq from "@/sections/Faq";
 import Gradient from "@/components/Gradient";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { prices } from "@/lib/placeholder-data";

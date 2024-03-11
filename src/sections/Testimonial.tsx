@@ -5,7 +5,7 @@ import "../app/globals.css";
 import Image from "next/image";
 import { testimonial } from "@/lib/placeholder-data";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import MaxWidthWrapper from "./MaxWidthWrapper";
+import MaxWidthWrapper from "../components/MaxWidthWrapper";
 import style from "@/style";
 
 export default function Testimonial() {

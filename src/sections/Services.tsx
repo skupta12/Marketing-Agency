@@ -1,7 +1,7 @@
 import { playfair } from "@/app/fonts";
 import { counter, services } from "@/lib/placeholder-data";
 import Image from "next/image";
-import MaxWidthWrapper from "./MaxWidthWrapper";
+import MaxWidthWrapper from "../components/MaxWidthWrapper";
 import style from "@/style";
 
 const Services = () => {

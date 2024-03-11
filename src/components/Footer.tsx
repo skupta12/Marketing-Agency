@@ -22,7 +22,7 @@ const Footer = () => {
                     <span className="absolute inset-x-0 -bottom-1 h-[2px] bg-black"></span>
                     {city}
                   </p>
-                  <p className="text-[18px] font-semibold text-gray-500">
+                  <p className="text-[18px] font-medium text-gray-500">
                     {street}
                   </p>
                 </div>

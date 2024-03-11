@@ -6,7 +6,7 @@ import Post from "./post";
 import BlogSkeleton from "../skeletons";
 import { fetchBlogPages } from "@/lib/data";
 import Pagination from "./pagination";
-import CTA from "@/components/CTA";
+import CTA from "@/sections/CTA";
 import styles from "@/style";
 
 export default async function page({

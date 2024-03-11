@@ -1,8 +1,8 @@
 import { playfair } from "@/app/fonts";
 import Image from "next/image";
 import Link from "next/link";
-import InfinitiveScroller from "./InfinitiveScroller";
-import MaxWidthWrapper from "./MaxWidthWrapper";
+import InfinitiveScroller from "../components/InfinitiveScroller";
+import MaxWidthWrapper from "../components/MaxWidthWrapper";
 import style from "@/style";
 
 const Portfolio = () => {

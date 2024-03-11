@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Button from "./Button";
+import Button from "../components/Button";
 import { playfair } from "@/app/fonts";
-import MaxWidthWrapper from "./MaxWidthWrapper";
-import Gradient from "./Gradient";
+import MaxWidthWrapper from "../components/MaxWidthWrapper";
+import Gradient from "@/components/Gradient";
 
 const Hero = () => {
   return (

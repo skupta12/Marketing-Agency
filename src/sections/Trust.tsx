@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { trust } from "@/lib/placeholder-data";
-import Button from "./Button";
-import MaxWidthWrapper from "./MaxWidthWrapper";
+import Button from "../components/Button";
+import MaxWidthWrapper from "../components/MaxWidthWrapper";
 import style from "../style"
 
 const Trust = () => {

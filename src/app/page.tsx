@@ -1,13 +1,13 @@
 "use client";
 
-import Ai from "@/components/Ai";
-import Blog from "@/components/Blog";
-import CTA from "@/components/CTA";
-import Hero from "@/components/Hero";
-import Portfolio from "@/components/Portfolio";
-import Services from "@/components/Services";
-import Testimonial from "@/components/Testimonial";
-import Trust from "@/components/Trust";
+import Ai from "@/sections/Ai";
+import Blog from "@/sections/Blog";
+import CTA from "@/sections/CTA";
+import Hero from "@/sections/Hero";
+import Portfolio from "@/sections/Portfolio";
+import Services from "@/sections/Services";
+import Testimonial from "@/sections/Testimonial";
+import Trust from "@/sections/Trust";
 
 // @ts-expect-error
 import AOS from "aos";

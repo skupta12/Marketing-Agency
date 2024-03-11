@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { Check } from "lucide-react";
 import { aiList } from "@/lib/placeholder-data";
-import { DownloadButton } from "./Button";
-import MaxWidthWrapper from "./MaxWidthWrapper";
+import { DownloadButton } from "../components/Button";
+import MaxWidthWrapper from "../components/MaxWidthWrapper";
 import style from "@/style";
 
 const Ai = () => {

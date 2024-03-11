@@ -2,9 +2,9 @@ import { playfair } from "../fonts";
 import Image from "next/image";
 import Button from "@/components/Button";
 import Gradient from "@/components/Gradient";
-import Team from "@/components/Team";
+import Team from "@/sections/Team";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import CTA from "@/components/CTA";
+import CTA from "@/sections/CTA";
 import styles from "@/style";
 
 const Page = () => {

@@ -5,7 +5,7 @@ import { portfolio } from "@/lib/placeholder-data";
 import Link from "next/link";
 import Image from "next/image";
 import InfinitiveScroller from "@/components/InfinitiveScroller";
-import CTA from "@/components/CTA";
+import CTA from "@/sections/CTA";
 import styles from "@/style";
 
 const scrollerboxStyle =

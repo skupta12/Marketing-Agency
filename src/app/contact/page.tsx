@@ -1,4 +1,4 @@
-import Faq from "@/components/Faq";
+import Faq from "@/sections/Faq";
 import { playfair } from "../fonts";
 import Image from "next/image";
 import { contact } from "@/lib/placeholder-data";
@@ -6,7 +6,7 @@ import { BlackButton } from "@/components/Button";
 import Gradient from "@/components/Gradient";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import styles from "@/style";
-import CTA from "@/components/CTA";
+import CTA from "@/sections/CTA";
 
 const Page = () => {
   return (
