@@ -38,6 +38,7 @@ export default function Page({ params }: { params: { url: string } }) {
           <div className="lg:col-span-7 col-span-12">
             <div className="relative overflow-hidden sm:h-[478px] h-[320px]">
                <Image
+                className="object-cover"
                 fill
                 src={src}
                 sizes="(min-width: 1320px) 683px, (min-width: 1040px) 48.95vw, 

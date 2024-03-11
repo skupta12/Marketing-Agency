@@ -34,6 +34,7 @@ export default async function Page({ params }: { params: { url: string } }) {
 
             <div className="relative lg:h-[750px] md:h-[500px] h-[320px] overflow-hidden">
               <Image
+                className="object-cover"
                 src={src}
                 alt="blog details image"
                 fill 
