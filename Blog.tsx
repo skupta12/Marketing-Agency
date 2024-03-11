@@ -1,8 +1,8 @@
 import { playfair } from "@/app/fonts";
-import Button from "../components/Button";
+import Button from "./src/components/Button";
 import { blogs } from "@/lib/placeholder-data";
 import Image from "next/image";
-import MaxWidthWrapper from "../components/MaxWidthWrapper";
+import MaxWidthWrapper from "./src/components/MaxWidthWrapper";
 import style from "@/style";
 import Link from "next/link";
 
