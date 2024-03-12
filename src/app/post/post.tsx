@@ -28,7 +28,7 @@ export default async function Post({
               <Image
                 className="object-cover"
                 fill
-                src="/blog/blog-1.jpg"
+                src={src}
                 alt="blog post image"
                 quality={90}
                 priority
