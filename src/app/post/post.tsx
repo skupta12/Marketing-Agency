@@ -27,13 +27,13 @@ export default async function Post({
           <Link className="relative" href={`/post/${url}`}>
             <div className="relative overflow-hidden h-[260px]">
               <Image
-                className="object-cover"
+                className="object-cover w-full"
                 fill
                 src={src}
                 alt="blog post image"
                 quality={90}
-                // priority
-                // loading="eager"
+                priority
+                loading="eager"
                 placeholder="blur"
                 blurDataURL={blur}
                 sizes="(min-width: 1360px) 381px, (min-width: 1040px) 
