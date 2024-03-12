@@ -30,16 +30,16 @@ const Blog = () => {
         <div
           data-aos="fade-up"
           data-aos-offset="-250"
-          className="grid grid-cols-12 gap-x-7 sm:gap-y-18 gap-y-14 pt-20"
+          className="grid grid-cols-12 sm:gap-x-7 gap-x-6 sm:gap-y-18 gap-y-14 pt-20"
         >
           {blogs.map(({ id, url, src, label, text, date}) => (
             <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
               <Link className="relative" href={`/post/${url}`}>
                 <div>
                   <Image
-                    className="object-cover"
-                    width={1000}
-                    height={650}
+                    className="object-cover w-full"
+                    width={381}
+                    height={260}
                     src={src}
                     alt="blog post"
                   />

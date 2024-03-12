@@ -20,14 +20,13 @@ export default async function Post({
   const blogs = await delayData();
 
   return (
-    <div className="grid grid-cols-12 gap-x-7 sm:gap-y-18 gap-y-14">
+    <div className="grid grid-cols-12 sm:gap-x-7 gap-x-6 sm:gap-y-18 gap-y-14">
       {blogs?.map(({ id, url, src, label, text, date, blur }) => (
         <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
           <Link className="relative" href={`/post/${url}`}>
             <div className="relative overflow-hidden h-[260px]">
               <Image
-                // style={{ objectFit: "cover" }}
-                // className="object-cover w-full"
+                className="object-cover"
                 fill
                 src={src}
                 alt="blog post image"

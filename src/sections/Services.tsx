@@ -53,7 +53,7 @@ const Services = () => {
             .
           </h4>
         </div>
-        <div className="counter grid grid-cols-12 gap-7 mt-10 justify-center">
+        <div className="counter grid grid-cols-12 sm:gap-7 gap-6 mt-10 justify-center">
           {counter.map(({ number, text, id, dataAosDelay }) => (
             <div
               data-aos="fade-up"

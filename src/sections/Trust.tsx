@@ -8,7 +8,7 @@ const Trust = () => {
   return (
     <section className={`${style.sectionPadding}`}>
       <MaxWidthWrapper>
-        <div className="grid grid-cols-12 gap-7 lg:pb-32 pb-20">
+        <div className="grid grid-cols-12 sm:gap-x-7 gap-x-6 gap-y-7 lg:pb-32 pb-20">
           <div className="lg:col-span-4 col-span-12 lg:pr-5 pr-0">
             <h4
               data-aos="fade-right"
@@ -18,23 +18,22 @@ const Trust = () => {
               <span className="text-gray-500">place their trust in us</span>.
             </h4>
           </div>
-          <div className="lg:col-span-8 col-span-12 grid grid-cols-12 gap-5">
-            {trust.map((item, index) => (
-              <div key={index} className="sm:col-span-4 col-span-6">
-                <div
-                  data-aos="zoom-in"
-                  className="bg-primary-200 p-12"
-                >
-                  <Image
-                    className="mx-auto"
-                    width={100}
-                    height={100}
-                    src={item.src}
-                    alt="trust image"
-                  />
+          <div className="lg:col-span-8 col-span-12">
+            <div className="grid grid-cols-12 gap-5">
+              {trust.map((item, index) => (
+                <div key={index} className="sm:col-span-4 col-span-6">
+                  <div data-aos="zoom-in" className="bg-primary-200 p-12 h-full">
+                    <Image
+                      className="mx-auto"
+                      width={100}
+                      height={100}
+                      src={item.src}
+                      alt="trust image"
+                    />
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-y-12 gap-x-5 place-items-center">
