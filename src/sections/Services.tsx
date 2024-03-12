@@ -8,10 +8,7 @@ const Services = () => {
   return (
     <section className={`${style.sectionPadding}`}>
       <MaxWidthWrapper>
-        <div
-          data-aos="fade-up"
-          className="text-center"
-        >
+        <div data-aos="fade-up" className="text-center">
           <h3 className={`${style.heading3} mb-4`}>
             What{" "}
             <span className={`font-medium ${playfair.className}`}>we do</span>
@@ -30,7 +27,10 @@ const Services = () => {
               className="w-full lg:col-span-4 md:col-span-6 col-span-12 bg-primary-200 p-12"
               key={id}
             >
-              <div className="services-icon flex flex-col justify-center items-center w-[100px] h-[100px] bg-white rounded-full p-6">
+              <div
+                className="services-icon flex flex-col justify-center items-center 
+              w-[100px] h-[100px] bg-white rounded-full p-6"
+              >
                 <Image width={45} height={45} src={icon} alt="service icon" />
               </div>
               <div className="services-text">

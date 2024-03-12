@@ -16,7 +16,8 @@ const Accordion = ({ title, content }: { title: string; content: string }) => {
   return (
     <div className="flex flex-col">
       <button
-        className="py-6 border-b-2 box-border appearance-none cursor-pointer focus:outline-none flex items-center justify-between"
+        className="py-6 border-b-2 box-border appearance-none cursor-pointer 
+        focus:outline-none flex items-center justify-between"
         onClick={toggleAccordion}
       >
         <p className="inline-block sm:text-[20px] text-[16px] font-semibold">

@@ -9,7 +9,8 @@ const Footer = () => {
       <MaxWidthWrapper>
         <div className="grid grid-cols-12">
           <div className="lg:col-span-7 col-span-12 lg:mb-0 mb-14">
-            <div className="inline-block text-[14px] font-semibold border-2 border-black px-5 py-2 rounded-full mb-10">
+            <div className="inline-block text-[14px] font-semibold border-2 
+            border-black px-5 py-2 rounded-full mb-10">
               VISIT US
             </div>
             <div className="grid grid-cols-12 gap-6">
@@ -31,7 +32,8 @@ const Footer = () => {
           </div>
 
           <div className="lg:col-span-5 col-span-12 lg:ml-14 lg:justify-self-center">
-            <div className="inline-block text-[14px] font-semibold border-2 border-black px-5 py-2 rounded-full sm:mb-10 mb-5">
+            <div className="inline-block text-[14px] font-semibold border-2 
+            border-black px-5 py-2 rounded-full sm:mb-10 mb-5">
               STAY IN TOUCH
             </div>
             <p className="mb-4 text-[16px] font-semibold text-gray-500 relative">
@@ -56,7 +58,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="lg:flex justify-between items-center gap-5 mt-20">
-          <div className="flex items-center gap-x-5 text-[16px] text-gray-500 font-medium lg:mt-0 mt-3">
+          <div className="flex items-center gap-x-5 text-[16px] text-gray-500 
+          font-medium lg:mt-0 mt-3">
             <Link className="relative inline-block" href="#">
               <span className="absolute inset-x-0 -bottom-1 h-[2px] bg-black"></span>
               Style Guide

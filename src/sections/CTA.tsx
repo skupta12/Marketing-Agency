@@ -6,9 +6,7 @@ import styles from "@/style";
 
 const CTA = () => {
   return (
-    <section
-      className={`${styles.sectionPadding} overflow-hidden relative`}
-    >
+    <section className={`${styles.sectionPadding} overflow-hidden relative`}>
       <Gradient fill className="sm:block hidden" src="/gradient.png" />
       <Gradient fill className="sm:hidden block" src="/gradient-mobile.png" />
 
@@ -42,14 +40,16 @@ const CTA = () => {
               <div className="flex items-center mb-5 relative">
                 <input
                   className="px-6 py-5 bg-white rounded-full
-              max-w-[600px] w-full placeholder:font-medium border-[1px] border-white focus:outline-none focus:border-sky-500"
+              max-w-[600px] w-full placeholder:font-medium border-[1px] border-white 
+              focus:outline-none focus:border-sky-500"
                   type="email"
                   name="email"
                   placeholder="Enter your email"
                 />
                 <button
                   aria-label="submit"
-                  className="absolute top-0 sm:-right-4 right-0 w-[80px] h-[70px] ml-2 rounded-full p-4 bg-black flex flex-col justify-center items-center"
+                  className="absolute top-0 sm:-right-4 right-0 w-[80px] h-[70px] ml-2 
+                  rounded-full p-4 bg-black flex flex-col justify-center items-center"
                   type="submit"
                 >
                   <ArrowRight className="text-white w-[20px] h-[20px]" />

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { fetchFilteredBlogs } from "@/lib/data";
-import Image from "next/image"
+import Image from "next/image";
 
 export default async function Post({
   query,
@@ -13,7 +13,7 @@ export default async function Post({
 
   // artificial delay
   const delayData = async () => {
-    await new Promise(resolve => setTimeout(resolve, 250));
+    await new Promise((resolve) => setTimeout(resolve, 250));
     return await fetchFilteredBlogs(query, currentPage);
   };
 
@@ -28,22 +28,28 @@ export default async function Post({
               <Image
                 className="object-cover"
                 fill
-                src={src}
+                src="/blog/blog-1.jpg"
                 alt="blog post image"
                 quality={90}
                 priority
                 loading="eager"
                 placeholder="blur"
                 blurDataURL={blur}
-                sizes="(min-width: 1440px) 381px, (min-width: 1040px) 
+                sizes="(min-width: 1360px) 381px, (min-width: 1040px) 
                 calc(27.89vw - 15px), (min-width: 780px) calc(50vw - 70px), 
                 (min-width: 380px) calc(100vw - 32px), calc(33.33vw + 208px)"
-                />
+              />
             </div>
-            <div className="absolute content-[''] top-0 left-0 right-0 bottom-0 inset-0 hover:bg-white hover:bg-opacity-15 transition" />
+            <div
+              className="absolute content-[''] top-0 left-0 right-0 bottom-0 inset-0 
+            hover:bg-white hover:bg-opacity-15 transition"
+            />
           </Link>
           <div>
-            <span className="text-[15px] inline-block font-semibold border-2 border-black px-4 py-1 rounded-full my-5">
+            <span
+              className="text-[15px] inline-block font-semibold border-2 border-black 
+            px-4 py-1 rounded-full my-5"
+            >
               {label}
             </span>
             <Link href={`/post/${url}`}>
@@ -56,7 +62,7 @@ export default async function Post({
             </span>
           </div>
         </div>
-      ))}  
+      ))}
     </div>
   );
 }

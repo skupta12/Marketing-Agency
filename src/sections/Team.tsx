@@ -15,14 +15,14 @@ const Team = () => {
           {team.map(({ id, src, prof, name }) => (
             <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
               <div className="relative lg:h-[385px] h-[330px] overflow-hidden">
-                <Image 
+                <Image
                   fill
                   className="object-cover"
-                  src={src} 
+                  src={src}
                   alt="team image"
-                  sizes="(min-width: 1440px) 384px, (min-width: 1040px) calc(28.16vw - 16px), 
+                  sizes="(min-width: 1360px) 384px, (min-width: 1040px) calc(28.16vw - 16px), 
                   (min-width: 780px) calc(50vw - 68px), calc(100vw - 32px)"
-                  />
+                />
               </div>
 
               <div className="text-center">

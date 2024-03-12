@@ -67,7 +67,7 @@ const Page = () => {
                       blurDataURL={blur}
                       priority
                       src={src}
-                      sizes="(min-width: 1440px) 590px, (min-width: 780px) 41.56vw, calc(100vw - 32px)"
+                      sizes="(min-width: 1360px) 590px, (min-width: 780px) 41.56vw, calc(100vw - 32px)"
                       alt="portfolio image"
                     />
                   </div>

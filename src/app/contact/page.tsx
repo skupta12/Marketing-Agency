@@ -57,7 +57,8 @@ const Page = () => {
                         <label className="form-label">{label}</label>
                         <input
                           className="mt-2 w-full border-2 border-black rounded-md p-[14px] 
-                    placeholder:text-black placeholder:font-medium focus:outline-none focus:border-sky-500"
+                          placeholder:text-black placeholder:font-medium 
+                            focus:outline-none focus:border-sky-500"
                           type={type}
                           name={name}
                           placeholder={placeholder}
@@ -79,7 +80,7 @@ const Page = () => {
                   fill
                   src="/blog/blog-1.jpg"
                   alt="contact image"
-                  sizes="(min-width: 1440px) 592px, (min-width: 1040px) 42.11vw, 
+                  sizes="(min-width: 1360px) 592px, (min-width: 1040px) 42.11vw, 
                   (min-width: 780px) calc(100vw - 112px), calc(100vw - 32px)"
                 />
               </div>

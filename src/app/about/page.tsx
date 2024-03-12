@@ -54,20 +54,22 @@ const Page = () => {
               quality={100}
               loading="eager"
               priority
-              sizes="(min-width: 1440px) 1200px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
+              sizes="(min-width: 1360px) 1200px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
             />
           </div>
           <div className="aboutus-text text-center">
             <h2 className="sm:text-[40px] text-[36px] font-semibold mt-14 mb-6">
               About Us
             </h2>
-            <p className="sm:text-[26px] md:text-[24px] text-[22px] font-semibold max-w-[700px] mx-auto mb-6">
+            <p className="sm:text-[26px] md:text-[24px] text-[22px] font-semibold 
+            max-w-[700px] mx-auto mb-6">
               Kebora and John Smith, the visionary founders behind Liège, were
               struck by a realization — the world was lacking creativity; an
               absence of design aesthetics, a play — it — safe approach by
               brands, and a dire need for innovation and beauty.
             </p>
-            <p className="text-gray-500 sm:text-[26px] md:text-[24px] text-[22px] font-semibold max-w-[700px] mx-auto">
+            <p className="text-gray-500 sm:text-[26px] md:text-[24px] 
+            text-[22px] font-semibold max-w-[700px] mx-auto">
               Thankfully, armed with their experience from the world of
               independent film, they were ready to take on this challenge with a
               tenacious, can — do mindset, celebrating and amplifying the

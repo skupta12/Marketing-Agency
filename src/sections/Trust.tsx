@@ -22,7 +22,10 @@ const Trust = () => {
             <div className="grid grid-cols-12 gap-5">
               {trust.map((item, index) => (
                 <div key={index} className="sm:col-span-4 col-span-6">
-                  <div data-aos="zoom-in" className="bg-primary-200 p-12 h-full">
+                  <div
+                    data-aos="zoom-in"
+                    className="bg-primary-200 p-12 h-full"
+                  >
                     <Image
                       className="mx-auto"
                       width={100}

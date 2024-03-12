@@ -9,7 +9,7 @@ import MaxWidthWrapper from "../components/MaxWidthWrapper";
 import style from "@/style";
 
 export default function Testimonial() {
-
+  
   type Swiper = any | null;
 
   const [swiperRef, setSwiperRef] = useState<Swiper | null>(null);
@@ -18,9 +18,7 @@ export default function Testimonial() {
     <section className={`${style.sectionPadding}`}>
       <MaxWidthWrapper>
         <div className="sm:mb-20 mb-10 sm:flex items-center justify-between">
-          <h4
-            className="sm:text-[34px] text-[30px] font-semibold"
-          >
+          <h4 className="sm:text-[34px] text-[30px] font-semibold">
             Trusted by over 4,000{" "}
             <span className="text-gray-500">clients worldwide</span>.
           </h4>
@@ -69,7 +67,6 @@ export default function Testimonial() {
           },
         }}
       >
-        
         {testimonial.map(({ id, src, text, name, prof }) => (
           <SwiperSlide key={id} className="bg-primary-200 px-12 py-14">
             <div>

@@ -6,7 +6,6 @@ import Link from 'next/link';
 import { generatePagination } from '@/lib/utils';
 import { usePathname, useSearchParams } from 'next/navigation';
 
-// Component for handling pagination
 export default function Pagination({ totalPages }: { totalPages: number }) {
 
   // Fetching the current path name

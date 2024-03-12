@@ -51,7 +51,8 @@ const Blog = () => {
                 />
               </Link>
               <div>
-                <span className="text-[15px] inline-block font-semibold border-2 border-black px-4 py-1 rounded-full my-6">
+                <span className="text-[15px] inline-block font-semibold border-2 
+                border-black px-4 py-1 rounded-full my-6">
                   {label}
                 </span>
                 <div className="blog-title">

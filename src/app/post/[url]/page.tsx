@@ -23,11 +23,13 @@ export default async function Page({ params }: { params: { url: string } }) {
       <section className="lg:pt-[180px] pt-[150px] lg:pb-24 pb-16 relative">
         <MaxWidthWrapper>
           <div className="text-center">
-            <span className="text-[15px] inline-block font-semibold border-2 border-black px-4 py-1 rounded-full mb-7">
+            <span className="text-[15px] inline-block font-semibold border-2 
+            border-black px-4 py-1 rounded-full mb-7">
               {label}
             </span>
             <div className="md:mb-20 mb-10">
-              <h1 className="font-semibold text-[30px] lg:text-[70px] md:text-[50px] xl:text-[94px] leading-[1.1]">
+              <h1 className="font-semibold text-[30px] lg:text-[70px] 
+              md:text-[50px] xl:text-[94px] leading-[1.1]">
                 {text}
               </h1>
             </div>
@@ -42,7 +44,7 @@ export default async function Page({ params }: { params: { url: string } }) {
                 quality={100}
                 placeholder="blur"
                 blurDataURL={blur}
-                sizes="(min-width: 1440px) 900px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
+                sizes="(min-width: 1360px) 900px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
               />
             </div>
           </div>
@@ -73,7 +75,8 @@ export default async function Page({ params }: { params: { url: string } }) {
             <div className="relative">
               <blockquote
                 className={`${oswald.className} blockquote text-[25px] leading-tight 
-                before:absolute before:content-[''] before:w-[1px] before:h-full before:left-0 before:bg-black pl-5 mb-10`}
+                before:absolute before:content-[''] before:w-[1px] before:h-full 
+                before:left-0 before:bg-black pl-5 mb-10`}
               >
                 A rich text element can be used with static or dynamic content.
                 For static content, just drop it into any page and begin
