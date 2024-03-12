@@ -5,7 +5,6 @@ import Image from "next/image";
 import { oswald } from "@/app/fonts";
 import NotFound from "@/app/not-found";
 import CTA from "@/sections/CTA";
-import BlurImage from "@/components/BlurImage";
 
 export default async function Page({ params }: { params: { url: string } }) {
 
@@ -41,7 +40,7 @@ export default async function Page({ params }: { params: { url: string } }) {
                 alt="blog details image"
                 fill 
                 priority
-                quality={100}
+                quality={90}
                 placeholder="blur"
                 blurDataURL={blur}
                 sizes="(min-width: 1360px) 800px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
