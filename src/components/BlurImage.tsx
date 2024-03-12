@@ -35,7 +35,7 @@ const BlurImage = ({
       src={src}
       className={`${className} ${
         zoomIn && "hover:scale-110"
-      } ${isLoading ? "blur-[20px]" : "blur-0"}
+      } ${isLoading ? "object-cover" : "object-cover"}
      `}
       fill={fill}
       onLoad={() => setIsLoading(false)}

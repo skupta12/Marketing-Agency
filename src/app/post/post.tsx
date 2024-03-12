@@ -41,7 +41,7 @@ export default async function Post({
                 (min-width: 380px) calc(100vw - 32px), calc(33.33vw + 208px)"
               /> */}
               <BlurImage
-                className="object-cover"
+                // className=""
                 fill
                 src={src}
                 alt="blog post image"
