@@ -14,7 +14,7 @@ const BlurImage = ({
   zoomIn,
   className,
   placeholder,
-  blurDataUrl
+  blurDataURL
 }: {
   src: string;
   fill: boolean;
@@ -26,25 +26,25 @@ const BlurImage = ({
   zoomIn?: string;
   className?: string;
   placeholder?: "empty" | "blur";
-  blurDataUrl?: string;
+  blurDataURL?: string;
 }) => {
-  // const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   return (
     <Image
       src={src}
-      className={`${className} object-cover transition-all duration-100 scale-110 ${
+      className={`${className} ${
         zoomIn && "hover:scale-110"
-      } 
+      } ${isLoading ? "blur-1xl" : "blur-0"}
      `}
       fill={fill}
-      // onLoad={() => setIsLoading(false)}
+      onLoad={() => setIsLoading(false)}
       alt={alt}
       quality={quality}
       loading={loading}
       priority={priority}
       placeholder={placeholder}
-      blurDataURL={blurDataUrl}
+      blurDataURL={blurDataURL}
       sizes={sizes}
     />
   );
