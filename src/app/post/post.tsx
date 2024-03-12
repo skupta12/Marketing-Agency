@@ -1,9 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { fetchFilteredBlogs } from "@/lib/data";
-// import BlurImage from "@/components/BlurImage";
 import Image from "next/image"
-// import BlogF from "/public/blog/blog-10.jpg"
 
 export default async function Post({
   query,
@@ -15,7 +13,7 @@ export default async function Post({
 
   // artificial delay
   const delayData = async () => {
-    await new Promise(resolve => setTimeout(resolve, 200));
+    await new Promise(resolve => setTimeout(resolve, 250));
     return await fetchFilteredBlogs(query, currentPage);
   };
 
@@ -26,9 +24,10 @@ export default async function Post({
       {blogs?.map(({ id, url, src, label, text, date, blur }) => (
         <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
           <Link className="relative" href={`/post/${url}`}>
-            <div className="relative overflow-hidden max-w-[381px] h-[260px]">
+            <div className="relative overflow-hidden h-[260px]">
               <Image
-                className="object-cover"
+                // style={{ objectFit: "cover" }}
+                // className="object-cover w-full"
                 fill
                 src={src}
                 alt="blog post image"

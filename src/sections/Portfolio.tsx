@@ -34,8 +34,8 @@ const Portfolio = () => {
               <Link href={"/work"}>
                 <Image
                   className="w-full"
-                  width={600}
-                  height={400}
+                  width={604}
+                  height={423}
                   src="/portfolio/portfolio-1.jpg"
                   alt="portfolio-image"
                 />
@@ -52,8 +52,8 @@ const Portfolio = () => {
               <Link href={"/work"}>
                 <Image
                   className="w-full"
-                  width={600}
-                  height={400}
+                  width={483}
+                  height={338}
                   src="/portfolio/portfolio-2.jpg"
                   alt="portfolio-image"
                 />
@@ -72,8 +72,8 @@ const Portfolio = () => {
               <Link href={"/work"}>
                 <Image
                   className="w-full"
-                  width={600}
-                  height={400}
+                  width={483}
+                  height={338}
                   src="/portfolio/portfolio-3.jpg"
                   alt="portfolio-image"
                 />
@@ -90,8 +90,8 @@ const Portfolio = () => {
               <Link href={"/work"}>
                 <Image
                   className="w-full"
-                  width={600}
-                  height={400}
+                  width={604}
+                  height={483}
                   src="/portfolio/portfolio-4.jpg"
                   alt="portfolio-image"
                 />

@@ -58,9 +58,9 @@ const Page = () => {
             />
           </div>
           <div className="aboutus-text text-center">
-            <h4 className="sm:text-[40px] text-[36px] font-semibold mt-14 mb-6">
+            <h2 className="sm:text-[40px] text-[36px] font-semibold mt-14 mb-6">
               About Us
-            </h4>
+            </h2>
             <p className="sm:text-[26px] md:text-[24px] text-[22px] font-semibold max-w-[700px] mx-auto mb-6">
               Kebora and John Smith, the visionary founders behind Liège, were
               struck by a realization — the world was lacking creativity; an
