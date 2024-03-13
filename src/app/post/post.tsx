@@ -24,7 +24,7 @@ export default async function Post({
       {blogs?.map(({ id, url, src, label, text, date, blur }) => (
         <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
           <Link className="relative" href={`/post/${url}`}>
-            <div className="relative overflow-hidden h-[260px]">
+            <div className="relative overflow-hidden h-[260px] max-h-full">
               <Image
                 style={{ objectFit: "cover"}}
                 fill
