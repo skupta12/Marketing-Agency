@@ -41,7 +41,7 @@ export default async function Page({ params }: { params: { url: string } }) {
                 fill 
                 priority
                 loading="eager"
-                quality={90}
+                quality={100}
                 placeholder="blur"
                 blurDataURL={blur}
                 sizes="(min-width: 1360px) 1000px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
