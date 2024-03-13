@@ -48,6 +48,7 @@ export default function Page({ params }: { params: { url: string } }) {
                 priority
                 placeholder="blur"
                 blurDataURL={blur}
+                quality={90}
                 />
             </div>
           </div>
@@ -90,9 +91,8 @@ export default function Page({ params }: { params: { url: string } }) {
           </div>
         </div>
       </MaxWidthWrapper>
+      <TextInfo secSrc={secSrc} />
     </section>
-    
-    <TextInfo secSrc={secSrc} />
     <CTA />
     </>
   );

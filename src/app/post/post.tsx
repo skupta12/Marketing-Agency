@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import { fetchFilteredBlogs } from "@/lib/data";
 import Image from "next/image";
-import BlurImage from "@/components/BlurImage";
 
 export default async function Post({
   query,
@@ -25,7 +24,7 @@ export default async function Post({
       {blogs?.map(({ id, url, src, label, text, date, blur }) => (
         <div key={id} className="lg:col-span-4 md:col-span-6 col-span-12">
           <Link className="relative" href={`/post/${url}`}>
-            <div className="relative overflow-hidden h-[260px]">
+            <div className="relative overflow-hidden h-[300px]">
               <Image
                 className="object-cover"
                 fill

@@ -5,9 +5,8 @@ import Image from "next/image";
 
 const TextInfo = ({ secSrc }: { secSrc: string }) => {
   return (
-    <section className={`${styles.sectionPadding}`}>
       <MaxWidthWrapper>
-        <div>
+        <div className="mt-14">
           <h3 className="text-[24px] font-medium mb-2 leading-tight">
             Objective
           </h3>
@@ -75,7 +74,7 @@ const TextInfo = ({ secSrc }: { secSrc: string }) => {
             <h3 className="text-[24px] font-medium mb-2 leading-tight">
               Conclusion
             </h3>
-            <p className="sm:text-[18px] text-gray-500 font-medium mb-10">
+            <p className="sm:text-[18px] text-gray-500 font-medium">
               Through careful research and a collaborative design process, I was
               able to create a unique and effective logo design that met the
               client&apos;s objectives and helped them to achieve their business
@@ -84,7 +83,6 @@ const TextInfo = ({ secSrc }: { secSrc: string }) => {
           </div>
         </div>
       </MaxWidthWrapper>
-    </section>
   );
 };
 
