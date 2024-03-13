@@ -15,7 +15,7 @@ export default async function Page({ params }: { params: { url: string } }) {
     return <NotFound />
   }
 
-  const { src, text, label, blur } = post;
+  const { srcd, text, label, blur } = post;
 
   return (
     <>
@@ -36,7 +36,7 @@ export default async function Page({ params }: { params: { url: string } }) {
             <div className="relative lg:h-[750px] md:h-[500px] h-[320px] overflow-hidden">
               <Image
                 className="object-cover"
-                src={src}
+                src={srcd}
                 alt="blog details image"
                 fill 
                 priority
