@@ -36,7 +36,7 @@ const Accordion = ({ title, content }: { title: string; content: string }) => {
       <div
         ref={contentSpace}
         style={{ maxHeight: `${height}` }}
-        className="overflow-hidden transition-max-height duration-500 ease-in-out"
+        className="overflow-hidden transition-max-height duration-300 ease-out"
       >
         <div className="py-6 text-[17px] text-gray-500 font-medium leading-[1.4] ">
           {content}

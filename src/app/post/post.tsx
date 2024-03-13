@@ -26,7 +26,7 @@ export default async function Post({
           <Link className="relative" href={`/post/${url}`}>
             <div className="relative overflow-hidden h-[260px]">
               <Image
-                className="object-cover"
+                style={{ objectFit: "cover"}}
                 fill
                 src={src}
                 alt="blog post image"
