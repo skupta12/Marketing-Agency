@@ -12,12 +12,12 @@ export default async function Post({
 }) {
 
   // artificial delay
-  const delayData = async () => {
-    await new Promise((resolve) => setTimeout(resolve, 250));
-    return await fetchFilteredBlogs(query, currentPage);
-  };
+  // const delayData = async () => {
+  //   await new Promise((resolve) => setTimeout(resolve, 250));
+  //   return await fetchFilteredBlogs(query, currentPage);
+  // };
 
-  const blogs = await delayData();
+  const blogs = await fetchFilteredBlogs(query, currentPage);
 
   return (
     <div className="grid grid-cols-12 sm:gap-x-7 gap-x-6 sm:gap-y-18 gap-y-14">
@@ -31,7 +31,7 @@ export default async function Post({
                 src={src}
                 alt="blog post image"
                 quality={90}
-                // priority
+                priority
                 loading="eager"
                 placeholder="blur"
                 blurDataURL={blur}

@@ -40,6 +40,7 @@ export default async function Page({ params }: { params: { url: string } }) {
                 alt="blog details image"
                 fill 
                 priority
+                loading="eager"
                 quality={90}
                 placeholder="blur"
                 blurDataURL={blur}
