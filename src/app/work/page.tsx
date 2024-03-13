@@ -68,7 +68,7 @@ const Page = () => {
                       blurDataURL={blur}
                       src={src}
                       quality={90}
-                      sizes="(min-width: 1360px) 600px, (min-width: 780px) 41.56vw, calc(100vw - 32px)"
+                      sizes="(min-width: 1360px) 590px, (min-width: 780px) 41.56vw, calc(100vw - 32px)"
                       alt="portfolio image"
                     />
                   </div>

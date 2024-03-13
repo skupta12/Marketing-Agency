@@ -30,14 +30,13 @@ export default async function Post({
                 fill
                 src={src}
                 alt="blog post image"
-                quality={90}            
+                quality={100}            
                 priority
                 loading="eager"
                 placeholder="blur"
                 blurDataURL={blur}
-                sizes="(min-width: 1360px) 381px, (min-width: 1040px) 
-                calc(27.89vw - 15px), (min-width: 780px) calc(50vw - 70px), 
-                (min-width: 380px) calc(100vw - 32px), calc(33.33vw + 208px)"
+                sizes="(min-width: 1440px) 381px, (min-width: 1040px) calc(27.89vw - 15px), 
+                (min-width: 780px) calc(50vw - 70px), calc(100vw - 32px)"
               />
             </div>
             <div
