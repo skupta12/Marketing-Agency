@@ -7,6 +7,7 @@ import Gradient from "@/components/Gradient";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import styles from "@/style";
 import CTA from "@/sections/CTA";
+import ContactImage from "/public/blog/blogd-1.jpg";
 
 const Page = () => {
   return (
@@ -78,7 +79,8 @@ const Page = () => {
                 <Image
                   className="object-cover"
                   fill
-                  src="/blog/blog-1.jpg"
+                  priority
+                  src={ContactImage}
                   alt="contact image"
                   sizes="(min-width: 1360px) 592px, (min-width: 1040px) 42.11vw, 
                   (min-width: 780px) calc(100vw - 112px), calc(100vw - 32px)"

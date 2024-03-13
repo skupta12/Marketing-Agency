@@ -3,6 +3,7 @@ import { trust } from "@/lib/placeholder-data";
 import Button from "../components/Button";
 import MaxWidthWrapper from "../components/MaxWidthWrapper";
 import style from "@/style";
+import Ring from "/public/media-ring.png"
 
 const Trust = () => {
   return (
@@ -56,7 +57,7 @@ const Trust = () => {
               data-aos="zoom-in"
               width={590}
               height={338}
-              src="/media-ring.png"
+              src={Ring}
               alt="media ring"
             />
           </div>

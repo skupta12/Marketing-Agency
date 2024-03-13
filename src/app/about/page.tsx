@@ -6,6 +6,7 @@ import Team from "@/sections/Team";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import CTA from "@/sections/CTA";
 import styles from "@/style";
+import AboutBlogImage from "/public/blog/blogd-1.jpg"
 
 const Page = () => {
   return (
@@ -49,7 +50,7 @@ const Page = () => {
             <Image
               className="object-cover"
               fill
-              src="/blog/blog-1.jpg"
+              src={AboutBlogImage}
               alt="about image"
               quality={100}
               loading="eager"

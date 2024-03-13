@@ -36,7 +36,7 @@ export default async function Post({
                 placeholder="blur"
                 blurDataURL={blur}
                 sizes="(min-width: 1440px) 381px, (min-width: 1040px) calc(27.89vw - 15px), 
-                (min-width: 780px) calc(50vw - 70px), calc(100vw - 32px)"
+                (min-width: 780px) calc(50vw - 70px), calc(100vw - 42px)"
               />
             </div>
             <div

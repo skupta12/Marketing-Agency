@@ -48,7 +48,7 @@ const Ai = () => {
             data-aos="fade-up"
             data-aos-offset="-350"
           >
-            <Image width={900} height={800} src="/ai.jpg" alt="ai image" />
+            <Image quality={100} width={900} height={800} src="/ai.jpg" alt="ai image" />
           </div>
         </div>
       </MaxWidthWrapper>

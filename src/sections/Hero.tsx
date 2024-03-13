@@ -3,6 +3,7 @@ import Button from "../components/Button";
 import { playfair } from "@/app/fonts";
 import MaxWidthWrapper from "../components/MaxWidthWrapper";
 import Gradient from "@/components/Gradient";
+import HeroImage from "/public/hero.png"
 
 const Hero = () => {
   return (
@@ -59,7 +60,8 @@ const Hero = () => {
                 height={653}
                 quality={100}
                 loading="eager"
-                src="/hero.png"
+                priority
+                src={HeroImage}
                 alt="hero image"
               />
             </div>
