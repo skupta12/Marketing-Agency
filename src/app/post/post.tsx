@@ -26,11 +26,11 @@ export default async function Post({
           <Link className="relative" href={`/post/${url}`}>
             <div className="relative overflow-hidden h-[260px]">
               <Image
-                style={{ objectFit: "cover"}}
+                className="object-cover min-w-full min-h-full"
                 fill
                 src={src}
                 alt="blog post image"
-                quality={90}
+                quality={90}            
                 priority
                 loading="eager"
                 placeholder="blur"
