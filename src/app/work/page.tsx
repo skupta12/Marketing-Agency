@@ -50,7 +50,7 @@ const Page = () => {
             // data-aos-delay="400"
             className="grid grid-cols-12 md:gap-5"
           >
-            {portfolio.map(({ id, url, src, scrollerTitle, blur }) => (
+            {portfolio.map(({ id, url, src, scrollerTitle }) => (
               <div
                 key={id}
                 className="md:col-span-6 col-span-12 relative overflow-hidden group"
@@ -64,8 +64,8 @@ const Page = () => {
                       fill
                       loading="eager"
                       priority
-                      placeholder="blur"
-                      blurDataURL={blur}
+                      // placeholder="blur"
+                      // blurDataURL={blur}
                       src={src}
                       quality={90}
                       sizes="(min-width: 1360px) 590px, (min-width: 780px) 41.56vw, calc(100vw - 32px)"

@@ -18,7 +18,7 @@ export default function RootLayout({
         <Header />
         <main className="relative flex flex-col">
           <div className="flex-grow flex-1">
-            {children}  
+            {children}       
           </div>
         </main>
         <Footer />
