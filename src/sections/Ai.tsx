@@ -11,22 +11,20 @@ const Ai = () => {
       <MaxWidthWrapper>
         <div className="grid lg:grid-cols-2 items-center gap-10">
           <div
-            data-aos="fade-up"
-            data-aos-offset="-350"
           >
             <h4 className="sm:text-[34px] text-[30px] font-semibold leading-tight">
               Artificial Intelligence solutions that deliver
               <span className="text-gray-500"> remarkable success</span>.
             </h4>
             <ul className="mt-10 mb-14">
-              {aiList.map(({ id, content }) => (
-                <li key={id} className="flex items-center gap-x-2 mb-5">
+              {aiList.map((content, i) => (
+                <li key={i} className="flex items-center gap-x-2 mb-5">
                   <div className="bg-primary-200 rounded-full p-2">
                     <Check className="w-[15px] h-[15px] text-black/50" />
                   </div>
 
                   <p className="sm:text-[17px] text-[16px] font-medium">
-                    {content}
+                    {content.content}
                   </p>
                 </li>
               ))}
@@ -44,11 +42,9 @@ const Ai = () => {
               />
             </div>
           </div>
-          <div
-            data-aos="fade-up"
-            data-aos-offset="-350"
+          <div className="relative overflow-hidden lg:h-[640px] h-[400px]"
           >
-            <Image quality={100} width={900} height={800} src="/ai.jpg" alt="ai image" />
+            <Image className="object-cover" quality={100} fill src="/ai.jpg" alt="ai image" />
           </div>
         </div>
       </MaxWidthWrapper>

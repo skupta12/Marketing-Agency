@@ -1,6 +1,5 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { workList } from "@/lib/placeholder-data";
-import styles from "@/style";
 import Image from "next/image";
 
 const TextInfo = ({ secSrc }: { secSrc: string }) => {

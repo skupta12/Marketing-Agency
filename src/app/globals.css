@@ -46,7 +46,8 @@
 } */
 
 .hscroll-line {
-  @apply lg:-bottom-[50px] -bottom-7 rounded-lg right-[50%] transform translate-x-[50%] -translate-y-[50%] md:h-[2.5px] h-[2px] absolute overflow-hidden md:w-[45px] w-[40px] rotate-[90deg];
+  @apply lg:-bottom-[50px] -bottom-7 rounded-lg right-[50%] transform translate-x-[50%] 
+  -translate-y-[50%] md:h-[2.5px] h-[2px] absolute overflow-hidden md:w-[45px] w-[40px] rotate-[90deg];
   transform-origin: 50% 50%;
 }
 
@@ -107,30 +108,6 @@
 }
 
 
-/* Swiper  */
-
-.swiper {
-  @apply w-full h-full;
-}
-
-.swiper-slide {
-  @apply flex justify-center items-center;
-}
-
-
-/* Nav Effect  */
-
-/* @keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-} */
-
 .fade-in-up {
   animation: fadeInUp 5s ease;
 }
@@ -141,3 +118,9 @@
 	transform: translateY(-100%);
 	-webkit-transform: translateY(-100%);
 }
+
+
+/* Swiper */
+
+.slick-list { margin: 0 -7px; & .slick-slide > div { padding: 0 10px; } }
+

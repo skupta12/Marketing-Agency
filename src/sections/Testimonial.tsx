@@ -1,3 +1,5 @@
+"use client"
+
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -72,7 +74,7 @@ export default function Testimonial() {
             <div>
               <Image
                 width={100}
-                height={100}
+                height={23}
                 src={src}
                 alt="testimonial logo"
               />

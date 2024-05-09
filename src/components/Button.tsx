@@ -19,9 +19,6 @@ export const Button = ({ title, className, href = "/" }: TitleProps) => {
   return (
     <Link href={href} onClick={() => router.push(href)}>
       <button
-        data-aos="fade-right"
-        data-aos-delay="400"
-        data-aos-offset="-400"
         className={`${className} text-white text-[17px] font-medium px-11 
           py-4 inline-flex rounded-[30px] group bg-gradient-to-r from-purple-400 
           from-20% via-sky-600 via-50% to-cyan-400 to-90%`}

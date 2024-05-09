@@ -12,7 +12,6 @@ const Trust = () => {
         <div className="grid grid-cols-12 sm:gap-x-7 gap-x-6 gap-y-7 lg:pb-32 pb-20">
           <div className="lg:col-span-4 col-span-12 lg:pr-5 pr-0">
             <h4
-              data-aos="fade-right"
               className="lg:text-[26px] text-[24px] font-semibold"
             >
               More than 100 companies internationally{" "}
@@ -24,13 +23,12 @@ const Trust = () => {
               {trust.map((item, index) => (
                 <div key={index} className="sm:col-span-4 col-span-6">
                   <div
-                    data-aos="zoom-in"
                     className="bg-primary-200 p-12 h-full"
                   >
                     <Image
                       className="mx-auto"
                       width={100}
-                      height={100}
+                      height={30}
                       src={item.src}
                       alt="trust image"
                     />
@@ -43,7 +41,6 @@ const Trust = () => {
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-y-12 gap-x-5 place-items-center">
           <div>
             <h4
-              data-aos="fade-right"
               className="text-[34px] font-semibold mb-10"
             >
               Check out our range of social media{" "}
@@ -54,7 +51,6 @@ const Trust = () => {
           <div>
             <Image
               className="w-full"
-              data-aos="zoom-in"
               width={590}
               height={338}
               src={Ring}

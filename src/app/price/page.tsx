@@ -26,22 +26,17 @@ const page = () => {
         <MaxWidthWrapper>
           <div className="text-center lg:mb-48 mb-20 relative">
             <h1
-              // data-aos="fade-up"
-              // data-aos-delay="50"
               className="lg:text-[100px] md:text-[80px] text-[46px] font-semibold"
             >
               Our <span className={playfair.className}>Prices</span>
             </h1>
             <div 
-            // data-aos="fade-up" data-aos-delay="200"
             >
               <span className="hscroll-line"></span>
             </div>
           </div>
           <div
             className="grid grid-cols-12 lg:gap-3 gap-7"
-            // data-aos="fade-up"
-            // data-aos-delay="400"
           >
             {prices.map(({ id, label, price, title, type }) => {
               return (

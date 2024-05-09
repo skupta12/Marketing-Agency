@@ -11,7 +11,7 @@ const Blog = () => {
     <section className={`${style.sectionPadding}`}>
       <MaxWidthWrapper>
         <div className="sm:flex justify-between items-center">
-          <div data-aos-offset="-250" data-aos="fade-up">
+          <div>
             <h3 className={`${style.heading3} mb-4`}>
               From{" "}
               <span className={`font-medium ${playfair.className}`}>blog</span>
@@ -28,8 +28,6 @@ const Blog = () => {
         </div>
 
         <div
-          data-aos="fade-up"
-          data-aos-offset="-250"
           className="grid grid-cols-12 sm:gap-x-7 gap-x-6 sm:gap-y-18 gap-y-14 pt-20"
         >
           {blogs.map(({ id, url, src, label, text, date}) => (

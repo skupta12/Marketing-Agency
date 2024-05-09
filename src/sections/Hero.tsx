@@ -21,13 +21,11 @@ const Hero = () => {
         isPriority
       />
       <MaxWidthWrapper>
-        <div className="lg:pt-[230px] pt-[150px] relative">
+        <div className="pt-[180px] relative">
           <div className="grid grid-cols-12 gap-y-12 lg:gap-y-7 gap-x-5 lg:place-items-center">
             <div className="lg:col-span-6 col-span-12">
               <div className="hero-text mb-10">
                 <h1
-                  data-aos="fade-right"
-                  data-aos-duration="600"
                   className="lg:text-[65px] md:text-[55px] text-[40px] font-semibold leading-tight"
                 >
                   The{" "}
@@ -37,9 +35,6 @@ const Hero = () => {
                   marketing agency.
                 </h1>
                 <p
-                  data-aos="fade-right"
-                  data-aos-delay="200"
-                  data-aos-duration="600"
                   className="lg:mt-16 mt-10 font-semibold lg:text-[26px] text-[24px]"
                 >
                   We build comprehensive digital solutions to efficiently{" "}
@@ -54,19 +49,16 @@ const Hero = () => {
             <div className="lg:col-span-6 col-span-12">
               <Image
                 className="w-full"
-                data-aos="zoom-in"
-                data-aos-duration="600"
                 width={665}
                 height={653}
                 quality={100}
-                loading="eager"
                 priority
                 src={HeroImage}
                 alt="hero image"
               />
             </div>
           </div>
-          <div data-aos="fade-in" className="relative lg:block hidden">
+          <div className="relative lg:block hidden">
             <span className="hscroll-line"></span>
           </div>
         </div>

@@ -12,7 +12,7 @@ const Portfolio = () => {
   return (
     <section className={`${style.sectionPadding} overflow-hidden relative`}>
       <MaxWidthWrapper>
-        <div data-aos="fade-up" data-aos-offset="-250" className="text-center">
+        <div className="text-center">
           <h3 className={`${style.heading3} mb-4`}>
             Recent <span className={`${playfair.className}`}>work</span>
           </h3>
@@ -27,77 +27,77 @@ const Portfolio = () => {
         <div>
           <div className="grid lg:grid-cols-[1.5fr_1.2fr] lg:gap-x-28 pt-20">
             <div
-              data-aos="zoom-in"
-              data-aos-duration="500"
               className="group lg:mb-32 relative overflow-hidden"
             >
-              <Link href={"/work"}>
+              <Link href={"/work/dreamy-visions"}>
+                <div className="relative overflow-hidden sm:h-[422px] h-[280px]">
                 <Image
-                  className="w-full"
-                  width={604}
-                  height={423}
+                  className="object-cover"
+                  fill
                   src="/portfolio/portfolio-1.jpg"
                   alt="portfolio-image"
                 />
                 <div className={`scroller-box ${scrollerboxStyle}`}>
                   <InfinitiveScroller title="Dreamy Visions" />
                 </div>
+                </div>
+              
               </Link>
             </div>
             <div
-              data-aos="zoom-in"
-              data-aos-duration="500"
               className="group lg:self-end relative overflow-hidden"
             >
-              <Link href={"/work"}>
+              <Link href={"/work/whimsy-tails"}>
+                <div className="relative overflow-hidden sm:h-[338px] h-[280px]">
                 <Image
-                  className="w-full"
-                  width={483}
-                  height={338}
+                  className="object-cover"
+                  fill
                   src="/portfolio/portfolio-2.jpg"
                   alt="portfolio-image"
                 />
                 <div className={`scroller-box ${scrollerboxStyle}`}>
                   <InfinitiveScroller title="Whimsy Tails" />
                 </div>
+                </div>
+               
               </Link>
             </div>
           </div>
           <div className="grid lg:grid-cols-[1.2fr_1.5fr] lg:gap-x-28 lg:pt-40">
             <div
-              data-aos="zoom-in"
-              data-aos-duration="500"
               className="group lg:self-end relative overflow-hidden"
             >
-              <Link href={"/work"}>
+              <Link href={"/work/night-desert"}>
+                <div className="relative overflow-hidden sm:h-[338px] h-[280px]">
                 <Image
-                  className="w-full"
-                  width={483}
-                  height={338}
+                  className="object-cover"
+                  fill
                   src="/portfolio/portfolio-3.jpg"
                   alt="portfolio-image"
                 />
                 <div className={`scroller-box ${scrollerboxStyle}`}>
                   <InfinitiveScroller title="Night Desert" />
                 </div>
+                </div>
+               
               </Link>
             </div>
             <div
-              data-aos="zoom-in"
-              data-aos-duration="500"
               className="group lg:mb-32 relative overflow-hidden"
             >
-              <Link href={"/work"}>
+              <Link href={"/work/colorful-jorneys"}>
+                <div className="relative overflow-hidden sm:h-[422px] h-[280px]">
                 <Image
-                  className="w-full"
-                  width={604}
-                  height={483}
+                  className="object-cover"
+                  fill
                   src="/portfolio/portfolio-4.jpg"
                   alt="portfolio-image"
                 />
                 <div className={`scroller-box ${scrollerboxStyle}`}>
                   <InfinitiveScroller title="Colorful Jorneys" />
                 </div>
+                </div>
+              
               </Link>
             </div>
           </div>

@@ -8,7 +8,7 @@ const Services = () => {
   return (
     <section className={`${style.sectionPadding}`}>
       <MaxWidthWrapper>
-        <div data-aos="fade-up" className="text-center">
+        <div className="text-center">
           <h3 className={`${style.heading3} mb-4`}>
             What{" "}
             <span className={`font-medium ${playfair.className}`}>we do</span>
@@ -19,7 +19,6 @@ const Services = () => {
           </p>
         </div>
         <div
-          data-aos="fade-up"
           className="grid grid-cols-12 gap-4 pt-20 lg:pb-32 pb-20"
         >
           {services.map(({ id, icon, title, text }) => (
@@ -42,7 +41,6 @@ const Services = () => {
         </div>
         <div className="analyzed-text text-center">
           <h4
-            data-aos="fade-up"
             className="font-semibold sm:text-[26px] text-[24px]"
           >
             We&apos;ve analyzed the data and have compelling{" "}
@@ -56,9 +54,6 @@ const Services = () => {
         <div className="counter grid grid-cols-12 sm:gap-7 gap-6 mt-10 justify-center">
           {counter.map(({ number, text, id, dataAosDelay }) => (
             <div
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay={dataAosDelay}
               key={id}
               className="lg:col-span-4 md:col-span-6 col-span-12 text-center"
             >

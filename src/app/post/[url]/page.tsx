@@ -44,7 +44,7 @@ export default async function Page({ params }: { params: { url: string } }) {
                 quality={100}
                 placeholder="blur"
                 blurDataURL={blur}
-                sizes="(min-width: 1360px) 1000px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
+                sizes="(min-width: 1440px) 1200px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
               />
             </div>
           </div>
