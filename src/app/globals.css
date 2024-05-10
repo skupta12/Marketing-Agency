@@ -122,5 +122,12 @@
 
 /* Swiper */
 
-.slick-list { margin: 0 -7px; & .slick-slide > div { padding: 0 10px; } } /* nested error */
+.slick-list {
+  margin: 0 -7px;
+}
+
+.slick-slide > div {
+  padding: 0 10px;
+}
+
 
