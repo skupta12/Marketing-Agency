@@ -8,6 +8,7 @@ import styles from "@/style";
 import { testimonial } from "@/lib/placeholder-data";
 import Image from "next/image";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import { YXtransition } from "@/components/Transition";
 
 export default function Testimonial() {
 
@@ -41,18 +42,21 @@ export default function Testimonial() {
   return (
     <section className={styles.sectionPadding}>
       <MaxWidthWrapper>
+        <YXtransition x={-70}>
         <div className="sm:mb-20 mb-10">
         <h4 className="sm:text-[34px] text-[30px] font-semibold">
             Trusted by over 4,000{" "}
             <span className="text-gray-500">clients worldwide</span>.
           </h4>
         </div>
+        </YXtransition>
+     
    
       </MaxWidthWrapper>
+      <YXtransition y={60} delay={0.1}>
       <Slider className="overflow-hidden" {...settings}>
         {testimonial.map(({ id, src, text, name, position }) => (
-          <div className="bg-primary-200 px-12 py-14" key={id}>
-            <div>
+          <div className="bg-primary-200 px-12 py-14 cursor-grab hover:scale-[97%] duration-200" key={id}>
               <div className="relative overflow-hidden h-[28px]">
               <Image fill src={src} alt={`testimonial logo ${id}`} />
               </div>
@@ -68,10 +72,11 @@ export default function Testimonial() {
                   {name}, <span className="text-gray-500">{position}</span>
                 </p>
               </div>
-            </div>
           </div>
         ))}
       </Slider>
+      </YXtransition>
+   
     </section>
   );
 }

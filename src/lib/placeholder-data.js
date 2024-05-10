@@ -90,19 +90,19 @@ export const counter = [
     id: 1,
     number: "610+",
     text: "Active monthly users",
-    dataAosDelay: "0"
+    delay: 0.4
   },
   {
     id: 2,
     number: "17",
     text: "Global location",
-    dataAosDelay: "200"
+    delay: 0.6
   },
   {
     id: 3,
     number: "6.8M",
     text: "Funding from backers",
-    dataAosDelay: "400"
+    delay: 0.8
   },
 ];
 

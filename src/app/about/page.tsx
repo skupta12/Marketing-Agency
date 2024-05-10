@@ -7,6 +7,7 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import CTA from "@/sections/CTA";
 import styles from "@/style";
 import AboutBlogImage from "/public/blog/blogd-1.jpg"
+import { YXtransition } from "@/components/Transition";
 
 const Page = () => {
   return (
@@ -25,6 +26,7 @@ const Page = () => {
           isPriority
         />
         <MaxWidthWrapper>
+          <YXtransition y={40}>
           <div className="text-center lg:mb-48 mb-20 relative">
             <h1
               className="lg:text-[100px] md:text-[80px] text-[46px] font-semibold"
@@ -36,6 +38,8 @@ const Page = () => {
               <span className="hscroll-line"></span>
             </div>
           </div>
+          </YXtransition>
+          <YXtransition y={40} delay={0.2}>
           <div
             className="relative lg:h-[750px] md:h-[500px] h-[260px] overflow-hidden"
             >
@@ -50,6 +54,8 @@ const Page = () => {
               sizes="(min-width: 1360px) 1200px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
             />
           </div>
+          </YXtransition>
+         
           <div className="aboutus-text text-center">
             <h2 className="sm:text-[40px] text-[36px] font-semibold mt-14 mb-6">
               About Us

@@ -6,6 +6,7 @@ import styles from "@/style";
 import TextInfo from "../textInfo";
 import CTA from "@/sections/CTA";
 import Image from "next/image"
+import { YXtransition } from "@/components/Transition";
 
 export default function Page({ params }: { params: { url: string } }) {
 
@@ -29,14 +30,17 @@ export default function Page({ params }: { params: { url: string } }) {
     <>
     <section className={`${styles.routePadding} lg:pb-24 pb-16`}>
       <MaxWidthWrapper>
+        <YXtransition x={-40}>
         <div className="mb-12">
           <h1 className="lg:text-[65px] md:text-[58px] text-[34px] font-semibold leading-tight tracking-[1.5px]">
             {scrollerTitle}
           </h1>
         </div>
+        </YXtransition>
+       
         <div className="grid grid-cols-12 sm:gap-x-10 gap-x-5 gap-y-10 items-center">
-          <div className="lg:col-span-7 col-span-12">
-            <div className="relative overflow-hidden sm:h-[478px] h-[320px]">
+          <YXtransition className="lg:col-span-7 col-span-12">
+          <div className="relative overflow-hidden sm:h-[478px] h-[320px]">
                <Image
                 className="object-cover"
                 fill
@@ -51,9 +55,9 @@ export default function Page({ params }: { params: { url: string } }) {
                 quality={90}
                 />
             </div>
-          </div>
-          <div className="lg:col-span-5 col-span-12 flex flex-col h-full justify-center border border-gray-300">
-            <div className="flex flex-col justify-center p-10">
+          </YXtransition>
+           <YXtransition delay={0.2} className="lg:col-span-5 col-span-12 flex flex-col h-full justify-center border border-gray-300">
+           <div className="flex flex-col justify-center p-10">
               <div
                 className={`${styles.flexBetween} border-b border-gray-300 pb-4`}
               >
@@ -88,7 +92,8 @@ export default function Page({ params }: { params: { url: string } }) {
               </div>
               <BlackButton className="mt-8" title="Launch Project" />
             </div>
-          </div>
+           </YXtransition>
+          
         </div>
       </MaxWidthWrapper>
       <TextInfo secSrc={secSrc} />

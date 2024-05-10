@@ -4,6 +4,7 @@ import { playfair } from "@/app/fonts";
 import MaxWidthWrapper from "../components/MaxWidthWrapper";
 import Gradient from "@/components/Gradient";
 import HeroImage from "/public/hero.png"
+import OSTransition, { YXtransition } from "@/components/Transition";
 
 const Hero = () => {
   return (
@@ -23,8 +24,9 @@ const Hero = () => {
       <MaxWidthWrapper>
         <div className="pt-[180px] relative">
           <div className="grid grid-cols-12 gap-y-12 lg:gap-y-7 gap-x-5 lg:place-items-center">
-            <div className="lg:col-span-6 col-span-12">
+            <div className="lg:col-span-7 col-span-12">
               <div className="hero-text mb-10">
+                <YXtransition x={-70}>
                 <h1
                   className="lg:text-[65px] md:text-[55px] text-[40px] font-semibold leading-tight"
                 >
@@ -34,6 +36,8 @@ const Hero = () => {
                   </span>{" "}
                   marketing agency.
                 </h1>
+                </YXtransition>
+                <YXtransition x={-70} delay={0.2}>
                 <p
                   className="lg:mt-16 mt-10 font-semibold lg:text-[26px] text-[24px]"
                 >
@@ -43,12 +47,17 @@ const Hero = () => {
                   </span>
                   .
                 </p>
+                </YXtransition>
+             
               </div>
-              <Button href="/contact" title="Send a Message" />
+              <YXtransition x={-70} delay={0.4}>
+                <Button href="/contact" title="Send a Message" />
+              </YXtransition>
+             
             </div>
-            <div className="lg:col-span-6 col-span-12">
+            <div className="lg:col-span-5 col-span-12">
+              <OSTransition scale={0.6} delay={0.3}>
               <Image
-                className="w-full"
                 width={665}
                 height={653}
                 quality={100}
@@ -56,11 +65,16 @@ const Hero = () => {
                 src={HeroImage}
                 alt="hero image"
               />
+              </OSTransition>
+            
             </div>
           </div>
+          <OSTransition delay={0.4}>
           <div className="relative lg:block hidden">
             <span className="hscroll-line"></span>
           </div>
+          </OSTransition>
+          
         </div>
       </MaxWidthWrapper>
     </section>

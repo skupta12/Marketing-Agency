@@ -4,6 +4,7 @@ import Link from "next/link";
 import InfinitiveScroller from "../components/InfinitiveScroller";
 import MaxWidthWrapper from "../components/MaxWidthWrapper";
 import style from "@/style";
+import OSTransition, { YXtransition } from "@/components/Transition";
 
 const Portfolio = () => {
   const scrollerboxStyle =
@@ -12,8 +13,8 @@ const Portfolio = () => {
   return (
     <section className={`${style.sectionPadding} overflow-hidden relative`}>
       <MaxWidthWrapper>
-        <div className="text-center">
-          <h3 className={`${style.heading3} mb-4`}>
+        <YXtransition className="text-center" y={70}>
+        <h3 className={`${style.heading3} mb-4`}>
             Recent <span className={`${playfair.className}`}>work</span>
           </h3>
           <p className="lg:text-[26px] text-[24px] font-medium">
@@ -23,12 +24,14 @@ const Portfolio = () => {
             </span>
             .
           </p>
-        </div>
+        </YXtransition>
+        
         <div>
           <div className="grid lg:grid-cols-[1.5fr_1.2fr] lg:gap-x-28 pt-20">
             <div
               className="group lg:mb-32 relative overflow-hidden"
             >
+              <OSTransition scale={0.6} delay={0.1}>
               <Link href={"/work/dreamy-visions"}>
                 <div className="relative overflow-hidden sm:h-[422px] h-[280px]">
                 <Image
@@ -43,10 +46,13 @@ const Portfolio = () => {
                 </div>
               
               </Link>
+              </OSTransition>
+            
             </div>
             <div
               className="group lg:self-end relative overflow-hidden"
             >
+              <OSTransition scale={0.6} delay={0.3}>
               <Link href={"/work/whimsy-tails"}>
                 <div className="relative overflow-hidden sm:h-[338px] h-[280px]">
                 <Image
@@ -61,12 +67,15 @@ const Portfolio = () => {
                 </div>
                
               </Link>
+              </OSTransition>
+              
             </div>
           </div>
           <div className="grid lg:grid-cols-[1.2fr_1.5fr] lg:gap-x-28 lg:pt-40">
             <div
               className="group lg:self-end relative overflow-hidden"
             >
+              <OSTransition scale={0.6} delay={0.5}>
               <Link href={"/work/night-desert"}>
                 <div className="relative overflow-hidden sm:h-[338px] h-[280px]">
                 <Image
@@ -81,11 +90,14 @@ const Portfolio = () => {
                 </div>
                
               </Link>
+              </OSTransition>
+              
             </div>
             <div
               className="group lg:mb-32 relative overflow-hidden"
             >
-              <Link href={"/work/colorful-jorneys"}>
+                <OSTransition scale={0.6} delay={0.7}>
+                <Link href={"/work/colorful-jorneys"}>
                 <div className="relative overflow-hidden sm:h-[422px] h-[280px]">
                 <Image
                   className="object-cover"
@@ -99,6 +111,8 @@ const Portfolio = () => {
                 </div>
               
               </Link>
+                </OSTransition>
+             
             </div>
           </div>
         </div>

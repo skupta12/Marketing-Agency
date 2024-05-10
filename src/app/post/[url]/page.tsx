@@ -5,14 +5,15 @@ import Image from "next/image";
 import { oswald } from "@/app/fonts";
 import NotFound from "@/app/not-found";
 import CTA from "@/sections/CTA";
+import { YXtransition } from "@/components/Transition";
 
 export default async function Page({ params }: { params: { url: string } }) {
-
+  
   const blogs = await fetchCurrentPost();
   const post = blogs?.find((obj) => obj.url === params.url);
 
   if (!post) {
-    return <NotFound />
+    return <NotFound />;
   }
 
   const { srcd, text, label, blur } = post;
@@ -22,31 +23,39 @@ export default async function Page({ params }: { params: { url: string } }) {
       <section className="lg:pt-[180px] pt-[150px] lg:pb-24 pb-16 relative">
         <MaxWidthWrapper>
           <div className="text-center">
-            <span className="text-[15px] inline-block font-semibold border-2 
-            border-black px-4 py-1 rounded-full mb-7">
-              {label}
-            </span>
-            <div className="md:mb-20 mb-10">
-              <h1 className="font-semibold text-[30px] lg:text-[70px] 
-              md:text-[50px] xl:text-[94px] leading-[1.1]">
-                {text}
-              </h1>
-            </div>
+            <YXtransition y={40}>
+              <span
+                className="text-[15px] inline-block font-semibold border-2 
+            border-black px-4 py-1 rounded-full mb-7"
+              >
+                {label}
+              </span>
+              <div className="md:mb-20 mb-10">
+                <h1
+                  className="font-semibold text-[30px] lg:text-[70px] 
+              md:text-[50px] xl:text-[94px] leading-[1.1]"
+                >
+                  {text}
+                </h1>
+              </div>
+            </YXtransition>
 
-            <div className="relative lg:h-[750px] md:h-[500px] h-[320px] overflow-hidden">
-              <Image
-                className="object-cover"
-                src={srcd}
-                alt="blog details image"
-                fill 
-                priority
-                loading="eager"
-                quality={100}
-                placeholder="blur"
-                blurDataURL={blur}
-                sizes="(min-width: 1440px) 1200px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
-              />
-            </div>
+            <YXtransition y={40} delay={0.2}>
+              <div className="relative lg:h-[750px] md:h-[500px] h-[320px] overflow-hidden">
+                <Image
+                  className="object-cover"
+                  src={srcd}
+                  alt="blog details image"
+                  fill
+                  priority
+                  loading="eager"
+                  quality={100}
+                  placeholder="blur"
+                  blurDataURL={blur}
+                  sizes="(min-width: 1440px) 1200px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
+                />
+              </div>
+            </YXtransition>
           </div>
           <div className="text-info">
             <p className="text-gray-500 sm:text-[18px] text-base font-medium mt-14 mb-[10px]">
