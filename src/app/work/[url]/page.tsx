@@ -30,7 +30,7 @@ export default function Page({ params }: { params: { url: string } }) {
     <>
     <section className={`${styles.routePadding} lg:pb-24 pb-16`}>
       <MaxWidthWrapper>
-        <YXtransition x={-40}>
+        <YXtransition>
         <div className="mb-12">
           <h1 className="lg:text-[65px] md:text-[58px] text-[34px] font-semibold leading-tight tracking-[1.5px]">
             {scrollerTitle}
