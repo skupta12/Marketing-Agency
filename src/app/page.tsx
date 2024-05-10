@@ -1,3 +1,5 @@
+"use client"
+
 import Ai from "@/sections/Ai";
 import Blog from "@/sections/Blog";
 import CTA from "@/sections/CTA";
