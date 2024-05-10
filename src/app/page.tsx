@@ -5,7 +5,7 @@ import Hero from "@/sections/Hero";
 import Portfolio from "@/sections/Portfolio";
 import Services from "@/sections/Services";
 import Testimonial from "@/sections/Testimonial";
-import Testimonials from "@/sections/Testimonials";
+import Testimonials from "@/sections/Testimonial";
 import Trust from "@/sections/Trust";
 
 export default function Home() {
