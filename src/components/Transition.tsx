@@ -14,10 +14,15 @@ export default function OSTransition({
   scale?: number;
 }) {
 
+  const shouldReduceMotion = useReducedMotion();
+  
   return (
       <motion.div
       className={className}
-      initial={{ opacity: 0, scale: scale }}
+      initial={{
+        opacity: shouldReduceMotion ? 1 : 0,
+        scale: shouldReduceMotion ? 0 : scale,
+      }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
       transition={{ ease: "easeOut", duration: 0.5, delay: delay }}
@@ -59,23 +64,24 @@ export const YXtransition = ({
   );
 };
 
-export const RouteTransition = ({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) => {
-  return (
-    <motion.div
-      className={className}
-      initial={{ y: 40, opacity: 0 }}
-      transition={{ ease: "easeInOut", duration: 0.4, delay: 0 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-    >
-      {children}
-    </motion.div>
-  );
-};
+// export const RouteTransition = ({
+//   children,
+//   className,
+// }: {
+//   children: React.ReactNode;
+//   className?: string;
+// }) => {
+
+//   return (
+//     <motion.div
+//       className={className}
+//       initial={{ y: 40, opacity: 0 }}
+//       transition={{ ease: "easeInOut", duration: 0.4, delay: 0 }}
+//       whileInView={{ opacity: 1, y: 0 }}
+//       viewport={{ once: true }}
+//     >
+//       {children}
+//     </motion.div>
+//   );
+// };
 
