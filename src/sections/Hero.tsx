@@ -8,7 +8,7 @@ import OSTransition, { YXtransition } from "@/components/Transition";
 
 const Hero = () => {
   return (
-    <section className="lg:pb-[200px] pb-16 overflow-hidden relative">
+    <section className="lg:pb-[150px] pb-16 overflow-hidden relative">
       <Gradient
         fill
         className="sm:block hidden" 
@@ -22,11 +22,11 @@ const Hero = () => {
         isPriority
       />
       <MaxWidthWrapper>
-        <div className="pt-[180px] relative">
+        <div className="mt-[200px] relative">
           <div className="grid grid-cols-12 gap-y-12 lg:gap-y-7 gap-x-5 lg:place-items-center">
             <div className="lg:col-span-7 col-span-12">
               <div className="hero-text mb-10">
-                <YXtransition x={-70}>
+                <YXtransition x={-40}>
                 <h1
                   className="lg:text-[65px] md:text-[55px] text-[40px] font-semibold leading-tight"
                 >
@@ -37,7 +37,7 @@ const Hero = () => {
                   marketing agency.
                 </h1>
                 </YXtransition>
-                <YXtransition x={-70} delay={0.2}>
+                <YXtransition x={-40} delay={0.2}>
                 <p
                   className="lg:mt-16 mt-10 font-semibold lg:text-[26px] text-[24px]"
                 >
@@ -50,7 +50,7 @@ const Hero = () => {
                 </YXtransition>
              
               </div>
-              <YXtransition x={-70} delay={0.4}>
+              <YXtransition x={-40} delay={0.4}>
                 <Button href="/contact" title="Send a Message" />
               </YXtransition>
              

@@ -9,7 +9,7 @@ const Services = () => {
   return (
     <section className={`${style.sectionPadding}`}>
       <MaxWidthWrapper>
-        <YXtransition y={70} delay={0.1}>
+        <YXtransition y={40} delay={0.1}>
           <div className="text-center">
             <h3 className={`${style.heading3} mb-4`}>
               What{" "}
@@ -21,7 +21,7 @@ const Services = () => {
             </p>
           </div>
         </YXtransition>
-        <YXtransition y={70} delay={0.1}>
+        <YXtransition y={40} delay={0.1}>
           <div className="grid grid-cols-12 gap-4 pt-20 lg:pb-32 pb-20">
             {services.map(({ id, icon, title, text }) => (
               <div

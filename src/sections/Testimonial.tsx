@@ -42,7 +42,7 @@ export default function Testimonial() {
   return (
     <section className={styles.sectionPadding}>
       <MaxWidthWrapper>
-        <YXtransition x={-70}>
+        <YXtransition x={-40}>
         <div className="sm:mb-20 mb-10">
         <h4 className="sm:text-[34px] text-[30px] font-semibold">
             Trusted by over 4,000{" "}
@@ -53,7 +53,7 @@ export default function Testimonial() {
      
    
       </MaxWidthWrapper>
-      <YXtransition y={60} delay={0.1}>
+      <YXtransition y={40} delay={0.1}>
       <Slider className="overflow-hidden" {...settings}>
         {testimonial.map(({ id, src, text, name, position }) => (
           <div className="bg-primary-200 px-12 py-14 cursor-grab hover:scale-[97%] duration-200" key={id}>

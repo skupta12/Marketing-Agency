@@ -13,7 +13,7 @@ const Portfolio = () => {
   return (
     <section className={`${style.sectionPadding} overflow-hidden relative`}>
       <MaxWidthWrapper>
-        <YXtransition className="text-center" y={70}>
+        <YXtransition className="text-center" y={40}>
         <h3 className={`${style.heading3} mb-4`}>
             Recent <span className={`${playfair.className}`}>work</span>
           </h3>

@@ -8,11 +8,12 @@ import OSTransition, { YXtransition } from "@/components/Transition";
 
 const Trust = () => {
   return (
+    <>
     <section className={`${style.sectionPadding}`}>
       <MaxWidthWrapper>
-        <div className="grid grid-cols-12 sm:gap-x-7 gap-x-6 gap-y-7 lg:pb-32 pb-20">
+        <div className="grid grid-cols-12 sm:gap-x-7 gap-x-6 gap-y-7">
           <div className="lg:col-span-4 col-span-12 lg:pr-5 pr-0">
-            <YXtransition x={-70} delay={0.1}>
+            <YXtransition x={-40} delay={0.1}>
             <h4
               className="lg:text-[26px] text-[24px] font-semibold"
             >
@@ -45,9 +46,14 @@ const Trust = () => {
             </div>
           </div>
         </div>
-        <div className="grid lg:grid-cols-2 grid-cols-1 gap-y-12 gap-x-5 place-items-center">
+        
+      </MaxWidthWrapper>
+    </section>
+    <section className={style.sectionPadding}>
+      <MaxWidthWrapper>
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-y-12 gap-x-5 place-items-center">
           <div>
-            <YXtransition x={-70}>
+            <YXtransition x={-40}>
             <h4
               className="text-[34px] font-semibold mb-10"
             >
@@ -55,7 +61,7 @@ const Trust = () => {
               <span className="text-gray-500">marketing options</span>.
             </h4>
             </YXtransition>
-              <YXtransition x={-70} delay={0.4}>
+              <YXtransition x={-40} delay={0.4}>
                 <Button href="/price" title="View Packages" />
               </YXtransition>
             
@@ -72,6 +78,7 @@ const Trust = () => {
         </div>
       </MaxWidthWrapper>
     </section>
+    </>
   );
 };
 
