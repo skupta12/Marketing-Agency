@@ -48,11 +48,9 @@ export default async function Page({ params }: { params: { url: string } }) {
                   alt="blog details image"
                   fill
                   priority
-                  loading="eager"
                   quality={100}
                   placeholder="blur"
                   blurDataURL={blur}
-                  sizes="(min-width: 1440px) 1200px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
                 />
               </div>
             </YXtransition>

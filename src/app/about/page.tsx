@@ -49,9 +49,7 @@ const Page = () => {
               src={AboutBlogImage}
               alt="about image"
               quality={100}
-              loading="eager"
               priority
-              sizes="(min-width: 1360px) 1200px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
             />
           </div>
           </YXtransition>

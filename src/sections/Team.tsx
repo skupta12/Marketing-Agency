@@ -20,8 +20,6 @@ const Team = () => {
                   className="object-cover"
                   src={src}
                   alt={`team image ${id}`}
-                  sizes="(min-width: 1360px) 384px, (min-width: 1040px) calc(28.16vw - 16px), 
-                  (min-width: 780px) calc(50vw - 68px), calc(100vw - 32px)"
                 />
               </div>
 

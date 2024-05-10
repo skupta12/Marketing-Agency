@@ -70,11 +70,9 @@ const Page = () => {
                   <Image
                     className="object-cover"
                     fill
-                    priority
+                    loading="eager"
                     src={ContactImage}
                     alt="contact image"
-                    sizes="(min-width: 1360px) 592px, (min-width: 1040px) 42.11vw, 
-                  (min-width: 780px) calc(100vw - 112px), calc(100vw - 32px)"
                   />
                 </div>
               </div>

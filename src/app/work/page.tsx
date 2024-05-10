@@ -51,13 +51,9 @@ const Page = () => {
                       <Image
                         className="object-cover"
                         fill
-                        loading="eager"
                         priority
-                        // placeholder="blur"
-                        // blurDataURL={blur}
                         src={src}
                         quality={90}
-                        sizes="(min-width: 1360px) 590px, (min-width: 780px) 41.56vw, calc(100vw - 32px)"
                         alt="portfolio image"
                       />
                     </div>
