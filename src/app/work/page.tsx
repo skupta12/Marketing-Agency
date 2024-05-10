@@ -51,10 +51,11 @@ const Page = () => {
                       <Image
                         className="object-cover"
                         fill
-                        priority
+                        loading="eager"
                         src={src}
                         quality={90}
                         alt="portfolio image"
+                        sizes="(min-width: 1440px) 590px, (min-width: 780px) 41.56vw, calc(100vw - 32px)"
                       />
                     </div>
 

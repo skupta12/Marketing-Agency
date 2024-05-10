@@ -141,7 +141,6 @@ export const portfolio = [
     role: "UI, UX, Development",
     recognition: "CSS Award",
     year: "2024",
-   
     blur: "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAABwAgCdASoIAAYAAkA4JbACdLoB+ACAAAXBjEAAAPuD6ZV/g72RKIP0l/+CE3KwPNF41hq/+LS6UOnQHpt9TgAA"
   },
   {

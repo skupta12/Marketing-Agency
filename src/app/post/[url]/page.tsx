@@ -48,6 +48,7 @@ export default async function Page({ params }: { params: { url: string } }) {
                   alt="blog details image"
                   fill
                   priority
+                  sizes="(min-width: 1440px) 1200px, (min-width: 780px) 83.13vw, calc(100vw - 32px)"
                   quality={100}
                   placeholder="blur"
                   blurDataURL={blur}
