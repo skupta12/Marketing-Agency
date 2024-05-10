@@ -11,7 +11,7 @@ const CTA = () => {
       <Gradient fill className="sm:hidden block" src="/gradient-mobile.png" />
 
       <MaxWidthWrapper className="relative">
-        <div className="grid grid-cols-12 lg:gap-14 md:gap-8 gap-6 items-center">
+        <div className="grid grid-cols-12 sm:gap-20 gap-y-20 items-center">
           <div className="md:col-span-7 col-span-12">
             <h2
               className="sm:text-[37px] text-[33px] font-semibold leading-tight mb-5"

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 export default function OSTransition({
   children,
@@ -13,8 +13,9 @@ export default function OSTransition({
   delay?: number;
   scale?: number;
 }) {
+
   return (
-    <motion.div
+      <motion.div
       className={className}
       initial={{ opacity: 0, scale: scale }}
       whileInView={{ opacity: 1, scale: 1 }}
@@ -35,15 +36,21 @@ export const YXtransition = ({
 }: {
   children: React.ReactNode;
   className?: string;
-  delay?: number,
+  delay?: number;
   y?: number;
   x?: number;
 }) => {
+  const shouldReduceMotion = useReducedMotion();
+
   return (
     <motion.div
       className={className}
-      initial={{ y: y, x: x, opacity: 0 }}
-      transition={{ ease: "easeOut", duration: 0.5, delay: delay}}
+      initial={{
+        opacity: shouldReduceMotion ? 1 : 0,
+        y: shouldReduceMotion ? 0 : y,
+        x: shouldReduceMotion ? 0 : x,
+      }}
+      transition={{ ease: "easeOut", duration: 0.5, delay: delay }}
       whileInView={{ opacity: 1, y: 0, x: 0 }}
       viewport={{ once: true }}
     >

@@ -31,7 +31,7 @@ const Portfolio = () => {
             <div
               className="group lg:mb-32 relative overflow-hidden"
             >
-              <OSTransition scale={0.6} delay={0.1}>
+              <OSTransition scale={0.6} delay={0.2}>
               <Link href={"/work/dreamy-visions"}>
                 <div className="relative overflow-hidden sm:h-[422px] h-[280px]">
                 <Image
@@ -52,7 +52,7 @@ const Portfolio = () => {
             <div
               className="group lg:self-end relative overflow-hidden"
             >
-              <OSTransition scale={0.6} delay={0.3}>
+              <OSTransition scale={0.6} delay={0.2}>
               <Link href={"/work/whimsy-tails"}>
                 <div className="relative overflow-hidden sm:h-[338px] h-[280px]">
                 <Image
@@ -75,7 +75,7 @@ const Portfolio = () => {
             <div
               className="group lg:self-end relative overflow-hidden"
             >
-              <OSTransition scale={0.6} delay={0.5}>
+              <OSTransition scale={0.6} delay={0.2}>
               <Link href={"/work/night-desert"}>
                 <div className="relative overflow-hidden sm:h-[338px] h-[280px]">
                 <Image
@@ -96,7 +96,7 @@ const Portfolio = () => {
             <div
               className="group lg:mb-32 relative overflow-hidden"
             >
-                <OSTransition scale={0.6} delay={0.7}>
+                <OSTransition scale={0.6} delay={0.2}>
                 <Link href={"/work/colorful-jorneys"}>
                 <div className="relative overflow-hidden sm:h-[422px] h-[280px]">
                 <Image
