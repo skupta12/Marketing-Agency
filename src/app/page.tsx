@@ -8,11 +8,10 @@ import Portfolio from "@/sections/Portfolio";
 import Services from "@/sections/Services";
 import Testimonial from "@/sections/Testimonial";
 import Trust from "@/sections/Trust";
-import { MotionConfig } from "framer-motion";
 
 export default function Home() {
   return (
-    <MotionConfig reducedMotion="user">
+    <>
       <Hero />
       <Trust />
       <Services />
@@ -21,6 +20,6 @@ export default function Home() {
       <Ai />
       <Blog />
       <CTA />
-    </MotionConfig>
+    </>
   );
 }
