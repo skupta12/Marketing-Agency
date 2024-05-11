@@ -10,8 +10,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      const maxScroll = document.body.clientHeight - window.innerHeight;
-      const scrollAlpha = Math.min(scrollTop / 200, maxScroll / 200);
+      const scrollAlpha = Math.min(scrollTop / 300);
       setScrollAlpha(scrollAlpha);
     };
 

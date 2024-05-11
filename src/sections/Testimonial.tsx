@@ -50,8 +50,6 @@ export default function Testimonial() {
           </h4>
         </div>
         </YXtransition>
-     
-   
       </MaxWidthWrapper>
       <YXtransition y={40} delay={0.1}>
       <Slider className="overflow-hidden" {...settings}>

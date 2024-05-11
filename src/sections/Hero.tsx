@@ -22,7 +22,7 @@ const Hero = () => {
         isPriority
       />
       <MaxWidthWrapper>
-        <div className="mt-[200px] relative">
+        <div className="sm:mt-[200px] mt-[150px] relative">
           <div className="grid grid-cols-12 gap-y-12 lg:gap-y-7 gap-x-5 lg:place-items-center">
             <div className="lg:col-span-7 col-span-12">
               <div className="hero-text mb-10">

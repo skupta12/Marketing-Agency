@@ -32,7 +32,7 @@ export function NavItem() {
       </button>
 
       <div
-        className={`fixed bg-white left-0 -z-[1] right-0 top-0 h-screen flex justify-center items-center
+        className={`fixed bg-white transform translate-y-0 left-0 -z-[1] right-0 top-0 h-screen flex justify-center items-center
         transition-transform duration-700 ease-in-out 
        ${isOpen ? "transform translate-y-0" : "transform translate-y-full"}`}
       >
