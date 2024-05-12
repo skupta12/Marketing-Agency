@@ -54,11 +54,11 @@ export default async function page({
           <Search placeholder="Search..." />
         </div> */}
           {/* async component */}
-          <YXtransition y={40} delay={0.2}>
+          {/* <YXtransition y={40} delay={0.2}> */}
             <Suspense key={query + currentPage} fallback={<BlogSkeleton />}>
               <Post query={query} currentPage={currentPage} />
             </Suspense>
-          </YXtransition>
+          {/* </YXtransition> */}
           <div className="mt-20 flex w-full justify-center">
             <Pagination totalPages={totalPages} />
           </div>

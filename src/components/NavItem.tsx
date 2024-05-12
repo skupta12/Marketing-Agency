@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import { navItems } from "@/lib/placeholder-data";
 import Link from "next/link";
 
@@ -45,33 +46,35 @@ export function NavItem() {
       >
         <nav className="navbar">
           <ul>
-            {navItems.map(({ id, name, href, number }) => (
-              <div
-                className="flex gap-x-3 justify-center leading-tight relative"
+            {navItems.map(({ id, name, href, number, delay }) => (
+              <motion.div
                 key={id}
+                initial={{ opacity: 0 }}
+                animate={{opacity: isOpen ? 1 : 0 }}
+                transition={{ duration: 0.7, ease: "backIn" }}
               >
-                <span
-                  className="flex flex-col justify-center items-center 
-                border-2 border-black rounded-full p-1 w-[40px] h-[40px]"
-                >
-                  {number}
-                </span>
-                <li className="overflow-hidden">
-                  <Link href={href}>
-                    <div
-                      onClick={() => setIsOpen(false)}
-                      className="text-black lg:text-[90px] text-[50px] font-semibold"
-                    >
-                      <span
-                        className="relative inline-block transition-transform duration-500"
-                        data-hover={name}
+                <div className="flex gap-x-3 justify-center leading-tight relative">
+                  <span className="flex flex-col justify-center items-center 
+                  border-2 border-black rounded-full p-1 w-[40px] h-[40px]">
+                    {number}
+                  </span>
+                  <li className="overflow-hidden">
+                    <Link href={href}>
+                      <div
+                        onClick={() => setIsOpen(false)}
+                        className="text-black lg:text-[90px] text-[50px] font-semibold"
                       >
-                        {name}
-                      </span>
-                    </div>
-                  </Link>
-                </li>
-              </div>
+                        <span
+                          className="relative inline-block transition-transform duration-500"
+                          data-hover={name}
+                        >
+                          {name}
+                        </span>
+                      </div>
+                    </Link>
+                  </li>
+                </div>
+              </motion.div>
             ))}
           </ul>
         </nav>
@@ -81,3 +84,4 @@ export function NavItem() {
 }
 
 export default NavItem;
+
