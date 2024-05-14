@@ -84,7 +84,7 @@ export default function Page({ params }: { params: { url: string } }) {
                 <p className="text-gray-600 text-[15px] font-semibold">YEAR</p>
                 <p className="text-[18px] font-medium text-gray-500">{year}</p>
               </div>
-              <BlackButton className="mt-8" title="Launch Project" />
+              <BlackButton type="button" className="mt-8" title="Launch Project" />
             </div>
            </YXtransition>
           

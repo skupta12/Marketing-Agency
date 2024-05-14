@@ -10,6 +10,7 @@ type TitleProps = {
   icon?: string;
   className?: string;
   href?: string;
+  type: "button" | "reset" | "submit";
 };
 
 export const Button = ({ title, className, href = "/" }: TitleProps) => {
@@ -54,12 +55,11 @@ export const DownloadButton = ({ title, icon, className }: TitleProps) => {
   );
 };
 
-export const BlackButton = ({ title, className }: TitleProps) => {
+export const BlackButton = ({ title, className, type }: TitleProps) => {
   return (
     <>
       <button
-        type="button"
-        value="submit"
+        type={type}
         className={`${className} inline-block font-semibold text-center bg-black 
         text-white px-7 py-[14px] rounded-lg`}
       >

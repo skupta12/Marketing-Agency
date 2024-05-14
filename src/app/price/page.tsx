@@ -57,6 +57,7 @@ const page = () => {
                         ))}
                       </ul>
                       <BlackButton
+                        type="button"
                         className="sm:w-auto w-full"
                         title="Contact us"
                       />

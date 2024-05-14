@@ -1,3 +1,5 @@
+"use client";
+
 import Faq from "@/sections/Faq";
 import { playfair } from "../fonts";
 import Image from "next/image";
@@ -9,8 +11,42 @@ import styles from "@/style";
 import CTA from "@/sections/CTA";
 import ContactImage from "/public/blog/blogd-1.jpg";
 import { YXtransition } from "@/components/Transition";
+import { schema } from "@/lib/validators";
+import { z } from "zod";
+import { useState } from "react";
+import { SubmitHandler, useForm } from "react-hook-form";
+import { errorMessages } from "@/lib/validators";
+import { zodResolver } from "@hookform/resolvers/zod";
 
-const Page = () => {
+const Contact = () => {
+  
+  type FormFields = z.infer<typeof schema>;
+
+  const [isFormSubmitted, setIsFormSubmitted] = useState<boolean>(false);
+
+  const {
+    register,
+    handleSubmit,
+    setError,
+    formState: { errors, isSubmitting },
+  } = useForm<FormFields>({
+    resolver: zodResolver(schema),
+  });
+
+  const onSubmit: SubmitHandler<FormFields> = async (data) => {
+    try {
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+
+      console.log(data);
+
+      setIsFormSubmitted(true);
+    } catch (error) {
+      setError("root", {
+        message: "This email is already taken",
+      });
+    }
+  };
+
   return (
     <>
       <section className={`${styles.routePadding} lg:pb-24 pb-16 relative`}>
@@ -41,26 +77,52 @@ const Page = () => {
           <YXtransition y={40} delay={0.2}>
             <div className="grid grid-cols-12 gap-4 items-center">
               <div className="lg:col-span-6 col-span-12 lg:pr-12">
-                <form action="#">
+                <form onSubmit={handleSubmit(onSubmit)}>
                   <div className="grid grid-cols-12 gap-4">
                     {contact.map(({ id, label, placeholder, type, name }) => {
                       return (
                         <div key={id} className="lg:col-span-6 col-span-12">
                           <label className="form-label">{label}</label>
                           <input
+                            {...register(name as keyof FormFields)}
                             className="mt-2 w-full border-2 border-black rounded-md p-[14px] 
                           placeholder:text-black placeholder:font-medium 
                             focus:outline-none focus:border-sky-500"
                             type={type}
                             name={name}
                             placeholder={placeholder}
-                            required
+                            // required
                           />
+                          {/* @ts-expect-error */}
+                          {errors[name] && (
+                            <div className="text-red-500 text-[14px] mt-2">
+                              {/* @ts-expect-error */}
+                              {errorMessages[name]}
+                            </div>
+                          )}
                         </div>
                       );
                     })}
                     <div className="col-span-12 mt-4">
-                      <BlackButton className="w-full" title="Contact us" />
+                      <BlackButton
+                        type="submit"
+                        className={`w-full ${
+                          isSubmitting ? "bg-black/85" : ""
+                        }`}
+                        title={isSubmitting ? "Loading..." : "Send a message"}
+                      />
+                      {errors.root && (
+                        <div className="text-red-500">
+                          {errors.root.message}
+                        </div>
+                      )}
+                      {isFormSubmitted ? (
+                        <div className="text-red-500 text-[14px] mt-2">
+                          Disabled
+                        </div>
+                      ) : (
+                        ""
+                      )}
                     </div>
                   </div>
                 </form>
@@ -74,7 +136,8 @@ const Page = () => {
                     src={ContactImage}
                     alt="contact image"
                     sizes="(min-width: 1440px) 592px, 
-                    (min-width: 1040px) 42.11vw, (min-width: 780px) calc(100vw - 112px), calc(100vw - 32px)"
+                    (min-width: 1040px) 42.11vw, (min-width: 780px) 
+                    calc(100vw - 112px), calc(100vw - 32px)"
                   />
                 </div>
               </div>
@@ -88,4 +151,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Contact;
