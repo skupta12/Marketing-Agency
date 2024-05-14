@@ -38,7 +38,7 @@ const CTA = () => {
                   focus:outline-none focus:border-sky-500"
                   type="text"
                 />
-                  <button className="font-medium sm:text-[18px] text-white rounded-full absolute right-1 top-1 bottom-1 flex flex-col 
+                  <button aria-label="submit button" className="font-medium sm:text-[18px] text-white rounded-full absolute right-1 top-1 bottom-1 flex flex-col 
                 justify-center px-6 bg-black" type="submit">
                     <ArrowRight className="text-white w-[20px] h-[20px]" />
                   </button>

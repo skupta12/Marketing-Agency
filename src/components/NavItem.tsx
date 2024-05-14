@@ -1,16 +1,16 @@
 "use client";
 
-import { useState } from "react";
-import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import { navItems } from "@/lib/placeholder-data";
 import Link from "next/link";
 
 export function NavItem() {
-  
+
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handleClick = () => {
-    setIsOpen((prev) => !prev);
+      setIsOpen((prev) => !prev)
   };
 
   return (
@@ -40,37 +40,42 @@ export function NavItem() {
       >
         <nav className="navbar">
           <ul>
-            {isOpen &&
-              navItems.map(({ id, name, href, number, delay }) => (
-                <motion.div
-                  key={id}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: isOpen ? 1 : 0 }}
-                  transition={{ duration: 0.7, ease: "backIn", delay: delay }}
-                >
-                  <div className="flex gap-x-3 justify-center leading-tight relative">
-                    <span className="flex flex-col justify-center items-center 
-                    border-2 border-black rounded-full p-1 w-[40px] h-[40px]">
-                      {number}
-                    </span>
-                    <li className="overflow-hidden">
-                      <Link href={href}>
-                        <div
-                          onClick={() => setIsOpen(false)}
-                          className="text-black lg:text-[90px] text-[50px] font-semibold"
-                        >
-                          <span
-                            className="relative inline-block transition-transform duration-500"
-                            data-hover={name}
+            <AnimatePresence>
+              {isOpen &&
+                navItems.map(({ id, name, href, number, delay }) => (
+                  <motion.div
+                    key={id}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.7, ease: "backIn", delay: delay }}
+                    exit={{
+                      opacity: 0,
+                      transition: { duration: 0.7, ease: "backOut" },
+                    }}
+                  >
+                    <div className="flex gap-x-3 justify-center leading-tight relative">
+                      <span className="flex flex-col justify-center items-center border-2 border-black rounded-full p-1 w-[40px] h-[40px]">
+                        {number}
+                      </span>
+                      <li className="overflow-hidden">
+                        <Link href={href}>
+                          <div
+                            onClick={() => setIsOpen(false)}
+                            className="text-black lg:text-[90px] text-[50px] font-semibold"
                           >
-                            {name}
-                          </span>
-                        </div>
-                      </Link>
-                    </li>
-                  </div>
-                </motion.div>
-              ))}
+                            <span
+                              className="relative inline-block transition-transform duration-500"
+                              data-hover={name}
+                            >
+                              {name}
+                            </span>
+                          </div>
+                        </Link>
+                      </li>
+                    </div>
+                  </motion.div>
+                ))}
+            </AnimatePresence>
           </ul>
         </nav>
       </div>
