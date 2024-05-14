@@ -50,7 +50,7 @@ const Hero = () => {
               </YXtransition>
             </div>
             <div className="lg:col-span-5 col-span-12">
-              {/* <OSTransition scale={0.6} delay={0.3}>
+              <OSTransition scale={0.6} delay={0.3}>
                 <Image
                   width={488}
                   height={489}
@@ -59,7 +59,7 @@ const Hero = () => {
                   src={HeroImage}
                   alt="hero image"
                 />
-              </OSTransition> */}
+              </OSTransition>
             </div>
           </div>
           <OSTransition delay={0.4}>
