@@ -12,13 +12,13 @@ const Trust = () => {
     <section className={`${style.sectionPadding}`}>
       <MaxWidthWrapper>
         <div className="grid grid-cols-12 sm:gap-x-7 gap-x-6 gap-y-7">
-          <div className="lg:col-span-4 col-span-12 lg:pr-5 pr-0">
+          <div className="lg:col-span-4 col-span-12">
             <YXtransition x={-40} delay={0.1}>
             <h4
               className="lg:text-[26px] text-[24px] font-semibold"
             >
               More than 100 companies internationally{" "}
-              <span className="text-gray-500">place their trust in us</span>.
+              <span className="text-gray-500">place their <br /> trust in us</span>.
             </h4>
             </YXtransition>
           
@@ -29,7 +29,7 @@ const Trust = () => {
                 <div key={index} className="sm:col-span-4 col-span-6">
                   <OSTransition scale={0.5} delay={0.1}>
                   <div
-                    className="bg-primary-200 p-12 h-full"
+                    className="bg-primary-200 px-16 py-11 h-full"
                   >
                     <Image
                       className="mx-auto"

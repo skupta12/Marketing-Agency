@@ -25,7 +25,7 @@ export default function OSTransition({
       }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
-      transition={{ ease: "easeOut", duration: 0.5, delay: delay }}
+      transition={{ ease: "easeOut", duration: 0.4, delay: delay }}
     >
       {children}
     </motion.div>
@@ -55,7 +55,7 @@ export const YXtransition = ({
         y: shouldReduceMotion ? 0 : y,
         x: shouldReduceMotion ? 0 : x,
       }}
-      transition={{ ease: "easeOut", duration: 0.5, delay: delay }}
+      transition={{ ease: "easeOut", duration: 0.4, delay: delay }}
       whileInView={{ opacity: 1, y: 0, x: 0 }}
       viewport={{ once: true }}
     >
