@@ -13,7 +13,7 @@ type TitleProps = {
   type: "button" | "reset" | "submit";
 };
 
-export const Button = ({ title, className, href = "/" }: TitleProps) => {
+export const Button = ({ title, className, href = "/", type }: TitleProps) => {
   
   const router = useRouter();
 
@@ -23,7 +23,7 @@ export const Button = ({ title, className, href = "/" }: TitleProps) => {
         className={`${className} text-white text-[17px] font-medium px-11 
           py-4 inline-flex rounded-[30px] group bg-gradient-to-r from-purple-400 
           from-20% via-sky-600 via-50% to-cyan-400 to-90%`}
-        type="button"
+        type={type}
       >
         {title}
         <ArrowUpRight
@@ -35,14 +35,14 @@ export const Button = ({ title, className, href = "/" }: TitleProps) => {
   );
 };
 
-export const DownloadButton = ({ title, icon, className }: TitleProps) => {
+export const DownloadButton = ({ title, icon, className, type }: TitleProps) => {
   return (
     <>
       <button
         className={`${className} text-[17px] font-medium px-9 
         py-5 inline-flex gap-x-4 sm:w-auto w-full items-center justify-center rounded-[50px] 
         group text-black transform hover:-translate-y-[2px] transition duration-300`}
-        type="button"
+        type={type}
       >
         {icon === "IOS" ? (
           <Image width={25} height={25} src="/apple.png" alt="apple icon" />

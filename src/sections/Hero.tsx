@@ -51,7 +51,7 @@ const Hero = () => {
              
               </div>
               <YXtransition x={-40} delay={0.4}>
-                <Button href="/contact" title="Send a Message" />
+                <Button type="button" href="/contact" title="Send a Message" />
               </YXtransition>
              
             </div>

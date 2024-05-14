@@ -74,7 +74,7 @@ const Page = () => {
               as a design studio dedicated to creativity and individuality in a
               world craving its presence.
             </p>
-            <Button href="/contact" className="mt-14" title="Join us" />
+            <Button type="button" href="/contact" className="mt-14" title="Join us" />
           </div>
         </MaxWidthWrapper>
       </section>

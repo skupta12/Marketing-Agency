@@ -28,7 +28,7 @@ const Blog = () => {
                 .
               </p>
             </div>
-            <Button href="/post" className="mt-14" title="View All" />
+            <Button type="button" href="/post" className="mt-14" title="View All" />
           </div>
 
           <div className="grid grid-cols-12 sm:gap-x-7 gap-x-6 sm:gap-y-18 gap-y-14 pt-20">

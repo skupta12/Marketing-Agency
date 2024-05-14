@@ -62,7 +62,7 @@ const Trust = () => {
             </h4>
             </YXtransition>
               <YXtransition x={-40} delay={0.4}>
-                <Button href="/price" title="View Packages" />
+                <Button type="button" href="/price" title="View Packages" />
               </YXtransition>
             
           </div>

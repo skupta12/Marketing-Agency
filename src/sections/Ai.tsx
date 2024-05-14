@@ -32,11 +32,13 @@ const Ai = () => {
               </ul>
               <div className="sm:flex gap-x-4">
                 <DownloadButton
+                  type="button"
                   className="shadow-lg text-black"
                   title="Download IOS"
                   icon="IOS"
                 />
                 <DownloadButton
+                  type="button"
                   className="bg-black text-white sm:mt-0 mt-5"
                   title="Download Android"
                   icon="Android"
