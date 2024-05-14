@@ -11,16 +11,16 @@ const Hero = () => {
     <section className="lg:pb-[150px] pb-16 overflow-hidden relative">
       <Gradient
         fill
-        className="object-cover" 
+        className="sm:block hidden object-cover" 
         src="/gradient.png" 
         isPriority 
         />
-      {/* <Gradient
+      <Gradient
         fill
         className="sm:hidden block object-cover"
         src="/gradient-mobile.png"
         isPriority
-      /> */}
+      />
       <MaxWidthWrapper>
         <div className="sm:mt-[200px] mt-[150px] relative">
           <div className="grid grid-cols-12 gap-y-12 lg:gap-y-7 gap-x-5 lg:place-items-center">
@@ -60,7 +60,7 @@ const Hero = () => {
               <Image
                 width={488}
                 height={489}
-                quality={95}
+                quality={80}
                 priority
                 src={HeroImage}
                 alt="hero image"
