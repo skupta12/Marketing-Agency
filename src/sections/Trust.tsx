@@ -13,7 +13,7 @@ const Trust = () => {
       <MaxWidthWrapper>
         <div className="grid grid-cols-12 sm:gap-x-7 gap-x-6 gap-y-7">
           <div className="lg:col-span-4 col-span-12">
-            <YXtransition x={-40} delay={0.1}>
+            <YXtransition x={-40}>
             <h4
               className="lg:text-[26px] text-[24px] font-semibold"
             >
@@ -27,9 +27,9 @@ const Trust = () => {
             <div className="grid grid-cols-12 gap-5">
               {trust.map((item, index) => (
                 <div key={index} className="sm:col-span-4 col-span-6">
-                  <OSTransition scale={0.5} delay={0.1}>
+                  <OSTransition scale={0.5}>
                   <div
-                    className="bg-primary-200 px-16 py-11 h-full"
+                    className="bg-primary-200 lg:px-16 px-12 py-9 lg:py-11 h-full"
                   >
                     <Image
                       className="mx-auto"
