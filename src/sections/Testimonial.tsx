@@ -24,11 +24,15 @@ export default function Testimonial() {
     // prevArrow: <SamplePrevArrow />,
     responsive: [
       {
+        breakpoint: 1300,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
-          infinite: true,
-          dots: true
         }
       },
       {
