@@ -30,14 +30,11 @@ export default function Page({ params }: { params: { url: string } }) {
     <>
     <section className={`${styles.routePadding} lg:pb-24 pb-16`}>
       <MaxWidthWrapper>
-        <YXtransition>
         <div className="mb-12">
           <h1 className="lg:text-[65px] md:text-[58px] text-[34px] font-semibold leading-tight tracking-[1.5px]">
             {scrollerTitle}
           </h1>
-        </div>
-        </YXtransition>
-       
+        </div>   
         <div className="grid grid-cols-12 sm:gap-x-10 gap-x-5 gap-y-10 items-center">
           <YXtransition className="lg:col-span-7 col-span-12">
           <div className="relative overflow-hidden sm:h-[478px] h-[320px]">
