@@ -8,8 +8,8 @@ const styles = {
     flexStart: "flex justify-center items-start",
     flexBetween: "flex justify-between items-center",
   
-    sectionPadding: "lg:py-28 py-16",
-    routePadding: "lg:pt-[180px] pt-[150px]",
+    section: "lg:py-24 py-16",
+    route: "lg:py-44 py-32",
   
     marginX: "sm:mx-16 mx-6",
     marginY: "sm:my-16 my-6",

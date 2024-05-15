@@ -6,7 +6,7 @@ import styles from "@/style";
 
 const CTA = () => {
   return (
-    <section className={`${styles.sectionPadding} overflow-hidden relative`}>
+    <section className={`${styles.section} overflow-hidden relative`}>
       <Gradient fill className="sm:block hidden" src="/gradient.png" />
       <Gradient fill className="sm:hidden block" src="/gradient-mobile.png" />
 

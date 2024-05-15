@@ -7,7 +7,7 @@ import { YXtransition } from "@/components/Transition";
 
 const Services = () => {
   return (
-    <section className={`${style.sectionPadding}`}>
+    <section className={`${style.section}`}>
       <MaxWidthWrapper>
         <YXtransition y={40} delay={0.1}>
           <div className="text-center">
@@ -25,7 +25,7 @@ const Services = () => {
           <div className="grid grid-cols-12 gap-4 pt-20 lg:pb-32 pb-20">
             {services.map(({ id, icon, title, text }) => (
               <div
-                className="w-full lg:col-span-4 md:col-span-6 col-span-12 bg-primary-200 p-12"
+                className="lg:col-span-4 md:col-span-6 col-span-12 bg-primary-200 p-12"
                 key={id}
               >
                 <div

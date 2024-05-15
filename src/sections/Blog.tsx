@@ -9,7 +9,7 @@ import { YXtransition } from "@/components/Transition";
 
 const Blog = () => {
   return (
-    <section className={`${style.sectionPadding}`}>
+    <section className={`${style.section}`}>
       <YXtransition y={40} delay={0.1}>
         <MaxWidthWrapper>
           <div className="sm:flex justify-between items-center">

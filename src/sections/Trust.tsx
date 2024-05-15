@@ -9,7 +9,7 @@ import OSTransition, { YXtransition } from "@/components/Transition";
 const Trust = () => {
   return (
     <>
-    <section className={`${style.sectionPadding}`}>
+    <section className={style.section}>
       <MaxWidthWrapper>
         <div className="grid grid-cols-12 sm:gap-x-7 gap-x-6 gap-y-7">
           <div className="lg:col-span-4 col-span-12">
@@ -49,7 +49,7 @@ const Trust = () => {
         
       </MaxWidthWrapper>
     </section>
-    <section className={style.sectionPadding}>
+    <section className={style.section}>
       <MaxWidthWrapper>
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-y-12 gap-x-5 place-items-center">
           <div>

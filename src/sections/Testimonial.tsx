@@ -44,7 +44,7 @@ export default function Testimonial() {
     ]
   };
   return (
-    <section className={styles.sectionPadding}>
+    <section className={styles.section}>
       <MaxWidthWrapper>
         <YXtransition x={-40}>
         <div className="sm:mb-20 mb-10">

@@ -49,7 +49,7 @@ const Contact = () => {
 
   return (
     <>
-      <section className={`${styles.routePadding} lg:pb-24 pb-16 relative`}>
+      <section className={`${styles.route} lg:pb-24 pb-16 relative`}>
         <Gradient
           fill
           className="sm:block hidden"

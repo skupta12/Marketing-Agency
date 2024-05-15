@@ -8,7 +8,7 @@ import { YXtransition } from "@/components/Transition";
 
 const Ai = () => {
   return (
-    <section className={`${style.sectionPadding}`}>
+    <section className={`${style.section}`}>
       <YXtransition y={70} delay={0.1}>
         <MaxWidthWrapper>
           <div className="grid lg:grid-cols-2 items-center gap-10">
@@ -21,7 +21,7 @@ const Ai = () => {
                 {aiList.map((content, i) => (
                   <li key={i} className="flex items-center gap-x-2 mb-5">
                     <div className="bg-primary-200 rounded-full p-2">
-                      <Check className="w-[15px] h-[15px] text-black/50" />
+                      <Check className=" w-[15px] h-[15px] text-black/50" />
                     </div>
 
                     <p className="sm:text-[17px] text-[16px] font-medium">

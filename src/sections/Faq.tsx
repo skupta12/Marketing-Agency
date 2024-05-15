@@ -6,7 +6,7 @@ import style from "@/style";
 
 const Faq = () => {
   return (
-    <section className={`${style.sectionPadding}`}>
+    <section className={`${style.section}`}>
       <MaxWidthWrapper>
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="text">

@@ -11,7 +11,7 @@ const Portfolio = () => {
     "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:opacity-0 duration-300 transition-opacity group-hover:opacity-[1]";
 
   return (
-    <section className={`${style.sectionPadding} overflow-hidden relative`}>
+    <section className={`${style.section} overflow-hidden relative`}>
       <MaxWidthWrapper>
         <YXtransition className="text-center" y={40}>
         <h3 className={`${style.heading3} mb-4`}>

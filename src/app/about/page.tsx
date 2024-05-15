@@ -12,7 +12,7 @@ import { YXtransition } from "@/components/Transition";
 const Page = () => {
   return (
     <>
-      <section className={`${styles.routePadding} relative overflow-hidden`}>
+      <section className={`${styles.route} relative overflow-hidden`}>
         <Gradient
           fill
           className="sm:block hidden"
