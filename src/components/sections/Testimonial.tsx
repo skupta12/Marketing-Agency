@@ -7,8 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 import styles from "@/style";
 import { testimonial } from "@/lib/placeholder-data";
 import Image from "next/image";
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import { YXtransition } from "@/components/Transition";
+import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
+import { YXtransition } from "@/components/common/Transition";
 
 export default function Testimonial() {
 

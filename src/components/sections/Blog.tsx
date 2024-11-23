@@ -1,11 +1,11 @@
 import { playfair } from "@/app/fonts";
-import Button from "../components/Button";
+import Button from "../common/Button";
 import { blogs } from "@/lib/placeholder-data";
 import Image from "next/image";
-import MaxWidthWrapper from "../components/MaxWidthWrapper";
+import MaxWidthWrapper from "../common/MaxWidthWrapper";
 import style from "@/style";
 import Link from "next/link";
-import { YXtransition } from "@/components/Transition";
+import { YXtransition } from "@/components/common/Transition";
 
 const Blog = () => {
   return (

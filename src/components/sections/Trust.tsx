@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { trust } from "@/lib/placeholder-data";
-import Button from "../components/Button";
-import MaxWidthWrapper from "../components/MaxWidthWrapper";
+import Button from "../common/Button";
+import MaxWidthWrapper from "../common/MaxWidthWrapper";
 import style from "@/style";
 import Ring from "/public/media-ring.png"
-import OSTransition, { YXtransition } from "@/components/Transition";
+import OSTransition, { YXtransition } from "@/components/common/Transition";
 
 const Trust = () => {
   return (

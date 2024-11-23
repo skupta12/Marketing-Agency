@@ -1,16 +1,16 @@
 "use client";
 
-import Faq from "@/sections/Faq";
+import Faq from "@/components/sections/Faq";
 import { playfair } from "../fonts";
 import Image from "next/image";
 import { contact } from "@/lib/placeholder-data";
-import { BlackButton } from "@/components/Button";
-import Gradient from "@/components/Gradient";
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import { BlackButton } from "@/components/common/Button";
+import Gradient from "@/components/common/Gradient";
+import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import styles from "@/style";
-import CTA from "@/sections/CTA";
+import CTA from "@/components/sections/CTA";
 import ContactImage from "/public/blog/blogd-1.jpg";
-import { YXtransition } from "@/components/Transition";
+import { YXtransition } from "@/components/common/Transition";
 import { schema } from "@/lib/validators";
 import { z } from "zod";
 import { useState } from "react";

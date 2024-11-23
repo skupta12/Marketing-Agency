@@ -1,10 +1,10 @@
 import { playfair } from "@/app/fonts";
 import Image from "next/image";
 import Link from "next/link";
-import InfinitiveScroller from "../components/InfinitiveScroller";
-import MaxWidthWrapper from "../components/MaxWidthWrapper";
+import InfinitiveScroller from "../common/InfinitiveScroller";
+import MaxWidthWrapper from "../common/MaxWidthWrapper";
 import style from "@/style";
-import OSTransition, { YXtransition } from "@/components/Transition";
+import OSTransition, { YXtransition } from "@/components/common/Transition";
 
 const Portfolio = () => {
   const scrollerboxStyle =

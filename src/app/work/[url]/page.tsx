@@ -1,12 +1,12 @@
 import NotFound from "@/app/not-found";
-import { BlackButton } from "@/components/Button";
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import { BlackButton } from "@/components/common/Button";
+import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import { portfolio } from "@/lib/placeholder-data";
 import styles from "@/style";
 import TextInfo from "../textInfo";
-import CTA from "@/sections/CTA";
+import CTA from "@/components/sections/CTA";
 import Image from "next/image"
-import { YXtransition } from "@/components/Transition";
+import { YXtransition } from "@/components/common/Transition";
 
 export default function Page({ params }: { params: { url: string } }) {
 

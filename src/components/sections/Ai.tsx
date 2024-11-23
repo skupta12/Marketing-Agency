@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { Check } from "lucide-react";
 import { aiList } from "@/lib/placeholder-data";
-import { DownloadButton } from "../components/Button";
-import MaxWidthWrapper from "../components/MaxWidthWrapper";
+import { DownloadButton } from "../common/Button";
+import MaxWidthWrapper from "../common/MaxWidthWrapper";
 import style from "@/style";
-import { YXtransition } from "@/components/Transition";
+import { YXtransition } from "@/components/common/Transition";
 
 const Ai = () => {
   return (

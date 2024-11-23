@@ -1,18 +1,18 @@
 import { playfair } from "../fonts";
 import Image from "next/image";
-import Button from "@/components/Button";
-import Gradient from "@/components/Gradient";
-import Team from "@/sections/Team";
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import CTA from "@/sections/CTA";
+import Button from "@/components/common/Button";
+import Gradient from "@/components/common/Gradient";
+import Team from "@/components/sections/Team";
+import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
+import CTA from "@/components/sections/CTA";
 import styles from "@/style";
 import AboutBlogImage from "/public/blog/blogd-1.jpg"
-import { YXtransition } from "@/components/Transition";
+import { YXtransition } from "@/components/common/Transition";
 
 const Page = () => {
   return (
     <>
-      <section className={`${styles.route} relative overflow-hidden`}>
+      <section className={`pt-44 pb-12 relative overflow-hidden`}>
         <Gradient
           fill
           className="sm:block hidden"

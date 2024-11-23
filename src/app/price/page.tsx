@@ -1,12 +1,12 @@
 import { playfair } from "@/app/fonts";
-import { BlackButton } from "@/components/Button";
-import CTA from "@/sections/CTA";
-import Faq from "@/sections/Faq";
-import Gradient from "@/components/Gradient";
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import { BlackButton } from "@/components/common/Button";
+import CTA from "@/components/sections/CTA";
+import Faq from "@/components/sections/Faq";
+import Gradient from "@/components/common/Gradient";
+import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import { prices } from "@/lib/placeholder-data";
 import styles from "@/style";
-import { YXtransition } from "@/components/Transition";
+import { YXtransition } from "@/components/common/Transition";
 
 const page = () => {
   return (

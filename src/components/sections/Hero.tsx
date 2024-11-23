@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Button from "../components/Button";
+import Button from "../common/Button";
 import { playfair } from "@/app/fonts";
-import MaxWidthWrapper from "../components/MaxWidthWrapper";
-import Gradient from "@/components/Gradient";
+import MaxWidthWrapper from "../common/MaxWidthWrapper";
+import Gradient from "@/components/common/Gradient";
 import HeroImage from "/public/hero.png";
-import OSTransition, { YXtransition } from "@/components/Transition";
+import OSTransition, { YXtransition } from "@/components/common/Transition";
 
 const Hero = () => {
   return (

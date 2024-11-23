@@ -1,6 +1,6 @@
 import React from "react";
-import MaxWidthWrapper from "../components/MaxWidthWrapper";
-import Accordion from "../components/Accordion";
+import MaxWidthWrapper from "../common/MaxWidthWrapper";
+import Accordion from "../common/Accordion";
 import { accordion } from "@/lib/placeholder-data";
 import style from "@/style";
 

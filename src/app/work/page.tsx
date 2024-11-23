@@ -1,13 +1,13 @@
 import { playfair } from "../fonts";
-import Gradient from "@/components/Gradient";
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import Gradient from "@/components/common/Gradient";
+import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import { portfolio } from "@/lib/placeholder-data";
 import Link from "next/link";
 import Image from "next/image";
-import InfinitiveScroller from "@/components/InfinitiveScroller";
-import CTA from "@/sections/CTA";
+import InfinitiveScroller from "@/components/common/InfinitiveScroller";
+import CTA from "@/components/sections/CTA";
 import styles from "@/style";
-import { YXtransition } from "@/components/Transition";
+import { YXtransition } from "@/components/common/Transition";
 
 const scrollerboxStyle =
   "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:opacity-0 duration-300 transition-opacity group-hover:opacity-[1]";

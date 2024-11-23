@@ -2,7 +2,7 @@ import { playfair } from "@/app/fonts";
 import { media, team } from "@/lib/placeholder-data";
 import Image from "next/image";
 import Link from "next/link";
-import MaxWidthWrapper from "../components/MaxWidthWrapper";
+import MaxWidthWrapper from "../common/MaxWidthWrapper";
 
 const Team = () => {
   return (

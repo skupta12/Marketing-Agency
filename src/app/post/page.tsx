@@ -1,14 +1,14 @@
 import { playfair } from "../fonts";
-import Gradient from "@/components/Gradient";
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import Gradient from "@/components/common/Gradient";
+import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import { Suspense } from "react";
 import Post from "./post";
 import BlogSkeleton from "../skeletons";
 import { fetchBlogPages } from "@/lib/data";
 import Pagination from "./pagination";
-import CTA from "@/sections/CTA";
+import CTA from "@/components/sections/CTA";
 import styles from "@/style";
-import { YXtransition } from "@/components/Transition";
+import { YXtransition } from "@/components/common/Transition";
 
 export default async function page({
   searchParams,

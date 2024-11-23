@@ -1,11 +1,11 @@
 import React from "react";
 import { fetchCurrentPost } from "@/lib/data";
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import Image from "next/image";
 import { oswald } from "@/app/fonts";
 import NotFound from "@/app/not-found";
-import CTA from "@/sections/CTA";
-import { YXtransition } from "@/components/Transition";
+import CTA from "@/components/sections/CTA";
+import { YXtransition } from "@/components/common/Transition";
 
 export default async function Page({ params }: { params: { url: string } }) {
   
