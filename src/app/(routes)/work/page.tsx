@@ -1,4 +1,4 @@
-import { playfair } from "../fonts";
+import { playfair } from "../../fonts";
 import Gradient from "@/components/common/Gradient";
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import { portfolio } from "@/lib/placeholder-data";

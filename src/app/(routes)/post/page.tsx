@@ -1,9 +1,9 @@
-import { playfair } from "../fonts";
+import { playfair } from "../../fonts";
 import Gradient from "@/components/common/Gradient";
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import { Suspense } from "react";
 import Post from "./post";
-import BlogSkeleton from "../skeletons";
+import BlogSkeleton from "../../skeletons";
 import { fetchBlogPages } from "@/lib/data";
 import Pagination from "./pagination";
 import CTA from "@/components/sections/CTA";

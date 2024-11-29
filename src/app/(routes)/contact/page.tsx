@@ -1,7 +1,7 @@
 "use client";
 
 import Faq from "@/components/sections/Faq";
-import { playfair } from "../fonts";
+import { playfair } from "../../fonts";
 import Image from "next/image";
 import { contact } from "@/lib/placeholder-data";
 import { BlackButton } from "@/components/common/Button";

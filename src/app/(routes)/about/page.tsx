@@ -1,4 +1,4 @@
-import { playfair } from "../fonts";
+import { playfair } from "../../fonts";
 import Image from "next/image";
 import Button from "@/components/common/Button";
 import Gradient from "@/components/common/Gradient";
