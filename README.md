@@ -1,5 +1,22 @@
 <h1>Liege - Next JS Marketing Agency Template</h1>
 
+![Heroicons React](https://img.shields.io/badge/@heroicons/react-v2.1.1-blue)  
+![Hookform Resolvers](https://img.shields.io/badge/@hookform/resolvers-v3.3.4-green)  
+![Plaiceholder Next](https://img.shields.io/badge/@plaiceholder/next-v3.0.0-orange)  
+![Vercel Postgres](https://img.shields.io/badge/@vercel/postgres-v0.7.2-brightgreen)  
+![clsx](https://img.shields.io/badge/clsx-v2.1.0-lightgrey)  
+![Framer Motion](https://img.shields.io/badge/framer--motion-v11.1.9-pink)  
+![Lucide React](https://img.shields.io/badge/lucide--react-v0.323.0-blueviolet)  
+![Next.js](https://img.shields.io/badge/next-v14.1.0-yellowgreen)  
+![React](https://img.shields.io/badge/react-v18-blue)  
+![React DOM](https://img.shields.io/badge/react--dom-v18-yellow)  
+![React Hook Form](https://img.shields.io/badge/react--hook--form-v7.51.4-green)  
+![React Slick](https://img.shields.io/badge/react--slick-v0.30.2-red)  
+![Slick Carousel](https://img.shields.io/badge/slick--carousel-v1.8.1-darkred)  
+![Use Debounce](https://img.shields.io/badge/use--debounce-v10.0.0-orange)  
+![Zod](https://img.shields.io/badge/zod-v3.23.8-purple)  
+
+
 ## Getting Started
 
 First, run the development server:
