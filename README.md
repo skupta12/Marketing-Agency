@@ -2,6 +2,7 @@
 
 ![Vercel Postgres](https://img.shields.io/badge/@vercel/postgres-v0.7.2-brightgreen) ![Framer Motion](https://img.shields.io/badge/framer--motion-v11.1.9-pink) ![Next.js](https://img.shields.io/badge/next-v14.1.0-yellowgreen) ![React](https://img.shields.io/badge/react-v18-blue) ![Zod](https://img.shields.io/badge/zod-v3.23.8-purple)  
 
+![do-whith](https://github.com/user-attachments/assets/50618fd6-ce18-47aa-8253-150074845468)
 
 ## Getting Started
 
