@@ -1,4 +1,4 @@
-<h2>Liege - Next JS Marketing Agency Template</h2>
+<h1>Liege - Next JS Marketing Agency Template</h1>
 
 ## Getting Started
 
