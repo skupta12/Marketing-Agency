@@ -1,7 +1,7 @@
 <h1>Liege - Next JS Marketing Agency Template</h1>
 
-![Heroicons React](https://img.shields.io/badge/@heroicons/react-v2.1.1-blue)  
-![Hookform Resolvers](https://img.shields.io/badge/@hookform/resolvers-v3.3.4-green)  
+![Heroicons React](https://img.shields.io/badge/@heroicons/react-v2.1.1-blue) ![Hookform Resolvers](https://img.shields.io/badge/@hookform/resolvers-v3.3.4-green)  
+
 ![Plaiceholder Next](https://img.shields.io/badge/@plaiceholder/next-v3.0.0-orange)  
 ![Vercel Postgres](https://img.shields.io/badge/@vercel/postgres-v0.7.2-brightgreen)  
 ![clsx](https://img.shields.io/badge/clsx-v2.1.0-lightgrey)  
