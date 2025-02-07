@@ -1,6 +1,6 @@
 <h1>Liege - Next JS Marketing Agency Template</h1>
 
-![Heroicons React](https://img.shields.io/badge/@heroicons/react-v2.1.1-blue) ![Vercel Postgres](https://img.shields.io/badge/@vercel/postgres-v0.7.2-brightgreen) ![Framer Motion](https://img.shields.io/badge/framer--motion-v11.1.9-pink) ![Next.js](https://img.shields.io/badge/next-v14.1.0-yellowgreen) ![React](https://img.shields.io/badge/react-v18-blue) ![Zod](https://img.shields.io/badge/zod-v3.23.8-purple)  
+![Vercel Postgres](https://img.shields.io/badge/@vercel/postgres-v0.7.2-brightgreen) ![Framer Motion](https://img.shields.io/badge/framer--motion-v11.1.9-pink) ![Next.js](https://img.shields.io/badge/next-v14.1.0-yellowgreen) ![React](https://img.shields.io/badge/react-v18-blue) ![Zod](https://img.shields.io/badge/zod-v3.23.8-purple)  
 
 
 ## Getting Started
