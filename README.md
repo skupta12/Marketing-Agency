@@ -1,6 +1,23 @@
 <h1>Liege - Next.js Marketing Agency Template</h1>
 
-![Framer Motion](https://img.shields.io/badge/framer--motion-v11.1.9-pink) ![Next.js](https://img.shields.io/badge/next-v14.1.0-yellowgreen) ![React](https://img.shields.io/badge/react-v18-blue)
+<p align="left">
+  <a href="https://reactjs.org/" target="_blank">
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
+  </a>
+  <a href="https://nextjs.org/" target="_blank">
+    <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js"/>
+  </a>
+  <a href="https://www.typescriptlang.org/" target="_blank">
+    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+  </a>
+  <a href="https://tailwindcss.com/" target="_blank">
+    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS"/>
+  </a>
+  <a href="https://www.framer.com/motion/" target="_blank">
+    <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion"/>
+  </a>
+</p>
+
 
 <a href="https://marketing-agency-db.vercel.app/">![do-whith](https://github.com/user-attachments/assets/50618fd6-ce18-47aa-8253-150074845468)</a>
 
